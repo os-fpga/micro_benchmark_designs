@@ -1,0 +1,6 @@
+#Block Name   x   y   z
+#------------ --  --  -
+clock0	6	0	19
+rst	7	0	12
+out:ff1	8	0	7
+start	8	0	16
