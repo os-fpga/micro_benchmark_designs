@@ -37,7 +37,7 @@ Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
 4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
 Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
 VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v'
-VERIFIC-WARNING [VERI-1372] /nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:10: redeclaration of ANSI port 'ff1' is not allowed
+VERIFIC-WARNING [VERI-1372] /nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:10: redeclaration of ANSI port 'ff2' is not allowed
 
 5. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
 Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
@@ -177,8 +177,8 @@ Optimizing module hop0_design.
 
 7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 4 unused wires.
-<suppressed ~3 debug messages>
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~4 debug messages>
 
 7.13. Executing CHECK pass (checking for obvious problems).
 Checking module hop0_design...
@@ -197,7 +197,7 @@ Running muxtree optimizer on module \hop0_design..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.17. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \hop0_design.
@@ -250,7 +250,7 @@ Running muxtree optimizer on module \hop0_design..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \hop0_design.
@@ -284,16 +284,16 @@ Finding unused cells or wires in module \hop0_design..
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.38. Executing WREDUCE pass (reducing word size of cells).
 
@@ -370,7 +370,7 @@ Running muxtree optimizer on module \hop0_design..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.50. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \hop0_design.
@@ -395,16 +395,16 @@ MAX OPT ITERATION = 1
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.57. Executing MEMORY pass.
 
@@ -437,20 +437,20 @@ Finding unused cells or wires in module \hop0_design..
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.59. Executing MUXPACK pass ($mux cell cascades to $pmux).
 Converted 0 (p)mux cells into 0 pmux cells.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.60. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
@@ -475,7 +475,7 @@ No more expansions possible.
 
 7.64. Executing MUXPACK pass ($mux cell cascades to $pmux).
 Converted 0 (p)mux cells into 0 pmux cells.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.65. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
 
@@ -483,16 +483,16 @@ Converted 0 (p)mux cells into 0 pmux cells.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.67. Executing TECHMAP pass (map to technology primitives).
 
@@ -533,22 +533,22 @@ Successfully finished Verilog frontend.
 Using extmapper simplemap for cells of type $mux.
 Using extmapper simplemap for cells of type $dff.
 No more expansions possible.
-<suppressed ~73 debug messages>
+<suppressed ~75 debug messages>
 
 7.68. Printing statistics.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $_DFF_P_                        1
-     $_MUX_                          1
+   Number of cells:                  4
+     $_DFF_P_                        2
+     $_MUX_                          2
 
 7.69. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -652,44 +652,44 @@ MAX OPT ITERATION = 1
 7.88. Executing ABC pass (technology mapping using ABC).
 
 7.88.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.88.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 5 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 7 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.88.2.1. Executing ABC.
 
 7.89. Executing ABC pass (technology mapping using ABC).
 
 7.89.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.89.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 4 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 6 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.89.2.1. Executing ABC.
 
 7.90. Executing ABC pass (technology mapping using ABC).
 
 7.90.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.90.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 4 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 6 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.90.2.1. Executing ABC.
 
 7.91. Executing ABC pass (technology mapping using ABC).
 
 7.91.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.91.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 4 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 6 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.91.2.1. Executing ABC.
 
@@ -724,8 +724,8 @@ Removed a total of 0 cells.
 
 7.100. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 20 unused wires.
-<suppressed ~1 debug messages>
+Removed 0 unused cells and 28 unused wires.
+<suppressed ~2 debug messages>
 
 7.101. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -738,17 +738,17 @@ MAX OPT ITERATION = 1
 7.104. Executing ABC pass (technology mapping using ABC).
 
 7.104.1. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
-Extracted 1 gates and 3 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 2 gates and 5 wires to a netlist network with 3 inputs and 2 outputs.
 
 7.104.1.1. Executing ABC.
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 0]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.08 sec. at Pass 1]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 2]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 3]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.11 sec. at Pass 5]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.03 sec. at Pass 0]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 1]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.04 sec. at Pass 2]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 3]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 5]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
 
 7.105. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -777,7 +777,7 @@ Removed a total of 0 cells.
 
 7.112. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 3 unused wires.
+Removed 0 unused cells and 5 unused wires.
 <suppressed ~1 debug messages>
 
 7.113. Executing OPT_EXPR pass (perform const folding).
@@ -792,16 +792,16 @@ Pushed 0 inverters.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
+   Number of wires:                  7
+   Number of wire bits:              7
    Number of public wires:           4
    Number of public wire bits:       4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $_DFF_P_                        1
-     $lut                            1
+   Number of cells:                  4
+     $_DFF_P_                        2
+     $lut                            2
 
 7.116. Executing SHREGMAP pass (map shift registers).
 Converted 0 dff cells into 0 shift registers.
@@ -812,16 +812,16 @@ Converted 0 dff cells into 0 shift registers.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
+   Number of wires:                  7
+   Number of wire bits:              7
    Number of public wires:           4
    Number of public wire bits:       4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $_DFF_P_                        1
-     $lut                            1
+   Number of cells:                  4
+     $_DFF_P_                        2
+     $lut                            2
 
 7.119. Executing TECHMAP pass (map to technology primitives).
 
@@ -926,11 +926,11 @@ Successfully finished Verilog frontend.
 Using template \$_DFF_P_ for cells of type $_DFF_P_.
 Using extmapper simplemap for cells of type $lut.
 No more expansions possible.
-<suppressed ~138 debug messages>
+<suppressed ~140 debug messages>
 
 7.120. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.121. Executing SIMPLEMAP pass (map simple cells to gate primitives).
 
@@ -939,13 +939,14 @@ Optimizing module hop0_design.
 
 7.123. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\hop0_design'.
-Removed a total of 0 cells.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
 
 7.124. Executing OPT_DFF pass (perform DFF optimizations).
 
 7.125. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 4 unused wires.
+Removed 0 unused cells and 9 unused wires.
 <suppressed ~1 debug messages>
 
 7.126. Executing OPT_EXPR pass (perform const folding).
@@ -983,17 +984,17 @@ MAX OPT ITERATION = 1
 7.135. Executing ABC pass (technology mapping using ABC).
 
 7.135.1. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
-Extracted 2 gates and 5 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 3 gates and 7 wires to a netlist network with 3 inputs and 2 outputs.
 
 7.135.1.1. Executing ABC.
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 0]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 1]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 2]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 3]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 5]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.03 sec. at Pass 0]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 1]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 2]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.04 sec. at Pass 3]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.07 sec. at Pass 5]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
 
 7.136. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -1022,7 +1023,7 @@ Removed a total of 0 cells.
 
 7.143. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 4 unused wires.
+Removed 0 unused cells and 6 unused wires.
 <suppressed ~1 debug messages>
 
 7.144. Executing OPT_EXPR pass (perform const folding).
@@ -1042,16 +1043,16 @@ Removed 0 unused modules.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
+   Number of wires:                  7
+   Number of wire bits:              7
    Number of public wires:           4
    Number of public wire bits:       4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $lut                            1
-     dffsre                          1
+   Number of cells:                  4
+     $lut                            2
+     dffsre                          2
 
 7.147. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
@@ -1062,6 +1063,6 @@ Finding unused cells or wires in module \hop0_design..
 Dumping module `\hop0_design'.
 
 Warnings: 3 unique messages, 3 total
-End of script. Logfile hash: bac219f013, CPU: user 0.35s system 0.05s, MEM: 22.38 MB peak
+End of script. Logfile hash: 9bcbed5e7b, CPU: user 0.26s system 0.04s, MEM: 22.39 MB peak
 Yosys 0.18+10 (git sha1 c98b0e94e, gcc 9.4.0 -fPIC -Os)
-Time spent: 95% 6x abc (7 sec), 2% 14x read_verilog (0 sec), ...
+Time spent: 96% 6x abc (6 sec), 1% 14x read_verilog (0 sec), ...

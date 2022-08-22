@@ -1,5 +1,5 @@
 # Out log file
-# Created: Mon Aug 22 14:36:49 2022
+# Created: Mon Aug 22 18:53:39 2022
 
 Created design: hop0_design
 Adding VERILOG_2001 /nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v 
@@ -44,7 +44,7 @@ Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
 4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
 Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
 VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v'
-VERIFIC-WARNING [VERI-1372] /nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:10: redeclaration of ANSI port 'ff1' is not allowed
+VERIFIC-WARNING [VERI-1372] /nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:10: redeclaration of ANSI port 'ff2' is not allowed
 
 5. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
 Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
@@ -184,8 +184,8 @@ Optimizing module hop0_design.
 
 7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 4 unused wires.
-<suppressed ~3 debug messages>
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~4 debug messages>
 
 7.13. Executing CHECK pass (checking for obvious problems).
 Checking module hop0_design...
@@ -204,7 +204,7 @@ Running muxtree optimizer on module \hop0_design..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.17. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \hop0_design.
@@ -257,7 +257,7 @@ Running muxtree optimizer on module \hop0_design..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \hop0_design.
@@ -291,16 +291,16 @@ Finding unused cells or wires in module \hop0_design..
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.38. Executing WREDUCE pass (reducing word size of cells).
 
@@ -377,7 +377,7 @@ Running muxtree optimizer on module \hop0_design..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.50. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \hop0_design.
@@ -402,16 +402,16 @@ MAX OPT ITERATION = 1
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.57. Executing MEMORY pass.
 
@@ -444,20 +444,20 @@ Finding unused cells or wires in module \hop0_design..
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.59. Executing MUXPACK pass ($mux cell cascades to $pmux).
 Converted 0 (p)mux cells into 0 pmux cells.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.60. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
@@ -482,7 +482,7 @@ No more expansions possible.
 
 7.64. Executing MUXPACK pass ($mux cell cascades to $pmux).
 Converted 0 (p)mux cells into 0 pmux cells.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.65. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
 
@@ -490,16 +490,16 @@ Converted 0 (p)mux cells into 0 pmux cells.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $dff                            1
-     $mux                            1
+   Number of cells:                  4
+     $dff                            2
+     $mux                            2
 
 7.67. Executing TECHMAP pass (map to technology primitives).
 
@@ -540,22 +540,22 @@ Successfully finished Verilog frontend.
 Using extmapper simplemap for cells of type $mux.
 Using extmapper simplemap for cells of type $dff.
 No more expansions possible.
-<suppressed ~73 debug messages>
+<suppressed ~75 debug messages>
 
 7.68. Printing statistics.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
-   Number of public wires:           4
-   Number of public wire bits:       4
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $_DFF_P_                        1
-     $_MUX_                          1
+   Number of cells:                  4
+     $_DFF_P_                        2
+     $_MUX_                          2
 
 7.69. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -659,44 +659,44 @@ MAX OPT ITERATION = 1
 7.88. Executing ABC pass (technology mapping using ABC).
 
 7.88.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.88.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 5 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 7 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.88.2.1. Executing ABC.
 
 7.89. Executing ABC pass (technology mapping using ABC).
 
 7.89.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.89.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 4 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 6 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.89.2.1. Executing ABC.
 
 7.90. Executing ABC pass (technology mapping using ABC).
 
 7.90.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.90.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 4 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 6 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.90.2.1. Executing ABC.
 
 7.91. Executing ABC pass (technology mapping using ABC).
 
 7.91.1. Summary of detected clock domains:
-  2 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+  4 cells in clk=\clock0, en={ }, arst={ }, srst={ }
 
 7.91.2. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
 Found matching posedge clock domain: \clock0
-Extracted 2 gates and 4 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 4 gates and 6 wires to a netlist network with 2 inputs and 1 outputs.
 
 7.91.2.1. Executing ABC.
 
@@ -731,8 +731,8 @@ Removed a total of 0 cells.
 
 7.100. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 20 unused wires.
-<suppressed ~1 debug messages>
+Removed 0 unused cells and 28 unused wires.
+<suppressed ~2 debug messages>
 
 7.101. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -745,17 +745,17 @@ MAX OPT ITERATION = 1
 7.104. Executing ABC pass (technology mapping using ABC).
 
 7.104.1. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
-Extracted 1 gates and 3 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 2 gates and 5 wires to a netlist network with 3 inputs and 2 outputs.
 
 7.104.1.1. Executing ABC.
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 0]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.08 sec. at Pass 1]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 2]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 3]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.11 sec. at Pass 5]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.03 sec. at Pass 0]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 1]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.04 sec. at Pass 2]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 3]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 5]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
 
 7.105. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -784,7 +784,7 @@ Removed a total of 0 cells.
 
 7.112. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 3 unused wires.
+Removed 0 unused cells and 5 unused wires.
 <suppressed ~1 debug messages>
 
 7.113. Executing OPT_EXPR pass (perform const folding).
@@ -799,16 +799,16 @@ Pushed 0 inverters.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
+   Number of wires:                  7
+   Number of wire bits:              7
    Number of public wires:           4
    Number of public wire bits:       4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $_DFF_P_                        1
-     $lut                            1
+   Number of cells:                  4
+     $_DFF_P_                        2
+     $lut                            2
 
 7.116. Executing SHREGMAP pass (map shift registers).
 Converted 0 dff cells into 0 shift registers.
@@ -819,16 +819,16 @@ Converted 0 dff cells into 0 shift registers.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
+   Number of wires:                  7
+   Number of wire bits:              7
    Number of public wires:           4
    Number of public wire bits:       4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $_DFF_P_                        1
-     $lut                            1
+   Number of cells:                  4
+     $_DFF_P_                        2
+     $lut                            2
 
 7.119. Executing TECHMAP pass (map to technology primitives).
 
@@ -933,11 +933,11 @@ Successfully finished Verilog frontend.
 Using template \$_DFF_P_ for cells of type $_DFF_P_.
 Using extmapper simplemap for cells of type $lut.
 No more expansions possible.
-<suppressed ~138 debug messages>
+<suppressed ~140 debug messages>
 
 7.120. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
-<suppressed ~1 debug messages>
+<suppressed ~2 debug messages>
 
 7.121. Executing SIMPLEMAP pass (map simple cells to gate primitives).
 
@@ -946,13 +946,14 @@ Optimizing module hop0_design.
 
 7.123. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\hop0_design'.
-Removed a total of 0 cells.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
 
 7.124. Executing OPT_DFF pass (perform DFF optimizations).
 
 7.125. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 4 unused wires.
+Removed 0 unused cells and 9 unused wires.
 <suppressed ~1 debug messages>
 
 7.126. Executing OPT_EXPR pass (perform const folding).
@@ -990,17 +991,17 @@ MAX OPT ITERATION = 1
 7.135. Executing ABC pass (technology mapping using ABC).
 
 7.135.1. Extracting gate netlist of module `\hop0_design' to `<abc-temp-dir>/input.blif'..
-Extracted 2 gates and 5 wires to a netlist network with 2 inputs and 1 outputs.
+Extracted 3 gates and 7 wires to a netlist network with 3 inputs and 2 outputs.
 
 7.135.1.1. Executing ABC.
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 0]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 1]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 2]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 3]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 5]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
-DE:   #PIs =   2  #Luts =     1  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.03 sec. at Pass 0]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 1]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.05 sec. at Pass 2]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.04 sec. at Pass 3]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.06 sec. at Pass 4]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.07 sec. at Pass 5]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]
+DE:   #PIs =   3  #Luts =     2  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]
 
 7.136. Executing OPT_EXPR pass (perform const folding).
 Optimizing module hop0_design.
@@ -1029,7 +1030,7 @@ Removed a total of 0 cells.
 
 7.143. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
-Removed 0 unused cells and 4 unused wires.
+Removed 0 unused cells and 6 unused wires.
 <suppressed ~1 debug messages>
 
 7.144. Executing OPT_EXPR pass (perform const folding).
@@ -1049,16 +1050,16 @@ Removed 0 unused modules.
 
 === hop0_design ===
 
-   Number of wires:                  5
-   Number of wire bits:              5
+   Number of wires:                  7
+   Number of wire bits:              7
    Number of public wires:           4
    Number of public wire bits:       4
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  2
-     $lut                            1
-     dffsre                          1
+   Number of cells:                  4
+     $lut                            2
+     dffsre                          2
 
 7.147. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \hop0_design..
@@ -1069,15 +1070,15 @@ Finding unused cells or wires in module \hop0_design..
 Dumping module `\hop0_design'.
 
 Warnings: 3 unique messages, 3 total
-End of script. Logfile hash: bac219f013, CPU: user 0.35s system 0.05s, MEM: 22.38 MB peak
+End of script. Logfile hash: 9bcbed5e7b, CPU: user 0.26s system 0.04s, MEM: 22.39 MB peak
 Yosys 0.18+10 (git sha1 c98b0e94e, gcc 9.4.0 -fPIC -Os)
-Time spent: 95% 6x abc (7 sec), 2% 14x read_verilog (0 sec), ...
+Time spent: 96% 6x abc (6 sec), 1% 14x read_verilog (0 sec), ...
 Design hop0_design is synthesized!##################################################Packing for design: hop0_design##################################################Constraint: create_clock -period 6.8 clock0 
 Constraint: set_input_delay 1 -clock clock0 [get_ports {*}] 
 Constraint: set_output_delay 1 -clock clock0 [get_ports {*}] 
 Constraint: set_pin_loc clock0 Bank_H_1_12 
 Constraint: set_pin_loc rst Bank_H_1_14 
-Constraint: set_pin_loc ff1 Bank_H_1_15 
+Constraint: set_pin_loc ff2 Bank_H_1_15 
 Constraint: set_pin_loc start Bank_H_1_16 
 Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --packPath: /nfs_scratch/scratch/AE/Roman/hop0Changed path to: /nfs_scratch/scratch/AE/Roman/hop0/hop0_designChanged path to: /nfs_scratch/scratch/AE/Roman/hop0VPR FPGA Placement and Routing.
 Version: 0.0.0+94dd8a56
@@ -1272,26 +1273,26 @@ Constant Pins Marked: 0
 # Verify circuit
 # Verify circuit took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
-  Blocks: 7
+  Blocks: 9
     .input :       3
     .output:       1
     0-LUT  :       1
-    6-LUT  :       1
-    dffsre :       1
-  Nets  : 6
-    Avg Fanout:     1.3
-    Max Fanout:     3.0
+    6-LUT  :       2
+    dffsre :       2
+  Nets  : 8
+    Avg Fanout:     1.9
+    Max Fanout:     6.0
     Min Fanout:     1.0
   Netlist Clocks: 1
 # Build Timing Graph
-  Timing Graph Nodes: 14
-  Timing Graph Edges: 15
-  Timing Graph Levels: 4
+  Timing Graph Nodes: 23
+  Timing Graph Edges: 29
+  Timing Graph Levels: 6
 # Build Timing Graph took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Netlist contains 1 clocks
-  Netlist Clock 'clock0' Fanout: 1 pins (7.1%), 1 blocks (14.3%)
+  Netlist Clock 'clock0' Fanout: 2 pins (8.7%), 2 blocks (22.2%)
 # Load Timing Constraints
-Warning 141: set_input_delay command matched but was not applied to primary output 'ff1'
+Warning 141: set_input_delay command matched but was not applied to primary output 'ff2'
 Warning 142: set_output_delay command matched but was not applied to primary input 'clock0'
 Warning 143: set_output_delay command matched but was not applied to primary input 'rst'
 Warning 144: set_output_delay command matched but was not applied to primary input 'start'
@@ -1340,7 +1341,7 @@ Warning 148: Ambiguous block type specification at grid location (79,67). Existi
 Begin packing 'hop0_design_post_synth.blif'.
 
 After removing unused inputs...
-	total blocks: 7, total nets: 6, total inputs: 3, total outputs: 1
+	total blocks: 9, total nets: 8, total inputs: 3, total outputs: 1
 Begin prepacking.
 
 There is one chain in this architecture called "carrychain" with the following starting points:
@@ -1359,8 +1360,8 @@ Warning 150: Ambiguous block type specification at grid location (0,67). Existin
 Warning 151: Ambiguous block type specification at grid location (79,0). Existing block type 'io_bottom' at (79,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
 Warning 152: Ambiguous block type specification at grid location (79,67). Existing block type 'io_top' at (79,67) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
 Not enough resources expand FPGA size to (80 x 68)
-Complex block 0: 'ff1' (clb) ...
-Complex block 1: 'out:ff1' (io) .
+Complex block 0: 'ff2' (clb) .....
+Complex block 1: 'out:ff2' (io) .
 Complex block 2: 'clock0' (io) .
 Complex block 3: 'rst' (io) .
 Complex block 4: 'start' (io) .
@@ -1369,23 +1370,23 @@ Pb types usage...
   io_input     : 3
   outpad       : 1
   io           : 4
-  flut5        : 2
-  lut5inter    : 1
+  flut5        : 3
+  lut5inter    : 2
   clb          : 1
-  lut5         : 2
-  ble5         : 2
-  fle          : 1
-  lut          : 2
-  ff           : 1
+  lut5         : 3
+  ble5         : 3
+  fle          : 2
+  lut          : 3
+  ff           : 2
   inpad        : 3
-  DFFSRE       : 1
+  DFFSRE       : 2
   io_output    : 1
 
 
 Logic Element (fle) detailed count:
-  Total number of Logic Elements used : 1
+  Total number of Logic Elements used : 2
   LEs used for logic and registers    : 0
-  LEs used for logic only             : 1
+  LEs used for logic only             : 2
   LEs used for registers only         : 0
 
 	EMPTY: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
@@ -1393,7 +1394,7 @@ Logic Element (fle) detailed count:
 	clb: # blocks: 1, average # input + clock pins used: 6, average # output pins used: 2
 	dsp: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
 	bram: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
-Absorbed logical nets 1 out of 6 nets, 5 nets not absorbed.
+Absorbed logical nets 3 out of 8 nets, 5 nets not absorbed.
 Warning 153: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
 Warning 154: Ambiguous block type specification at grid location (0,67). Existing block type 'io_top' at (0,67) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
 Warning 155: Ambiguous block type specification at grid location (79,0). Existing block type 'io_bottom' at (79,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
@@ -1406,7 +1407,7 @@ Device Utilization: 0.00 (target 1.00)
 
 Netlist conversion complete.
 
-# Packing took 0.02 seconds (max_rss 20.5 MiB, delta_rss +1.2 MiB)
+# Packing took 0.02 seconds (max_rss 20.5 MiB, delta_rss +1.3 MiB)
 # Load Packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'hop0_design_post_synth.net'.
@@ -1478,15 +1479,15 @@ Warning 162: Sized nonsensical R=0 transistor to minimum width
 Warning 163: Sized nonsensical R=0 transistor to minimum width
 Warning 164: Sized nonsensical R=0 transistor to minimum width
 Warning 165: Sized nonsensical R=0 transistor to minimum width
-## Build tileable routing resource graph took 58.40 seconds (max_rss 796.3 MiB, delta_rss +775.5 MiB)
+## Build tileable routing resource graph took 59.03 seconds (max_rss 796.3 MiB, delta_rss +775.5 MiB)
   RR Graph Nodes: 1485668
   RR Graph Edges: 10163507
-# Create Device took 58.59 seconds (max_rss 799.2 MiB, delta_rss +778.5 MiB)
+# Create Device took 59.22 seconds (max_rss 799.3 MiB, delta_rss +778.5 MiB)
 
 
-Timing analysis took 0.000213754 seconds (0.000159152 STA, 5.4602e-05 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Timing analysis took 4.3707e-05 seconds (3.5954e-05 STA, 7.753e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
 VPR suceeded
-The entire flow of VPR took 59.17 seconds (max_rss 799.2 MiB)
+The entire flow of VPR took 59.81 seconds (max_rss 799.3 MiB)
 Design hop0_design is packed!##################################################Placement for design: hop0_design##################################################Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf hop0_design_openfpga.pcf --blif hop0_design_post_synth.blif --output hop0_design_pin_loc.placePath: /nfs_scratch/scratch/AE/Roman/hop0Changed path to: /nfs_scratch/scratch/AE/Roman/hop0/hop0_designChanged path to: /nfs_scratch/scratch/AE/Roman/hop0Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins hop0_design_pin_loc.placePath: /nfs_scratch/scratch/AE/Roman/hop0Changed path to: /nfs_scratch/scratch/AE/Roman/hop0/hop0_designChanged path to: /nfs_scratch/scratch/AE/Roman/hop0VPR FPGA Placement and Routing.
 Version: 0.0.0+94dd8a56
 Revision: 94dd8a56
@@ -1680,26 +1681,26 @@ Constant Pins Marked: 0
 # Verify circuit
 # Verify circuit took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
-  Blocks: 7
+  Blocks: 9
     .input :       3
     .output:       1
     0-LUT  :       1
-    6-LUT  :       1
-    dffsre :       1
-  Nets  : 6
-    Avg Fanout:     1.3
-    Max Fanout:     3.0
+    6-LUT  :       2
+    dffsre :       2
+  Nets  : 8
+    Avg Fanout:     1.9
+    Max Fanout:     6.0
     Min Fanout:     1.0
   Netlist Clocks: 1
 # Build Timing Graph
-  Timing Graph Nodes: 14
-  Timing Graph Edges: 15
-  Timing Graph Levels: 4
+  Timing Graph Nodes: 23
+  Timing Graph Edges: 29
+  Timing Graph Levels: 6
 # Build Timing Graph took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Netlist contains 1 clocks
-  Netlist Clock 'clock0' Fanout: 1 pins (7.1%), 1 blocks (14.3%)
+  Netlist Clock 'clock0' Fanout: 2 pins (8.7%), 2 blocks (22.2%)
 # Load Timing Constraints
-Warning 141: set_input_delay command matched but was not applied to primary output 'ff1'
+Warning 141: set_input_delay command matched but was not applied to primary output 'ff2'
 Warning 142: set_output_delay command matched but was not applied to primary input 'clock0'
 Warning 143: set_output_delay command matched but was not applied to primary input 'rst'
 Warning 144: set_output_delay command matched but was not applied to primary input 'start'
@@ -1758,8 +1759,8 @@ RoutingArch.Fs: 3
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'hop0_design_post_synth.net'.
 Detected 1 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.01 seconds).
-# Load Packing took 0.01 seconds (max_rss 19.4 MiB, delta_rss +0.2 MiB)
+Finished loading packed FPGA netlist file (took 0 seconds).
+# Load Packing took 0.05 seconds (max_rss 19.4 MiB, delta_rss +0.2 MiB)
 Warning 145: Netlist contains 0 global net to non-global architecture pin connections
 
 Netlist num_nets: 5
@@ -1817,7 +1818,7 @@ Device Utilization: 0.00 (target 1.00)
 	Physical Tile bram:
 	Block Utilization: 0.00 Logical Block: bram
 
-## Build Device Grid took 0.00 seconds (max_rss 20.0 MiB, delta_rss +0.5 MiB)
+## Build Device Grid took 0.00 seconds (max_rss 19.8 MiB, delta_rss +0.2 MiB)
 ## Build tileable routing resource graph
 X-direction routing channel width is 180
 Y-direction routing channel width is 180
@@ -1825,10 +1826,10 @@ Warning 150: Sized nonsensical R=0 transistor to minimum width
 Warning 151: Sized nonsensical R=0 transistor to minimum width
 Warning 152: Sized nonsensical R=0 transistor to minimum width
 Warning 153: Sized nonsensical R=0 transistor to minimum width
-## Build tileable routing resource graph took 57.56 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
+## Build tileable routing resource graph took 60.37 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
   RR Graph Nodes: 1485668
   RR Graph Edges: 10163507
-# Create Device took 57.76 seconds (max_rss 798.8 MiB, delta_rss +779.3 MiB)
+# Create Device took 60.55 seconds (max_rss 798.9 MiB, delta_rss +779.3 MiB)
 
 # Placement
 ## Computing placement delta delay look-up
@@ -1837,12 +1838,12 @@ Warning 154: Sized nonsensical R=0 transistor to minimum width
 Warning 155: Sized nonsensical R=0 transistor to minimum width
 Warning 156: Sized nonsensical R=0 transistor to minimum width
 Warning 157: Sized nonsensical R=0 transistor to minimum width
-### Build routing resource graph took 52.41 seconds (max_rss 873.3 MiB, delta_rss +74.4 MiB)
+### Build routing resource graph took 52.35 seconds (max_rss 873.3 MiB, delta_rss +74.4 MiB)
   RR Graph Nodes: 1485668
   RR Graph Edges: 13181287
 ### Computing delta delays
-### Computing delta delays took 10.33 seconds (max_rss 873.5 MiB, delta_rss +0.3 MiB)
-## Computing placement delta delay look-up took 63.26 seconds (max_rss 873.5 MiB, delta_rss +74.7 MiB)
+### Computing delta delays took 10.17 seconds (max_rss 873.6 MiB, delta_rss +0.3 MiB)
+## Computing placement delta delay look-up took 63.00 seconds (max_rss 873.6 MiB, delta_rss +74.7 MiB)
 
 Reading locations of IO pads from 'hop0_design_pin_loc.place'.
 Successfully read hop0_design_pin_loc.place.
@@ -1854,72 +1855,72 @@ There are 6 point to point connections in this circuit.
 BB estimate of min-dist (placement) wire length: 153
 
 Completed placement consistency check successfully.
-Initial placement cost: 1 bb_cost: 0.85092 td_cost: 2.81613e-09
+Initial placement cost: 1 bb_cost: 0.85092 td_cost: 2.79695e-09
 Initial placement estimated Critical Path Delay (CPD): 5.79211 ns
 Initial placement estimated setup Total Negative Slack (sTNS): 0 ns
 Initial placement estimated setup Worst Negative Slack (sWNS): 0 ns
 
 Initial placement estimated setup slack histogram:
-[    1e-09:  1.5e-09) 1 (50.0%) |**************************************************
+[    1e-09:  1.5e-09) 1 (33.3%) |*************************
 [  1.5e-09:  1.9e-09) 0 ( 0.0%) |
 [  1.9e-09:  2.4e-09) 0 ( 0.0%) |
-[  2.4e-09:  2.8e-09) 0 ( 0.0%) |
-[  2.8e-09:  3.3e-09) 0 ( 0.0%) |
+[  2.4e-09:  2.9e-09) 0 ( 0.0%) |
+[  2.9e-09:  3.3e-09) 0 ( 0.0%) |
 [  3.3e-09:  3.8e-09) 0 ( 0.0%) |
 [  3.8e-09:  4.2e-09) 0 ( 0.0%) |
 [  4.2e-09:  4.7e-09) 0 ( 0.0%) |
-[  4.7e-09:  5.1e-09) 0 ( 0.0%) |
-[  5.1e-09:  5.6e-09) 1 (50.0%) |**************************************************
+[  4.7e-09:  5.2e-09) 0 ( 0.0%) |
+[  5.2e-09:  5.6e-09) 2 (66.7%) |*************************************************
 Placement contains 0 placement macros involving 0 blocks (average macro size -nan)
 
 ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
 ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
-7.0e+00   0.936       1.10 4.1696e-09   6.500          0    0.000   1.000  0.3147   79.0     1.00          8  0.500
-3.5e+00   0.621       0.92 3.729e-09    7.100       -0.3   -0.300   1.000  0.2924   79.0     1.00         16  0.500
-1.7e+00   1.167       1.07 3.5972e-09   5.900          0    0.000   1.000  0.6005   79.0     1.00         24  0.500
-8.7e-01   0.915       0.94 3.3717e-09   6.152          0    0.000   0.750  0.5124   79.0     1.00         32  0.950
-8.3e-01   0.959       0.33 1.023e-09    4.832          0    0.000   0.375  0.4638   79.0     1.00         40  0.950
-7.9e-01   1.733       0.48 1.0083e-09   4.712          0    0.000   0.250  0.7042   73.9     1.46         48  0.950
-7.5e-01   0.696       0.17 2.9597e-10   4.832          0    0.000   0.125  0.0000   59.8     2.72         56  0.950
-7.1e-01   0.850       0.12 1.1803e-10   4.592          0    0.000   0.125  0.0000   41.0     4.41         64  0.950
-6.7e-01   1.000       0.12 7.626e-11    4.472          0    0.000   0.000  0.0000   28.1     5.57         72  0.950
-6.4e-01   3.131       0.63 1.8076e-10   4.472          0    0.000   0.750  0.9640   15.7     6.68         80  0.950
-6.1e-01   0.864       0.64 5.9716e-10   5.660          0    0.000   0.625  0.2433   20.6     6.24         88  0.950
-5.8e-01   1.950       1.39 9.5204e-10   5.300          0    0.000   0.875  0.3725   24.4     5.90         96  0.900
-5.2e-01   0.442       0.82 1.8305e-09   7.820      -1.02   -1.020   1.000  0.1852   35.0     4.95        104  0.500
-2.6e-01   1.066       1.02 1.7852e-09   6.032          0    0.000   0.875  0.3273   54.6     3.19        112  0.900
-2.3e-01   1.000       0.30 9.1525e-10   4.820          0    0.000   0.000  0.0000   78.4     1.05        120  0.950
-2.2e-01   1.000       0.30 2.7288e-10   4.820          0    0.000   0.000  0.0000   43.9     4.15        128  0.950
-2.1e-01   1.563       0.60 3.0432e-10   4.820          0    0.000   0.375  0.2645   24.6     5.88        136  0.950
-2.0e-01   0.710       0.35 2.6945e-10   5.312          0    0.000   0.875  0.1483   23.0     6.03        144  0.900
-1.8e-01   1.000       0.26 1.6696e-10   4.712          0    0.000   0.000  0.0000   33.0     5.13        152  0.950
-1.7e-01   1.166       0.33 1.4624e-10   4.712          0    0.000   0.375  0.4220   18.5     6.43        160  0.950
-1.6e-01   1.019       0.16 8.1985e-11   4.580          0    0.000   0.125  0.0000   17.3     6.54        168  0.950
-1.5e-01   0.761       0.08 5.5688e-11   4.592          0    0.000   0.125  0.0000   11.8     7.03        176  0.950
-1.5e-01   1.104       0.10 5.4979e-11   4.472          0    0.000   0.125  0.0000    8.1     7.36        184  0.950
-1.4e-01   1.125       0.13 5.0808e-11   4.568          0    0.000   0.375  0.0910    5.6     7.59        192  0.950
-1.3e-01   0.871       0.10 4.0335e-11   4.472          0    0.000   0.625  0.0956    5.2     7.62        200  0.950
-1.3e-01   1.000       0.07 4.2138e-11   4.472          0    0.000   0.000  0.0000    6.2     7.54        208  0.950
-1.2e-01   1.061       0.08 3.5296e-11   4.472          0    0.000   0.375  0.1981    3.4     7.78        216  0.950
-1.1e-01   1.030       0.05 2.877e-11    4.352          0    0.000   0.250  0.0421    3.2     7.80        224  0.950
-1.1e-01   1.059       0.06 3.3206e-11   4.352          0    0.000   0.125  0.0000    2.6     7.86        232  0.950
-1.0e-01   0.945       0.05 2.6331e-11   4.472          0    0.000   0.125  0.0000    1.8     7.93        240  0.950
+7.0e+00   0.936       1.10 4.145e-09    6.500          0    0.000   1.000  0.3147   79.0     1.00          8  0.500
+3.5e+00   0.621       0.92 3.709e-09    7.100       -0.3   -0.300   1.000  0.2925   79.0     1.00         16  0.500
+1.7e+00   1.167       1.07 3.5737e-09   5.900          0    0.000   1.000  0.6005   79.0     1.00         24  0.500
+8.7e-01   0.915       0.94 3.3505e-09   6.152          0    0.000   0.750  0.5125   79.0     1.00         32  0.950
+8.3e-01   0.959       0.33 1.0148e-09   4.832          0    0.000   0.375  0.4639   79.0     1.00         40  0.950
+7.9e-01   1.731       0.48 9.9915e-10   4.712          0    0.000   0.250  0.7024   73.9     1.46         48  0.950
+7.5e-01   0.696       0.17 2.9437e-10   4.832          0    0.000   0.125  0.0000   59.8     2.72         56  0.950
+7.1e-01   0.850       0.12 1.179e-10    4.592          0    0.000   0.125  0.0000   41.0     4.41         64  0.950
+6.7e-01   1.000       0.12 7.6242e-11   4.472          0    0.000   0.000  0.0000   28.1     5.57         72  0.950
+6.4e-01   3.131       0.63 1.8074e-10   4.472          0    0.000   0.750  0.9640   15.7     6.68         80  0.950
+6.1e-01   0.864       0.64 5.9678e-10   5.660          0    0.000   0.625  0.2432   20.6     6.24         88  0.950
+5.8e-01   1.950       1.39 9.5146e-10   5.300          0    0.000   0.875  0.3725   24.4     5.90         96  0.900
+5.2e-01   0.442       0.82 1.8235e-09   7.820      -1.02   -1.020   1.000  0.1852   35.0     4.95        104  0.500
+2.6e-01   1.066       1.02 1.7755e-09   6.032          0    0.000   0.875  0.3273   54.6     3.19        112  0.900
+2.3e-01   1.000       0.30 9.0645e-10   4.820          0    0.000   0.000  0.0000   78.4     1.05        120  0.950
+2.2e-01   1.000       0.30 2.723e-10    4.820          0    0.000   0.000  0.0000   43.9     4.15        128  0.950
+2.1e-01   1.563       0.60 3.0418e-10   4.820          0    0.000   0.375  0.2645   24.6     5.88        136  0.950
+2.0e-01   0.710       0.35 2.6931e-10   5.312          0    0.000   0.875  0.1482   23.0     6.03        144  0.900
+1.8e-01   1.000       0.26 1.6684e-10   4.712          0    0.000   0.000  0.0000   33.0     5.13        152  0.950
+1.7e-01   1.166       0.33 1.4621e-10   4.712          0    0.000   0.375  0.4220   18.5     6.43        160  0.950
+1.6e-01   1.019       0.16 8.1973e-11   4.580          0    0.000   0.125  0.0000   17.3     6.54        168  0.950
+1.5e-01   0.761       0.08 5.5682e-11   4.592          0    0.000   0.125  0.0000   11.8     7.03        176  0.950
+1.5e-01   1.104       0.10 5.4976e-11   4.472          0    0.000   0.125  0.0000    8.1     7.36        184  0.950
+1.4e-01   1.125       0.13 5.0805e-11   4.568          0    0.000   0.375  0.0910    5.6     7.59        192  0.950
+1.3e-01   0.871       0.10 4.0334e-11   4.472          0    0.000   0.625  0.0956    5.2     7.62        200  0.950
+1.3e-01   1.000       0.07 4.2136e-11   4.472          0    0.000   0.000  0.0000    6.2     7.54        208  0.950
+1.2e-01   1.061       0.08 3.5295e-11   4.472          0    0.000   0.375  0.1981    3.4     7.78        216  0.950
+1.1e-01   1.030       0.05 2.8769e-11   4.352          0    0.000   0.250  0.0421    3.2     7.80        224  0.950
+1.1e-01   1.059       0.06 3.3205e-11   4.352          0    0.000   0.125  0.0000    2.6     7.86        232  0.950
+1.0e-01   0.945       0.05 2.633e-11    4.472          0    0.000   0.125  0.0000    1.8     7.93        240  0.950
 9.8e-02   1.114       0.06 3.1918e-11   4.352          0    0.000   0.375  0.0945    1.2     7.98        248  0.950
-9.3e-02   1.211       0.08 3.3176e-11   4.472          0    0.000   0.375  0.1055    1.1     7.99        256  0.950
-8.8e-02   0.949       0.08 3.3111e-11   4.472          0    0.000   0.750  0.0984    1.1     7.99        264  0.950
+9.3e-02   1.211       0.08 3.3175e-11   4.472          0    0.000   0.375  0.1055    1.1     7.99        256  0.950
+8.8e-02   0.949       0.08 3.311e-11    4.472          0    0.000   0.750  0.0984    1.1     7.99        264  0.950
 8.4e-02   1.271       0.10 3.0016e-11   4.352          0    0.000   0.750  0.1467    1.4     7.96        272  0.950
-7.9e-02   0.788       0.06 3.1617e-11   4.568          0    0.000   0.750  0.0664    1.8     7.92        280  0.950
+7.9e-02   0.788       0.06 3.1615e-11   4.568          0    0.000   0.750  0.0664    1.8     7.92        280  0.950
 7.5e-02   1.000       0.05 2.3202e-11   4.352          0    0.000   0.000  0.0000    2.4     7.87        288  0.950
 7.2e-02   1.000       0.05 2.2511e-11   4.352          0    0.000   0.000  0.0000    1.3     7.97        296  0.950
-6.8e-02   1.074       0.06 2.5431e-11   4.352          0    0.000   0.375  0.0829    1.0     8.00        304  0.950
+6.8e-02   1.074       0.06 2.543e-11    4.352          0    0.000   0.375  0.0829    1.0     8.00        304  0.950
 6.5e-02   1.000       0.05 2.2289e-11   4.352          0    0.000   0.000  0.0000    1.0     8.00        312  0.800
-5.2e-02   1.030       0.05 2.7002e-11   4.352          0    0.000   0.250  0.0419    1.0     8.00        320  0.950
-4.9e-02   1.111       0.06 2.7002e-11   4.352          0    0.000   0.250  0.0738    1.0     8.00        328  0.950
-4.7e-02   0.945       0.05 2.5779e-11   4.472          0    0.000   0.125  0.0000    1.0     8.00        336  0.800
-3.7e-02   1.059       0.06 3.1715e-11   4.352          0    0.000   0.125  0.0000    1.0     8.00        344  0.800
-3.0e-02   0.945       0.05 2.5779e-11   4.472          0    0.000   0.125  0.0000    1.0     8.00        352  0.800
-2.4e-02   1.030       0.05 2.7002e-11   4.352          0    0.000   0.250  0.0419    1.0     8.00        360  0.950
+5.2e-02   1.030       0.05 2.7001e-11   4.352          0    0.000   0.250  0.0419    1.0     8.00        320  0.950
+4.9e-02   1.111       0.06 2.7001e-11   4.352          0    0.000   0.250  0.0738    1.0     8.00        328  0.950
+4.7e-02   0.945       0.05 2.5778e-11   4.472          0    0.000   0.125  0.0000    1.0     8.00        336  0.800
+3.7e-02   1.059       0.06 3.1714e-11   4.352          0    0.000   0.125  0.0000    1.0     8.00        344  0.800
+3.0e-02   0.945       0.05 2.5778e-11   4.472          0    0.000   0.125  0.0000    1.0     8.00        352  0.800
+2.4e-02   1.030       0.05 2.7001e-11   4.352          0    0.000   0.250  0.0419    1.0     8.00        360  0.950
 2.3e-02   1.000       0.05 2.2289e-11   4.352          0    0.000   0.000  0.0000    1.0     8.00        368  0.800
 1.8e-02   1.000       0.05 2.2289e-11   4.352          0    0.000   0.000  0.0000    1.0     8.00        376  0.800
 1.5e-02   1.000       0.05 2.2289e-11   4.352          0    0.000   0.000  0.0000    1.0     8.00        384  0.800
@@ -1947,18 +1948,18 @@ Placement estimated setup Total Negative Slack (sTNS): 0 ns
 Placement estimated setup Worst Negative Slack (sWNS): 0 ns
 
 Placement estimated setup slack histogram:
-[  2.4e-09:  2.9e-09) 1 (50.0%) |**************************************************
-[  2.9e-09:  3.4e-09) 0 ( 0.0%) |
-[  3.4e-09:  3.8e-09) 0 ( 0.0%) |
+[  2.4e-09:  2.9e-09) 1 (33.3%) |**************************************************
+[  2.9e-09:  3.3e-09) 0 ( 0.0%) |
+[  3.3e-09:  3.8e-09) 0 ( 0.0%) |
 [  3.8e-09:  4.3e-09) 0 ( 0.0%) |
 [  4.3e-09:  4.7e-09) 0 ( 0.0%) |
 [  4.7e-09:  5.2e-09) 0 ( 0.0%) |
-[  5.2e-09:  5.6e-09) 0 ( 0.0%) |
+[  5.2e-09:  5.6e-09) 1 (33.3%) |**************************************************
 [  5.6e-09:  6.1e-09) 0 ( 0.0%) |
 [  6.1e-09:  6.5e-09) 0 ( 0.0%) |
-[  6.5e-09:    7e-09) 1 (50.0%) |**************************************************
+[  6.5e-09:    7e-09) 1 (33.3%) |**************************************************
 
-Placement cost: 1, bb_cost: 0.05092, td_cost: 2.22888e-11, 
+Placement cost: 1, bb_cost: 0.05092, td_cost: 2.22886e-11, 
 
 Placement resource usage:
   io  implemented as io_bottom: 4
@@ -1971,11 +1972,11 @@ Placement total # of swap attempts: 485
 	Swaps aborted :   0 ( 0.0 %)
 
 Aborted Move Reasons:
-# Placement took 63.30 seconds (max_rss 873.9 MiB, delta_rss +75.0 MiB)
+# Placement took 63.05 seconds (max_rss 873.9 MiB, delta_rss +75.0 MiB)
 
-Timing analysis took 0.00044448 seconds (0.000398604 STA, 4.5876e-05 slack) (62 full updates: 62 setup, 0 hold, 0 combined).
+Timing analysis took 0.000649074 seconds (0.000581722 STA, 6.7352e-05 slack) (62 full updates: 62 setup, 0 hold, 0 combined).
 VPR suceeded
-The entire flow of VPR took 121.43 seconds (max_rss 873.9 MiB)
+The entire flow of VPR took 124.07 seconds (max_rss 873.9 MiB)
 Design hop0_design is placed!##################################################Routing for design: hop0_design##################################################Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --routePath: /nfs_scratch/scratch/AE/Roman/hop0Changed path to: /nfs_scratch/scratch/AE/Roman/hop0/hop0_designChanged path to: /nfs_scratch/scratch/AE/Roman/hop0VPR FPGA Placement and Routing.
 Version: 0.0.0+94dd8a56
 Revision: 94dd8a56
@@ -2145,7 +2146,7 @@ Warning 137: frac_logic[0].regchain[0] unconnected pin in architecture.
 Warning 138: frac_logic[0].regchain[0] unconnected pin in architecture.
 Warning 139: frac_logic[0].regchain[0] unconnected pin in architecture.
 Warning 140: frac_logic[0].regchain[0] unconnected pin in architecture.
-# Building complex block graph took 0.10 seconds (max_rss 18.6 MiB, delta_rss +7.8 MiB)
+# Building complex block graph took 0.07 seconds (max_rss 18.6 MiB, delta_rss +7.8 MiB)
 # Load circuit
 Found constant-zero generator '$false'
 Found constant-one generator '$true'
@@ -2169,26 +2170,26 @@ Constant Pins Marked: 0
 # Verify circuit
 # Verify circuit took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
-  Blocks: 7
+  Blocks: 9
     .input :       3
     .output:       1
     0-LUT  :       1
-    6-LUT  :       1
-    dffsre :       1
-  Nets  : 6
-    Avg Fanout:     1.3
-    Max Fanout:     3.0
+    6-LUT  :       2
+    dffsre :       2
+  Nets  : 8
+    Avg Fanout:     1.9
+    Max Fanout:     6.0
     Min Fanout:     1.0
   Netlist Clocks: 1
 # Build Timing Graph
-  Timing Graph Nodes: 14
-  Timing Graph Edges: 15
-  Timing Graph Levels: 4
+  Timing Graph Nodes: 23
+  Timing Graph Edges: 29
+  Timing Graph Levels: 6
 # Build Timing Graph took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Netlist contains 1 clocks
-  Netlist Clock 'clock0' Fanout: 1 pins (7.1%), 1 blocks (14.3%)
+  Netlist Clock 'clock0' Fanout: 2 pins (8.7%), 2 blocks (22.2%)
 # Load Timing Constraints
-Warning 141: set_input_delay command matched but was not applied to primary output 'ff1'
+Warning 141: set_input_delay command matched but was not applied to primary output 'ff2'
 Warning 142: set_output_delay command matched but was not applied to primary input 'clock0'
 Warning 143: set_output_delay command matched but was not applied to primary input 'rst'
 Warning 144: set_output_delay command matched but was not applied to primary input 'start'
@@ -2328,7 +2329,7 @@ Device Utilization: 0.00 (target 1.00)
 	Physical Tile bram:
 	Block Utilization: 0.00 Logical Block: bram
 
-## Build Device Grid took 0.00 seconds (max_rss 20.0 MiB, delta_rss +0.5 MiB)
+## Build Device Grid took 0.00 seconds (max_rss 19.8 MiB, delta_rss +0.2 MiB)
 ## Build tileable routing resource graph
 X-direction routing channel width is 180
 Y-direction routing channel width is 180
@@ -2336,10 +2337,10 @@ Warning 150: Sized nonsensical R=0 transistor to minimum width
 Warning 151: Sized nonsensical R=0 transistor to minimum width
 Warning 152: Sized nonsensical R=0 transistor to minimum width
 Warning 153: Sized nonsensical R=0 transistor to minimum width
-## Build tileable routing resource graph took 60.66 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
+## Build tileable routing resource graph took 59.22 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
   RR Graph Nodes: 1485668
   RR Graph Edges: 10163507
-# Create Device took 60.84 seconds (max_rss 798.9 MiB, delta_rss +779.3 MiB)
+# Create Device took 59.40 seconds (max_rss 798.9 MiB, delta_rss +779.3 MiB)
 
 # Load Placement
 # Load Placement took 0.04 seconds (max_rss 798.9 MiB, delta_rss +0.0 MiB)
@@ -2352,7 +2353,7 @@ Warning 154: Sized nonsensical R=0 transistor to minimum width
 Warning 155: Sized nonsensical R=0 transistor to minimum width
 Warning 156: Sized nonsensical R=0 transistor to minimum width
 Warning 157: Sized nonsensical R=0 transistor to minimum width
-## Build tileable routing resource graph took 57.01 seconds (max_rss 798.9 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph took 68.32 seconds (max_rss 798.9 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 1485668
   RR Graph Edges: 10163507
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2360,32 +2361,30 @@ Confirming router algorithm: TIMING_DRIVEN.
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0    1973       4       6       1 ( 0.000%)      32 ( 0.0%)    4.676      0.000      0.000    -0.2940     -0.294      N/A
-   2    0.0     0.5    1    2108       2       4       1 ( 0.000%)      37 ( 0.0%)    4.676      0.000      0.000    -0.2940     -0.294      N/A
-   3    0.0     0.6    0    1451       1       3       0 ( 0.000%)      31 ( 0.0%)    4.676      0.000      0.000    -0.2940     -0.294      N/A
+   1    0.0     0.0    0    2289       4       6       0 ( 0.000%)      29 ( 0.0%)    4.676      0.000      0.000    -0.5621     -0.326      N/A
 Restoring best routing
 Critical path: 4.67611 ns
-Successfully routed after 3 routing iterations.
-Router Stats: total_nets_routed: 7 total_connections_routed: 13 total_heap_pushes: 5532 total_heap_pops: 2002
-# Routing took 57.59 seconds (max_rss 844.5 MiB, delta_rss +45.6 MiB)
+Successfully routed after 1 routing iterations.
+Router Stats: total_nets_routed: 4 total_connections_routed: 6 total_heap_pushes: 2289 total_heap_pops: 560
+# Routing took 68.91 seconds (max_rss 844.5 MiB, delta_rss +45.6 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
 
-Serial number (magic cookie) for the routing is: -21790
+Serial number (magic cookie) for the routing is: -20148
 Circuit successfully routed with a channel width factor of 180.
 
-Average number of bends per net: 4.50000  Maximum # of bends: 12
+Average number of bends per net: 2.50000  Maximum # of bends: 3
 
 Number of global nets: 1
 Number of routed nets (nonglobal): 4
 Wire length results (in units of 1 clb segments)...
-	Total wirelength: 31, average net length: 7.75000
-	Maximum net length: 18
+	Total wirelength: 29, average net length: 7.25000
+	Maximum net length: 13
 
 Wire length results in terms of physical segments...
-	Total wiring segments used: 22, average wire segments per net: 5.50000
-	Maximum segments used by a net: 13
+	Total wiring segments used: 16, average wire segments per net: 4.00000
+	Maximum segments used by a net: 6
 	Total local nets with reserved CLB opins: 0
 
 Routing channel utilization histogram:
@@ -2403,9 +2402,9 @@ Maximum routing channel utilization:     0.022 at (8,1)
 
 X - Directed channels:   j max occ ave occ capacity
                       ---- ------- ------- --------
-                         0       3   0.087      180
-                         1       4   0.075      180
-                         2       1   0.025      180
+                         0       3   0.075      180
+                         1       4   0.125      180
+                         2       1   0.013      180
                          3       0   0.000      180
                          4       0   0.000      180
                          5       0   0.000      180
@@ -2479,10 +2478,10 @@ Y - Directed channels:   i max occ ave occ capacity
                          4       0   0.000      180
                          5       0   0.000      180
                          6       0   0.000      180
-                         7       1   0.015      180
-                         8       6   0.118      180
-                         9       2   0.088      180
-                        10       1   0.015      180
+                         7       2   0.029      180
+                         8       5   0.132      180
+                         9       1   0.015      180
+                        10       0   0.000      180
                         11       0   0.000      180
                         12       0   0.000      180
                         13       0   0.000      180
@@ -2563,49 +2562,49 @@ Routing area (in minimum width transistor areas)...
 
 Segment usage by type (index): type utilization
                                ---- -----------
-                                  0    3.72e-05
-                                  1    2.04e-05
+                                  0    2.39e-05
+                                  1    1.79e-05
 
 Segment usage by length: length utilization
                          ------ -----------
-                              1    3.72e-05
-                              4    2.04e-05
+                              1    2.39e-05
+                              4    1.79e-05
 
 
-Hold Worst Negative Slack (hWNS): -0.294031 ns
-Hold Total Negative Slack (hTNS): -0.294031 ns
+Hold Worst Negative Slack (hWNS): -0.326032 ns
+Hold Total Negative Slack (hTNS): -0.562063 ns
 
 Hold slack histogram:
-[ -2.9e-10:  1.7e-10) 1 (50.0%) |**************************************************
-[  1.7e-10:  6.3e-10) 0 ( 0.0%) |
-[  6.3e-10:  1.1e-09) 0 ( 0.0%) |
-[  1.1e-09:  1.6e-09) 0 ( 0.0%) |
-[  1.6e-09:    2e-09) 0 ( 0.0%) |
+[ -3.3e-10:  1.4e-10) 2 (66.7%) |*************************************************
+[  1.4e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  1.1e-09) 0 ( 0.0%) |
+[  1.1e-09:  1.5e-09) 0 ( 0.0%) |
+[  1.5e-09:    2e-09) 0 ( 0.0%) |
 [    2e-09:  2.5e-09) 0 ( 0.0%) |
-[  2.5e-09:    3e-09) 0 ( 0.0%) |
-[    3e-09:  3.4e-09) 0 ( 0.0%) |
+[  2.5e-09:  2.9e-09) 0 ( 0.0%) |
+[  2.9e-09:  3.4e-09) 0 ( 0.0%) |
 [  3.4e-09:  3.9e-09) 0 ( 0.0%) |
-[  3.9e-09:  4.3e-09) 1 (50.0%) |**************************************************
+[  3.9e-09:  4.3e-09) 1 (33.3%) |*************************
 
 Final critical path: 4.67611 ns, Fmax: 213.853 MHz
 Setup Worst Negative Slack (sWNS): 0 ns
 Setup Total Negative Slack (sTNS): 0 ns
 
 Setup slack histogram:
-[  2.1e-09:  2.6e-09) 1 (50.0%) |**************************************************
+[  2.1e-09:  2.6e-09) 1 (33.3%) |**************************************************
 [  2.6e-09:  3.1e-09) 0 ( 0.0%) |
-[  3.1e-09:  3.6e-09) 0 ( 0.0%) |
-[  3.6e-09:    4e-09) 0 ( 0.0%) |
+[  3.1e-09:  3.5e-09) 0 ( 0.0%) |
+[  3.5e-09:    4e-09) 0 ( 0.0%) |
 [    4e-09:  4.5e-09) 0 ( 0.0%) |
 [  4.5e-09:    5e-09) 0 ( 0.0%) |
-[    5e-09:  5.5e-09) 0 ( 0.0%) |
-[  5.5e-09:  5.9e-09) 0 ( 0.0%) |
+[    5e-09:  5.4e-09) 0 ( 0.0%) |
+[  5.4e-09:  5.9e-09) 1 (33.3%) |**************************************************
 [  5.9e-09:  6.4e-09) 0 ( 0.0%) |
-[  6.4e-09:  6.9e-09) 1 (50.0%) |**************************************************
+[  6.4e-09:  6.9e-09) 1 (33.3%) |**************************************************
 
-Timing analysis took 0.000331784 seconds (0.000310535 STA, 2.1249e-05 slack) (4 full updates: 0 setup, 0 hold, 4 combined).
+Timing analysis took 0.000387655 seconds (0.000373659 STA, 1.3996e-05 slack) (2 full updates: 0 setup, 0 hold, 2 combined).
 VPR suceeded
-The entire flow of VPR took 119.43 seconds (max_rss 844.6 MiB)
+The entire flow of VPR took 129.33 seconds (max_rss 844.6 MiB)
 Design hop0_design is routed!##################################################Timing Analysis for design: hop0_design##################################################Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysisPath: /nfs_scratch/scratch/AE/Roman/hop0Changed path to: /nfs_scratch/scratch/AE/Roman/hop0/hop0_designChanged path to: /nfs_scratch/scratch/AE/Roman/hop0VPR FPGA Placement and Routing.
 Version: 0.0.0+94dd8a56
 Revision: 94dd8a56
@@ -2756,7 +2755,7 @@ mode 'fabric[default]' is disabled in packing by user
 mode 'frac_logic[default]' is disabled in packing by user
 mode 'dsp[physical]' is disabled in packing by user
 mode 'bram[physical]' is disabled in packing by user
-# Loading Architecture Description took 0.03 seconds (max_rss 10.9 MiB, delta_rss +1.8 MiB)
+# Loading Architecture Description took 0.02 seconds (max_rss 10.9 MiB, delta_rss +1.8 MiB)
 # Building complex block graph
 Warning 124: io[0].scan_reset[0] unconnected pin in architecture.
 Warning 125: io_output[0].reset[0] unconnected pin in architecture.
@@ -2775,7 +2774,7 @@ Warning 137: frac_logic[0].regchain[0] unconnected pin in architecture.
 Warning 138: frac_logic[0].regchain[0] unconnected pin in architecture.
 Warning 139: frac_logic[0].regchain[0] unconnected pin in architecture.
 Warning 140: frac_logic[0].regchain[0] unconnected pin in architecture.
-# Building complex block graph took 0.08 seconds (max_rss 18.6 MiB, delta_rss +7.8 MiB)
+# Building complex block graph took 0.06 seconds (max_rss 18.6 MiB, delta_rss +7.8 MiB)
 # Load circuit
 Found constant-zero generator '$false'
 Found constant-one generator '$true'
@@ -2799,26 +2798,26 @@ Constant Pins Marked: 0
 # Verify circuit
 # Verify circuit took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
-  Blocks: 7
+  Blocks: 9
     .input :       3
     .output:       1
     0-LUT  :       1
-    6-LUT  :       1
-    dffsre :       1
-  Nets  : 6
-    Avg Fanout:     1.3
-    Max Fanout:     3.0
+    6-LUT  :       2
+    dffsre :       2
+  Nets  : 8
+    Avg Fanout:     1.9
+    Max Fanout:     6.0
     Min Fanout:     1.0
   Netlist Clocks: 1
 # Build Timing Graph
-  Timing Graph Nodes: 14
-  Timing Graph Edges: 15
-  Timing Graph Levels: 4
+  Timing Graph Nodes: 23
+  Timing Graph Edges: 29
+  Timing Graph Levels: 6
 # Build Timing Graph took 0.00 seconds (max_rss 18.9 MiB, delta_rss +0.0 MiB)
 Netlist contains 1 clocks
-  Netlist Clock 'clock0' Fanout: 1 pins (7.1%), 1 blocks (14.3%)
+  Netlist Clock 'clock0' Fanout: 2 pins (8.7%), 2 blocks (22.2%)
 # Load Timing Constraints
-Warning 141: set_input_delay command matched but was not applied to primary output 'ff1'
+Warning 141: set_input_delay command matched but was not applied to primary output 'ff2'
 Warning 142: set_output_delay command matched but was not applied to primary input 'clock0'
 Warning 143: set_output_delay command matched but was not applied to primary input 'rst'
 Warning 144: set_output_delay command matched but was not applied to primary input 'start'
@@ -2899,7 +2898,7 @@ RoutingArch.Fs: 3
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'hop0_design_post_synth.net'.
 Detected 1 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.01 seconds).
+Finished loading packed FPGA netlist file (took 0 seconds).
 # Load Packing took 0.01 seconds (max_rss 19.4 MiB, delta_rss +0.2 MiB)
 Warning 145: Netlist contains 0 global net to non-global architecture pin connections
 
@@ -2958,7 +2957,7 @@ Device Utilization: 0.00 (target 1.00)
 	Physical Tile bram:
 	Block Utilization: 0.00 Logical Block: bram
 
-## Build Device Grid took 0.00 seconds (max_rss 20.0 MiB, delta_rss +0.5 MiB)
+## Build Device Grid took 0.00 seconds (max_rss 19.8 MiB, delta_rss +0.2 MiB)
 ## Build tileable routing resource graph
 X-direction routing channel width is 180
 Y-direction routing channel width is 180
@@ -2966,10 +2965,10 @@ Warning 150: Sized nonsensical R=0 transistor to minimum width
 Warning 151: Sized nonsensical R=0 transistor to minimum width
 Warning 152: Sized nonsensical R=0 transistor to minimum width
 Warning 153: Sized nonsensical R=0 transistor to minimum width
-## Build tileable routing resource graph took 61.87 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
+## Build tileable routing resource graph took 69.48 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
   RR Graph Nodes: 1485668
   RR Graph Edges: 10163507
-# Create Device took 62.05 seconds (max_rss 798.9 MiB, delta_rss +779.3 MiB)
+# Create Device took 69.66 seconds (max_rss 798.9 MiB, delta_rss +779.3 MiB)
 
 # Load Placement
 # Load Placement took 0.03 seconds (max_rss 798.9 MiB, delta_rss +0.0 MiB)
@@ -2982,20 +2981,20 @@ Finished loading route file
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
 
-Serial number (magic cookie) for the routing is: -21790
+Serial number (magic cookie) for the routing is: -20148
 Circuit successfully routed with a channel width factor of 180.
 
-Average number of bends per net: 4.50000  Maximum # of bends: 12
+Average number of bends per net: 2.50000  Maximum # of bends: 3
 
 Number of global nets: 1
 Number of routed nets (nonglobal): 4
 Wire length results (in units of 1 clb segments)...
-	Total wirelength: 31, average net length: 7.75000
-	Maximum net length: 18
+	Total wirelength: 29, average net length: 7.25000
+	Maximum net length: 13
 
 Wire length results in terms of physical segments...
-	Total wiring segments used: 22, average wire segments per net: 5.50000
-	Maximum segments used by a net: 13
+	Total wiring segments used: 16, average wire segments per net: 4.00000
+	Maximum segments used by a net: 6
 	Total local nets with reserved CLB opins: 0
 
 Routing channel utilization histogram:
@@ -3013,9 +3012,9 @@ Maximum routing channel utilization:     0.022 at (8,1)
 
 X - Directed channels:   j max occ ave occ capacity
                       ---- ------- ------- --------
-                         0       3   0.087      180
-                         1       4   0.075      180
-                         2       1   0.025      180
+                         0       3   0.075      180
+                         1       4   0.125      180
+                         2       1   0.013      180
                          3       0   0.000      180
                          4       0   0.000      180
                          5       0   0.000      180
@@ -3089,10 +3088,10 @@ Y - Directed channels:   i max occ ave occ capacity
                          4       0   0.000      180
                          5       0   0.000      180
                          6       0   0.000      180
-                         7       1   0.015      180
-                         8       6   0.118      180
-                         9       2   0.088      180
-                        10       1   0.015      180
+                         7       2   0.029      180
+                         8       5   0.132      180
+                         9       1   0.015      180
+                        10       0   0.000      180
                         11       0   0.000      180
                         12       0   0.000      180
                         13       0   0.000      180
@@ -3173,47 +3172,47 @@ Routing area (in minimum width transistor areas)...
 
 Segment usage by type (index): type utilization
                                ---- -----------
-                                  0    3.72e-05
-                                  1    2.04e-05
+                                  0    2.39e-05
+                                  1    1.79e-05
 
 Segment usage by length: length utilization
                          ------ -----------
-                              1    3.72e-05
-                              4    2.04e-05
+                              1    2.39e-05
+                              4    1.79e-05
 
 
-Hold Worst Negative Slack (hWNS): -0.294031 ns
-Hold Total Negative Slack (hTNS): -0.294031 ns
+Hold Worst Negative Slack (hWNS): -0.326032 ns
+Hold Total Negative Slack (hTNS): -0.562063 ns
 
 Hold slack histogram:
-[ -2.9e-10:  1.7e-10) 1 (50.0%) |**************************************************
-[  1.7e-10:  6.3e-10) 0 ( 0.0%) |
-[  6.3e-10:  1.1e-09) 0 ( 0.0%) |
-[  1.1e-09:  1.6e-09) 0 ( 0.0%) |
-[  1.6e-09:    2e-09) 0 ( 0.0%) |
+[ -3.3e-10:  1.4e-10) 2 (66.7%) |*************************************************
+[  1.4e-10:  6.1e-10) 0 ( 0.0%) |
+[  6.1e-10:  1.1e-09) 0 ( 0.0%) |
+[  1.1e-09:  1.5e-09) 0 ( 0.0%) |
+[  1.5e-09:    2e-09) 0 ( 0.0%) |
 [    2e-09:  2.5e-09) 0 ( 0.0%) |
-[  2.5e-09:    3e-09) 0 ( 0.0%) |
-[    3e-09:  3.4e-09) 0 ( 0.0%) |
+[  2.5e-09:  2.9e-09) 0 ( 0.0%) |
+[  2.9e-09:  3.4e-09) 0 ( 0.0%) |
 [  3.4e-09:  3.9e-09) 0 ( 0.0%) |
-[  3.9e-09:  4.3e-09) 1 (50.0%) |**************************************************
+[  3.9e-09:  4.3e-09) 1 (33.3%) |*************************
 
 Final critical path: 4.67611 ns, Fmax: 213.853 MHz
 Setup Worst Negative Slack (sWNS): 0 ns
 Setup Total Negative Slack (sTNS): 0 ns
 
 Setup slack histogram:
-[  2.1e-09:  2.6e-09) 1 (50.0%) |**************************************************
+[  2.1e-09:  2.6e-09) 1 (33.3%) |**************************************************
 [  2.6e-09:  3.1e-09) 0 ( 0.0%) |
-[  3.1e-09:  3.6e-09) 0 ( 0.0%) |
-[  3.6e-09:    4e-09) 0 ( 0.0%) |
+[  3.1e-09:  3.5e-09) 0 ( 0.0%) |
+[  3.5e-09:    4e-09) 0 ( 0.0%) |
 [    4e-09:  4.5e-09) 0 ( 0.0%) |
 [  4.5e-09:    5e-09) 0 ( 0.0%) |
-[    5e-09:  5.5e-09) 0 ( 0.0%) |
-[  5.5e-09:  5.9e-09) 0 ( 0.0%) |
+[    5e-09:  5.4e-09) 0 ( 0.0%) |
+[  5.4e-09:  5.9e-09) 1 (33.3%) |**************************************************
 [  5.9e-09:  6.4e-09) 0 ( 0.0%) |
-[  6.4e-09:  6.9e-09) 1 (50.0%) |**************************************************
+[  6.4e-09:  6.9e-09) 1 (33.3%) |**************************************************
 
-Timing analysis took 0.000228809 seconds (0.000218248 STA, 1.0561e-05 slack) (2 full updates: 0 setup, 0 hold, 2 combined).
+Timing analysis took 0.000364416 seconds (0.000351897 STA, 1.2519e-05 slack) (2 full updates: 0 setup, 0 hold, 2 combined).
 VPR suceeded
-The entire flow of VPR took 63.10 seconds (max_rss 838.8 MiB)
+The entire flow of VPR took 70.72 seconds (max_rss 838.8 MiB)
 Design hop0_design is timing analysed!

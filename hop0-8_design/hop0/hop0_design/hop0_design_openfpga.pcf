@@ -1,4 +1,4 @@
 set_io clock0 Bank_H_1_12  
 set_io rst Bank_H_1_14  
-set_io ff1 Bank_H_1_15  
+set_io ff2 Bank_H_1_15  
 set_io start Bank_H_1_16  

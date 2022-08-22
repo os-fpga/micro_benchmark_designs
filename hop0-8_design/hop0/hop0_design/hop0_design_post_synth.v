@@ -2,14 +2,16 @@
 
 (* top =  1  *)
 (* src = "/nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:1" *)
-module hop0_design(clock0, rst, start, ff1);
-  wire \$abc$199$li0_li0 ;
+module hop0_design(clock0, rst, start, ff2);
+  wire \$abc$212$li0_li0 ;
+  wire \$abc$212$li1_li1 ;
+  wire \$abc$212$lo0 ;
   (* src = "/nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:3" *)
   input clock0;
   wire clock0;
   (* src = "/nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:6" *)
-  output ff1;
-  wire ff1;
+  output ff2;
+  wire ff2;
   (* src = "/nfs_scratch/scratch/AE/Roman/hop0/./hop0_design.v:4" *)
   input rst;
   wire rst;
@@ -18,19 +20,36 @@ module hop0_design(clock0, rst, start, ff1);
   wire start;
   (* module_not_derived = 32'h00000001 *)
   (* src = "/nfs_cadtools/raptor/08_20_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:18.12-18.81" *)
-  dffsre \$abc$199$auto$blifparse.cc:362:parse_blif$200  (
+  dffsre \$abc$212$auto$blifparse.cc:362:parse_blif$213  (
     .C(clock0),
-    .D(\$abc$199$li0_li0 ),
+    .D(\$abc$212$li0_li0 ),
     .E(1'h1),
-    .Q(ff1),
+    .Q(\$abc$212$lo0 ),
+    .R(1'h1),
+    .S(1'h1)
+  );
+  (* module_not_derived = 32'h00000001 *)
+  (* src = "/nfs_cadtools/raptor/08_20_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:18.12-18.81" *)
+  dffsre \$abc$212$auto$blifparse.cc:362:parse_blif$214  (
+    .C(clock0),
+    .D(\$abc$212$li1_li1 ),
+    .E(1'h1),
+    .Q(ff2),
     .R(1'h1),
     .S(1'h1)
   );
   \$lut  #(
     .LUT(4'h4),
     .WIDTH(32'h00000002)
-  ) \$abc$350$auto$blifparse.cc:515:parse_blif$351  (
+  ) \$abc$372$auto$blifparse.cc:515:parse_blif$373  (
     .A({ start, rst }),
-    .Y(\$abc$199$li0_li0 )
+    .Y(\$abc$212$li0_li0 )
+  );
+  \$lut  #(
+    .LUT(4'h4),
+    .WIDTH(32'h00000002)
+  ) \$abc$372$auto$blifparse.cc:515:parse_blif$374  (
+    .A({ \$abc$212$lo0 , rst }),
+    .Y(\$abc$212$li1_li1 )
   );
 endmodule

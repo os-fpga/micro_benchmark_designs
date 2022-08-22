@@ -1,20 +1,20 @@
 # Perf log file
-# Created: Mon Aug 22 14:36:49 2022
+# Created: Mon Aug 22 18:53:39 2022
 
-[ 14:36:49 ] Synthesize has started
-[ 14:36:49 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/yosys -s hop0_design.ys -l hop0_design_synth.log
-[ 14:36:55 ] Duration: 5887 ms. Max utilization: 65 MB
-[ 14:36:55 ] Packing has started
-[ 14:36:55 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
-[ 14:37:55 ] Duration: 59294 ms. Max utilization: 1062 MB
-[ 14:37:55 ] Placement has started
-[ 14:37:55 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf hop0_design_openfpga.pcf --blif hop0_design_post_synth.blif --output hop0_design_pin_loc.place
-[ 14:37:55 ] Duration: 106 ms. Max utilization: 227 MB
-[ 14:37:55 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins hop0_design_pin_loc.place
-[ 14:39:56 ] Duration: 121574 ms. Max utilization: 1107 MB
-[ 14:39:56 ] Route has started
-[ 14:39:56 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
-[ 14:41:56 ] Duration: 119576 ms. Max utilization: 1107 MB
-[ 14:41:56 ] TimingAnalysis has started
-[ 14:41:56 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
-[ 14:42:59 ] Duration: 63261 ms. Max utilization: 1102 MB
+[ 18:53:39 ] Synthesize has started
+[ 18:53:39 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/yosys -s hop0_design.ys -l hop0_design_synth.log
+[ 18:53:44 ] Duration: 5329 ms. Max utilization: 65 MB
+[ 18:53:44 ] Packing has started
+[ 18:53:44 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
+[ 18:54:44 ] Duration: 59968 ms. Max utilization: 1062 MB
+[ 18:54:44 ] Placement has started
+[ 18:54:44 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf hop0_design_openfpga.pcf --blif hop0_design_post_synth.blif --output hop0_design_pin_loc.place
+[ 18:54:44 ] Duration: 106 ms. Max utilization: 227 MB
+[ 18:54:44 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins hop0_design_pin_loc.place
+[ 18:56:48 ] Duration: 124232 ms. Max utilization: 1107 MB
+[ 18:56:48 ] Route has started
+[ 18:56:48 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 18:58:58 ] Duration: 129519 ms. Max utilization: 1107 MB
+[ 18:58:58 ] TimingAnalysis has started
+[ 18:58:58 ] Command: /nfs_cadtools/raptor/08_20_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop0_design_post_synth.blif --sdc_file hop0_design_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop0_design_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 19:00:09 ] Duration: 70892 ms. Max utilization: 1102 MB
