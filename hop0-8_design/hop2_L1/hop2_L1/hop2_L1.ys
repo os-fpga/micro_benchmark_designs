@@ -1,0 +1,24 @@
+ 
+# Yosys synthesis script for hop2_L1
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/hop2_L1/./hop2_L1.v
+verific -import hop2_L1
+
+
+# Technology mapping
+hierarchy -top hop2_L1
+
+setattr -set keep 1 clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top hop2_L1 -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif hop2_L1_post_synth.blif
+write_verilog -noexpr -nodec -norename hop2_L1_post_synth.v
+  
