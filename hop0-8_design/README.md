@@ -1,8 +1,8 @@
 
 
-#implementing Hop0 to Hop8 design using L1 and L4.
+##implementing Hop0 to Hop8 design using L1 and L4.
 
-#These design target GEMINI device
+##These design target GEMINI device
 
 # hop0 design
 	-- use 1 CLB.   (status: Done)
