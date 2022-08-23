@@ -17,7 +17,7 @@
 	-- use 3 CLB. (status: Done)
 
 ### hop2_L4 design
-	-- (status: In Progress)
+	-- use 3 CLB. (status: Done)
 
 ### hop3_L1 design
 	-- use 4 CLB. (status: Done)
