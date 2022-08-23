@@ -1,0 +1,19 @@
+Netlist_File: uart_protocol_post_synth.net Netlist_ID: SHA256:059555972094d94330f191263cbf555144c94f5bc36e495483af39fbb331872f
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$abc$4207$new_new_n123__	25	18	0	#0
+$abc$2079$li06_li06	17	18	0	#1
+$abc$1358$auto$opt_dff.cc:194:make_patterns_logic$250	16	19	0	#2
+$abc$2079$li17_li17	17	19	0	#3
+$abc$2222$li4_li4	16	18	0	#4
+$abc$2079$li16_li16	25	17	0	#5
+$abc$2011$lo0	16	20	0	#6
+$abc$2037$lo0	17	20	0	#7
+$abc$2071$lo0	17	17	0	#8
+out:TxD		8	0	16	#9
+out:Txd_busy	9	0	1	#10
+clock0		6	0	19	#11
+enable		7	0	12	#12
+RxD		8	0	7	#13

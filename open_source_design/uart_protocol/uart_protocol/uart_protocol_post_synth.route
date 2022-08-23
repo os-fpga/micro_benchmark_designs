@@ -1,0 +1,1021 @@
+Placement_File: uart_protocol_post_synth.place Placement_ID: SHA256:fc569049249954a81ede59a79c1c1073274763c5d7d01523db51ccdde2eba7f1
+Array size: 80 x 68 logic blocks.
+
+Routing:
+
+Net 0 ($abc$2079$lo18)
+
+Node:	198068	SOURCE (25,17)  Class: 23  Switch: 0
+Node:	198110	  OPIN (25,17)  Pin: 59   clb.O[8] Switch: 2
+Node:	817383	 CHANX (25,17)  Track: 19  Switch: 2
+Node:	1219716	 CHANY (24,18)  Track: 16  Switch: 3
+Node:	823140	 CHANX (25,18) to (28,18)  Track: (100,102,104,106)  Switch: 1
+Node:	205285	  IPIN (25,18)  Pin: 0   clb.I0[0] Switch: 0
+Node:	205243	  SINK (25,18)  Class: 0  Switch: -1
+
+
+Net 1 ($abc$2079$li14_li14)
+
+Node:	198077	SOURCE (25,17)  Class: 32  Switch: 0
+Node:	198119	  OPIN (25,17)  Pin: 68   clb.O[17] Switch: 3
+Node:	1224538	 CHANY (25,17) to (25,20)  Track: (92,94,96,98)  Switch: 3
+Node:	1224602	 CHANY (25,18) to (25,21)  Track: (60,62,64,66)  Switch: 2
+Node:	823107	 CHANX (25,18)  Track: 19  Switch: 1
+Node:	205294	  IPIN (25,18)  Pin: 9   clb.I0[9] Switch: 0
+Node:	205243	  SINK (25,18)  Class: 0  Switch: -1
+
+
+Net 2 ($abc$4207$new_new_n105__)
+
+Node:	205237	SOURCE (25,18)  Class: 32  Switch: 0
+Node:	205279	  OPIN (25,18)  Pin: 68   clb.O[17] Switch: 2
+Node:	1224574	 CHANY (25,18)  Track: 14  Switch: 2
+Node:	823105	 CHANX (25,18)  Track: 17  Switch: 1
+Node:	205293	  IPIN (25,18)  Pin: 8   clb.I0[8] Switch: 0
+Node:	205243	  SINK (25,18)  Class: 0  Switch: -1
+Node:	205279	  OPIN (25,18)  Pin: 68   clb.O[17] Switch: 3
+Node:	1224610	 CHANY (25,18) to (25,21)  Track: (92,94,96,98)  Switch: 3
+Node:	840097	 CHANX (22,21) to (25,21)  Track: (107,105,103,101)  Switch: 3
+Node:	839881	 CHANX (19,21) to (22,21)  Track: (107,105,103,101)  Switch: 3
+Node:	839735	 CHANX (17,21) to (20,21)  Track: (99,97,95,93)  Switch: 3
+Node:	1185727	 CHANY (17,18) to (17,21)  Track: (83,81,79,77)  Switch: 1
+Node:	204725	  IPIN (17,18)  Pin: 35   clb.I3[5] Switch: 0
+Node:	204646	  SINK (17,18)  Class: 3  Switch: -1
+Node:	1185727	 CHANY (17,18) to (17,21)  Track: (83,81,79,77)  Switch: 1
+Node:	204717	  IPIN (17,18)  Pin: 27   clb.I2[7] Switch: 0
+Node:	204645	  SINK (17,18)  Class: 2  Switch: -1
+
+
+Net 3 ($abc$2079$li08_li08)
+
+Node:	198067	SOURCE (25,17)  Class: 22  Switch: 0
+Node:	198109	  OPIN (25,17)  Pin: 58   clb.O[7] Switch: 3
+Node:	817428	 CHANX (25,17) to (28,17)  Track: (148,150,152,154)  Switch: 2
+Node:	1224572	 CHANY (25,18)  Track: 12  Switch: 2
+Node:	823103	 CHANX (25,18)  Track: 15  Switch: 1
+Node:	205292	  IPIN (25,18)  Pin: 7   clb.I0[7] Switch: 0
+Node:	205243	  SINK (25,18)  Class: 0  Switch: -1
+
+
+Net 4 ($abc$2079$lo12)
+
+Node:	205235	SOURCE (25,18)  Class: 30  Switch: 0
+Node:	205277	  OPIN (25,18)  Pin: 66   clb.O[15] Switch: 2
+Node:	1224570	 CHANY (25,18)  Track: 10  Switch: 2
+Node:	823101	 CHANX (25,18)  Track: 13  Switch: 1
+Node:	205291	  IPIN (25,18)  Pin: 6   clb.I0[6] Switch: 0
+Node:	205243	  SINK (25,18)  Class: 0  Switch: -1
+
+
+Net 5 (enable)
+
+Node:	2424	SOURCE (7,0)  Pad: 124  Switch: 0
+Node:	2624	  OPIN (7,0)  Pad: 124  Switch: 3
+Node:	718822	 CHANX (7,0) to (10,0)  Track: (140,142,144,146)  Switch: 3
+Node:	1145550	 CHANY (9,1)  Track: 82  Switch: 3
+Node:	724461	 CHANX (6,1) to (9,1)  Track: (91,89,87,85)  Switch: 3
+Node:	1130941	 CHANY (6,1)  Track: 53  Switch: 3
+Node:	718814	 CHANX (7,0) to (10,0)  Track: (108,110,112,114)  Switch: 3
+Node:	719034	 CHANX (10,0) to (13,0)  Track: (124,126,128,130)  Switch: 3
+Node:	719188	 CHANX (12,0) to (15,0)  Track: (164,166,168,170)  Switch: 3
+Node:	1169868	 CHANY (14,1) to (14,4)  Track: (100,102,104,106)  Switch: 3
+Node:	1170144	 CHANY (14,4) to (14,7)  Track: (100,102,104,106)  Switch: 3
+Node:	1170360	 CHANY (14,7) to (14,10)  Track: (100,102,104,106)  Switch: 3
+Node:	1170576	 CHANY (14,10) to (14,13)  Track: (100,102,104,106)  Switch: 3
+Node:	1170792	 CHANY (14,13) to (14,16)  Track: (100,102,104,106)  Switch: 3
+Node:	1171008	 CHANY (14,16) to (14,19)  Track: (100,102,104,106)  Switch: 3
+Node:	822420	 CHANX (15,18) to (18,18)  Track: (100,102,104,106)  Switch: 1
+Node:	204695	  IPIN (17,18)  Pin: 10   clb.I1[0] Switch: 0
+Node:	204644	  SINK (17,18)  Class: 1  Switch: -1
+Node:	1170144	 CHANY (14,4) to (14,7)  Track: (100,102,104,106)  Switch: 3
+Node:	753732	 CHANX (15,6) to (18,6)  Track: (100,102,104,106)  Switch: 3
+Node:	1184940	 CHANY (17,7) to (17,10)  Track: (100,102,104,106)  Switch: 3
+Node:	1185156	 CHANY (17,10) to (17,13)  Track: (100,102,104,106)  Switch: 3
+Node:	1185372	 CHANY (17,13) to (17,16)  Track: (100,102,104,106)  Switch: 3
+Node:	805464	 CHANX (18,15) to (21,15)  Track: (100,102,104,106)  Switch: 3
+Node:	805680	 CHANX (21,15) to (24,15)  Track: (100,102,104,106)  Switch: 3
+Node:	1214748	 CHANY (23,16) to (23,19)  Track: (100,102,104,106)  Switch: 3
+Node:	817342	 CHANX (24,17) to (27,17)  Track: (92,94,96,98)  Switch: 1
+Node:	198138	  IPIN (25,17)  Pin: 13   clb.I1[3] Switch: 0
+Node:	198084	  SINK (25,17)  Class: 1  Switch: -1
+Node:	805680	 CHANX (21,15) to (24,15)  Track: (100,102,104,106)  Switch: 3
+Node:	805896	 CHANX (24,15) to (27,15)  Track: (100,102,104,106)  Switch: 3
+Node:	1224466	 CHANY (25,16) to (25,19)  Track: (92,94,96,98)  Switch: 1
+Node:	205324	  IPIN (25,18)  Pin: 34   clb.I3[4] Switch: 0
+Node:	205246	  SINK (25,18)  Class: 3  Switch: -1
+Node:	1185372	 CHANY (17,13) to (17,16)  Track: (100,102,104,106)  Switch: 3
+Node:	1185588	 CHANY (17,16) to (17,19)  Track: (100,102,104,106)  Switch: 3
+Node:	822636	 CHANX (18,18) to (21,18)  Track: (100,102,104,106)  Switch: 3
+Node:	822704	 CHANX (19,18) to (22,18)  Track: (84,86,88,90)  Switch: 3
+Node:	822912	 CHANX (22,18) to (25,18)  Track: (52,54,56,58)  Switch: 1
+Node:	205296	  IPIN (25,18)  Pin: 11   clb.I1[1] Switch: 0
+Node:	205244	  SINK (25,18)  Class: 1  Switch: -1
+
+
+Net 6 ($abc$2079$lo00)
+
+Node:	198078	SOURCE (25,17)  Class: 33  Switch: 0
+Node:	198120	  OPIN (25,17)  Pin: 69   clb.O[18] Switch: 3
+Node:	1224558	 CHANY (25,17) to (25,20)  Track: (172,174,176,178)  Switch: 2
+Node:	823121	 CHANX (25,18)  Track: 33  Switch: 1
+Node:	205301	  IPIN (25,18)  Pin: 16   clb.I1[6] Switch: 0
+Node:	205244	  SINK (25,18)  Class: 1  Switch: -1
+
+
+Net 7 ($abc$2079$lo10)
+
+Node:	205226	SOURCE (25,18)  Class: 21  Switch: 0
+Node:	205268	  OPIN (25,18)  Pin: 57   clb.O[6] Switch: 3
+Node:	822911	 CHANX (22,18) to (25,18)  Track: (51,49,47,45)  Switch: 1
+Node:	205297	  IPIN (25,18)  Pin: 12   clb.I1[2] Switch: 0
+Node:	205244	  SINK (25,18)  Class: 1  Switch: -1
+
+
+Net 8 ($abc$4207$new_new_n118__)
+
+Node:	205231	SOURCE (25,18)  Class: 26  Switch: 0
+Node:	205273	  OPIN (25,18)  Pin: 62   clb.O[11] Switch: 3
+Node:	1224395	 CHANY (25,15) to (25,18)  Track: (99,97,95,93)  Switch: 1
+Node:	205314	  IPIN (25,18)  Pin: 24   clb.I2[4] Switch: 0
+Node:	205245	  SINK (25,18)  Class: 2  Switch: -1
+Node:	1224395	 CHANY (25,15) to (25,18)  Track: (99,97,95,93)  Switch: 3
+Node:	805747	 CHANX (22,15) to (25,15)  Track: (83,81,79,77)  Switch: 3
+Node:	1205020	 CHANY (21,16) to (21,19)  Track: (68,70,72,74)  Switch: 3
+Node:	828355	 CHANX (18,19) to (21,19)  Track: (83,81,79,77)  Switch: 2
+Node:	1190647	 CHANY (18,19)  Track: 35  Switch: 3
+Node:	822407	 CHANX (15,18) to (18,18)  Track: (51,49,47,45)  Switch: 2
+Node:	1185687	 CHANY (17,18)  Track: 7  Switch: 1
+Node:	204713	  IPIN (17,18)  Pin: 23   clb.I2[3] Switch: 0
+Node:	204645	  SINK (17,18)  Class: 2  Switch: -1
+Node:	828355	 CHANX (18,19) to (21,19)  Track: (83,81,79,77)  Switch: 2
+Node:	1185775	 CHANY (17,19)  Track: 23  Switch: 3
+Node:	822347	 CHANX (14,18) to (17,18)  Track: (99,97,95,93)  Switch: 1
+Node:	204697	  IPIN (17,18)  Pin: 12   clb.I1[2] Switch: 0
+Node:	204644	  SINK (17,18)  Class: 1  Switch: -1
+
+
+Net 9 ($abc$2079$lo04)
+
+Node:	205238	SOURCE (25,18)  Class: 33  Switch: 0
+Node:	205280	  OPIN (25,18)  Pin: 69   clb.O[18] Switch: 2
+Node:	1224576	 CHANY (25,18)  Track: 16  Switch: 1
+Node:	205318	  IPIN (25,18)  Pin: 28   clb.I2[8] Switch: 0
+Node:	205245	  SINK (25,18)  Class: 2  Switch: -1
+
+
+Net 10 ($abc$2079$li16_li16)
+
+Node:	198079	SOURCE (25,17)  Class: 34  Switch: 0
+Node:	198121	  OPIN (25,17)  Pin: 70   clb.O[19] Switch: 3
+Node:	1224542	 CHANY (25,17) to (25,20)  Track: (108,110,112,114)  Switch: 1
+Node:	205329	  IPIN (25,18)  Pin: 39   clb.I3[9] Switch: 0
+Node:	205246	  SINK (25,18)  Class: 3  Switch: -1
+
+
+Net 11 ($abc$2079$lo16)
+
+Node:	205228	SOURCE (25,18)  Class: 23  Switch: 0
+Node:	205270	  OPIN (25,18)  Pin: 59   clb.O[8] Switch: 3
+Node:	823142	 CHANX (25,18) to (28,18)  Track: (108,110,112,114)  Switch: 3
+Node:	1224399	 CHANY (25,15) to (25,18)  Track: (115,113,111,109)  Switch: 1
+Node:	198155	  IPIN (25,17)  Pin: 25   clb.I2[5] Switch: 0
+Node:	198085	  SINK (25,17)  Class: 2  Switch: -1
+Node:	1224399	 CHANY (25,15) to (25,18)  Track: (115,113,111,109)  Switch: 1
+Node:	205322	  IPIN (25,18)  Pin: 32   clb.I3[2] Switch: 0
+Node:	205246	  SINK (25,18)  Class: 3  Switch: -1
+
+
+Net 12 ($true)
+
+Node:	205220	SOURCE (25,18)  Class: 15  Switch: 0
+Node:	205262	  OPIN (25,18)  Pin: 51   clb.O[0] Switch: 3
+Node:	823150	 CHANX (25,18) to (28,18)  Track: (140,142,144,146)  Switch: 2
+Node:	1224567	 CHANY (25,18)  Track: 7  Switch: 1
+Node:	205331	  IPIN (25,18)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	205251	  SINK (25,18)  Class: 8  Switch: -1
+Node:	205262	  OPIN (25,18)  Pin: 51   clb.O[0] Switch: 3
+Node:	823138	 CHANX (25,18) to (28,18)  Track: (92,94,96,98)  Switch: 3
+Node:	1238973	 CHANY (28,15) to (28,18)  Track: (91,89,87,85)  Switch: 3
+Node:	817401	 CHANX (25,17) to (28,17)  Track: (43,41,39,37)  Switch: 2
+Node:	1224493	 CHANY (25,17)  Track: 5  Switch: 1
+Node:	198170	  IPIN (25,17)  Pin: 43   clb.set[0] Switch: 0
+Node:	198090	  SINK (25,17)  Class: 7  Switch: -1
+Node:	817401	 CHANX (25,17) to (28,17)  Track: (43,41,39,37)  Switch: 2
+Node:	1224564	 CHANY (25,18)  Track: 4  Switch: 2
+Node:	823095	 CHANX (25,18)  Track: 7  Switch: 1
+Node:	205308	  IPIN (25,18)  Pin: 49   clb.enable[0] Switch: 0
+Node:	205256	  SINK (25,18)  Class: 13  Switch: -1
+Node:	823138	 CHANX (25,18) to (28,18)  Track: (92,94,96,98)  Switch: 3
+Node:	1224387	 CHANY (25,15) to (25,18)  Track: (67,65,63,61)  Switch: 1
+Node:	205330	  IPIN (25,18)  Pin: 43   clb.set[0] Switch: 0
+Node:	205250	  SINK (25,18)  Class: 7  Switch: -1
+Node:	1224387	 CHANY (25,15) to (25,18)  Track: (67,65,63,61)  Switch: 1
+Node:	198171	  IPIN (25,17)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	198091	  SINK (25,17)  Class: 8  Switch: -1
+Node:	823138	 CHANX (25,18) to (28,18)  Track: (92,94,96,98)  Switch: 3
+Node:	823202	 CHANX (26,18) to (29,18)  Track: (60,62,64,66)  Switch: 2
+Node:	1229439	 CHANY (26,18)  Track: 19  Switch: 3
+Node:	817275	 CHANX (23,17) to (26,17)  Track: (115,113,111,109)  Switch: 1
+Node:	198148	  IPIN (25,17)  Pin: 49   clb.enable[0] Switch: 0
+Node:	198096	  SINK (25,17)  Class: 13  Switch: -1
+Node:	205262	  OPIN (25,18)  Pin: 51   clb.O[0] Switch: 3
+Node:	822923	 CHANX (22,18) to (25,18)  Track: (99,97,95,93)  Switch: 3
+Node:	1205240	 CHANY (21,19) to (21,22)  Track: (84,86,88,90)  Switch: 3
+Node:	845531	 CHANX (18,22) to (21,22)  Track: (99,97,95,93)  Switch: 2
+Node:	1185987	 CHANY (17,22)  Track: 19  Switch: 3
+Node:	839523	 CHANX (14,21) to (17,21)  Track: (115,113,111,109)  Switch: 3
+Node:	1180875	 CHANY (16,18) to (16,21)  Track: (115,113,111,109)  Switch: 3
+Node:	1180803	 CHANY (16,17) to (16,20)  Track: (115,113,111,109)  Switch: 1
+Node:	214193	  IPIN (16,19)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	214113	  SINK (16,19)  Class: 8  Switch: -1
+Node:	1180803	 CHANY (16,17) to (16,20)  Track: (115,113,111,109)  Switch: 1
+Node:	232132	  IPIN (16,20)  Pin: 43   clb.set[0] Switch: 0
+Node:	232052	  SINK (16,20)  Class: 7  Switch: -1
+Node:	1180875	 CHANY (16,18) to (16,21)  Track: (115,113,111,109)  Switch: 1
+Node:	232133	  IPIN (16,20)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	232053	  SINK (16,20)  Class: 8  Switch: -1
+Node:	1205240	 CHANY (21,19) to (21,22)  Track: (84,86,88,90)  Switch: 3
+Node:	834071	 CHANX (18,20) to (21,20)  Track: (51,49,47,45)  Switch: 2
+Node:	834043	 CHANX (18,20)  Track: 11  Switch: 3
+Node:	1185667	 CHANY (17,17) to (17,20)  Track: (131,129,127,125)  Switch: 3
+Node:	828087	 CHANX (14,19) to (17,19)  Track: (163,161,159,157)  Switch: 1
+Node:	214170	  IPIN (16,19)  Pin: 49   clb.enable[0] Switch: 0
+Node:	214118	  SINK (16,19)  Class: 13  Switch: -1
+Node:	1185667	 CHANY (17,17) to (17,20)  Track: (131,129,127,125)  Switch: 3
+Node:	1185603	 CHANY (17,16) to (17,19)  Track: (163,161,159,157)  Switch: 1
+Node:	214312	  IPIN (17,19)  Pin: 43   clb.set[0] Switch: 0
+Node:	214232	  SINK (17,19)  Class: 7  Switch: -1
+Node:	1185603	 CHANY (17,16) to (17,19)  Track: (163,161,159,157)  Switch: 1
+Node:	204731	  IPIN (17,18)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	204651	  SINK (17,18)  Class: 8  Switch: -1
+Node:	1185667	 CHANY (17,17) to (17,20)  Track: (131,129,127,125)  Switch: 1
+Node:	232252	  IPIN (17,20)  Pin: 43   clb.set[0] Switch: 0
+Node:	232172	  SINK (17,20)  Class: 7  Switch: -1
+Node:	834071	 CHANX (18,20) to (21,20)  Track: (51,49,47,45)  Switch: 2
+Node:	1190695	 CHANY (18,20)  Track: 11  Switch: 3
+Node:	828155	 CHANX (15,19) to (18,19)  Track: (147,145,143,141)  Switch: 2
+Node:	1185830	 CHANY (17,20)  Track: 6  Switch: 1
+Node:	232253	  IPIN (17,20)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	232173	  SINK (17,20)  Class: 8  Switch: -1
+Node:	822923	 CHANX (22,18) to (25,18)  Track: (99,97,95,93)  Switch: 3
+Node:	822703	 CHANX (19,18) to (22,18)  Track: (83,81,79,77)  Switch: 2
+Node:	1195506	 CHANY (19,19)  Track: 34  Switch: 3
+Node:	828201	 CHANX (16,19) to (19,19)  Track: (43,41,39,37)  Switch: 2
+Node:	1180897	 CHANY (16,19)  Track: 5  Switch: 1
+Node:	214192	  IPIN (16,19)  Pin: 43   clb.set[0] Switch: 0
+Node:	214112	  SINK (16,19)  Class: 7  Switch: -1
+Node:	822703	 CHANX (19,18) to (22,18)  Track: (83,81,79,77)  Switch: 2
+Node:	822691	 CHANX (19,18)  Track: 35  Switch: 2
+Node:	1190575	 CHANY (18,18)  Track: 35  Switch: 3
+Node:	816683	 CHANX (15,17) to (18,17)  Track: (51,49,47,45)  Switch: 2
+Node:	1185615	 CHANY (17,17)  Track: 7  Switch: 1
+Node:	197571	  IPIN (17,17)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	197491	  SINK (17,17)  Class: 8  Switch: -1
+Node:	816683	 CHANX (15,17) to (18,17)  Track: (51,49,47,45)  Switch: 2
+Node:	816725	 CHANX (16,17)  Track: 9  Switch: 2
+Node:	1175966	 CHANY (15,18)  Track: 6  Switch: 3
+Node:	822502	 CHANX (16,18) to (19,18)  Track: (140,142,144,146)  Switch: 1
+Node:	204708	  IPIN (17,18)  Pin: 49   clb.enable[0] Switch: 0
+Node:	204656	  SINK (17,18)  Class: 13  Switch: -1
+Node:	822502	 CHANX (16,18) to (19,18)  Track: (140,142,144,146)  Switch: 2
+Node:	1180827	 CHANY (16,18)  Track: 7  Switch: 1
+Node:	204611	  IPIN (16,18)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	204531	  SINK (16,18)  Class: 8  Switch: -1
+Node:	816683	 CHANX (15,17) to (18,17)  Track: (51,49,47,45)  Switch: 2
+Node:	816795	 CHANX (17,17)  Track: 7  Switch: 2
+Node:	1180824	 CHANY (16,18)  Track: 4  Switch: 1
+Node:	204610	  IPIN (16,18)  Pin: 43   clb.set[0] Switch: 0
+Node:	204530	  SINK (16,18)  Class: 7  Switch: -1
+Node:	822703	 CHANX (19,18) to (22,18)  Track: (83,81,79,77)  Switch: 2
+Node:	1190563	 CHANY (18,18)  Track: 23  Switch: 3
+Node:	816695	 CHANX (15,17) to (18,17)  Track: (99,97,95,93)  Switch: 3
+Node:	1185435	 CHANY (17,14) to (17,17)  Track: (67,65,63,61)  Switch: 1
+Node:	197570	  IPIN (17,17)  Pin: 43   clb.set[0] Switch: 0
+Node:	197490	  SINK (17,17)  Class: 7  Switch: -1
+Node:	816695	 CHANX (15,17) to (18,17)  Track: (99,97,95,93)  Switch: 3
+Node:	1185722	 CHANY (17,18) to (17,21)  Track: (60,62,64,66)  Switch: 1
+Node:	204730	  IPIN (17,18)  Pin: 43   clb.set[0] Switch: 0
+Node:	204650	  SINK (17,18)  Class: 7  Switch: -1
+Node:	1185722	 CHANY (17,18) to (17,21)  Track: (60,62,64,66)  Switch: 1
+Node:	214313	  IPIN (17,19)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	214233	  SINK (17,19)  Class: 8  Switch: -1
+
+
+Net 13 ($abc$2079$lo14)
+
+Node:	205221	SOURCE (25,18)  Class: 16  Switch: 0
+Node:	205263	  OPIN (25,18)  Pin: 52   clb.O[1] Switch: 3
+Node:	822925	 CHANX (22,18) to (25,18)  Track: (107,105,103,101)  Switch: 3
+Node:	1219533	 CHANY (24,15) to (24,18)  Track: (91,89,87,85)  Switch: 3
+Node:	817400	 CHANX (25,17) to (28,17)  Track: (36,38,40,42)  Switch: 1
+Node:	198125	  IPIN (25,17)  Pin: 0   clb.I0[0] Switch: 0
+Node:	198083	  SINK (25,17)  Class: 0  Switch: -1
+
+
+Net 14 ($abc$4207$new_new_n119__)
+
+Node:	205223	SOURCE (25,18)  Class: 18  Switch: 0
+Node:	205265	  OPIN (25,18)  Pin: 54   clb.O[3] Switch: 3
+Node:	822929	 CHANX (22,18) to (25,18)  Track: (123,121,119,117)  Switch: 3
+Node:	1205246	 CHANY (21,19) to (21,22)  Track: (108,110,112,114)  Switch: 3
+Node:	828363	 CHANX (18,19) to (21,19)  Track: (115,113,111,109)  Switch: 2
+Node:	1185767	 CHANY (17,19)  Track: 15  Switch: 3
+Node:	822355	 CHANX (14,18) to (17,18)  Track: (131,129,127,125)  Switch: 1
+Node:	204693	  IPIN (17,18)  Pin: 8   clb.I0[8] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+
+
+Net 15 ($abc$2079$lo11)
+
+Node:	205230	SOURCE (25,18)  Class: 25  Switch: 0
+Node:	205272	  OPIN (25,18)  Pin: 61   clb.O[10] Switch: 3
+Node:	1224393	 CHANY (25,15) to (25,18)  Track: (91,89,87,85)  Switch: 3
+Node:	805741	 CHANX (22,15) to (25,15)  Track: (59,57,55,53)  Switch: 3
+Node:	1205014	 CHANY (21,16) to (21,19)  Track: (44,46,48,50)  Switch: 3
+Node:	828349	 CHANX (18,19) to (21,19)  Track: (59,57,55,53)  Switch: 2
+Node:	1185781	 CHANY (17,19)  Track: 29  Switch: 3
+Node:	822341	 CHANX (14,18) to (17,18)  Track: (75,73,71,69)  Switch: 1
+Node:	204685	  IPIN (17,18)  Pin: 0   clb.I0[0] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+
+
+Net 16 ($abc$2079$lo08)
+
+Node:	205236	SOURCE (25,18)  Class: 31  Switch: 0
+Node:	205278	  OPIN (25,18)  Pin: 67   clb.O[16] Switch: 2
+Node:	1224573	 CHANY (25,18)  Track: 13  Switch: 3
+Node:	817209	 CHANX (22,17) to (25,17)  Track: (139,137,135,133)  Switch: 1
+Node:	198141	  IPIN (25,17)  Pin: 16   clb.I1[6] Switch: 0
+Node:	198084	  SINK (25,17)  Class: 1  Switch: -1
+
+
+Net 17 (clock0): global net connecting:
+
+Block clock0 (#11) at (6,0), Pin class 194.
+Block $abc$4207$new_new_n123__ (#0) at (25,18), Pin class 41.
+Block $abc$2079$li06_li06 (#1) at (17,18), Pin class 41.
+Block $abc$1358$auto$opt_dff.cc:194:make_patterns_logic$250 (#2) at (16,19), Pin class 41.
+Block $abc$2079$li17_li17 (#3) at (17,19), Pin class 41.
+Block $abc$2222$li4_li4 (#4) at (16,18), Pin class 41.
+Block $abc$2079$li16_li16 (#5) at (25,17), Pin class 41.
+Block $abc$2011$lo0 (#6) at (16,20), Pin class 41.
+Block $abc$2037$lo0 (#7) at (17,20), Pin class 41.
+Block $abc$2071$lo0 (#8) at (17,17), Pin class 38.
+
+
+Net 18 ($abc$2222$lo2)
+
+Node:	204508	SOURCE (16,18)  Class: 23  Switch: 0
+Node:	204550	  OPIN (16,18)  Pin: 59   clb.O[8] Switch: 3
+Node:	822506	 CHANX (16,18) to (19,18)  Track: (156,158,160,162)  Switch: 1
+Node:	204690	  IPIN (17,18)  Pin: 5   clb.I0[5] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+
+
+Net 19 ($abc$2222$lo4)
+
+Node:	204519	SOURCE (16,18)  Class: 34  Switch: 0
+Node:	204561	  OPIN (16,18)  Pin: 70   clb.O[19] Switch: 3
+Node:	1180874	 CHANY (16,18) to (16,21)  Track: (108,110,112,114)  Switch: 3
+Node:	822566	 CHANX (17,18) to (20,18)  Track: (108,110,112,114)  Switch: 1
+Node:	204694	  IPIN (17,18)  Pin: 9   clb.I0[9] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+
+
+Net 20 ($abc$2071$lo0)
+
+Node:	197479	SOURCE (17,17)  Class: 34  Switch: 0
+Node:	197521	  OPIN (17,17)  Pin: 70   clb.O[19] Switch: 3
+Node:	1185644	 CHANY (17,17) to (17,20)  Track: (36,38,40,42)  Switch: 2
+Node:	828241	 CHANX (17,19)  Track: 5  Switch: 3
+Node:	1180741	 CHANY (16,16) to (16,19)  Track: (155,153,151,149)  Switch: 2
+Node:	822524	 CHANX (17,18)  Track: 12  Switch: 1
+Node:	204691	  IPIN (17,18)  Pin: 6   clb.I0[6] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+Node:	197521	  OPIN (17,17)  Pin: 70   clb.O[19] Switch: 2
+Node:	1185626	 CHANY (17,17)  Track: 18  Switch: 2
+Node:	816809	 CHANX (17,17)  Track: 21  Switch: 2
+Node:	1180838	 CHANY (16,18)  Track: 18  Switch: 1
+Node:	204599	  IPIN (16,18)  Pin: 29   clb.I2[9] Switch: 0
+Node:	204525	  SINK (16,18)  Class: 2  Switch: -1
+
+
+Net 21 ($abc$2037$lo1)
+
+Node:	232151	SOURCE (17,20)  Class: 24  Switch: 0
+Node:	232193	  OPIN (17,20)  Pin: 60   clb.O[9] Switch: 3
+Node:	834016	 CHANX (17,20) to (20,20)  Track: (116,118,120,122)  Switch: 3
+Node:	1185669	 CHANY (17,17) to (17,20)  Track: (139,137,135,133)  Switch: 1
+Node:	214293	  IPIN (17,19)  Pin: 21   clb.I2[1] Switch: 0
+Node:	214227	  SINK (17,19)  Class: 2  Switch: -1
+Node:	834016	 CHANX (17,20) to (20,20)  Track: (116,118,120,122)  Switch: 3
+Node:	1200243	 CHANY (20,17) to (20,20)  Track: (115,113,111,109)  Switch: 3
+Node:	822569	 CHANX (17,18) to (20,18)  Track: (123,121,119,117)  Switch: 1
+Node:	204688	  IPIN (17,18)  Pin: 3   clb.I0[3] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+
+
+Net 22 ($abc$4207$new_new_n107__)
+
+Node:	204633	SOURCE (17,18)  Class: 28  Switch: 0
+Node:	204675	  OPIN (17,18)  Pin: 64   clb.O[13] Switch: 2
+Node:	1185686	 CHANY (17,18)  Track: 6  Switch: 2
+Node:	822521	 CHANX (17,18)  Track: 9  Switch: 1
+Node:	204689	  IPIN (17,18)  Pin: 4   clb.I0[4] Switch: 0
+Node:	204643	  SINK (17,18)  Class: 0  Switch: -1
+
+
+Net 23 ($abc$2222$lo3)
+
+Node:	204518	SOURCE (16,18)  Class: 33  Switch: 0
+Node:	204560	  OPIN (16,18)  Pin: 69   clb.O[18] Switch: 2
+Node:	1180836	 CHANY (16,18)  Track: 16  Switch: 3
+Node:	822564	 CHANX (17,18) to (20,18)  Track: (100,102,104,106)  Switch: 1
+Node:	204701	  IPIN (17,18)  Pin: 16   clb.I1[6] Switch: 0
+Node:	204644	  SINK (17,18)  Class: 1  Switch: -1
+
+
+Net 24 ($abc$2037$lo0)
+
+Node:	232161	SOURCE (17,20)  Class: 34  Switch: 0
+Node:	232203	  OPIN (17,20)  Pin: 70   clb.O[19] Switch: 3
+Node:	1185645	 CHANY (17,17) to (17,20)  Track: (43,41,39,37)  Switch: 2
+Node:	822515	 CHANX (17,18)  Track: 3  Switch: 1
+Node:	204704	  IPIN (17,18)  Pin: 19   clb.I1[9] Switch: 0
+Node:	204644	  SINK (17,18)  Class: 1  Switch: -1
+Node:	1185645	 CHANY (17,17) to (17,20)  Track: (43,41,39,37)  Switch: 2
+Node:	828237	 CHANX (17,19)  Track: 1  Switch: 1
+Node:	214267	  IPIN (17,19)  Pin: 0   clb.I0[0] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 25 (async_receiver_inst.RxD_state[3])
+
+Node:	204630	SOURCE (17,18)  Class: 25  Switch: 0
+Node:	204672	  OPIN (17,18)  Pin: 61   clb.O[10] Switch: 3
+Node:	1185728	 CHANY (17,18) to (17,21)  Track: (84,86,88,90)  Switch: 3
+Node:	822333	 CHANX (14,18) to (17,18)  Track: (43,41,39,37)  Switch: 1
+Node:	204566	  IPIN (16,18)  Pin: 1   clb.I0[1] Switch: 0
+Node:	204523	  SINK (16,18)  Class: 0  Switch: -1
+Node:	204672	  OPIN (17,18)  Pin: 61   clb.O[10] Switch: 2
+Node:	1185681	 CHANY (17,18)  Track: 1  Switch: 2
+Node:	816789	 CHANX (17,17)  Track: 1  Switch: 3
+Node:	1180890	 CHANY (16,18) to (16,21)  Track: (172,174,176,178)  Switch: 2
+Node:	822542	 CHANX (17,18)  Track: 30  Switch: 1
+Node:	204700	  IPIN (17,18)  Pin: 15   clb.I1[5] Switch: 0
+Node:	204644	  SINK (17,18)  Class: 1  Switch: -1
+Node:	1180890	 CHANY (16,18) to (16,21)  Track: (172,174,176,178)  Switch: 1
+Node:	204594	  IPIN (16,18)  Pin: 24   clb.I2[4] Switch: 0
+Node:	204525	  SINK (16,18)  Class: 2  Switch: -1
+
+
+Net 26 ($abc$2079$lo02)
+
+Node:	204621	SOURCE (17,18)  Class: 16  Switch: 0
+Node:	204663	  OPIN (17,18)  Pin: 52   clb.O[1] Switch: 2
+Node:	822516	 CHANX (17,18)  Track: 4  Switch: 2
+Node:	1185683	 CHANY (17,18)  Track: 3  Switch: 1
+Node:	204711	  IPIN (17,18)  Pin: 21   clb.I2[1] Switch: 0
+Node:	204645	  SINK (17,18)  Class: 2  Switch: -1
+
+
+Net 27 ($abc$2079$lo09)
+
+Node:	204622	SOURCE (17,18)  Class: 17  Switch: 0
+Node:	204664	  OPIN (17,18)  Pin: 53   clb.O[2] Switch: 3
+Node:	822339	 CHANX (14,18) to (17,18)  Track: (67,65,63,61)  Switch: 1
+Node:	204578	  IPIN (16,18)  Pin: 13   clb.I1[3] Switch: 0
+Node:	204524	  SINK (16,18)  Class: 1  Switch: -1
+
+
+Net 28 ($abc$1309$flatten\async_receiver_inst.$verific$n208$63)
+
+Node:	204623	SOURCE (17,18)  Class: 18  Switch: 0
+Node:	204665	  OPIN (17,18)  Pin: 54   clb.O[3] Switch: 3
+Node:	822353	 CHANX (14,18) to (17,18)  Track: (123,121,119,117)  Switch: 3
+Node:	1166366	 CHANY (13,19) to (13,22)  Track: (108,110,112,114)  Switch: 3
+Node:	1166438	 CHANY (13,20) to (13,23)  Track: (108,110,112,114)  Switch: 3
+Node:	833798	 CHANX (14,20) to (17,20)  Track: (108,110,112,114)  Switch: 3
+Node:	833870	 CHANX (15,20) to (18,20)  Track: (108,110,112,114)  Switch: 1
+Node:	232110	  IPIN (16,20)  Pin: 49   clb.enable[0] Switch: 0
+Node:	232058	  SINK (16,20)  Class: 13  Switch: -1
+
+
+Net 29 ($abc$1335$auto$opt_dff.cc:219:make_patterns_logic$257)
+
+Node:	204625	SOURCE (17,18)  Class: 20  Switch: 0
+Node:	204667	  OPIN (17,18)  Pin: 56   clb.O[5] Switch: 3
+Node:	822548	 CHANX (17,18) to (20,18)  Track: (36,38,40,42)  Switch: 2
+Node:	1190543	 CHANY (18,18)  Track: 3  Switch: 3
+Node:	816715	 CHANX (15,17) to (18,17)  Track: (179,177,175,173)  Switch: 1
+Node:	197548	  IPIN (17,17)  Pin: 49   clb.enable[0] Switch: 0
+Node:	197496	  SINK (17,17)  Class: 13  Switch: -1
+
+
+Net 30 ($abc$2079$lo01)
+
+Node:	204631	SOURCE (17,18)  Class: 26  Switch: 0
+Node:	204673	  OPIN (17,18)  Pin: 62   clb.O[11] Switch: 2
+Node:	1185682	 CHANY (17,18)  Track: 2  Switch: 2
+Node:	822517	 CHANX (17,18)  Track: 5  Switch: 3
+Node:	1180669	 CHANY (16,15) to (16,18)  Track: (155,153,151,149)  Switch: 1
+Node:	204606	  IPIN (16,18)  Pin: 36   clb.I3[6] Switch: 0
+Node:	204526	  SINK (16,18)  Class: 3  Switch: -1
+
+
+Net 31 ($abc$2079$lo13)
+
+Node:	204632	SOURCE (17,18)  Class: 27  Switch: 0
+Node:	204674	  OPIN (17,18)  Pin: 63   clb.O[12] Switch: 3
+Node:	1185720	 CHANY (17,18) to (17,21)  Track: (52,54,56,58)  Switch: 2
+Node:	828251	 CHANX (17,19)  Track: 15  Switch: 1
+Node:	214274	  IPIN (17,19)  Pin: 7   clb.I0[7] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+Node:	204674	  OPIN (17,18)  Pin: 63   clb.O[12] Switch: 2
+Node:	1185684	 CHANY (17,18)  Track: 4  Switch: 2
+Node:	822519	 CHANX (17,18)  Track: 7  Switch: 2
+Node:	1180896	 CHANY (16,19)  Track: 4  Switch: 2
+Node:	828171	 CHANX (16,19)  Track: 7  Switch: 1
+Node:	214150	  IPIN (16,19)  Pin: 3   clb.I0[3] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 32 (BaudTickGen_inst.tick)
+
+Node:	204639	SOURCE (17,18)  Class: 34  Switch: 0
+Node:	204681	  OPIN (17,18)  Pin: 70   clb.O[19] Switch: 3
+Node:	1185734	 CHANY (17,18) to (17,21)  Track: (108,110,112,114)  Switch: 3
+Node:	822351	 CHANX (14,18) to (17,18)  Track: (115,113,111,109)  Switch: 1
+Node:	204588	  IPIN (16,18)  Pin: 49   clb.enable[0] Switch: 0
+Node:	204536	  SINK (16,18)  Class: 13  Switch: -1
+Node:	204681	  OPIN (17,18)  Pin: 70   clb.O[19] Switch: 2
+Node:	1185698	 CHANY (17,18)  Track: 18  Switch: 2
+Node:	822533	 CHANX (17,18)  Track: 21  Switch: 2
+Node:	1180910	 CHANY (16,19)  Track: 18  Switch: 2
+Node:	828185	 CHANX (16,19)  Track: 21  Switch: 1
+Node:	214157	  IPIN (16,19)  Pin: 10   clb.I1[0] Switch: 0
+Node:	214106	  SINK (16,19)  Class: 1  Switch: -1
+Node:	204681	  OPIN (17,18)  Pin: 70   clb.O[19] Switch: 3
+Node:	1185716	 CHANY (17,18) to (17,21)  Track: (36,38,40,42)  Switch: 2
+Node:	828239	 CHANX (17,19)  Track: 3  Switch: 3
+Node:	1180743	 CHANY (16,16) to (16,19)  Track: (163,161,159,157)  Switch: 1
+Node:	214184	  IPIN (16,19)  Pin: 32   clb.I3[2] Switch: 0
+Node:	214108	  SINK (16,19)  Class: 3  Switch: -1
+Node:	828239	 CHANX (17,19)  Track: 3  Switch: 1
+Node:	214268	  IPIN (17,19)  Pin: 1   clb.I0[1] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 33 ($abc$2011$lo7)
+
+Node:	232028	SOURCE (16,20)  Class: 21  Switch: 0
+Node:	232070	  OPIN (16,20)  Pin: 57   clb.O[6] Switch: 3
+Node:	833711	 CHANX (13,20) to (16,20)  Track: (51,49,47,45)  Switch: 2
+Node:	1176111	 CHANY (15,20)  Track: 7  Switch: 2
+Node:	828172	 CHANX (16,19)  Track: 8  Switch: 1
+Node:	214151	  IPIN (16,19)  Pin: 4   clb.I0[4] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 34 ($abc$2011$lo0)
+
+Node:	232041	SOURCE (16,20)  Class: 34  Switch: 0
+Node:	232083	  OPIN (16,20)  Pin: 70   clb.O[19] Switch: 3
+Node:	1180785	 CHANY (16,17) to (16,20)  Track: (43,41,39,37)  Switch: 2
+Node:	828165	 CHANX (16,19)  Track: 1  Switch: 1
+Node:	214147	  IPIN (16,19)  Pin: 0   clb.I0[0] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 35 ($abc$2079$li17_li17)
+
+Node:	214221	SOURCE (17,19)  Class: 34  Switch: 0
+Node:	214263	  OPIN (17,19)  Pin: 70   clb.O[19] Switch: 2
+Node:	1185771	 CHANY (17,19)  Track: 19  Switch: 2
+Node:	822604	 CHANX (18,18)  Track: 20  Switch: 3
+Node:	1190664	 CHANY (18,19) to (18,22)  Track: (100,102,104,106)  Switch: 3
+Node:	828141	 CHANX (15,19) to (18,19)  Track: (91,89,87,85)  Switch: 1
+Node:	214155	  IPIN (16,19)  Pin: 8   clb.I0[8] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 36 ($abc$2050$lo3)
+
+Node:	214206	SOURCE (17,19)  Class: 19  Switch: 0
+Node:	214248	  OPIN (17,19)  Pin: 55   clb.O[4] Switch: 3
+Node:	828067	 CHANX (14,19) to (17,19)  Track: (83,81,79,77)  Switch: 1
+Node:	214152	  IPIN (16,19)  Pin: 5   clb.I0[5] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 37 ($abc$2011$lo6)
+
+Node:	232038	SOURCE (16,20)  Class: 31  Switch: 0
+Node:	232080	  OPIN (16,20)  Pin: 67   clb.O[16] Switch: 3
+Node:	1180815	 CHANY (16,17) to (16,20)  Track: (163,161,159,157)  Switch: 2
+Node:	828183	 CHANX (16,19)  Track: 19  Switch: 1
+Node:	214156	  IPIN (16,19)  Pin: 9   clb.I0[9] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 38 ($abc$2079$li15_li15)
+
+Node:	214209	SOURCE (17,19)  Class: 22  Switch: 0
+Node:	214251	  OPIN (17,19)  Pin: 58   clb.O[7] Switch: 3
+Node:	828073	 CHANX (14,19) to (17,19)  Track: (107,105,103,101)  Switch: 1
+Node:	214148	  IPIN (16,19)  Pin: 1   clb.I0[1] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 39 ($abc$2050$lo0)
+
+Node:	214214	SOURCE (17,19)  Class: 27  Switch: 0
+Node:	214256	  OPIN (17,19)  Pin: 63   clb.O[12] Switch: 3
+Node:	1185589	 CHANY (17,16) to (17,19)  Track: (107,105,103,101)  Switch: 3
+Node:	805466	 CHANX (18,15) to (21,15)  Track: (108,110,112,114)  Switch: 3
+Node:	1195312	 CHANY (19,16) to (19,19)  Track: (116,118,120,122)  Switch: 3
+Node:	828223	 CHANX (16,19) to (19,19)  Track: (131,129,127,125)  Switch: 1
+Node:	214154	  IPIN (16,19)  Pin: 7   clb.I0[7] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 40 ($abc$2050$lo7)
+
+Node:	214220	SOURCE (17,19)  Class: 33  Switch: 0
+Node:	214262	  OPIN (17,19)  Pin: 69   clb.O[18] Switch: 2
+Node:	1185769	 CHANY (17,19)  Track: 17  Switch: 2
+Node:	822602	 CHANX (18,18)  Track: 18  Switch: 3
+Node:	1190666	 CHANY (18,19) to (18,22)  Track: (108,110,112,114)  Switch: 3
+Node:	828147	 CHANX (15,19) to (18,19)  Track: (115,113,111,109)  Switch: 1
+Node:	214153	  IPIN (16,19)  Pin: 6   clb.I0[6] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 41 ($abc$2050$lo2)
+
+Node:	214215	SOURCE (17,19)  Class: 28  Switch: 0
+Node:	214257	  OPIN (17,19)  Pin: 64   clb.O[13] Switch: 3
+Node:	1185591	 CHANY (17,16) to (17,19)  Track: (115,113,111,109)  Switch: 3
+Node:	816629	 CHANX (14,17) to (17,17)  Track: (123,121,119,117)  Switch: 3
+Node:	1166294	 CHANY (13,18) to (13,21)  Track: (108,110,112,114)  Switch: 3
+Node:	828076	 CHANX (14,19) to (17,19)  Track: (116,118,120,122)  Switch: 1
+Node:	214149	  IPIN (16,19)  Pin: 2   clb.I0[2] Switch: 0
+Node:	214105	  SINK (16,19)  Class: 0  Switch: -1
+
+
+Net 42 ($abc$2050$lo1)
+
+Node:	214205	SOURCE (17,19)  Class: 18  Switch: 0
+Node:	214247	  OPIN (17,19)  Pin: 54   clb.O[3] Switch: 3
+Node:	828065	 CHANX (14,19) to (17,19)  Track: (75,73,71,69)  Switch: 1
+Node:	214164	  IPIN (16,19)  Pin: 17   clb.I1[7] Switch: 0
+Node:	214106	  SINK (16,19)  Class: 1  Switch: -1
+
+
+Net 43 ($abc$2011$lo2)
+
+Node:	232040	SOURCE (16,20)  Class: 33  Switch: 0
+Node:	232082	  OPIN (16,20)  Pin: 69   clb.O[18] Switch: 3
+Node:	1180819	 CHANY (16,17) to (16,20)  Track: (179,177,175,173)  Switch: 2
+Node:	828195	 CHANX (16,19)  Track: 31  Switch: 1
+Node:	214162	  IPIN (16,19)  Pin: 15   clb.I1[5] Switch: 0
+Node:	214106	  SINK (16,19)  Class: 1  Switch: -1
+
+
+Net 44 ($abc$2011$lo1)
+
+Node:	232030	SOURCE (16,20)  Class: 23  Switch: 0
+Node:	232072	  OPIN (16,20)  Pin: 59   clb.O[8] Switch: 2
+Node:	833906	 CHANX (16,20)  Track: 18  Switch: 2
+Node:	1180981	 CHANY (16,20)  Track: 17  Switch: 3
+Node:	828005	 CHANX (13,19) to (16,19)  Track: (123,121,119,117)  Switch: 1
+Node:	214163	  IPIN (16,19)  Pin: 16   clb.I1[6] Switch: 0
+Node:	214106	  SINK (16,19)  Class: 1  Switch: -1
+
+
+Net 45 ($abc$2011$lo4)
+
+Node:	232039	SOURCE (16,20)  Class: 32  Switch: 0
+Node:	232081	  OPIN (16,20)  Pin: 68   clb.O[17] Switch: 3
+Node:	1181032	 CHANY (16,20) to (16,23)  Track: (164,166,168,170)  Switch: 2
+Node:	833913	 CHANX (16,20)  Track: 25  Switch: 1
+Node:	232099	  IPIN (16,20)  Pin: 12   clb.I1[2] Switch: 0
+Node:	232046	  SINK (16,20)  Class: 1  Switch: -1
+Node:	232081	  OPIN (16,20)  Pin: 68   clb.O[17] Switch: 2
+Node:	1180979	 CHANY (16,20)  Track: 15  Switch: 3
+Node:	828007	 CHANX (13,19) to (16,19)  Track: (131,129,127,125)  Switch: 1
+Node:	214159	  IPIN (16,19)  Pin: 12   clb.I1[2] Switch: 0
+Node:	214106	  SINK (16,19)  Class: 1  Switch: -1
+
+
+Net 46 ($abc$2079$lo22)
+
+Node:	214088	SOURCE (16,19)  Class: 21  Switch: 0
+Node:	214130	  OPIN (16,19)  Pin: 57   clb.O[6] Switch: 3
+Node:	828226	 CHANX (16,19) to (19,19)  Track: (140,142,144,146)  Switch: 2
+Node:	1185761	 CHANY (17,19)  Track: 9  Switch: 1
+Node:	214296	  IPIN (17,19)  Pin: 24   clb.I2[4] Switch: 0
+Node:	214227	  SINK (17,19)  Class: 2  Switch: -1
+Node:	214130	  OPIN (16,19)  Pin: 57   clb.O[6] Switch: 3
+Node:	828214	 CHANX (16,19) to (19,19)  Track: (92,94,96,98)  Switch: 1
+Node:	214166	  IPIN (16,19)  Pin: 19   clb.I1[9] Switch: 0
+Node:	214106	  SINK (16,19)  Class: 1  Switch: -1
+
+
+Net 47 ($abc$2079$lo24)
+
+Node:	214090	SOURCE (16,19)  Class: 23  Switch: 0
+Node:	214132	  OPIN (16,19)  Pin: 59   clb.O[8] Switch: 3
+Node:	828230	 CHANX (16,19) to (19,19)  Track: (156,158,160,162)  Switch: 1
+Node:	214280	  IPIN (17,19)  Pin: 13   clb.I1[3] Switch: 0
+Node:	214226	  SINK (17,19)  Class: 1  Switch: -1
+Node:	214132	  OPIN (16,19)  Pin: 59   clb.O[8] Switch: 2
+Node:	828182	 CHANX (16,19)  Track: 18  Switch: 2
+Node:	1180909	 CHANY (16,19)  Track: 17  Switch: 1
+Node:	214180	  IPIN (16,19)  Pin: 28   clb.I2[8] Switch: 0
+Node:	214107	  SINK (16,19)  Class: 2  Switch: -1
+
+
+Net 48 ($abc$2050$lo5)
+
+Node:	214208	SOURCE (17,19)  Class: 21  Switch: 0
+Node:	214250	  OPIN (17,19)  Pin: 57   clb.O[6] Switch: 3
+Node:	828071	 CHANX (14,19) to (17,19)  Track: (99,97,95,93)  Switch: 3
+Node:	1180719	 CHANY (16,16) to (16,19)  Track: (67,65,63,61)  Switch: 1
+Node:	214176	  IPIN (16,19)  Pin: 24   clb.I2[4] Switch: 0
+Node:	214107	  SINK (16,19)  Class: 2  Switch: -1
+
+
+Net 49 ($abc$2011$lo3)
+
+Node:	232029	SOURCE (16,20)  Class: 22  Switch: 0
+Node:	232071	  OPIN (16,20)  Pin: 58   clb.O[7] Switch: 3
+Node:	833940	 CHANX (16,20) to (19,20)  Track: (100,102,104,106)  Switch: 3
+Node:	1180797	 CHANY (16,17) to (16,20)  Track: (91,89,87,85)  Switch: 1
+Node:	214173	  IPIN (16,19)  Pin: 21   clb.I2[1] Switch: 0
+Node:	214107	  SINK (16,19)  Class: 2  Switch: -1
+
+
+Net 50 ($abc$2050$lo6)
+
+Node:	214218	SOURCE (17,19)  Class: 31  Switch: 0
+Node:	214260	  OPIN (17,19)  Pin: 67   clb.O[16] Switch: 2
+Node:	1185765	 CHANY (17,19)  Track: 13  Switch: 3
+Node:	822357	 CHANX (14,18) to (17,18)  Track: (139,137,135,133)  Switch: 2
+Node:	1180892	 CHANY (16,19)  Track: 0  Switch: 1
+Node:	214172	  IPIN (16,19)  Pin: 20   clb.I2[0] Switch: 0
+Node:	214107	  SINK (16,19)  Class: 2  Switch: -1
+
+
+Net 51 ($abc$2050$lo4)
+
+Node:	214216	SOURCE (17,19)  Class: 29  Switch: 0
+Node:	214258	  OPIN (17,19)  Pin: 65   clb.O[14] Switch: 3
+Node:	1185581	 CHANY (17,16) to (17,19)  Track: (75,73,71,69)  Switch: 2
+Node:	822537	 CHANX (17,18)  Track: 25  Switch: 2
+Node:	1180914	 CHANY (16,19)  Track: 22  Switch: 1
+Node:	214183	  IPIN (16,19)  Pin: 31   clb.I3[1] Switch: 0
+Node:	214108	  SINK (16,19)  Class: 3  Switch: -1
+
+
+Net 52 ($abc$1573$li2_li2)
+
+Node:	214084	SOURCE (16,19)  Class: 17  Switch: 0
+Node:	214126	  OPIN (16,19)  Pin: 53   clb.O[2] Switch: 3
+Node:	828206	 CHANX (16,19) to (19,19)  Track: (60,62,64,66)  Switch: 1
+Node:	214272	  IPIN (17,19)  Pin: 5   clb.I0[5] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 53 ($abc$2050$li2_li2)
+
+Node:	214085	SOURCE (16,19)  Class: 18  Switch: 0
+Node:	214127	  OPIN (16,19)  Pin: 54   clb.O[3] Switch: 3
+Node:	828208	 CHANX (16,19) to (19,19)  Track: (68,70,72,74)  Switch: 1
+Node:	214284	  IPIN (17,19)  Pin: 17   clb.I1[7] Switch: 0
+Node:	214226	  SINK (17,19)  Class: 1  Switch: -1
+
+
+Net 54 ($abc$2050$li5_li5)
+
+Node:	214086	SOURCE (16,19)  Class: 19  Switch: 0
+Node:	214128	  OPIN (16,19)  Pin: 55   clb.O[4] Switch: 3
+Node:	828222	 CHANX (16,19) to (19,19)  Track: (124,126,128,130)  Switch: 1
+Node:	214276	  IPIN (17,19)  Pin: 9   clb.I0[9] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 55 (Txd_busy)
+
+Node:	214089	SOURCE (16,19)  Class: 22  Switch: 0
+Node:	214131	  OPIN (16,19)  Pin: 58   clb.O[7] Switch: 3
+Node:	828001	 CHANX (13,19) to (16,19)  Track: (107,105,103,101)  Switch: 3
+Node:	1166149	 CHANY (13,16) to (13,19)  Track: (107,105,103,101)  Switch: 3
+Node:	1165933	 CHANY (13,13) to (13,16)  Track: (107,105,103,101)  Switch: 3
+Node:	1165717	 CHANY (13,10) to (13,13)  Track: (107,105,103,101)  Switch: 3
+Node:	1165501	 CHANY (13,7) to (13,10)  Track: (107,105,103,101)  Switch: 3
+Node:	1165285	 CHANY (13,4) to (13,7)  Track: (107,105,103,101)  Switch: 3
+Node:	1165015	 CHANY (13,1) to (13,4)  Track: (107,105,103,101)  Switch: 3
+Node:	724753	 CHANX (10,1) to (13,1)  Track: (107,105,103,101)  Switch: 3
+Node:	1155281	 CHANY (11,1)  Track: 93  Switch: 3
+Node:	718885	 CHANX (8,0) to (11,0)  Track: (107,105,103,101)  Switch: 1
+Node:	3448	  IPIN (9,0)  Pad: 10  Switch: 0
+Node:	3248	  SINK (9,0)  Pad: 10  Switch: -1
+
+
+Net 56 ($abc$1573$li0_li0)
+
+Node:	214093	SOURCE (16,19)  Class: 26  Switch: 0
+Node:	214135	  OPIN (16,19)  Pin: 62   clb.O[11] Switch: 3
+Node:	1180739	 CHANY (16,16) to (16,19)  Track: (147,145,143,141)  Switch: 2
+Node:	822518	 CHANX (17,18)  Track: 6  Switch: 3
+Node:	1185818	 CHANY (17,19) to (17,22)  Track: (156,158,160,162)  Switch: 1
+Node:	214304	  IPIN (17,19)  Pin: 32   clb.I3[2] Switch: 0
+Node:	214228	  SINK (17,19)  Class: 3  Switch: -1
+
+
+Net 57 ($abc$2050$li0_li0)
+
+Node:	214094	SOURCE (16,19)  Class: 27  Switch: 0
+Node:	214136	  OPIN (16,19)  Pin: 63   clb.O[12] Switch: 3
+Node:	1180944	 CHANY (16,19) to (16,22)  Track: (100,102,104,106)  Switch: 3
+Node:	839736	 CHANX (17,21) to (20,21)  Track: (100,102,104,106)  Switch: 3
+Node:	1190591	 CHANY (18,18) to (18,21)  Track: (99,97,95,93)  Switch: 3
+Node:	828137	 CHANX (15,19) to (18,19)  Track: (75,73,71,69)  Switch: 1
+Node:	214275	  IPIN (17,19)  Pin: 8   clb.I0[8] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 58 ($abc$2050$li4_li4)
+
+Node:	214095	SOURCE (16,19)  Class: 28  Switch: 0
+Node:	214137	  OPIN (16,19)  Pin: 64   clb.O[13] Switch: 2
+Node:	1180899	 CHANY (16,19)  Track: 7  Switch: 2
+Node:	822520	 CHANX (17,18)  Track: 8  Switch: 3
+Node:	1185816	 CHANY (17,19) to (17,22)  Track: (148,150,152,154)  Switch: 2
+Node:	828249	 CHANX (17,19)  Track: 13  Switch: 1
+Node:	214273	  IPIN (17,19)  Pin: 6   clb.I0[6] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 59 ($abc$2050$li6_li6)
+
+Node:	214096	SOURCE (16,19)  Class: 29  Switch: 0
+Node:	214138	  OPIN (16,19)  Pin: 65   clb.O[14] Switch: 2
+Node:	1180900	 CHANY (16,19)  Track: 8  Switch: 3
+Node:	828296	 CHANX (17,19) to (20,19)  Track: (132,134,136,138)  Switch: 2
+Node:	1185753	 CHANY (17,19)  Track: 1  Switch: 1
+Node:	214292	  IPIN (17,19)  Pin: 20   clb.I2[0] Switch: 0
+Node:	214227	  SINK (17,19)  Class: 2  Switch: -1
+
+
+Net 60 ($abc$2079$lo15)
+
+Node:	214098	SOURCE (16,19)  Class: 31  Switch: 0
+Node:	214140	  OPIN (16,19)  Pin: 67   clb.O[16] Switch: 2
+Node:	1180904	 CHANY (16,19)  Track: 12  Switch: 3
+Node:	828292	 CHANX (17,19) to (20,19)  Track: (116,118,120,122)  Switch: 1
+Node:	214283	  IPIN (17,19)  Pin: 16   clb.I1[6] Switch: 0
+Node:	214226	  SINK (17,19)  Class: 1  Switch: -1
+Node:	214140	  OPIN (16,19)  Pin: 67   clb.O[16] Switch: 3
+Node:	1180725	 CHANY (16,16) to (16,19)  Track: (91,89,87,85)  Switch: 3
+Node:	805390	 CHANX (17,15) to (20,15)  Track: (92,94,96,98)  Switch: 3
+Node:	1185578	 CHANY (17,16) to (17,19)  Track: (60,62,64,66)  Switch: 1
+Node:	214299	  IPIN (17,19)  Pin: 27   clb.I2[7] Switch: 0
+Node:	214227	  SINK (17,19)  Class: 2  Switch: -1
+
+
+Net 61 ($abc$2079$lo17)
+
+Node:	214099	SOURCE (16,19)  Class: 32  Switch: 0
+Node:	214141	  OPIN (16,19)  Pin: 68   clb.O[17] Switch: 2
+Node:	1180906	 CHANY (16,19)  Track: 14  Switch: 3
+Node:	828290	 CHANX (17,19) to (20,19)  Track: (108,110,112,114)  Switch: 1
+Node:	214271	  IPIN (17,19)  Pin: 4   clb.I0[4] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 62 (TxD)
+
+Node:	214100	SOURCE (16,19)  Class: 33  Switch: 0
+Node:	214142	  OPIN (16,19)  Pin: 69   clb.O[18] Switch: 3
+Node:	1180729	 CHANY (16,16) to (16,19)  Track: (107,105,103,101)  Switch: 3
+Node:	1180513	 CHANY (16,13) to (16,16)  Track: (107,105,103,101)  Switch: 3
+Node:	793657	 CHANX (13,13) to (16,13)  Track: (107,105,103,101)  Switch: 3
+Node:	793441	 CHANX (10,13) to (13,13)  Track: (107,105,103,101)  Switch: 3
+Node:	793225	 CHANX (7,13) to (10,13)  Track: (107,105,103,101)  Switch: 3
+Node:	1136557	 CHANY (7,10) to (7,13)  Track: (107,105,103,101)  Switch: 3
+Node:	1136341	 CHANY (7,7) to (7,10)  Track: (107,105,103,101)  Switch: 3
+Node:	1136125	 CHANY (7,4) to (7,7)  Track: (107,105,103,101)  Switch: 3
+Node:	1135855	 CHANY (7,1) to (7,4)  Track: (107,105,103,101)  Switch: 3
+Node:	718868	 CHANX (8,0) to (11,0)  Track: (36,38,40,42)  Switch: 1
+Node:	3168	  IPIN (8,0)  Pad: 160  Switch: 0
+Node:	2968	  SINK (8,0)  Pad: 160  Switch: -1
+
+
+Net 63 ($abc$1358$auto$opt_dff.cc:194:make_patterns_logic$250)
+
+Node:	214101	SOURCE (16,19)  Class: 34  Switch: 0
+Node:	214143	  OPIN (16,19)  Pin: 70   clb.O[19] Switch: 2
+Node:	1180911	 CHANY (16,19)  Track: 19  Switch: 3
+Node:	822279	 CHANX (13,18) to (16,18)  Track: (115,113,111,109)  Switch: 3
+Node:	1176086	 CHANY (15,19) to (15,22)  Track: (108,110,112,114)  Switch: 3
+Node:	828218	 CHANX (16,19) to (19,19)  Track: (108,110,112,114)  Switch: 1
+Node:	214290	  IPIN (17,19)  Pin: 49   clb.enable[0] Switch: 0
+Node:	214238	  SINK (17,19)  Class: 13  Switch: -1
+
+
+Net 64 ($abc$2011$lo5)
+
+Node:	232031	SOURCE (16,20)  Class: 24  Switch: 0
+Node:	232073	  OPIN (16,20)  Pin: 60   clb.O[9] Switch: 3
+Node:	833944	 CHANX (16,20) to (19,20)  Track: (116,118,120,122)  Switch: 3
+Node:	1185671	 CHANY (17,17) to (17,20)  Track: (147,145,143,141)  Switch: 2
+Node:	828243	 CHANX (17,19)  Track: 7  Switch: 1
+Node:	214270	  IPIN (17,19)  Pin: 3   clb.I0[3] Switch: 0
+Node:	214225	  SINK (17,19)  Class: 0  Switch: -1
+
+
+Net 65 ($abc$2222$lo1)
+
+Node:	204516	SOURCE (16,18)  Class: 31  Switch: 0
+Node:	204558	  OPIN (16,18)  Pin: 67   clb.O[16] Switch: 3
+Node:	1180886	 CHANY (16,18) to (16,21)  Track: (156,158,160,162)  Switch: 2
+Node:	828256	 CHANX (17,19)  Track: 20  Switch: 1
+Node:	214277	  IPIN (17,19)  Pin: 10   clb.I1[0] Switch: 0
+Node:	214226	  SINK (17,19)  Class: 1  Switch: -1
+
+
+Net 66 ($abc$1345$auto$opt_dff.cc:219:make_patterns_logic$263)
+
+Node:	214204	SOURCE (17,19)  Class: 17  Switch: 0
+Node:	214246	  OPIN (17,19)  Pin: 53   clb.O[2] Switch: 3
+Node:	828278	 CHANX (17,19) to (20,19)  Track: (60,62,64,66)  Switch: 2
+Node:	828326	 CHANX (18,19)  Track: 18  Switch: 3
+Node:	1190738	 CHANY (18,20) to (18,23)  Track: (108,110,112,114)  Switch: 3
+Node:	833871	 CHANX (15,20) to (18,20)  Track: (115,113,111,109)  Switch: 1
+Node:	232230	  IPIN (17,20)  Pin: 49   clb.enable[0] Switch: 0
+Node:	232178	  SINK (17,20)  Class: 13  Switch: -1
+
+
+Net 67 ($abc$1335$li0_li0)
+
+Node:	214207	SOURCE (17,19)  Class: 20  Switch: 0
+Node:	214249	  OPIN (17,19)  Pin: 56   clb.O[5] Switch: 3
+Node:	828284	 CHANX (17,19) to (20,19)  Track: (84,86,88,90)  Switch: 3
+Node:	1185573	 CHANY (17,16) to (17,19)  Track: (43,41,39,37)  Switch: 2
+Node:	816791	 CHANX (17,17)  Track: 3  Switch: 1
+Node:	197526	  IPIN (17,17)  Pin: 1   clb.I0[1] Switch: 0
+Node:	197483	  SINK (17,17)  Class: 0  Switch: -1
+
+
+Net 68 (async_receiver_inst.Filter_cnt[0])
+
+Node:	214213	SOURCE (17,19)  Class: 26  Switch: 0
+Node:	214255	  OPIN (17,19)  Pin: 62   clb.O[11] Switch: 3
+Node:	1185802	 CHANY (17,19) to (17,22)  Track: (92,94,96,98)  Switch: 3
+Node:	833789	 CHANX (14,20) to (17,20)  Track: (75,73,71,69)  Switch: 1
+Node:	232223	  IPIN (17,20)  Pin: 16   clb.I1[6] Switch: 0
+Node:	232166	  SINK (17,20)  Class: 1  Switch: -1
+
+
+Net 69 ($abc$2037$li1_li1)
+
+Node:	214217	SOURCE (17,19)  Class: 30  Switch: 0
+Node:	214259	  OPIN (17,19)  Pin: 66   clb.O[15] Switch: 3
+Node:	1185810	 CHANY (17,19) to (17,22)  Track: (124,126,128,130)  Switch: 3
+Node:	833813	 CHANX (14,20) to (17,20)  Track: (171,169,167,165)  Switch: 1
+Node:	232207	  IPIN (17,20)  Pin: 0   clb.I0[0] Switch: 0
+Node:	232165	  SINK (17,20)  Class: 0  Switch: -1
+
+
+Net 70 (RxD)
+
+Node:	2814	SOURCE (8,0)  Pad: 74  Switch: 0
+Node:	3014	  OPIN (8,0)  Pad: 74  Switch: 3
+Node:	718681	 CHANX (5,0) to (8,0)  Track: (155,153,151,149)  Switch: 3
+Node:	1135832	 CHANY (7,1) to (7,4)  Track: (84,86,88,90)  Switch: 3
+Node:	741491	 CHANX (4,4) to (7,4)  Track: (99,97,95,93)  Switch: 3
+Node:	1130955	 CHANY (6,1) to (6,4)  Track: (67,65,63,61)  Switch: 3
+Node:	718828	 CHANX (7,0) to (10,0)  Track: (164,166,168,170)  Switch: 3
+Node:	1145568	 CHANY (9,1) to (9,4)  Track: (100,102,104,106)  Switch: 3
+Node:	1145844	 CHANY (9,4) to (9,7)  Track: (100,102,104,106)  Switch: 3
+Node:	753372	 CHANX (10,6) to (13,6)  Track: (100,102,104,106)  Switch: 3
+Node:	1160640	 CHANY (12,7) to (12,10)  Track: (100,102,104,106)  Switch: 3
+Node:	1160856	 CHANY (12,10) to (12,13)  Track: (100,102,104,106)  Switch: 3
+Node:	1161072	 CHANY (12,13) to (12,16)  Track: (100,102,104,106)  Switch: 3
+Node:	1161288	 CHANY (12,16) to (12,19)  Track: (100,102,104,106)  Switch: 3
+Node:	822276	 CHANX (13,18) to (16,18)  Track: (100,102,104,106)  Switch: 1
+Node:	204576	  IPIN (16,18)  Pin: 11   clb.I1[1] Switch: 0
+Node:	204524	  SINK (16,18)  Class: 1  Switch: -1
+
+
+Net 71 (async_receiver_inst.RxD_bit)
+
+Node:	204502	SOURCE (16,18)  Class: 17  Switch: 0
+Node:	204544	  OPIN (16,18)  Pin: 53   clb.O[2] Switch: 3
+Node:	822494	 CHANX (16,18) to (19,18)  Track: (108,110,112,114)  Switch: 3
+Node:	1180946	 CHANY (16,19) to (16,22)  Track: (108,110,112,114)  Switch: 3
+Node:	833729	 CHANX (13,20) to (16,20)  Track: (123,121,119,117)  Switch: 1
+Node:	232087	  IPIN (16,20)  Pin: 0   clb.I0[0] Switch: 0
+Node:	232045	  SINK (16,20)  Class: 0  Switch: -1

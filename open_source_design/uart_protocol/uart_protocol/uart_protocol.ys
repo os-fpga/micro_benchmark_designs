@@ -1,0 +1,27 @@
+ 
+# Yosys synthesis script for uart_protocol
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/uart_protocol/./uart_protocol.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/uart_protocol/./receiver.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/uart_protocol/./baud_tick_generator.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/uart_protocol/./transmitter.v
+verific -import uart_protocol
+
+
+# Technology mapping
+hierarchy -top uart_protocol
+
+setattr -set keep 1 w:\clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top uart_protocol -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif uart_protocol_post_synth.blif
+write_verilog -noexpr -nodec -norename uart_protocol_post_synth.v
+  

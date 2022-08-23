@@ -1,0 +1,7 @@
+#Block Name   x   y   z
+#------------ --  --  -
+clock0	6	0	19
+enable	7	0	12
+RxD	8	0	7
+out:TxD	8	0	16
+out:Txd_busy	9	0	1

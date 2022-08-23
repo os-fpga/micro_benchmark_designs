@@ -1,0 +1,5 @@
+set_io clock0 Bank_H_1_12  
+set_io enable Bank_H_1_14  
+set_io RxD Bank_H_1_15  
+set_io TxD Bank_H_1_16  
+set_io Txd_busy Bank_H_1_17  

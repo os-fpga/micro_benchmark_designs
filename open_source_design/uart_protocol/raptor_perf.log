@@ -1,0 +1,20 @@
+# Perf log file
+# Created: Tue Aug 23 20:04:56 2022
+
+[ 20:04:56 ] Synthesize has started
+[ 20:04:56 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/yosys -s uart_protocol.ys -l uart_protocol_synth.log
+[ 20:05:03 ] Duration: 7445 ms. Max utilization: 72 MB
+[ 20:05:03 ] Packing has started
+[ 20:05:03 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml uart_protocol_post_synth.blif --sdc_file uart_protocol_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report uart_protocol_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
+[ 20:06:04 ] Duration: 61057 ms. Max utilization: 1063 MB
+[ 20:06:04 ] Placement has started
+[ 20:06:04 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf uart_protocol_openfpga.pcf --blif uart_protocol_post_synth.blif --output uart_protocol_pin_loc.place --assign_unconstrained_pins in_define_order
+[ 20:06:04 ] Duration: 73 ms. Max utilization: 227 MB
+[ 20:06:04 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml uart_protocol_post_synth.blif --sdc_file uart_protocol_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report uart_protocol_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins uart_protocol_pin_loc.place
+[ 20:08:11 ] Duration: 126246 ms. Max utilization: 1108 MB
+[ 20:08:11 ] Route has started
+[ 20:08:11 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml uart_protocol_post_synth.blif --sdc_file uart_protocol_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report uart_protocol_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 20:10:12 ] Duration: 121357 ms. Max utilization: 1108 MB
+[ 20:10:12 ] TimingAnalysis has started
+[ 20:10:12 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml uart_protocol_post_synth.blif --sdc_file uart_protocol_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report uart_protocol_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 20:11:10 ] Duration: 57798 ms. Max utilization: 1103 MB
