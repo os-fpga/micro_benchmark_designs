@@ -1,0 +1,407 @@
+#Timing report of worst 8 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: ff4.Q[0] (dffsre at (1,13) clocked by clock0)
+Endpoint  : out:ff4.outpad[0] (.output at (79,66) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+ff4.C[0] (dffsre at (1,13))                                      0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+ff4.Q[0] (dffsre at (1,13)) [clock-to-output]                    0.000     2.809
+| (intra 'clb' routing)                                          0.142     2.951
+| (OPIN:150901 side:RIGHT (1,13))                                0.000     2.951
+| (CHANY:1107614 L4 length:3 (1,13)->(1,16))                     0.120     3.071
+| (CHANY:1107834 L4 length:3 (1,16)->(1,19))                     0.120     3.191
+| (CHANX:827109 L4 length:0 (1,19)->(1,19))                      0.120     3.311
+| (CHANY:1103262 L4 length:3 (0,20)->(0,23))                     0.120     3.431
+| (CHANY:1103416 L4 length:3 (0,22)->(0,25))                     0.120     3.551
+| (CHANX:855696 L4 length:3 (1,24)->(4,24))                      0.120     3.671
+| (CHANY:1118196 L4 length:3 (3,25)->(3,28))                     0.120     3.791
+| (CHANY:1118412 L4 length:3 (3,28)->(3,31))                     0.120     3.911
+| (CHANX:890316 L4 length:3 (4,30)->(7,30))                      0.120     4.031
+| (CHANX:890532 L4 length:3 (7,30)->(10,30))                     0.120     4.151
+| (CHANX:890748 L4 length:3 (10,30)->(13,30))                    0.120     4.271
+| (CHANX:890964 L4 length:3 (13,30)->(16,30))                    0.120     4.391
+| (CHANX:891180 L4 length:3 (16,30)->(19,30))                    0.120     4.511
+| (CHANX:891396 L4 length:3 (19,30)->(22,30))                    0.120     4.631
+| (CHANX:891612 L4 length:3 (22,30)->(25,30))                    0.120     4.751
+| (CHANX:891828 L4 length:3 (25,30)->(28,30))                    0.120     4.871
+| (CHANY:1235268 L4 length:3 (27,31)->(27,34))                   0.120     4.991
+| (CHANY:1235484 L4 length:3 (27,34)->(27,37))                   0.120     5.111
+| (CHANY:1235700 L4 length:3 (27,37)->(27,40))                   0.120     5.231
+| (CHANY:1235916 L4 length:3 (27,40)->(27,43))                   0.120     5.351
+| (CHANY:1236132 L4 length:3 (27,43)->(27,46))                   0.120     5.471
+| (CHANY:1236348 L4 length:3 (27,46)->(27,49))                   0.120     5.591
+| (CHANY:1236564 L4 length:3 (27,49)->(27,52))                   0.120     5.711
+| (CHANY:1236780 L4 length:3 (27,52)->(27,55))                   0.120     5.831
+| (CHANX:1029420 L4 length:3 (28,54)->(31,54))                   0.120     5.951
+| (CHANX:1029636 L4 length:3 (31,54)->(34,54))                   0.120     6.071
+| (CHANX:1029852 L4 length:3 (34,54)->(37,54))                   0.120     6.191
+| (CHANX:1030068 L4 length:3 (37,54)->(40,54))                   0.120     6.311
+| (CHANX:1030284 L4 length:3 (40,54)->(43,54))                   0.120     6.431
+| (CHANX:1030500 L4 length:3 (43,54)->(46,54))                   0.120     6.551
+| (CHANX:1030716 L4 length:3 (46,54)->(49,54))                   0.120     6.671
+| (CHANX:1030932 L4 length:3 (49,54)->(52,54))                   0.120     6.791
+| (CHANX:1031148 L4 length:3 (52,54)->(55,54))                   0.120     6.911
+| (CHANX:1031364 L4 length:3 (55,54)->(58,54))                   0.120     7.031
+| (CHANX:1031580 L4 length:3 (58,54)->(61,54))                   0.120     7.151
+| (CHANX:1031796 L4 length:3 (61,54)->(64,54))                   0.120     7.271
+| (CHANX:1032012 L4 length:3 (64,54)->(67,54))                   0.120     7.391
+| (CHANX:1032228 L4 length:3 (67,54)->(70,54))                   0.120     7.511
+| (CHANX:1032444 L4 length:3 (70,54)->(73,54))                   0.120     7.631
+| (CHANY:1455696 L4 length:3 (72,55)->(72,58))                   0.120     7.751
+| (CHANY:1455912 L4 length:3 (72,58)->(72,61))                   0.120     7.871
+| (CHANY:1456128 L4 length:3 (72,61)->(72,64))                   0.120     7.991
+| (CHANX:1078450 L4 length:3 (73,62)->(76,62))                   0.120     8.111
+| (CHANX:1078588 L4 length:3 (75,62)->(78,62))                   0.120     8.231
+| (CHANY:1485450 L4 length:3 (78,63)->(78,66))                   0.120     8.351
+| (IPIN:686980 side:LEFT (79,66))                                0.164     8.515
+| (intra 'io' routing)                                           0.118     8.632
+out:ff4.outpad[0] (.output at (79,66))                           0.000     8.632
+data arrival time                                                          8.632
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -8.632
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.832
+
+
+#Path 2
+Startpoint: ff1.Q[0] (dffsre at (1,1) clocked by clock0)
+Endpoint  : ff2.D[0] (dffsre at (1,5) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+ff1.C[0] (dffsre at (1,1))                                       0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+ff1.Q[0] (dffsre at (1,1)) [clock-to-output]                     0.000     2.809
+| (intra 'clb' routing)                                          0.142     2.951
+| (OPIN:31661 side:RIGHT (1,1))                                  0.000     2.951
+| (CHANY:1106696 L4 length:3 (1,1)->(1,4))                       0.120     3.071
+| (CHANY:1106896 L4 length:3 (1,3)->(1,6))                       0.120     3.191
+| (CHANX:746989 L4 length:0 (1,5)->(1,5))                        0.120     3.311
+| (IPIN:76965 side:TOP (1,5))                                    0.164     3.475
+| (intra 'clb' routing)                                          0.378     3.853
+ff2.D[0] (dffsre at (1,5))                                       0.000     3.853
+data arrival time                                                          3.853
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+ff2.C[0] (dffsre at (1,5))                                       0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.853
+--------------------------------------------------------------------------------
+slack (MET)                                                                4.983
+
+
+#Path 3
+Startpoint: ff2.Q[0] (dffsre at (1,5) clocked by clock0)
+Endpoint  : ff3.D[0] (dffsre at (1,9) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+ff2.C[0] (dffsre at (1,5))                                       0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+ff2.Q[0] (dffsre at (1,5)) [clock-to-output]                     0.000     2.809
+| (intra 'clb' routing)                                          0.142     2.951
+| (OPIN:76961 side:RIGHT (1,5))                                  0.000     2.951
+| (CHANY:1107038 L4 length:3 (1,5)->(1,8))                       0.120     3.071
+| (CHANY:1107110 L4 length:3 (1,6)->(1,9))                       0.120     3.191
+| (IPIN:118839 side:RIGHT (1,9))                                 0.164     3.355
+| (intra 'clb' routing)                                          0.378     3.733
+ff3.D[0] (dffsre at (1,9))                                       0.000     3.733
+data arrival time                                                          3.733
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+ff3.C[0] (dffsre at (1,9))                                       0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.733
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.103
+
+
+#Path 4
+Startpoint: ff3.Q[0] (dffsre at (1,9) clocked by clock0)
+Endpoint  : ff4.D[0] (dffsre at (1,13) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+ff3.C[0] (dffsre at (1,9))                                       0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+ff3.Q[0] (dffsre at (1,9)) [clock-to-output]                     0.000     2.809
+| (intra 'clb' routing)                                          0.142     2.951
+| (OPIN:118803 side:RIGHT (1,9))                                 0.000     2.951
+| (CHANY:1107326 L4 length:3 (1,9)->(1,12))                      0.120     3.071
+| (CHANY:1107398 L4 length:3 (1,10)->(1,13))                     0.120     3.191
+| (IPIN:150937 side:RIGHT (1,13))                                0.164     3.355
+| (intra 'clb' routing)                                          0.378     3.733
+ff4.D[0] (dffsre at (1,13))                                      0.000     3.733
+data arrival time                                                          3.733
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+ff4.C[0] (dffsre at (1,13))                                      0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.733
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.103
+
+
+#Path 5
+Startpoint: rst3.inpad[0] (.input at (8,0) clocked by clock0)
+Endpoint  : ff4.R[0] (dffsre at (1,13) clocked by clock0)
+Path Type : setup
+
+Point                                                                                                                                                                                                                                    Incr      Path
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock clock0 (rise edge)                                                                                                                                                                                                                0.000     0.000
+clock source latency                                                                                                                                                                                                                    0.000     0.000
+input external delay                                                                                                                                                                                                                    1.000     1.000
+rst3.inpad[0] (.input at (8,0))                                                                                                                                                                                                         0.000     1.000
+| (intra 'io' routing)                                                                                                                                                                                                                  0.099     1.099
+| (OPIN:3032 side:TOP (8,0))                                                                                                                                                                                                            0.000     1.099
+| (CHANX:718675 L4 length:3 (8,0)->(5,0))                                                                                                                                                                                               0.120     1.219
+| (CHANX:718541 L4 length:3 (6,0)->(3,0))                                                                                                                                                                                               0.120     1.339
+| (CHANY:1116408 L4 length:3 (3,1)->(3,4))                                                                                                                                                                                              0.120     1.459
+| (CHANY:1116684 L4 length:3 (3,4)->(3,7))                                                                                                                                                                                              0.120     1.579
+| (CHANY:1116900 L4 length:3 (3,7)->(3,10))                                                                                                                                                                                             0.120     1.699
+| (CHANY:1117116 L4 length:3 (3,10)->(3,13))                                                                                                                                                                                            0.120     1.819
+| (CHANX:792745 L4 length:2 (3,13)->(1,13))                                                                                                                                                                                             0.120     1.939
+| (IPIN:150911 side:TOP (1,13))                                                                                                                                                                                                         0.164     2.103
+| (intra 'clb' routing)                                                                                                                                                                                                                 0.208     2.311
+$abc$416$techmap$techmap407$abc$251$auto$blifparse.cc:362:parse_blif$252.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$342_Y.in[0] (.names at (1,13))                        0.000     2.311
+| (primitive '.names' combinational delay)                                                                                                                                                                                              0.070     2.381
+$abc$416$techmap$techmap407$abc$251$auto$blifparse.cc:362:parse_blif$252.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$342_Y.out[0] (.names at (1,13))                       0.000     2.381
+| (intra 'clb' routing)                                                                                                                                                                                                                 0.149     2.530
+| (OPIN:150891 side:TOP (1,13))                                                                                                                                                                                                         0.000     2.530
+| (CHANX:792701 L4 length:0 (1,13)->(1,13))                                                                                                                                                                                             0.120     2.650
+| (CHANY:1102838 L4 length:3 (0,14)->(0,17))                                                                                                                                                                                            0.120     2.770
+| (CHANX:798446 L4 length:0 (1,14)->(1,14))                                                                                                                                                                                             0.120     2.890
+| (CHANY:1107463 L4 length:3 (1,14)->(1,11))                                                                                                                                                                                            0.120     3.010
+| (IPIN:150951 side:RIGHT (1,13))                                                                                                                                                                                                       0.164     3.173
+| (intra 'clb' routing)                                                                                                                                                                                                                 0.020     3.194
+ff4.R[0] (dffsre at (1,13))                                                                                                                                                                                                             0.000     3.194
+data arrival time                                                                                                                                                                                                                                 3.194
+
+clock clock0 (rise edge)                                                                                                                                                                                                                6.800     6.800
+clock source latency                                                                                                                                                                                                                    0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                                                                                                                                                                                       0.000     6.800
+| (intra 'io' routing)                                                                                                                                                                                                                  0.099     6.899
+| (inter-block routing:global net)                                                                                                                                                                                                      0.000     6.899
+| (intra 'clb' routing)                                                                                                                                                                                                                 2.000     8.899
+ff4.C[0] (dffsre at (1,13))                                                                                                                                                                                                             0.000     8.899
+clock uncertainty                                                                                                                                                                                                                       0.000     8.899
+cell setup time                                                                                                                                                                                                                         0.087     8.986
+data required time                                                                                                                                                                                                                                8.986
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                                                                                                                8.986
+data arrival time                                                                                                                                                                                                                                -3.194
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                                                                                                                                       5.793
+
+
+#Path 6
+Startpoint: rst2.inpad[0] (.input at (8,0) clocked by clock0)
+Endpoint  : ff3.R[0] (dffsre at (1,9) clocked by clock0)
+Path Type : setup
+
+Point                                                                                                                                                                                                                                   Incr      Path
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock clock0 (rise edge)                                                                                                                                                                                                               0.000     0.000
+clock source latency                                                                                                                                                                                                                   0.000     0.000
+input external delay                                                                                                                                                                                                                   1.000     1.000
+rst2.inpad[0] (.input at (8,0))                                                                                                                                                                                                        0.000     1.000
+| (intra 'io' routing)                                                                                                                                                                                                                 0.099     1.099
+| (OPIN:3014 side:TOP (8,0))                                                                                                                                                                                                           0.000     1.099
+| (CHANX:718657 L4 length:3 (8,0)->(5,0))                                                                                                                                                                                              0.120     1.219
+| (CHANY:1121206 L4 length:2 (4,1)->(4,3))                                                                                                                                                                                             0.120     1.339
+| (CHANX:735443 L4 length:3 (4,3)->(1,3))                                                                                                                                                                                              0.120     1.459
+| (CHANY:1102100 L4 length:3 (0,4)->(0,7))                                                                                                                                                                                             0.120     1.579
+| (CHANY:1102308 L4 length:3 (0,7)->(0,10))                                                                                                                                                                                            0.120     1.699
+| (CHANX:769752 L1 length:0 (1,9)->(1,9))                                                                                                                                                                                              0.108     1.807
+| (IPIN:118815 side:TOP (1,9))                                                                                                                                                                                                         0.164     1.971
+| (intra 'clb' routing)                                                                                                                                                                                                                0.208     2.179
+$abc$416$techmap$techmap406$abc$255$auto$blifparse.cc:362:parse_blif$256.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$342_Y.in[0] (.names at (1,9))                       -0.000     2.179
+| (primitive '.names' combinational delay)                                                                                                                                                                                             0.070     2.249
+$abc$416$techmap$techmap406$abc$255$auto$blifparse.cc:362:parse_blif$256.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$342_Y.out[0] (.names at (1,9))                       0.000     2.249
+| (intra 'clb' routing)                                                                                                                                                                                                                0.149     2.398
+| (OPIN:118793 side:TOP (1,9))                                                                                                                                                                                                         0.000     2.398
+| (CHANX:769805 L4 length:0 (1,9)->(1,9))                                                                                                                                                                                              0.120     2.518
+| (CHANY:1102550 L4 length:3 (0,10)->(0,13))                                                                                                                                                                                           0.120     2.638
+| (CHANX:775550 L4 length:0 (1,10)->(1,10))                                                                                                                                                                                            0.120     2.758
+| (CHANY:1107175 L4 length:3 (1,10)->(1,7))                                                                                                                                                                                            0.120     2.878
+| (IPIN:118853 side:RIGHT (1,9))                                                                                                                                                                                                       0.164     3.041
+| (intra 'clb' routing)                                                                                                                                                                                                                0.020     3.062
+ff3.R[0] (dffsre at (1,9))                                                                                                                                                                                                             0.000     3.062
+data arrival time                                                                                                                                                                                                                                3.062
+
+clock clock0 (rise edge)                                                                                                                                                                                                               6.800     6.800
+clock source latency                                                                                                                                                                                                                   0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                                                                                                                                                                                      0.000     6.800
+| (intra 'io' routing)                                                                                                                                                                                                                 0.099     6.899
+| (inter-block routing:global net)                                                                                                                                                                                                     0.000     6.899
+| (intra 'clb' routing)                                                                                                                                                                                                                2.000     8.899
+ff3.C[0] (dffsre at (1,9))                                                                                                                                                                                                             0.000     8.899
+clock uncertainty                                                                                                                                                                                                                      0.000     8.899
+cell setup time                                                                                                                                                                                                                        0.087     8.986
+data required time                                                                                                                                                                                                                               8.986
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                                                                                                               8.986
+data arrival time                                                                                                                                                                                                                               -3.062
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                                                                                                                                      5.925
+
+
+#Path 7
+Startpoint: rst1.inpad[0] (.input at (7,0) clocked by clock0)
+Endpoint  : ff2.R[0] (dffsre at (1,5) clocked by clock0)
+Path Type : setup
+
+Point                                                                                               Incr      Path
+------------------------------------------------------------------------------------------------------------------
+clock clock0 (rise edge)                                                                           0.000     0.000
+clock source latency                                                                               0.000     0.000
+input external delay                                                                               1.000     1.000
+rst1.inpad[0] (.input at (7,0))                                                                    0.000     1.000
+| (intra 'io' routing)                                                                             0.099     1.099
+| (OPIN:2624 side:TOP (7,0))                                                                       0.000     1.099
+| (CHANX:718607 L4 length:3 (7,0)->(4,0))                                                          0.120     1.219
+| (CHANY:1121250 L4 length:0 (4,1)->(4,1))                                                         0.120     1.339
+| (CHANX:724035 L4 length:3 (4,1)->(1,1))                                                          0.120     1.459
+| (IPIN:31676 side:TOP (1,1))                                                                      0.164     1.623
+| (intra 'clb' routing)                                                                            0.208     1.831
+$abc$416$auto$simplemap.cc:333:simplemap_lut$408[1].in[0] (.names at (1,1))                        0.000     1.831
+| (primitive '.names' combinational delay)                                                         0.120     1.951
+$abc$416$auto$simplemap.cc:333:simplemap_lut$408[1].out[0] (.names at (1,1))                       0.000     1.951
+| (intra 'clb' routing)                                                                            0.149     2.100
+| (OPIN:31660 side:RIGHT (1,1))                                                                    0.000     2.100
+| (CHANY:1106712 L4 length:3 (1,1)->(1,4))                                                         0.120     2.220
+| (CHANY:1106982 L4 length:3 (1,4)->(1,7))                                                         0.120     2.340
+| (IPIN:77011 side:RIGHT (1,5))                                                                    0.164     2.503
+| (intra 'clb' routing)                                                                            0.020     2.524
+ff2.R[0] (dffsre at (1,5))                                                                         0.000     2.524
+data arrival time                                                                                            2.524
+
+clock clock0 (rise edge)                                                                           6.800     6.800
+clock source latency                                                                               0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                                                  0.000     6.800
+| (intra 'io' routing)                                                                             0.099     6.899
+| (inter-block routing:global net)                                                                 0.000     6.899
+| (intra 'clb' routing)                                                                            2.000     8.899
+ff2.C[0] (dffsre at (1,5))                                                                         0.000     8.899
+clock uncertainty                                                                                  0.000     8.899
+cell setup time                                                                                    0.087     8.986
+data required time                                                                                           8.986
+------------------------------------------------------------------------------------------------------------------
+data required time                                                                                           8.986
+data arrival time                                                                                           -2.524
+------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                  6.463
+
+
+#Path 8
+Startpoint: start.inpad[0] (.input at (9,0) clocked by clock0)
+Endpoint  : ff1.D[0] (dffsre at (1,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+start.inpad[0] (.input at (9,0))                                 0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:3402 side:TOP (9,0))                                     0.000     1.099
+| (CHANX:718741 L4 length:3 (9,0)->(6,0))                        0.120     1.219
+| (CHANX:718525 L4 length:3 (6,0)->(3,0))                        0.120     1.339
+| (CHANY:1121218 L4 length:0 (4,1)->(4,1))                       0.120     1.459
+| (CHANX:724003 L4 length:3 (4,1)->(1,1))                        0.120     1.579
+| (IPIN:31668 side:TOP (1,1))                                    0.164     1.743
+| (intra 'clb' routing)                                          0.208     1.951
+$abc$259$li0_li0.in[0] (.names at (1,1))                         0.000     1.951
+| (primitive '.names' combinational delay)                       0.280     2.231
+$abc$259$li0_li0.out[0] (.names at (1,1))                        0.000     2.231
+| (intra 'clb' routing)                                          0.000     2.231
+ff1.D[0] (dffsre at (1,1))                                       0.000     2.231
+data arrival time                                                          2.231
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+ff1.C[0] (dffsre at (1,1))                                       0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -2.231
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.605
+
+
+#End of timing report
