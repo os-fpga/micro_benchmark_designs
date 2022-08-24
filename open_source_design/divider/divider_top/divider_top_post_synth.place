@@ -1,0 +1,12 @@
+Netlist_File: divider_top_post_synth.net Netlist_ID: SHA256:ca47ad34feedbbaa1019db06d105a304b8d0d9ab35c4ed47ae536c14dfac658c
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$abc$601$li5_li5	8	1	0	#0
+err		10	1	0	#1
+out:ok		8	0	16	#2
+out:err		9	0	1	#3
+clock0		6	0	19	#4
+reset		7	0	12	#5
+start		8	0	7	#6

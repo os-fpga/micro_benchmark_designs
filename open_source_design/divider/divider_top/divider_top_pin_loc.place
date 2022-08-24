@@ -1,0 +1,7 @@
+#Block Name   x   y   z
+#------------ --  --  -
+clock0	6	0	19
+reset	7	0	12
+start	8	0	7
+out:ok	8	0	16
+out:err	9	0	1

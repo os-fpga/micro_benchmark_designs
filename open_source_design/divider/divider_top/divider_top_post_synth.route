@@ -1,0 +1,104 @@
+Placement_File: divider_top_post_synth.place Placement_ID: SHA256:0cff7787389c88058b783c376a7c1a55838c5daed94a2889ec6a2957cea9c223
+Array size: 80 x 68 logic blocks.
+
+Routing:
+
+Net 0 ($abc$601$lo0)
+
+Node:	33283	SOURCE (8,1)  Class: 20  Switch: 0
+Node:	33325	  OPIN (8,1)  Pin: 56   clb.O[5] Switch: 2
+Node:	724568	 CHANX (8,1)  Track: 12  Switch: 1
+Node:	33349	  IPIN (8,1)  Pin: 6   clb.I0[6] Switch: 0
+Node:	33301	  SINK (8,1)  Class: 0  Switch: -1
+
+
+Net 1 (reset)
+
+Node:	2424	SOURCE (7,0)  Pad: 124  Switch: 0
+Node:	2624	  OPIN (7,0)  Pad: 124  Switch: 3
+Node:	718822	 CHANX (7,0) to (10,0)  Track: (140,142,144,146)  Switch: 3
+Node:	1140688	 CHANY (8,1) to (8,2)  Track: (80,82)  Switch: 2
+Node:	724591	 CHANX (8,1)  Track: 35  Switch: 1
+Node:	33360	  IPIN (8,1)  Pin: 17   clb.I1[7] Switch: 0
+Node:	33302	  SINK (8,1)  Class: 1  Switch: -1
+
+
+Net 2 ($abc$601$lo5)
+
+Node:	33297	SOURCE (8,1)  Class: 34  Switch: 0
+Node:	33339	  OPIN (8,1)  Pin: 70   clb.O[19] Switch: 2
+Node:	1140626	 CHANY (8,1)  Track: 18  Switch: 2
+Node:	724577	 CHANX (8,1)  Track: 21  Switch: 1
+Node:	33353	  IPIN (8,1)  Pin: 10   clb.I1[0] Switch: 0
+Node:	33302	  SINK (8,1)  Class: 1  Switch: -1
+
+
+Net 3 ($abc$601$lo3)
+
+Node:	33294	SOURCE (8,1)  Class: 31  Switch: 0
+Node:	33336	  OPIN (8,1)  Pin: 67   clb.O[16] Switch: 3
+Node:	1140782	 CHANY (8,1) to (8,3)  Track: (174,176,178)  Switch: 2
+Node:	724589	 CHANX (8,1)  Track: 33  Switch: 1
+Node:	33359	  IPIN (8,1)  Pin: 16   clb.I1[6] Switch: 0
+Node:	33302	  SINK (8,1)  Class: 1  Switch: -1
+
+
+Net 4 ($true)
+
+Node:	33282	SOURCE (8,1)  Class: 19  Switch: 0
+Node:	33324	  OPIN (8,1)  Pin: 55   clb.O[4] Switch: 3
+Node:	724614	 CHANX (8,1) to (11,1)  Track: (124,126,128,130)  Switch: 3
+Node:	1140765	 CHANY (8,1)  Track: 157  Switch: 1
+Node:	33388	  IPIN (8,1)  Pin: 43   clb.set[0] Switch: 0
+Node:	33308	  SINK (8,1)  Class: 7  Switch: -1
+
+
+Net 5 ($abc$959$techmap$techmap768$abc$601$auto$blifparse.cc:362:parse_blif$604.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:80$709_Y)
+
+Node:	33292	SOURCE (8,1)  Class: 29  Switch: 0
+Node:	33334	  OPIN (8,1)  Pin: 65   clb.O[14] Switch: 3
+Node:	1140764	 CHANY (8,1) to (8,4)  Track: (156,158,160,162)  Switch: 2
+Node:	724575	 CHANX (8,1)  Track: 19  Switch: 3
+Node:	1135841	 CHANY (7,1)  Track: 93  Switch: 2
+Node:	718854	 CHANX (8,0)  Track: 22  Switch: 3
+Node:	1140766	 CHANY (8,1) to (8,3)  Track: (158,160,162)  Switch: 1
+Node:	33389	  IPIN (8,1)  Pin: 44   clb.lreset[0] Switch: 0
+Node:	33309	  SINK (8,1)  Class: 8  Switch: -1
+
+
+Net 6 (start)
+
+Node:	2814	SOURCE (8,0)  Pad: 74  Switch: 0
+Node:	3014	  OPIN (8,0)  Pad: 74  Switch: 3
+Node:	718681	 CHANX (5,0) to (8,0)  Track: (155,153,151,149)  Switch: 3
+Node:	1130974	 CHANY (6,1) to (6,3)  Track: (86,88,90)  Switch: 3
+Node:	724522	 CHANX (7,1) to (10,1)  Track: (44,46,48,50)  Switch: 1
+Node:	33366	  IPIN (8,1)  Pin: 49   clb.enable[0] Switch: 0
+Node:	33314	  SINK (8,1)  Class: 13  Switch: -1
+
+
+Net 7 (ok)
+
+Node:	33296	SOURCE (8,1)  Class: 33  Switch: 0
+Node:	33338	  OPIN (8,1)  Pin: 69   clb.O[18] Switch: 2
+Node:	1140625	 CHANY (8,1)  Track: 17  Switch: 3
+Node:	718673	 CHANX (5,0) to (8,0)  Track: (123,121,119,117)  Switch: 1
+Node:	3168	  IPIN (8,0)  Pad: 160  Switch: 0
+Node:	2968	  SINK (8,0)  Pad: 160  Switch: -1
+
+
+Net 8 (clock0): global net connecting:
+
+Block clock0 (#4) at (6,0), Pin class 194.
+Block $abc$601$li5_li5 (#0) at (8,1), Pin class 41.
+
+
+Net 9 (err)
+
+Node:	33683	SOURCE (10,1)  Class: 34  Switch: 0
+Node:	33725	  OPIN (10,1)  Pin: 70   clb.O[19] Switch: 3
+Node:	1150365	 CHANY (10,1)  Track: 37  Switch: 3
+Node:	718797	 CHANX (7,0) to (10,0)  Track: (43,41,39,37)  Switch: 2
+Node:	718905	 CHANX (9,0)  Track: 1  Switch: 1
+Node:	3448	  IPIN (9,0)  Pad: 10  Switch: 0
+Node:	3248	  SINK (9,0)  Pad: 10  Switch: -1

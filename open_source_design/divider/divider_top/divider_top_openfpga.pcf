@@ -1,0 +1,5 @@
+set_io clock0 Bank_H_1_12  
+set_io reset Bank_H_1_14  
+set_io start Bank_H_1_15  
+set_io ok Bank_H_1_16  
+set_io err Bank_H_1_17  
