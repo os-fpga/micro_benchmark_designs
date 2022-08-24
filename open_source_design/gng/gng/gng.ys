@@ -1,0 +1,30 @@
+ 
+# Yosys synthesis script for gng
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_coef.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_lzd.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v
+verific -import gng
+
+
+# Technology mapping
+hierarchy -top gng
+
+setattr -set keep 1 w:\clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top gng -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif gng_post_synth.blif
+write_verilog -noexpr -nodec -norename gng_post_synth.v
+  

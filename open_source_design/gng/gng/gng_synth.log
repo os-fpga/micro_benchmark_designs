@@ -1,0 +1,1689 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys-Verific 0.0.68
+ Yosys 0.18+10 (git sha1 c98b0e94e, gcc 9.4.0 -fPIC -Os)
+
+
+-- Executing script file `gng.ys' --
+
+1. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+2. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+3. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng.v'
+
+5. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_coef.v'
+
+6. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v'
+
+7. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v'
+
+8. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_lzd.v'
+
+9. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v'
+
+10. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v'
+
+11. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+Adding Verilog module 'gng' to elaboration queue.
+Running hier_tree::Elaborate().
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng.v:39: compiling module 'gng'
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:41: compiling module 'gng_ctg'
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:39: compiling module 'gng_interp'
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_lzd.v:39: compiling module 'gng_lzd'
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_coef.v:39: compiling module 'gng_coef'
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:40: compiling module 'gng_smul_16_18_sadd_37'
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:39: compiling module 'gng_smul_16_18'
+Importing module gng.
+Importing module gng_ctg.
+Importing module gng_interp.
+Importing module gng_coef.
+Importing module gng_lzd.
+Importing module gng_smul_16_18.
+Importing module gng_smul_16_18_sadd_37.
+
+12. Executing HIERARCHY pass (managing design hierarchy).
+
+12.1. Analyzing design hierarchy..
+Top module:  \gng
+Used module:     \gng_interp
+Used module:         \gng_smul_16_18
+Used module:         \gng_smul_16_18_sadd_37
+Used module:         \gng_coef
+Used module:         \gng_lzd
+Used module:     \gng_ctg
+
+12.2. Analyzing design hierarchy..
+Top module:  \gng
+Used module:     \gng_interp
+Used module:         \gng_smul_16_18
+Used module:         \gng_smul_16_18_sadd_37
+Used module:         \gng_coef
+Used module:         \gng_lzd
+Used module:     \gng_ctg
+Removed 0 unused modules.
+
+13. Executing synth_rs pass: v0.4.68
+
+13.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/common/cells_sim.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/common/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\inv'.
+Generating RTLIL representation for module `\buff'.
+Generating RTLIL representation for module `\logic_0'.
+Generating RTLIL representation for module `\logic_1'.
+Generating RTLIL representation for module `\gclkbuff'.
+Successfully finished Verilog frontend.
+
+13.2. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/cells_sim.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\dffsre'.
+Generating RTLIL representation for module `\dffnsre'.
+Generating RTLIL representation for module `\latchsre'.
+Generating RTLIL representation for module `\latchnsre'.
+Generating RTLIL representation for module `\io_scff'.
+Generating RTLIL representation for module `\scff'.
+Generating RTLIL representation for module `\sh_dff'.
+Generating RTLIL representation for module `\adder_carry'.
+Generating RTLIL representation for module `\sdffr'.
+Generating RTLIL representation for module `\sdffs'.
+Generating RTLIL representation for module `\TDP_BRAM18'.
+Generating RTLIL representation for module `\TDP36K'.
+Successfully finished Verilog frontend.
+
+13.3. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v' to AST representation.
+Generating RTLIL representation for module `\RS_DSP1'.
+Generating RTLIL representation for module `\RS_DSP2'.
+Generating RTLIL representation for module `\RS_DSP2_MULT'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGIN_REGOUT'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_sim_cfg_ports'.
+Generating RTLIL representation for module `\RS_DSP3'.
+Generating RTLIL representation for module `\RS_DSP3_MULT'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGIN_REGOUT'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_sim_cfg_params'.
+Successfully finished Verilog frontend.
+
+13.4. Executing HIERARCHY pass (managing design hierarchy).
+
+13.4.1. Analyzing design hierarchy..
+Top module:  \gng
+Used module:     \gng_interp
+Used module:         \gng_smul_16_18
+Used module:         \gng_smul_16_18_sadd_37
+Used module:         \gng_coef
+Used module:         \gng_lzd
+Used module:     \gng_ctg
+
+13.4.2. Analyzing design hierarchy..
+Top module:  \gng
+Used module:     \gng_interp
+Used module:         \gng_smul_16_18
+Used module:         \gng_smul_16_18_sadd_37
+Used module:         \gng_coef
+Used module:         \gng_lzd
+Used module:     \gng_ctg
+Removed 0 unused modules.
+
+13.5. Executing PROC pass (convert processes to netlists).
+
+13.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+13.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+13.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+13.5.4. Executing PROC_INIT pass (extract init attributes).
+
+13.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+13.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+13.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+13.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+13.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+13.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+13.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+13.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng_smul_16_18_sadd_37.
+Optimizing module gng_smul_16_18.
+Optimizing module gng_lzd.
+Optimizing module gng_coef.
+Optimizing module gng_interp.
+<suppressed ~3 debug messages>
+Optimizing module gng_ctg.
+<suppressed ~6 debug messages>
+Optimizing module gng.
+
+13.6. Executing DEMUXMAP pass.
+
+13.7. Executing FLATTEN pass (flatten design).
+Deleting now unused module gng_coef.
+Deleting now unused module gng_ctg.
+Deleting now unused module gng_interp.
+Deleting now unused module gng_lzd.
+Deleting now unused module gng_smul_16_18.
+Deleting now unused module gng_smul_16_18_sadd_37.
+<suppressed ~6 debug messages>
+
+13.8. Executing DEMUXMAP pass.
+
+13.9. Executing TRIBUF pass.
+
+13.10. Executing DEMINOUT pass (demote inout ports to input or output).
+
+13.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 1 unused cells and 612 unused wires.
+<suppressed ~88 debug messages>
+
+13.13. Executing CHECK pass (checking for obvious problems).
+Checking module gng...
+Found and reported 0 problems.
+
+13.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.15. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.16. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.17. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+    New ctrl vector for $pmux cell $flatten\u_gng_interp.$verific$select_46$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:111$389: { $flatten\u_gng_interp.$verific$n331$219 $flatten\u_gng_interp.$verific$n332$220 $flatten\u_gng_interp.$verific$n333$221 $flatten\u_gng_interp.$verific$n334$222 $flatten\u_gng_interp.$verific$n335$223 $flatten\u_gng_interp.$verific$n336$224 $flatten\u_gng_interp.$verific$n337$225 $flatten\u_gng_interp.$verific$n338$226 $flatten\u_gng_interp.$verific$n339$227 $flatten\u_gng_interp.$verific$n340$228 $flatten\u_gng_interp.$verific$n341$229 $flatten\u_gng_interp.$verific$n342$230 $flatten\u_gng_interp.$verific$n343$231 $flatten\u_gng_interp.$verific$n344$232 $flatten\u_gng_interp.$verific$n345$233 $auto$opt_reduce.cc:134:opt_pmux$921 }
+  Optimizing cells in module \gng.
+Performed a total of 1 changes.
+
+13.18. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.19. Executing OPT_SHARE pass.
+
+13.20. Executing OPT_DFF pass (perform DFF optimizations).
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$result_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:73$918 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$prod_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:67$914 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$b_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$910 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$a_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$909 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18.$verific$prod_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:61$893 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18.$verific$b_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:57$890 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_smul_16_18.$verific$a_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:57$889 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_coef.$verific$c2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_coef.v:315$701 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_coef.$verific$c1_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_coef.v:315$700 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.\u_gng_coef.$verific$c0_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_coef.v:315$699 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$x_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:143$460 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$x_r4_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:150$469 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$x_r3_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:150$468 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$x_r2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:150$467 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$x_r1_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:150$466 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$valid_in_r_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:173$485 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$sum2_rnd_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:202$672 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$sum2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:198$669 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$sign_r_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:166$483 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$offset_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:122$394 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$num_lzd_r_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:85$367 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$mask_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:113$391 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$data_out_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:220$684 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$c1_r1_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:154$471 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$c0_r5_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:162$481 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$c0_r4_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:162$480 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$c0_r3_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:162$479 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$c0_r2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:162$478 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_interp.$verific$c0_r1_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:162$477 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_ctg.$verific$z3_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:78$205 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_ctg.$verific$z2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:78$204 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_ctg.$verific$z1_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:78$203 ($aldff) from module gng.
+Removing never-active async load on $flatten\u_gng_ctg.$verific$data_out_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:94$213 ($aldff) from module gng.
+Setting constant 0-bit at position 15 on $flatten\u_gng_interp.\u_gng_smul_16_18.$verific$a_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:57$889 ($dff) from module gng.
+Setting constant 0-bit at position 15 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$a_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$909 ($dff) from module gng.
+Setting constant 0-bit at position 17 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$b_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$910 ($dff) from module gng.
+Setting constant 0-bit at position 0 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 1 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 2 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 3 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 4 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 5 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 6 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 7 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 8 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 9 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 10 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 11 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 12 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 13 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 14 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 15 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 16 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 17 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+Setting constant 0-bit at position 18 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$c_reg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:63$911 ($dff) from module gng.
+
+13.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.23. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.24. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+13.26. Executing OPT_SHARE pass.
+
+13.27. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.30. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.31. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.32. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.33. Executing OPT_SHARE pass.
+
+13.34. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.36. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 3
+
+13.37. Executing FSM pass (extract and optimize FSM).
+
+13.37.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking gng.u_gng_interp.mask as FSM state register:
+    Users of register don't seem to benefit from recoding.
+
+13.37.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+13.37.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+13.37.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.37.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+13.37.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+13.37.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+13.37.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+13.38. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.39. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.40. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.41. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.42. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.43. Executing OPT_SHARE pass.
+
+13.44. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\u_gng_ctg.$verific$z3_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:78$205 ($dff) from module gng (D = $flatten\u_gng_ctg.$verific$n979$175, Q = \u_gng_ctg.z3).
+Adding EN signal on $flatten\u_gng_ctg.$verific$z2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:78$204 ($dff) from module gng (D = $flatten\u_gng_ctg.$verific$n914$174, Q = \u_gng_ctg.z2).
+Adding EN signal on $flatten\u_gng_ctg.$verific$z1_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_ctg.v:78$203 ($dff) from module gng (D = $flatten\u_gng_ctg.$verific$n849$173, Q = \u_gng_ctg.z1).
+
+13.45. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.46. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.47. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.48. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.49. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+13.50. Executing OPT_SHARE pass.
+
+13.51. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.52. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+13.53. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.54. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.55. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.56. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.57. Executing OPT_SHARE pass.
+
+13.58. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.59. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.60. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 3
+
+13.61. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell gng.$auto$opt_dff.cc:195:make_patterns_logic$928 ($ne).
+Converting cell gng.$flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$mult_11$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:66$912 ($mul) from signed to unsigned.
+Removed top 1 bits (of 16) from port A of cell gng.$flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$mult_11$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:66$912 ($mul).
+Removed top 1 bits (of 18) from port B of cell gng.$flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$mult_11$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:66$912 ($mul).
+Removed top 2 bits (of 34) from port Y of cell gng.$flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$mult_11$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:66$912 ($mul).
+Removed top 14 bits (of 15) from port B of cell gng.$flatten\u_gng_interp.$verific$add_102$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:201$670 ($add).
+Removed top 14 bits (of 15) from port B of cell gng.$flatten\u_gng_interp.$verific$add_116$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:217$680 ($add).
+Removed top 1 bits (of 19) from port A of cell gng.$flatten\u_gng_interp.$verific$add_98$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:197$667 ($add).
+Removed top 1 bits (of 19) from FF cell gng.$flatten\u_gng_interp.$verific$sum2_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:198$669 ($dff).
+Removed top 1 bits (of 34) from FF cell gng.$flatten\u_gng_interp.\u_gng_smul_16_18.$verific$prod_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:61$893 ($dff).
+Removed top 1 bits (of 34) from port Y of cell gng.$flatten\u_gng_interp.\u_gng_smul_16_18.$verific$mult_9$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18.v:60$891 ($mul).
+Removed top 1 bits (of 19) from port Y of cell gng.$flatten\u_gng_interp.$verific$add_98$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:197$667 ($add).
+Removed top 1 bits (of 19) from port B of cell gng.$flatten\u_gng_interp.$verific$add_98$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:197$667 ($add).
+Removed top 1 bits (of 19) from wire gng.$flatten\u_gng_interp.$verific$n1083$284.
+Removed top 1 bits (of 34) from wire gng.$flatten\u_gng_interp.\u_gng_smul_16_18.$verific$n113$884.
+Removed top 2 bits (of 34) from wire gng.$flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$n154$900.
+
+13.62. Executing PEEPOPT pass (run peephole optimizers).
+
+13.63. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+13.64. Executing DEMUXMAP pass.
+
+13.65. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                164
+   Number of wire bits:           2748
+   Number of public wires:         116
+   Number of public wire bits:    1907
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                155
+     $add                            4
+     $and                            1
+     $bmux                           1
+     $dff                           32
+     $dffe                           3
+     $eq                            16
+     $mul                            2
+     $mux                           47
+     $ne                             1
+     $not                           35
+     $or                             5
+     $pmux                           1
+     $reduce_or                      2
+     $xor                            5
+
+13.66. Executing WREDUCE pass (reducing word size of cells).
+
+13.67. Executing RS_DSP_MACC pass.
+
+13.68. Executing TECHMAP pass (map to technology primitives).
+
+13.68.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+13.68.2. Continuing TECHMAP pass.
+Using template $paramod$0b3acdba67c63800fb913e7755a4ce4c737a67f0\_80_mul for cells of type $mul.
+Using template $paramod$5bb745dd0b0158abf00c082ff375e603ffd0cca7\_80_mul for cells of type $mul.
+Using template $paramod$ccc3ad9efb925127414f564502b0bcbcbc091f22\_80_mul for cells of type $mul.
+Using template $paramod$e9bc679718f543a57db3c11af53aa707c2e7587c\_80_mul for cells of type $mul.
+No more expansions possible.
+<suppressed ~210 debug messages>
+
+13.69. Executing TECHMAP pass (map to technology primitives).
+
+13.69.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+13.69.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+13.70. Executing TECHMAP pass (map to technology primitives).
+
+13.70.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `\$__RS_MUL20X18'.
+Generating RTLIL representation for module `\$__RS_MUL10X9'.
+Successfully finished Verilog frontend.
+
+13.70.2. Continuing TECHMAP pass.
+Using template $paramod$634152cd8a084a79dd1c766e8cd49b2888052862\$__RS_MUL20X18 for cells of type $__RS_MUL20X18.
+Using template $paramod$3f5ce01024a32f04a4f044c926b5414a98b95ed7\$__RS_MUL20X18 for cells of type $__RS_MUL20X18.
+No more expansions possible.
+<suppressed ~44 debug messages>
+
+13.71. Executing RS_DSP_SIMD pass.
+
+13.72. Executing TECHMAP pass (map to technology primitives).
+
+13.72.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_final_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_final_map.v' to AST representation.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_params'.
+Successfully finished Verilog frontend.
+
+13.72.2. Continuing TECHMAP pass.
+Using template dsp_t1_20x18x64_cfg_ports for cells of type dsp_t1_20x18x64_cfg_ports.
+No more expansions possible.
+<suppressed ~8 debug messages>
+
+13.73. Executing RS_DSP_IO_REGS pass.
+
+13.74. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module gng:
+  creating $macc model for $flatten\u_gng_interp.$verific$add_102$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:201$670 ($add).
+  creating $macc model for $flatten\u_gng_interp.$verific$add_116$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:217$680 ($add).
+  creating $macc model for $flatten\u_gng_interp.$verific$add_98$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:197$667 ($add).
+  creating $macc model for $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$add_14$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:69$915 ($add).
+  creating $alu model for $macc $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$add_14$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:69$915.
+  creating $alu model for $macc $flatten\u_gng_interp.$verific$add_98$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:197$667.
+  creating $alu model for $macc $flatten\u_gng_interp.$verific$add_116$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:217$680.
+  creating $alu model for $macc $flatten\u_gng_interp.$verific$add_102$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:201$670.
+  creating $alu cell for $flatten\u_gng_interp.$verific$add_102$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:201$670: $auto$alumacc.cc:485:replace_alu$946
+  creating $alu cell for $flatten\u_gng_interp.$verific$add_116$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:217$680: $auto$alumacc.cc:485:replace_alu$949
+  creating $alu cell for $flatten\u_gng_interp.$verific$add_98$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_interp.v:197$667: $auto$alumacc.cc:485:replace_alu$952
+  creating $alu cell for $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$add_14$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:69$915: $auto$alumacc.cc:485:replace_alu$955
+  created 4 $alu and 0 $macc cells.
+
+13.75. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.76. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.77. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+13.78. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.79. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.80. Executing OPT_SHARE pass.
+
+13.81. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 32 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$prod_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:67$914 ($dff) from module gng.
+Setting constant 0-bit at position 33 on $flatten\u_gng_interp.\u_gng_smul_16_18_sadd_37.$verific$prod_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/gng/./gng_smul_16_18_sadd_37.v:67$914 ($dff) from module gng.
+
+13.82. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 60 unused wires.
+<suppressed ~1 debug messages>
+
+13.83. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 1
+
+13.84. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                176
+   Number of wire bits:           2997
+   Number of public wires:         116
+   Number of public wire bits:    1907
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                155
+     $alu                            4
+     $and                            1
+     $bmux                           1
+     $dff                           32
+     $dffe                           3
+     $eq                            16
+     $mux                           47
+     $ne                             1
+     $not                           35
+     $or                             5
+     $pmux                           1
+     $reduce_or                      2
+     $xor                            5
+     RS_DSP2_MULT                    2
+
+13.85. Executing MEMORY pass.
+
+13.85.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+13.85.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+13.85.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+13.85.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+13.85.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$memory_bmux2rom.cc:63:execute$959'[0] in module `\gng': merging output FF to cell.
+
+13.85.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 3 unused cells and 54 unused wires.
+<suppressed ~5 debug messages>
+
+13.85.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+13.85.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+13.85.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.85.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+13.86. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                175
+   Number of wire bits:           2944
+   Number of public wires:         115
+   Number of public wire bits:    1854
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                152
+     $alu                            4
+     $and                            1
+     $dff                           29
+     $dffe                           3
+     $eq                            16
+     $mem_v2                         1
+     $mux                           47
+     $ne                             1
+     $not                           35
+     $or                             5
+     $pmux                           1
+     $reduce_or                      2
+     $xor                            5
+     RS_DSP2_MULT                    2
+
+13.87. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converted 0 (p)mux cells into 0 pmux cells.
+<suppressed ~47 debug messages>
+
+13.88. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.89. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+Processing gng.$auto$memory_bmux2rom.cc:63:execute$959:
+  Properties: ports=1 bits=13568 rports=1 wports=0 dbits=53 abits=8 words=256
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=768 dwaste=19 bwaste=32512 waste=32512 efficiency=18
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1) rejected: requirement 'min wports 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=1792 dwaste=1 bwaste=32512 waste=32512 efficiency=12
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2) rejected: requirement 'min wports 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=3840 dwaste=1 bwaste=34816 waste=34816 efficiency=6
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3) rejected: requirement 'min wports 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=7936 dwaste=3 bwaste=32512 waste=32512 efficiency=2
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4) rejected: requirement 'min wports 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=16128 dwaste=1 bwaste=32512 waste=32512 efficiency=1
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5) rejected: requirement 'min wports 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=32512 dwaste=0 bwaste=32512 waste=32512 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=768 dwaste=19 bwaste=32512 waste=32512 efficiency=18
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1) accepted.
+    Mapping to bram type $__RS_FACTOR_BRAM36_SDP (variant 1):
+      Read port #0 is in clock domain \clock0.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=32512 efficiency=18
+      Storing for later selection.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=1792 dwaste=1 bwaste=32512 waste=32512 efficiency=12
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2) accepted.
+    Mapping to bram type $__RS_FACTOR_BRAM36_SDP (variant 2):
+      Read port #0 is in clock domain \clock0.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=32512 efficiency=12
+      Storing for later selection.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=3840 dwaste=1 bwaste=34816 waste=34816 efficiency=6
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3) accepted.
+    Mapping to bram type $__RS_FACTOR_BRAM36_SDP (variant 3):
+      Read port #0 is in clock domain \clock0.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=34816 efficiency=6
+      Storing for later selection.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=7936 dwaste=3 bwaste=32512 waste=32512 efficiency=2
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4) accepted.
+    Mapping to bram type $__RS_FACTOR_BRAM36_SDP (variant 4):
+      Read port #0 is in clock domain \clock0.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=32512 efficiency=2
+      Storing for later selection.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=16128 dwaste=1 bwaste=32512 waste=32512 efficiency=1
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5) accepted.
+    Mapping to bram type $__RS_FACTOR_BRAM36_SDP (variant 5):
+      Read port #0 is in clock domain \clock0.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=32512 efficiency=1
+      Storing for later selection.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=32512 dwaste=0 bwaste=32512 waste=32512 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6) rejected: requirement 'min efficiency 1' not met.
+  Selecting best of 5 rules:
+    Efficiency for rule 2.5: efficiency=1, cells=27, acells=1
+    Efficiency for rule 2.4: efficiency=2, cells=14, acells=1
+    Efficiency for rule 2.3: efficiency=6, cells=6, acells=1
+    Efficiency for rule 2.2: efficiency=12, cells=3, acells=1
+    Efficiency for rule 2.1: efficiency=18, cells=2, acells=1
+    Selected rule 2.1 with efficiency 18.
+    Mapping to bram type $__RS_FACTOR_BRAM36_SDP (variant 1):
+      Read port #0 is in clock domain \clock0.
+        Mapped to bram port A1.1.
+      Creating $__RS_FACTOR_BRAM36_SDP cell at grid position <0 0 0>: $auto$memory_bmux2rom.cc:63:execute$959.0.0.0
+      Creating $__RS_FACTOR_BRAM36_SDP cell at grid position <1 0 0>: $auto$memory_bmux2rom.cc:63:execute$959.1.0.0
+
+13.90. Executing TECHMAP pass (map to technology primitives).
+
+13.90.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/brams_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_TDP'.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM18_TDP'.
+/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/brams_map.v:236: Warning: Range [2:0] select out of bounds on signal `\DOP': Setting 1 MSB bits to undef.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_SDP'.
+Successfully finished Verilog frontend.
+
+13.90.2. Continuing TECHMAP pass.
+Using template $paramod$5724f784f567e9e18ab8c48edc82e97fd4c57c37\$__RS_FACTOR_BRAM36_SDP for cells of type $__RS_FACTOR_BRAM36_SDP.
+Using template $paramod$def00c9403a29a7c800bebef53852830188e01eb\$__RS_FACTOR_BRAM36_SDP for cells of type $__RS_FACTOR_BRAM36_SDP.
+No more expansions possible.
+<suppressed ~45 debug messages>
+
+13.91. Executing PMUXTREE pass.
+
+13.92. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converting gng.$auto$pmuxtree.cc:65:recursive_mux_generator$1071 ... gng.$auto$pmuxtree.cc:65:recursive_mux_generator$1073 to a pmux with 2 cases.
+Converted 2 (p)mux cells into 1 pmux cells.
+<suppressed ~63 debug messages>
+
+13.93. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+13.94. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                249
+   Number of wire bits:           3963
+   Number of public wires:         115
+   Number of public wire bits:    1854
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                180
+     $alu                            4
+     $and                            1
+     $dff                           29
+     $dffe                           3
+     $eq                            16
+     $mux                           61
+     $ne                             1
+     $not                           36
+     $or                             9
+     $pmux                           1
+     $reduce_or                      6
+     $shl                            4
+     $xor                            5
+     RS_DSP2_MULT                    2
+     TDP36K                          2
+
+13.95. Executing TECHMAP pass (map to technology primitives).
+
+13.95.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+13.95.2. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/arith_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_rs_alu'.
+Successfully finished Verilog frontend.
+
+13.95.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$21a993a8c398891107be36c3a76332f0d1652884\_90_pmux for cells of type $pmux.
+Using template $paramod$3b7577489eb4433b1d5620cab7f3794743dee5ea\_90_alu for cells of type $alu.
+Using template $paramod$constmap:a7eead085ec9ad087d5e1f3e47e2f483dad20349$paramod$41cbe7f1ccfc80c318dbcc7b14b92838aa80b900\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port B: 1'1
+  Constant input on bit 1 of port B: 1'0
+  Constant input on bit 2 of port B: 1'1
+  Constant input on bit 3 of port B: 1'0
+  Constant input on bit 4 of port B: 1'0
+  Constant input on bit 5 of port B: 1'0
+  Constant input on bit 6 of port B: 1'0
+  Constant input on bit 7 of port B: 1'0
+  Constant input on bit 8 of port B: 1'0
+  Constant input on bit 9 of port B: 1'0
+  Constant input on bit 10 of port B: 1'0
+  Constant input on bit 11 of port B: 1'0
+  Constant input on bit 12 of port B: 1'0
+  Constant input on bit 13 of port B: 1'0
+  Constant input on bit 14 of port B: 1'0
+  Constant input on bit 15 of port B: 1'0
+  Constant input on bit 16 of port B: 1'0
+  Constant input on bit 17 of port B: 1'0
+  Constant input on bit 18 of port B: 1'0
+  Constant input on bit 19 of port B: 1'0
+  Constant input on bit 20 of port B: 1'0
+  Constant input on bit 21 of port B: 1'0
+  Constant input on bit 22 of port B: 1'0
+  Constant input on bit 23 of port B: 1'0
+  Constant input on bit 24 of port B: 1'0
+  Constant input on bit 25 of port B: 1'0
+  Constant input on bit 26 of port B: 1'0
+  Constant input on bit 27 of port B: 1'0
+  Constant input on bit 28 of port B: 1'0
+  Constant input on bit 29 of port B: 1'0
+  Constant input on bit 30 of port B: 1'0
+  Constant input on bit 31 of port B: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+Creating constmapped module `$paramod$constmap:25329900a077e617a30c49e8ff3e823e52730c92$paramod$41cbe7f1ccfc80c318dbcc7b14b92838aa80b900\_90_shift_ops_shr_shl_sshl_sshr'.
+
+13.95.14. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:25329900a077e617a30c49e8ff3e823e52730c92$paramod$41cbe7f1ccfc80c318dbcc7b14b92838aa80b900\_90_shift_ops_shr_shl_sshl_sshr..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~522 debug messages>
+
+13.95.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:25329900a077e617a30c49e8ff3e823e52730c92$paramod$41cbe7f1ccfc80c318dbcc7b14b92838aa80b900\_90_shift_ops_shr_shl_sshl_sshr.
+<suppressed ~191 debug messages>
+Removed 0 unused cells and 20 unused wires.
+Using template $paramod$constmap:25329900a077e617a30c49e8ff3e823e52730c92$paramod$41cbe7f1ccfc80c318dbcc7b14b92838aa80b900\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $dff.
+Using template $paramod$6177de982a145c5b9397c76cce0d57e0a983739a\_90_alu for cells of type $alu.
+Using template $paramod$ab9f392bf4eec94510db0c153202b74c14e544c4\_80_rs_alu for cells of type $alu.
+Using template $paramod$c7f685413b22256ea2bbbfc71a16a94e0ecdf3fb\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000010000 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000100110 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001111 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~1050 debug messages>
+
+13.96. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                735
+   Number of wire bits:          17884
+   Number of public wires:         115
+   Number of public wire bits:    1854
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2855
+     $_AND_                        281
+     $_DFFE_PP_                    192
+     $_DFF_P_                      510
+     $_MUX_                        900
+     $_NOT_                        184
+     $_OR_                         319
+     $_XOR_                        447
+     RS_DSP2_MULT                    2
+     TDP36K                          2
+     adder_carry                    18
+
+13.97. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+<suppressed ~779 debug messages>
+
+13.98. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+<suppressed ~468 debug messages>
+Removed a total of 156 cells.
+
+13.99. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.100. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.101. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.102. Executing OPT_SHARE pass.
+
+13.103. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.104. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 194 unused cells and 497 unused wires.
+<suppressed ~195 debug messages>
+
+13.105. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.106. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.107. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.108. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.109. Executing OPT_SHARE pass.
+
+13.110. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.111. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+
+13.112. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 2
+
+13.113. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+<suppressed ~498 debug messages>
+
+13.114. Executing TECHMAP pass (map to technology primitives).
+
+13.114.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+13.114.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~71 debug messages>
+
+13.115. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.116. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.117. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.118. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.119. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.120. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.121. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+13.122. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 1
+
+13.123. Executing ABC pass (technology mapping using ABC).
+
+13.123.1. Summary of detected clock domains:
+  510 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$927, arst={ }, srst={ }
+  1193 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+13.123.2. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$927
+Extracted 510 gates and 513 wires to a netlist network with 2 inputs and 97 outputs.
+
+13.123.2.1. Executing ABC.
+
+13.123.3. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 1171 gates and 1365 wires to a netlist network with 193 inputs and 122 outputs.
+
+13.123.3.1. Executing ABC.
+
+13.124. Executing ABC pass (technology mapping using ABC).
+
+13.124.1. Summary of detected clock domains:
+  501 cells in clk=\clock0, en=$abc$5021$auto$opt_dff.cc:194:make_patterns_logic$927, arst={ }, srst={ }
+  1028 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+13.124.2. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$5021$auto$opt_dff.cc:194:make_patterns_logic$927
+Extracted 501 gates and 503 wires to a netlist network with 2 inputs and 106 outputs.
+
+13.124.2.1. Executing ABC.
+
+13.124.3. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 1006 gates and 1208 wires to a netlist network with 202 inputs and 122 outputs.
+
+13.124.3.1. Executing ABC.
+
+13.125. Executing ABC pass (technology mapping using ABC).
+
+13.125.1. Summary of detected clock domains:
+  501 cells in clk=\clock0, en=$abc$6909$abc$5021$auto$opt_dff.cc:194:make_patterns_logic$927, arst={ }, srst={ }
+  1021 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+13.125.2. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$6909$abc$5021$auto$opt_dff.cc:194:make_patterns_logic$927
+Extracted 501 gates and 503 wires to a netlist network with 2 inputs and 106 outputs.
+
+13.125.2.1. Executing ABC.
+
+13.125.3. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 999 gates and 1201 wires to a netlist network with 202 inputs and 122 outputs.
+
+13.125.3.1. Executing ABC.
+
+13.126. Executing ABC pass (technology mapping using ABC).
+
+13.126.1. Summary of detected clock domains:
+  501 cells in clk=\clock0, en=$abc$8790$abc$6909$abc$5021$auto$opt_dff.cc:194:make_patterns_logic$927, arst={ }, srst={ }
+  1017 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+13.126.2. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$8790$abc$6909$abc$5021$auto$opt_dff.cc:194:make_patterns_logic$927
+Extracted 501 gates and 503 wires to a netlist network with 2 inputs and 106 outputs.
+
+13.126.2.1. Executing ABC.
+
+13.126.3. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 995 gates and 1197 wires to a netlist network with 202 inputs and 122 outputs.
+
+13.126.3.1. Executing ABC.
+
+13.127. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+13.128. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.129. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+13.130. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.131. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.132. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.133. Executing OPT_SHARE pass.
+
+13.134. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.135. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 7209 unused wires.
+<suppressed ~47 debug messages>
+
+13.136. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 1
+
+13.137. Executing BMUXMAP pass.
+
+13.138. Executing DEMUXMAP pass.
+
+13.139. Executing ABC pass (technology mapping using ABC).
+
+13.139.1. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Extracted 931 gates and 1248 wires to a netlist network with 317 inputs and 306 outputs.
+
+13.139.1.1. Executing ABC.
+DE:   #PIs = 317  #Luts =   454  Max Lvl =   5  Avg Lvl =   1.43  [   0.05 sec. at Pass 0]
+DE:   #PIs = 317  #Luts =   435  Max Lvl =   5  Avg Lvl =   1.42  [   0.65 sec. at Pass 1]
+DE:   #PIs = 317  #Luts =   444  Max Lvl =   4  Avg Lvl =   1.39  [   0.34 sec. at Pass 2]
+DE:   #PIs = 317  #Luts =   437  Max Lvl =   4  Avg Lvl =   1.39  [   0.32 sec. at Pass 3]
+DE:   #PIs = 317  #Luts =   437  Max Lvl =   4  Avg Lvl =   1.39  [   0.41 sec. at Pass 4]
+DE:   #PIs = 317  #Luts =   437  Max Lvl =   4  Avg Lvl =   1.39  [   0.42 sec. at Pass 5]
+DE:   #PIs = 317  #Luts =   435  Max Lvl =   4  Avg Lvl =   1.42  [   0.45 sec. at Pass 6]
+DE:   #PIs = 317  #Luts =   434  Max Lvl =   4  Avg Lvl =   1.39  [   0.40 sec. at Pass 7]
+DE:   #PIs = 317  #Luts =   434  Max Lvl =   4  Avg Lvl =   1.39  [   0.44 sec. at Pass 8]
+DE:   #PIs = 317  #Luts =   432  Max Lvl =   4  Avg Lvl =   1.39  [   0.42 sec. at Pass 9]
+DE:   #PIs = 317  #Luts =   432  Max Lvl =   4  Avg Lvl =   1.39  [   0.48 sec. at Pass 10]
+DE:   #PIs = 317  #Luts =   430  Max Lvl =   4  Avg Lvl =   1.39  [   0.41 sec. at Pass 11]
+DE:   #PIs = 317  #Luts =   430  Max Lvl =   4  Avg Lvl =   1.39  [   0.46 sec. at Pass 12]
+DE:   #PIs = 317  #Luts =   429  Max Lvl =   4  Avg Lvl =   1.39  [   0.40 sec. at Pass 13]
+DE:   #PIs = 317  #Luts =   429  Max Lvl =   4  Avg Lvl =   1.39  [   0.46 sec. at Pass 14]
+DE:   #PIs = 317  #Luts =   428  Max Lvl =   4  Avg Lvl =   1.39  [   0.38 sec. at Pass 15]
+DE:   #PIs = 317  #Luts =   428  Max Lvl =   4  Avg Lvl =   1.39  [   0.43 sec. at Pass 16]
+DE:   #PIs = 317  #Luts =   427  Max Lvl =   4  Avg Lvl =   1.39  [   0.40 sec. at Pass 17]
+DE:   #PIs = 317  #Luts =   427  Max Lvl =   4  Avg Lvl =   1.39  [   0.44 sec. at Pass 18]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.39 sec. at Pass 19]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.46 sec. at Pass 20]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.38 sec. at Pass 21]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.44 sec. at Pass 22]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.00 sec. at Pass 23]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.00 sec. at Pass 24]
+
+13.140. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.141. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.142. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.143. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.144. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.145. Executing OPT_SHARE pass.
+
+13.146. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.147. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 1200 unused wires.
+<suppressed ~1 debug messages>
+
+13.148. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 1
+
+13.149. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+13.150. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                945
+   Number of wire bits:           2791
+   Number of public wires:          69
+   Number of public wire bits:    1585
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1009
+     $_DFFE_PP_                    176
+     $_DFF_P_                      386
+     $lut                          425
+     RS_DSP2_MULT                    2
+     TDP36K                          2
+     adder_carry                    18
+
+13.151. Executing SHREGMAP pass (map shift registers).
+Converting gng.$abc$11169$auto$blifparse.cc:362:parse_blif$11462 ... gng.$abc$11169$auto$blifparse.cc:362:parse_blif$11471 to a shift register with depth 10.
+Converted 10 dff cells into 1 shift registers.
+
+13.152. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+13.153. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                945
+   Number of wire bits:           2791
+   Number of public wires:          69
+   Number of public wire bits:    1585
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1000
+     $_DFFE_PP0P_                  176
+     $_DFF_P_                      376
+     $__SHREG_DFF_P_                 1
+     $lut                          425
+     RS_DSP2_MULT                    2
+     TDP36K                          2
+     adder_carry                    18
+
+13.154. Executing TECHMAP pass (map to technology primitives).
+
+13.154.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+13.154.2. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0N_'.
+Generating RTLIL representation for module `\$_DFFE_PN0P_'.
+Generating RTLIL representation for module `\$_DFFE_PN0N_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1N_'.
+Generating RTLIL representation for module `\$_DFFE_PN1P_'.
+Generating RTLIL representation for module `\$_DFFE_PN1N_'.
+Generating RTLIL representation for module `\$_DFFSR_PPP_'.
+Generating RTLIL representation for module `\$_DFFSR_PNP_'.
+Generating RTLIL representation for module `\$_DFFSR_PNN_'.
+Generating RTLIL representation for module `\$_DFFSR_PPN_'.
+Generating RTLIL representation for module `\$_DFFSR_NPP_'.
+Generating RTLIL representation for module `\$_DFFSR_NNP_'.
+Generating RTLIL representation for module `\$_DFFSR_NNN_'.
+Generating RTLIL representation for module `\$_DFFSR_NPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPNN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNNN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PPP_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NPP_'.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0N_'.
+Generating RTLIL representation for module `\$_DFFE_NN0P_'.
+Generating RTLIL representation for module `\$_DFFE_NN0N_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1N_'.
+Generating RTLIL representation for module `\$_DFFE_NN1P_'.
+Generating RTLIL representation for module `\$_DFFE_NN1N_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPNN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNNN_'.
+Generating RTLIL representation for module `\$__SHREG_DFF_P_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PN0_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NN0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_PN1_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_NN1_'.
+Successfully finished Verilog frontend.
+
+13.154.3. Continuing TECHMAP pass.
+Using template \$_DFFE_PP0P_ for cells of type $_DFFE_PP0P_.
+Using extmapper simplemap for cells of type $lut.
+Using template \$_DFF_P_ for cells of type $_DFF_P_.
+Using template $paramod\$__SHREG_DFF_P_\DEPTH=32'00000000000000000000000000001010 for cells of type $__SHREG_DFF_P_.
+Using extmapper simplemap for cells of type $logic_not.
+No more expansions possible.
+<suppressed ~1301 debug messages>
+
+13.155. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+<suppressed ~5828 debug messages>
+
+13.156. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+13.157. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.158. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+<suppressed ~4920 debug messages>
+Removed a total of 1640 cells.
+
+13.159. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.160. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 2940 unused wires.
+<suppressed ~1 debug messages>
+
+13.161. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+<suppressed ~17 debug messages>
+
+13.162. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.163. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.164. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.165. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.166. Executing OPT_SHARE pass.
+
+13.167. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.168. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+13.169. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 1
+
+13.170. Executing ABC pass (technology mapping using ABC).
+
+13.170.1. Extracting gate netlist of module `\gng' to `<abc-temp-dir>/input.blif'..
+Extracted 1470 gates and 1789 wires to a netlist network with 317 inputs and 306 outputs.
+
+13.170.1.1. Executing ABC.
+DE:   #PIs = 317  #Luts =   429  Max Lvl =   4  Avg Lvl =   1.39  [   0.05 sec. at Pass 0]
+DE:   #PIs = 317  #Luts =   429  Max Lvl =   4  Avg Lvl =   1.39  [   0.75 sec. at Pass 1]
+DE:   #PIs = 317  #Luts =   426  Max Lvl =   4  Avg Lvl =   1.39  [   0.36 sec. at Pass 2]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.31 sec. at Pass 3]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.46 sec. at Pass 4]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.39 sec. at Pass 5]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.49 sec. at Pass 6]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.00 sec. at Pass 7]
+DE:   #PIs = 317  #Luts =   425  Max Lvl =   4  Avg Lvl =   1.39  [   0.00 sec. at Pass 8]
+
+13.171. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+
+13.172. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.173. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \gng..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.174. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \gng.
+Performed a total of 0 changes.
+
+13.175. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\gng'.
+Removed a total of 0 cells.
+
+13.176. Executing OPT_SHARE pass.
+
+13.177. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.178. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 1486 unused wires.
+<suppressed ~1 debug messages>
+
+13.179. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gng.
+MAX OPT ITERATION = 1
+
+13.180. Executing HIERARCHY pass (managing design hierarchy).
+
+13.180.1. Analyzing design hierarchy..
+Top module:  \gng
+
+13.180.2. Analyzing design hierarchy..
+Top module:  \gng
+Removed 0 unused modules.
+Warning: Resizing cell port gng.$auto$memory_bmux2rom.cc:63:execute$959.0.0.0.ADDR_A2_i from 15 bits to 14 bits.
+Warning: Resizing cell port gng.$auto$memory_bmux2rom.cc:63:execute$959.1.0.0.ADDR_A2_i from 15 bits to 14 bits.
+
+13.181. Printing statistics.
+
+=== gng ===
+
+   Number of wires:                937
+   Number of wire bits:           2791
+   Number of public wires:          69
+   Number of public wire bits:    1585
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1009
+     $lut                          425
+     RS_DSP2_MULT                    2
+     TDP36K                          2
+     adder_carry                    18
+     dffsre                        552
+     sh_dff                         10
+
+13.182. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gng..
+Removed 0 unused cells and 55 unused wires.
+<suppressed ~55 debug messages>
+
+14. Executing BLIF backend.
+
+15. Executing Verilog backend.
+Dumping module `\gng'.
+
+Warnings: 3 unique messages, 3 total
+End of script. Logfile hash: a8c6da05e0, CPU: user 3.91s system 0.11s, MEM: 44.25 MB peak
+Yosys 0.18+10 (git sha1 c98b0e94e, gcc 9.4.0 -fPIC -Os)
+Time spent: 97% 6x abc (120 sec), 0% 39x opt_expr (1 sec), ...
