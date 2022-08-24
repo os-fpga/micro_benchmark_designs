@@ -1,0 +1,2237 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys-Verific 0.0.68
+ Yosys 0.18+10 (git sha1 c98b0e94e, gcc 9.4.0 -fPIC -Os)
+
+
+-- Executing script file `simple_spi_top.ys' --
+
+1. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+2. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+3. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v'
+VERIFIC-INFO [VERI-2561] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:117: undeclared symbol 'clk_i', assumed default net type 'wire'
+
+5. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v'
+
+6. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+Adding Verilog module 'simple_spi_top' to elaboration queue.
+Running hier_tree::Elaborate().
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:73: compiling module 'simple_spi_top'
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:122: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:123: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:128: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:131: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:141: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:142: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:143: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:144: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:153: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:155: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:178: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:180: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:185: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:187: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:200: delay control is not supported for synthesis
+VERIFIC-INFO [VERI-1018] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:59: compiling module 'fifo4'
+VERIFIC-INFO [VERI-2571] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:77: extracting RAM for identifier 'mem'
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:92: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:94: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:96: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:102: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:104: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:106: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:115: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:123: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:125: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:127: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:129: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:233: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:236: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:237: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:238: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:239: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:240: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:241: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:242: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:243: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:244: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:245: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:246: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:247: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-1173] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:235: synthesis - simulation differences may occur when using full_case directive
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:257: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:258: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:259: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:260: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:261: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:262: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:266: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:267: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:272: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:273: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:274: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:277: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:278: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:279: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:285: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:286: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:291: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:292: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:295: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:296: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:297: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:299: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:300: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:304: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:315: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:318: delay control is not supported for synthesis
+VERIFIC-WARNING [VERI-2371] /nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:320: delay control is not supported for synthesis
+Importing module simple_spi_top.
+Importing module fifo4.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \simple_spi_top
+Used module:     \fifo4
+
+7.2. Analyzing design hierarchy..
+Top module:  \simple_spi_top
+Used module:     \fifo4
+Removed 0 unused modules.
+
+8. Executing synth_rs pass: v0.4.68
+
+8.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/common/cells_sim.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/common/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\inv'.
+Generating RTLIL representation for module `\buff'.
+Generating RTLIL representation for module `\logic_0'.
+Generating RTLIL representation for module `\logic_1'.
+Generating RTLIL representation for module `\gclkbuff'.
+Successfully finished Verilog frontend.
+
+8.2. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/cells_sim.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\dffsre'.
+Generating RTLIL representation for module `\dffnsre'.
+Generating RTLIL representation for module `\latchsre'.
+Generating RTLIL representation for module `\latchnsre'.
+Generating RTLIL representation for module `\io_scff'.
+Generating RTLIL representation for module `\scff'.
+Generating RTLIL representation for module `\sh_dff'.
+Generating RTLIL representation for module `\adder_carry'.
+Generating RTLIL representation for module `\sdffr'.
+Generating RTLIL representation for module `\sdffs'.
+Generating RTLIL representation for module `\TDP_BRAM18'.
+Generating RTLIL representation for module `\TDP36K'.
+Successfully finished Verilog frontend.
+
+8.3. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v' to AST representation.
+Generating RTLIL representation for module `\RS_DSP1'.
+Generating RTLIL representation for module `\RS_DSP2'.
+Generating RTLIL representation for module `\RS_DSP2_MULT'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGIN_REGOUT'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_sim_cfg_ports'.
+Generating RTLIL representation for module `\RS_DSP3'.
+Generating RTLIL representation for module `\RS_DSP3_MULT'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGIN_REGOUT'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_sim_cfg_params'.
+Successfully finished Verilog frontend.
+
+8.4. Executing HIERARCHY pass (managing design hierarchy).
+
+8.4.1. Analyzing design hierarchy..
+Top module:  \simple_spi_top
+Used module:     \fifo4
+
+8.4.2. Analyzing design hierarchy..
+Top module:  \simple_spi_top
+Used module:     \fifo4
+Removed 0 unused modules.
+
+8.5. Executing PROC pass (convert processes to netlists).
+
+8.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+8.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+8.5.4. Executing PROC_INIT pass (extract init attributes).
+
+8.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+8.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+8.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+8.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+8.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+8.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+8.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo4.
+<suppressed ~3 debug messages>
+Optimizing module simple_spi_top.
+<suppressed ~25 debug messages>
+
+8.6. Executing DEMUXMAP pass.
+
+8.7. Executing FLATTEN pass (flatten design).
+Deleting now unused module fifo4.
+<suppressed ~2 debug messages>
+
+8.8. Executing DEMUXMAP pass.
+
+8.9. Executing TRIBUF pass.
+
+8.10. Executing DEMINOUT pass (demote inout ports to input or output).
+
+8.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~6 debug messages>
+
+8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 8 unused cells and 138 unused wires.
+<suppressed ~72 debug messages>
+
+8.13. Executing CHECK pass (checking for obvious problems).
+Checking module simple_spi_top...
+Found and reported 0 problems.
+
+8.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~6 debug messages>
+
+8.15. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+8.16. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+8.17. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.18. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.19. Executing OPT_SHARE pass.
+
+8.20. Executing OPT_DFF pass (perform DFF optimizations).
+Removing never-active async load on $verific$treg_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:306$300 ($aldff) from module simple_spi_top.
+Removing never-active async load on $verific$tcnt_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:320$311 ($aldff) from module simple_spi_top.
+Removing never-active async load on $verific$state_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:306$298 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $verific$sper_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:132$144 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $verific$spcr_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:132$143 ($aldff) from module simple_spi_top.
+Removing never-active async load on $verific$dat_o_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:145$154 ($aldff) from module simple_spi_top.
+Removing never-active async load on $verific$clkcnt_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:248$250 ($aldff) from module simple_spi_top.
+Removing never-active async load on $verific$bcnt_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:306$299 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $verific$ack_o_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:155$162 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $flatten\wfifo.$verific$wp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:96$354 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $flatten\wfifo.$verific$rp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:106$362 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $flatten\rfifo.$verific$wp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:96$354 ($aldff) from module simple_spi_top.
+Changing const-value async load to async reset on $flatten\rfifo.$verific$rp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:106$362 ($aldff) from module simple_spi_top.
+
+8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 1 unused cells and 3 unused wires.
+<suppressed ~3 debug messages>
+
+8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.23. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+8.24. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.26. Executing OPT_SHARE pass.
+
+8.27. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 2
+
+8.30. Executing FSM pass (extract and optimize FSM).
+
+8.30.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+8.30.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+8.30.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+8.30.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.30.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+8.30.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+8.30.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+8.30.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+8.31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.32. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.33. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+8.34. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.35. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.36. Executing OPT_SHARE pass.
+
+8.37. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $verific$tcnt_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:320$311 ($dff) from module simple_spi_top (D = $verific$n678$123, Q = \tcnt).
+Adding EN signal on $verific$sper_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:132$144 ($adff) from module simple_spi_top (D = \dat_i, Q = \sper).
+Adding EN signal on $verific$spcr_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:132$143 ($adff) from module simple_spi_top (D = { \dat_i [7:5] 1'1 \dat_i [3:0] }, Q = \spcr).
+Adding EN signal on $flatten\wfifo.$verific$wp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:96$354 ($adff) from module simple_spi_top (D = $flatten\wfifo.$verific$n19$337, Q = \wfifo.wp).
+Adding EN signal on $flatten\wfifo.$verific$rp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:106$362 ($adff) from module simple_spi_top (D = $flatten\wfifo.$verific$n53$342, Q = \wfifo.rp).
+Adding EN signal on $flatten\wfifo.$verific$gb_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:129$383 ($dff) from module simple_spi_top (D = $flatten\wfifo.$verific$n114$333, Q = \wfifo.gb).
+Adding EN signal on $flatten\rfifo.$verific$wp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:96$354 ($adff) from module simple_spi_top (D = $flatten\rfifo.$verific$n19$337, Q = \rfifo.wp).
+Adding EN signal on $flatten\rfifo.$verific$rp_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:106$362 ($adff) from module simple_spi_top (D = $flatten\rfifo.$verific$n53$342, Q = \rfifo.rp).
+Adding EN signal on $flatten\rfifo.$verific$gb_reg$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:129$383 ($dff) from module simple_spi_top (D = $flatten\rfifo.$verific$n114$333, Q = \rfifo.gb).
+Setting constant 1-bit at position 4 on $auto$ff.cc:262:slice$390 ($adffe) from module simple_spi_top.
+
+8.38. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 4 unused cells and 4 unused wires.
+<suppressed ~5 debug messages>
+
+8.39. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.40. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+8.41. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.42. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+8.43. Executing OPT_SHARE pass.
+
+8.44. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.45. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+8.46. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.47. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+8.48. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.49. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.50. Executing OPT_SHARE pass.
+
+8.51. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.52. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.53. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 3
+
+8.54. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$verific$equal_61$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:173$173 ($eq).
+Removed top 11 bits (of 12) from port B of cell simple_spi_top.$verific$sub_102$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:233$245 ($sub).
+Removed top 2 bits (of 3) from port B of cell simple_spi_top.$verific$sub_149$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:292$272 ($sub).
+Removed top 1 bits (of 2) from mux cell simple_spi_top.$verific$mux_158$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:301$278 ($mux).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$verific$sub_190$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:318$307 ($sub).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$auto$opt_dff.cc:195:make_patterns_logic$395 ($ne).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$flatten\wfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355 ($add).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$flatten\wfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363 ($add).
+Removed top 1 bits (of 4) from port B of cell simple_spi_top.$auto$opt_dff.cc:195:make_patterns_logic$401 ($ne).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$auto$opt_dff.cc:195:make_patterns_logic$407 ($ne).
+Removed top 2 bits (of 4) from port B of cell simple_spi_top.$auto$opt_dff.cc:195:make_patterns_logic$410 ($ne).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$flatten\rfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355 ($add).
+Removed top 1 bits (of 2) from port B of cell simple_spi_top.$flatten\rfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363 ($add).
+Removed top 1 bits (of 2) from wire simple_spi_top.$verific$n573$107.
+
+8.55. Executing PEEPOPT pass (run peephole optimizers).
+
+8.56. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+8.57. Executing DEMUXMAP pass.
+
+8.58. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                172
+   Number of wire bits:            375
+   Number of public wires:          77
+   Number of public wire bits:     193
+   Number of memories:               2
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                134
+     $add                            4
+     $adff                           1
+     $adffe                          6
+     $and                           23
+     $bmux                           8
+     $dff                           11
+     $dffe                           3
+     $eq                             7
+     $logic_not                      1
+     $memrd_v2                       2
+     $memwr_v2                       2
+     $mux                           41
+     $ne                             6
+     $not                            8
+     $or                             2
+     $reduce_and                     2
+     $reduce_or                      4
+     $sub                            3
+
+8.59. Executing WREDUCE pass (reducing word size of cells).
+
+8.60. Executing RS_DSP_MACC pass.
+
+8.61. Executing TECHMAP pass (map to technology primitives).
+
+8.61.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+8.61.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.62. Executing TECHMAP pass (map to technology primitives).
+
+8.62.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+8.62.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.63. Executing TECHMAP pass (map to technology primitives).
+
+8.63.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `\$__RS_MUL20X18'.
+Generating RTLIL representation for module `\$__RS_MUL10X9'.
+Successfully finished Verilog frontend.
+
+8.63.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.64. Executing RS_DSP_SIMD pass.
+
+8.65. Executing TECHMAP pass (map to technology primitives).
+
+8.65.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_final_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/dsp_final_map.v' to AST representation.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_params'.
+Successfully finished Verilog frontend.
+
+8.65.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+8.66. Executing RS_DSP_IO_REGS pass.
+
+8.67. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module simple_spi_top:
+  creating $macc model for $flatten\rfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355 ($add).
+  creating $macc model for $flatten\rfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363 ($add).
+  creating $macc model for $flatten\wfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355 ($add).
+  creating $macc model for $flatten\wfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363 ($add).
+  creating $macc model for $verific$sub_102$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:233$245 ($sub).
+  creating $macc model for $verific$sub_149$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:292$272 ($sub).
+  creating $macc model for $verific$sub_190$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:318$307 ($sub).
+  creating $alu model for $macc $verific$sub_190$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:318$307.
+  creating $alu model for $macc $verific$sub_149$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:292$272.
+  creating $alu model for $macc $verific$sub_102$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:233$245.
+  creating $alu model for $macc $flatten\wfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363.
+  creating $alu model for $macc $flatten\wfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355.
+  creating $alu model for $macc $flatten\rfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363.
+  creating $alu model for $macc $flatten\rfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355.
+  creating $alu cell for $flatten\rfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355: $auto$alumacc.cc:485:replace_alu$413
+  creating $alu cell for $flatten\rfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363: $auto$alumacc.cc:485:replace_alu$416
+  creating $alu cell for $flatten\wfifo.$verific$add_12$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:98$355: $auto$alumacc.cc:485:replace_alu$419
+  creating $alu cell for $flatten\wfifo.$verific$add_25$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./fifo4.v:108$363: $auto$alumacc.cc:485:replace_alu$422
+  creating $alu cell for $verific$sub_102$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:233$245: $auto$alumacc.cc:485:replace_alu$425
+  creating $alu cell for $verific$sub_149$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:292$272: $auto$alumacc.cc:485:replace_alu$428
+  creating $alu cell for $verific$sub_190$/nfs_scratch/scratch/AE/Roman/open_source_design/spi/./simple_spi_top.v:318$307: $auto$alumacc.cc:485:replace_alu$431
+  created 7 $alu and 0 $macc cells.
+
+8.68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.70. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+8.71. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.72. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.73. Executing OPT_SHARE pass.
+
+8.74. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.75. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.76. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 1
+
+8.77. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                186
+   Number of wire bits:            425
+   Number of public wires:          77
+   Number of public wire bits:     193
+   Number of memories:               2
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                134
+     $adff                           1
+     $adffe                          6
+     $alu                            7
+     $and                           23
+     $bmux                           8
+     $dff                           11
+     $dffe                           3
+     $eq                             7
+     $logic_not                      1
+     $memrd_v2                       2
+     $memwr_v2                       2
+     $mux                           41
+     $ne                             6
+     $not                            8
+     $or                             2
+     $reduce_and                     2
+     $reduce_or                      4
+
+8.78. Executing MEMORY pass.
+
+8.78.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+8.78.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+8.78.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+  Analyzing simple_spi_top.rfifo.mem write port 0.
+  Analyzing simple_spi_top.wfifo.mem write port 0.
+
+8.78.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+8.78.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$memory_bmux2rom.cc:63:execute$434'[0] in module `\simple_spi_top': FF found, but with a mux select that doesn't seem to correspond to transparency logic.
+Checking read port `\rfifo.mem'[0] in module `\simple_spi_top': no output FF found.
+Checking read port `\wfifo.mem'[0] in module `\simple_spi_top': no output FF found.
+Checking read port address `$auto$memory_bmux2rom.cc:63:execute$434'[0] in module `\simple_spi_top': no address FF found.
+Checking read port address `\rfifo.mem'[0] in module `\simple_spi_top': address FF has async set and/or reset, not supported.
+Checking read port address `\wfifo.mem'[0] in module `\simple_spi_top': address FF has async set and/or reset, not supported.
+
+8.78.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.78.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+8.78.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+8.78.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.78.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+8.79. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                186
+   Number of wire bits:            425
+   Number of public wires:          77
+   Number of public wire bits:     193
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                132
+     $adff                           1
+     $adffe                          6
+     $alu                            7
+     $and                           23
+     $bmux                           7
+     $dff                           11
+     $dffe                           3
+     $eq                             7
+     $logic_not                      1
+     $mem_v2                         3
+     $mux                           41
+     $ne                             6
+     $not                            8
+     $or                             2
+     $reduce_and                     2
+     $reduce_or                      4
+
+8.80. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converted 0 (p)mux cells into 0 pmux cells.
+<suppressed ~36 debug messages>
+
+8.81. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.82. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+Processing simple_spi_top.$auto$memory_bmux2rom.cc:63:execute$434:
+  Properties: ports=1 bits=192 rports=1 wports=0 dbits=12 abits=4 words=16
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=1008 dwaste=24 bwaste=36672 waste=36672 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=2032 dwaste=6 bwaste=36672 waste=36672 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=4080 dwaste=6 bwaste=36816 waste=36816 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=8176 dwaste=0 bwaste=32704 waste=32704 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=16368 dwaste=0 bwaste=32736 waste=32736 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=32752 dwaste=0 bwaste=32752 waste=32752 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=1008 dwaste=24 bwaste=36672 waste=36672 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=2032 dwaste=6 bwaste=36672 waste=36672 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=4080 dwaste=6 bwaste=36816 waste=36816 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=8176 dwaste=0 bwaste=32704 waste=32704 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=16368 dwaste=0 bwaste=32736 waste=32736 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5) rejected: requirement 'min efficiency 1' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=32752 dwaste=0 bwaste=32752 waste=32752 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6) rejected: requirement 'min efficiency 1' not met.
+  No acceptable bram resources found.
+Processing simple_spi_top.rfifo.mem:
+  Properties: ports=2 bits=32 rports=1 wports=1 dbits=8 abits=2 words=4
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=1020 dwaste=28 bwaste=36832 waste=36832 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=2044 dwaste=10 bwaste=36832 waste=36832 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=4092 dwaste=1 bwaste=36832 waste=36832 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=8188 dwaste=0 bwaste=32752 waste=32752 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=16380 dwaste=0 bwaste=32760 waste=32760 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=32764 dwaste=0 bwaste=32764 waste=32764 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=1020 dwaste=28 bwaste=36832 waste=36832 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=2044 dwaste=10 bwaste=36832 waste=36832 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=4092 dwaste=1 bwaste=36832 waste=36832 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=8188 dwaste=0 bwaste=32752 waste=32752 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=16380 dwaste=0 bwaste=32760 waste=32760 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=32764 dwaste=0 bwaste=32764 waste=32764 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6) rejected: requirement 'min bits 128' not met.
+  No acceptable bram resources found.
+Processing simple_spi_top.wfifo.mem:
+  Properties: ports=2 bits=32 rports=1 wports=1 dbits=8 abits=2 words=4
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=1020 dwaste=28 bwaste=36832 waste=36832 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 1) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=2044 dwaste=10 bwaste=36832 waste=36832 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 2) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=4092 dwaste=1 bwaste=36832 waste=36832 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 3) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=8188 dwaste=0 bwaste=32752 waste=32752 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 4) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=16380 dwaste=0 bwaste=32760 waste=32760 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 5) rejected: requirement 'min bits 128' not met.
+  Checking rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_TDP: awaste=32764 dwaste=0 bwaste=32764 waste=32764 efficiency=0
+    Rule #1 for bram type $__RS_FACTOR_BRAM36_TDP (variant 6) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=1020 dwaste=28 bwaste=36832 waste=36832 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 1) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=2044 dwaste=10 bwaste=36832 waste=36832 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 2) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=4092 dwaste=1 bwaste=36832 waste=36832 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 3) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=8188 dwaste=0 bwaste=32752 waste=32752 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 4) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=16380 dwaste=0 bwaste=32760 waste=32760 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 5) rejected: requirement 'min bits 128' not met.
+  Checking rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__RS_FACTOR_BRAM36_SDP: awaste=32764 dwaste=0 bwaste=32764 waste=32764 efficiency=0
+    Rule #2 for bram type $__RS_FACTOR_BRAM36_SDP (variant 6) rejected: requirement 'min bits 128' not met.
+  No acceptable bram resources found.
+
+8.83. Executing TECHMAP pass (map to technology primitives).
+
+8.83.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/brams_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_TDP'.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM18_TDP'.
+/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/brams_map.v:236: Warning: Range [2:0] select out of bounds on signal `\DOP': Setting 1 MSB bits to undef.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_SDP'.
+Successfully finished Verilog frontend.
+
+8.83.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+
+8.84. Executing PMUXTREE pass.
+
+8.85. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converted 0 (p)mux cells into 0 pmux cells.
+<suppressed ~36 debug messages>
+
+8.86. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $auto$memory_bmux2rom.cc:63:execute$434 in module \simple_spi_top:
+  created 16 $dff cells and 0 static cells of width 12.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory \rfifo.mem in module \simple_spi_top:
+  created 4 $dff cells and 0 static cells of width 8.
+  read interface: 0 $dff and 3 $mux cells.
+  write interface: 4 write mux blocks.
+Mapping memory \wfifo.mem in module \simple_spi_top:
+  created 4 $dff cells and 0 static cells of width 8.
+  read interface: 0 $dff and 3 $mux cells.
+  write interface: 4 write mux blocks.
+
+8.87. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                308
+   Number of wire bits:           1481
+   Number of public wires:          85
+   Number of public wire bits:     257
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                206
+     $adff                           1
+     $adffe                          6
+     $alu                            7
+     $and                           39
+     $bmux                           7
+     $dff                           35
+     $dffe                           3
+     $eq                            15
+     $logic_not                      1
+     $mux                           70
+     $ne                             6
+     $not                            8
+     $or                             2
+     $reduce_and                     2
+     $reduce_or                      4
+
+8.88. Executing TECHMAP pass (map to technology primitives).
+
+8.88.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+8.88.2. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/arith_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_rs_alu'.
+Successfully finished Verilog frontend.
+
+8.88.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $bmux.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$b8c0a997bce700f23568a5ada79cc6781d1f5ca0\_90_alu for cells of type $alu.
+Using template $paramod$ba698a254f9a5947e85cbe7beae6b161eefc5386\_90_alu for cells of type $alu.
+Using template $paramod$6831557730818fb92b11a295f9eb33ff8fa62af1\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~935 debug messages>
+
+8.89. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                605
+   Number of wire bits:           9788
+   Number of public wires:          85
+   Number of public wire bits:     257
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1114
+     $_AND_                        105
+     $_DFFE_PN0P_                   23
+     $_DFFE_PP_                      4
+     $_DFF_PN0_                      1
+     $_DFF_P_                      295
+     $_MUX_                        475
+     $_NOT_                         49
+     $_OR_                          67
+     $_XOR_                         95
+
+8.90. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~161 debug messages>
+
+8.91. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+<suppressed ~69 debug messages>
+Removed a total of 23 cells.
+
+8.92. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.93. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.94. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.95. Executing OPT_SHARE pass.
+
+8.96. Executing OPT_DFF pass (perform DFF optimizations).
+Handling const CLK on $auto$ff.cc:262:slice$1134 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$794 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$782 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$890 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$842 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$768 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$854 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$818 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$744 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1594 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1582 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1570 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1558 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1365 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1339 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1750 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$733 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$734 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$735 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$736 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$737 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$738 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$739 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$740 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$741 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$742 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$743 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$757 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$758 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$759 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$760 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$761 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$762 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$763 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$764 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$765 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$766 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$767 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$771 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$772 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$773 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$774 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$775 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$776 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$777 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$778 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$779 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$780 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$781 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$783 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$784 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$785 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$786 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$787 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$788 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$789 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$790 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$791 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$792 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$793 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$807 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$808 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$809 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$810 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$811 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$812 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$813 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$814 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$815 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$816 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$817 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$831 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$832 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$833 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$834 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$835 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$836 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$837 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$838 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$839 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$840 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$841 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$843 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$844 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$845 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$846 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$847 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$848 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$849 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$850 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$851 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$852 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$853 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$879 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$880 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$881 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$882 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$883 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$884 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$885 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$886 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$887 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$888 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$889 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1123 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1124 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1125 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1126 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1127 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1128 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1129 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1130 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1131 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1132 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1133 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1328 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1329 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1330 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1331 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1332 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1333 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1334 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1335 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1336 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1337 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1338 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1354 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1355 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1356 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1357 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1358 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1359 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1360 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1361 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1362 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1363 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1364 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1547 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1548 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1549 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1550 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1551 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1552 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1553 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1554 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1555 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1556 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1557 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1559 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1560 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1561 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1562 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1563 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1564 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1565 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1566 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1567 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1568 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1569 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1571 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1572 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1573 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1574 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1575 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1576 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1577 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1578 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1579 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1580 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1581 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1583 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1584 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1585 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1586 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1587 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1588 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1589 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1590 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1591 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1592 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1593 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1739 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1740 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1741 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1742 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1743 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1744 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1745 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1746 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1747 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1748 ($_DFF_P_) from module simple_spi_top (removing D path).
+Handling const CLK on $auto$ff.cc:262:slice$1749 ($_DFF_P_) from module simple_spi_top (removing D path).
+
+8.97. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 16 unused cells and 359 unused wires.
+<suppressed ~17 debug messages>
+
+8.98. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~139 debug messages>
+
+8.99. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.100. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.101. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+<suppressed ~39 debug messages>
+Removed a total of 13 cells.
+
+8.102. Executing OPT_SHARE pass.
+
+8.103. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.104. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+8.105. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.106. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.107. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.108. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.109. Executing OPT_SHARE pass.
+
+8.110. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.111. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.112. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 3
+
+8.113. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~71 debug messages>
+
+8.114. Executing TECHMAP pass (map to technology primitives).
+
+8.114.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+8.114.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~71 debug messages>
+
+8.115. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.116. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.117. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.118. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.119. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.120. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.121. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+8.122. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 1
+
+8.123. Executing ABC pass (technology mapping using ABC).
+
+8.123.1. Summary of detected clock domains:
+  14 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$394, arst=!\rst_i, srst={ }
+  9 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$385, arst={ }, srst={ }
+  37 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$406, arst=!\rst_i, srst={ }
+  9 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$409, arst={ }, srst={ }
+  68 cells in clk=\clock0, en=$auto$opt_dff.cc:219:make_patterns_logic$391, arst=!\rst_i, srst={ }
+  31 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$397, arst=!\rst_i, srst={ }
+  8 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$400, arst={ }, srst={ }
+  8 cells in clk=\clock0, en=$auto$opt_dff.cc:194:make_patterns_logic$385, arst=!\rst_i, srst={ }
+  39 cells in clk=\clock0, en=$auto$opt_dff.cc:219:make_patterns_logic$388, arst=!\rst_i, srst={ }
+  8 cells in clk=\clock0, en={ }, arst=!\rst_i, srst={ }
+  355 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+8.123.2. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$394, asynchronously reset by !\rst_i
+Extracted 14 gates and 20 wires to a netlist network with 6 inputs and 10 outputs.
+
+8.123.2.1. Executing ABC.
+
+8.123.3. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$385
+Extracted 9 gates and 16 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.123.3.1. Executing ABC.
+
+8.123.4. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$406, asynchronously reset by !\rst_i
+Extracted 37 gates and 77 wires to a netlist network with 40 inputs and 14 outputs.
+
+8.123.4.1. Executing ABC.
+
+8.123.5. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$409
+Extracted 9 gates and 17 wires to a netlist network with 8 inputs and 4 outputs.
+
+8.123.5.1. Executing ABC.
+
+8.123.6. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:219:make_patterns_logic$391, asynchronously reset by !\rst_i
+Extracted 68 gates and 119 wires to a netlist network with 50 inputs and 45 outputs.
+
+8.123.6.1. Executing ABC.
+
+8.123.7. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$397, asynchronously reset by !\rst_i
+Extracted 31 gates and 69 wires to a netlist network with 38 inputs and 15 outputs.
+
+8.123.7.1. Executing ABC.
+
+8.123.8. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:194:make_patterns_logic$400
+Extracted 8 gates and 15 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.123.8.1. Executing ABC.
+
+8.123.9. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, asynchronously reset by !\rst_i
+Extracted 8 gates and 10 wires to a netlist network with 2 inputs and 8 outputs.
+
+8.123.9.1. Executing ABC.
+
+8.123.10. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $auto$opt_dff.cc:219:make_patterns_logic$388, asynchronously reset by !\rst_i
+Extracted 39 gates and 72 wires to a netlist network with 32 inputs and 27 outputs.
+
+8.123.10.1. Executing ABC.
+
+8.123.11. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, asynchronously reset by !\rst_i
+Extracted 8 gates and 12 wires to a netlist network with 4 inputs and 3 outputs.
+
+8.123.11.1. Executing ABC.
+
+8.123.12. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 355 gates and 442 wires to a netlist network with 85 inputs and 108 outputs.
+
+8.123.12.1. Executing ABC.
+
+8.124. Executing ABC pass (technology mapping using ABC).
+
+8.124.1. Summary of detected clock domains:
+  7 cells in clk=\clock0, en=$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, arst={ }, srst={ }
+  7 cells in clk=\clock0, en=$abc$2407$auto$opt_dff.cc:194:make_patterns_logic$400, arst={ }, srst={ }
+  11 cells in clk=\clock0, en=$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, arst=!\rst_i, srst={ }
+  86 cells in clk=\clock0, en=$abc$2301$auto$opt_dff.cc:219:make_patterns_logic$391, arst=!\rst_i, srst={ }
+  12 cells in clk=\clock0, en=$abc$2232$auto$opt_dff.cc:194:make_patterns_logic$394, arst=!\rst_i, srst={ }
+  37 cells in clk=\clock0, en=$abc$2428$auto$opt_dff.cc:219:make_patterns_logic$388, arst=!\rst_i, srst={ }
+  9 cells in clk=\clock0, en=$abc$2292$auto$opt_dff.cc:194:make_patterns_logic$409, arst={ }, srst={ }
+  6 cells in clk=\clock0, en={ }, arst=!\rst_i, srst={ }
+  34 cells in clk=\clock0, en=$abc$2256$auto$opt_dff.cc:194:make_patterns_logic$406, arst=!\rst_i, srst={ }
+  33 cells in clk=\clock0, en=$abc$2371$auto$opt_dff.cc:194:make_patterns_logic$397, arst=!\rst_i, srst={ }
+  304 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+8.124.2. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385
+Extracted 7 gates and 13 wires to a netlist network with 6 inputs and 4 outputs.
+
+8.124.2.1. Executing ABC.
+
+8.124.3. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2407$auto$opt_dff.cc:194:make_patterns_logic$400
+Extracted 7 gates and 14 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.124.3.1. Executing ABC.
+
+8.124.4. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, asynchronously reset by !\rst_i
+Extracted 11 gates and 13 wires to a netlist network with 2 inputs and 8 outputs.
+
+8.124.4.1. Executing ABC.
+
+8.124.5. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2301$auto$opt_dff.cc:219:make_patterns_logic$391, asynchronously reset by !\rst_i
+Extracted 86 gates and 162 wires to a netlist network with 76 inputs and 45 outputs.
+
+8.124.5.1. Executing ABC.
+
+8.124.6. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2232$auto$opt_dff.cc:194:make_patterns_logic$394, asynchronously reset by !\rst_i
+Extracted 12 gates and 18 wires to a netlist network with 6 inputs and 10 outputs.
+
+8.124.6.1. Executing ABC.
+
+8.124.7. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2428$auto$opt_dff.cc:219:make_patterns_logic$388, asynchronously reset by !\rst_i
+Extracted 37 gates and 70 wires to a netlist network with 33 inputs and 25 outputs.
+
+8.124.7.1. Executing ABC.
+
+8.124.8. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2292$auto$opt_dff.cc:194:make_patterns_logic$409
+Extracted 9 gates and 16 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.124.8.1. Executing ABC.
+
+8.124.9. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, asynchronously reset by !\rst_i
+Extracted 6 gates and 10 wires to a netlist network with 4 inputs and 3 outputs.
+
+8.124.9.1. Executing ABC.
+
+8.124.10. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2256$auto$opt_dff.cc:194:make_patterns_logic$406, asynchronously reset by !\rst_i
+Extracted 34 gates and 75 wires to a netlist network with 41 inputs and 15 outputs.
+
+8.124.10.1. Executing ABC.
+
+8.124.11. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2371$auto$opt_dff.cc:194:make_patterns_logic$397, asynchronously reset by !\rst_i
+Extracted 33 gates and 72 wires to a netlist network with 39 inputs and 14 outputs.
+
+8.124.11.1. Executing ABC.
+
+8.124.12. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 304 gates and 389 wires to a netlist network with 85 inputs and 134 outputs.
+
+8.124.12.1. Executing ABC.
+
+8.125. Executing ABC pass (technology mapping using ABC).
+
+8.125.1. Summary of detected clock domains:
+  34 cells in clk=\clock0, en=$abc$3157$abc$2371$auto$opt_dff.cc:194:make_patterns_logic$397, arst=!\rst_i, srst={ }
+  7 cells in clk=\clock0, en=$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, arst={ }, srst={ }
+  7 cells in clk=\clock0, en=$abc$2926$abc$2407$auto$opt_dff.cc:194:make_patterns_logic$400, arst={ }, srst={ }
+  11 cells in clk=\clock0, en=$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, arst=!\rst_i, srst={ }
+  11 cells in clk=\clock0, en=$abc$3040$abc$2232$auto$opt_dff.cc:194:make_patterns_logic$394, arst=!\rst_i, srst={ }
+  86 cells in clk=\clock0, en=$abc$2947$abc$2301$auto$opt_dff.cc:219:make_patterns_logic$391, arst=!\rst_i, srst={ }
+  8 cells in clk=\clock0, en=$abc$3104$abc$2292$auto$opt_dff.cc:194:make_patterns_logic$409, arst={ }, srst={ }
+  5 cells in clk=\clock0, en={ }, arst=!\rst_i, srst={ }
+  36 cells in clk=\clock0, en=$abc$3055$abc$2428$auto$opt_dff.cc:219:make_patterns_logic$388, arst=!\rst_i, srst={ }
+  34 cells in clk=\clock0, en=$abc$3120$abc$2256$auto$opt_dff.cc:194:make_patterns_logic$406, arst=!\rst_i, srst={ }
+  304 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+8.125.2. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3157$abc$2371$auto$opt_dff.cc:194:make_patterns_logic$397, asynchronously reset by !\rst_i
+Extracted 34 gates and 73 wires to a netlist network with 39 inputs and 13 outputs.
+
+8.125.2.1. Executing ABC.
+
+8.125.3. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385
+Extracted 7 gates and 13 wires to a netlist network with 6 inputs and 4 outputs.
+
+8.125.3.1. Executing ABC.
+
+8.125.4. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2926$abc$2407$auto$opt_dff.cc:194:make_patterns_logic$400
+Extracted 7 gates and 14 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.125.4.1. Executing ABC.
+
+8.125.5. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3631$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, asynchronously reset by !\rst_i
+Extracted 11 gates and 13 wires to a netlist network with 2 inputs and 8 outputs.
+
+8.125.5.1. Executing ABC.
+
+8.125.6. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3040$abc$2232$auto$opt_dff.cc:194:make_patterns_logic$394, asynchronously reset by !\rst_i
+Extracted 11 gates and 16 wires to a netlist network with 5 inputs and 10 outputs.
+
+8.125.6.1. Executing ABC.
+
+8.125.7. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$2947$abc$2301$auto$opt_dff.cc:219:make_patterns_logic$391, asynchronously reset by !\rst_i
+Extracted 86 gates and 163 wires to a netlist network with 77 inputs and 46 outputs.
+
+8.125.7.1. Executing ABC.
+
+8.125.8. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3104$abc$2292$auto$opt_dff.cc:194:make_patterns_logic$409
+Extracted 8 gates and 15 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.125.8.1. Executing ABC.
+
+8.125.9. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, asynchronously reset by !\rst_i
+Extracted 5 gates and 9 wires to a netlist network with 4 inputs and 3 outputs.
+
+8.125.9.1. Executing ABC.
+
+8.125.10. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3055$abc$2428$auto$opt_dff.cc:219:make_patterns_logic$388, asynchronously reset by !\rst_i
+Extracted 36 gates and 69 wires to a netlist network with 33 inputs and 25 outputs.
+
+8.125.10.1. Executing ABC.
+
+8.125.11. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3120$abc$2256$auto$opt_dff.cc:194:make_patterns_logic$406, asynchronously reset by !\rst_i
+Extracted 34 gates and 75 wires to a netlist network with 41 inputs and 15 outputs.
+
+8.125.11.1. Executing ABC.
+
+8.125.12. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 304 gates and 390 wires to a netlist network with 86 inputs and 135 outputs.
+
+8.125.12.1. Executing ABC.
+
+8.126. Executing ABC pass (technology mapping using ABC).
+
+8.126.1. Summary of detected clock domains:
+  34 cells in clk=\clock0, en=$abc$3833$abc$3120$abc$2256$auto$opt_dff.cc:194:make_patterns_logic$406, arst=!\rst_i, srst={ }
+  32 cells in clk=\clock0, en=$abc$3596$abc$3157$abc$2371$auto$opt_dff.cc:194:make_patterns_logic$397, arst=!\rst_i, srst={ }
+  6 cells in clk=\clock0, en=$abc$3631$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, arst={ }, srst={ }
+  7 cells in clk=\clock0, en=$abc$3640$abc$2926$abc$2407$auto$opt_dff.cc:194:make_patterns_logic$400, arst={ }, srst={ }
+  8 cells in clk=\clock0, en=$abc$3631$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, arst=!\rst_i, srst={ }
+  10 cells in clk=\clock0, en=$abc$3661$abc$3040$abc$2232$auto$opt_dff.cc:194:make_patterns_logic$394, arst=!\rst_i, srst={ }
+  90 cells in clk=\clock0, en=$abc$3676$abc$2947$abc$2301$auto$opt_dff.cc:219:make_patterns_logic$391, arst=!\rst_i, srst={ }
+  8 cells in clk=\clock0, en=$abc$3770$abc$3104$abc$2292$auto$opt_dff.cc:194:make_patterns_logic$409, arst={ }, srst={ }
+  5 cells in clk=\clock0, en={ }, arst=!\rst_i, srst={ }
+  33 cells in clk=\clock0, en=$abc$3786$abc$3055$abc$2428$auto$opt_dff.cc:219:make_patterns_logic$388, arst=!\rst_i, srst={ }
+  308 cells in clk=\clock0, en={ }, arst={ }, srst={ }
+
+8.126.2. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3833$abc$3120$abc$2256$auto$opt_dff.cc:194:make_patterns_logic$406, asynchronously reset by !\rst_i
+Extracted 34 gates and 76 wires to a netlist network with 42 inputs and 17 outputs.
+
+8.126.2.1. Executing ABC.
+
+8.126.3. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3596$abc$3157$abc$2371$auto$opt_dff.cc:194:make_patterns_logic$397, asynchronously reset by !\rst_i
+Extracted 32 gates and 72 wires to a netlist network with 40 inputs and 15 outputs.
+
+8.126.3.1. Executing ABC.
+
+8.126.4. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3631$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385
+Extracted 6 gates and 10 wires to a netlist network with 4 inputs and 4 outputs.
+
+8.126.4.1. Executing ABC.
+
+8.126.5. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3640$abc$2926$abc$2407$auto$opt_dff.cc:194:make_patterns_logic$400
+Extracted 7 gates and 14 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.126.5.1. Executing ABC.
+
+8.126.6. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$4345$abc$3631$abc$2917$abc$2247$auto$opt_dff.cc:194:make_patterns_logic$385, asynchronously reset by !\rst_i
+Extracted 8 gates and 10 wires to a netlist network with 2 inputs and 8 outputs.
+
+8.126.6.1. Executing ABC.
+
+8.126.7. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3661$abc$3040$abc$2232$auto$opt_dff.cc:194:make_patterns_logic$394, asynchronously reset by !\rst_i
+Extracted 10 gates and 15 wires to a netlist network with 5 inputs and 10 outputs.
+
+8.126.7.1. Executing ABC.
+
+8.126.8. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3676$abc$2947$abc$2301$auto$opt_dff.cc:219:make_patterns_logic$391, asynchronously reset by !\rst_i
+Extracted 90 gates and 173 wires to a netlist network with 83 inputs and 51 outputs.
+
+8.126.8.1. Executing ABC.
+
+8.126.9. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3770$abc$3104$abc$2292$auto$opt_dff.cc:194:make_patterns_logic$409
+Extracted 8 gates and 15 wires to a netlist network with 7 inputs and 4 outputs.
+
+8.126.9.1. Executing ABC.
+
+8.126.10. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, asynchronously reset by !\rst_i
+Extracted 5 gates and 9 wires to a netlist network with 4 inputs and 3 outputs.
+
+8.126.10.1. Executing ABC.
+
+8.126.11. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0, enabled by $abc$3786$abc$3055$abc$2428$auto$opt_dff.cc:219:make_patterns_logic$388, asynchronously reset by !\rst_i
+Extracted 33 gates and 67 wires to a netlist network with 34 inputs and 23 outputs.
+
+8.126.11.1. Executing ABC.
+
+8.126.12. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clock0
+Extracted 308 gates and 394 wires to a netlist network with 86 inputs and 135 outputs.
+
+8.126.12.1. Executing ABC.
+
+8.127. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+8.128. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.129. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.130. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.131. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.132. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.133. Executing OPT_SHARE pass.
+
+8.134. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4652 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[7], Q = $abc$4549$lo102).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4651 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[6], Q = $abc$4549$lo101).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4650 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[5], Q = $abc$4549$lo100).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4649 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[4], Q = $abc$4549$lo099).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4648 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[3], Q = $abc$4549$lo098).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4647 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[2], Q = $abc$4549$lo097).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4646 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[1], Q = $abc$4549$lo096).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4645 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[0], Q = $abc$4549$lo095).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4628 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[7], Q = $abc$4549$lo078).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4627 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[6], Q = $abc$4549$lo077).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4626 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[5], Q = $abc$4549$lo076).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4625 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[4], Q = $abc$4549$lo075).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4624 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[3], Q = $abc$4549$lo074).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4623 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[2], Q = $abc$4549$lo073).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4622 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[1], Q = $abc$4549$lo072).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4621 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[0], Q = $abc$4549$lo071).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4608 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo091, Q = $abc$4549$lo058).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4607 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo090, Q = $abc$4549$lo057).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4606 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo089, Q = $abc$4549$lo056).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4605 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo088, Q = $abc$4549$lo055).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4604 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo087, Q = $abc$4549$lo054).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4603 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo086, Q = $abc$4549$lo053).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4602 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo085, Q = $abc$4549$lo052).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4601 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo084, Q = $abc$4549$lo051).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4600 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo091, Q = $abc$4549$lo050).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4599 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo090, Q = $abc$4549$lo049).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4598 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo089, Q = $abc$4549$lo048).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4597 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo088, Q = $abc$4549$lo047).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4596 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo087, Q = $abc$4549$lo046).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4595 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo086, Q = $abc$4549$lo045).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4594 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo085, Q = $abc$4549$lo044).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4593 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo084, Q = $abc$4549$lo043).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4592 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo091, Q = $abc$4549$lo042).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4591 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo090, Q = $abc$4549$lo041).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4590 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo089, Q = $abc$4549$lo040).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4589 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo088, Q = $abc$4549$lo039).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4588 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo087, Q = $abc$4549$lo038).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4587 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo086, Q = $abc$4549$lo037).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4586 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo085, Q = $abc$4549$lo036).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4585 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo084, Q = $abc$4549$lo035).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4584 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo091, Q = $abc$4549$lo034).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4583 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo090, Q = $abc$4549$lo033).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4582 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo089, Q = $abc$4549$lo032).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4581 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo088, Q = $abc$4549$lo031).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4580 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo087, Q = $abc$4549$lo030).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4579 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo086, Q = $abc$4549$lo029).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4578 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo085, Q = $abc$4549$lo028).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4577 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$lo084, Q = $abc$4549$lo027).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4573 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[7], Q = $abc$4549$lo023).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4572 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[6], Q = $abc$4549$lo022).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4571 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[5], Q = $abc$4549$lo021).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4570 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[4], Q = $abc$4549$lo020).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4569 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[3], Q = $abc$4549$lo019).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4568 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[2], Q = $abc$4549$lo018).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4567 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[1], Q = $abc$4549$lo017).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4566 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[0], Q = $abc$4549$lo016).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4565 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[7], Q = $abc$4549$lo015).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4564 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[6], Q = $abc$4549$lo014).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4563 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[5], Q = $abc$4549$lo013).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4562 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[4], Q = $abc$4549$lo012).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4561 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[3], Q = $abc$4549$lo011).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4560 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[2], Q = $abc$4549$lo010).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4559 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[1], Q = $abc$4549$lo009).
+Adding EN signal on $abc$4549$auto$blifparse.cc:362:parse_blif$4558 ($_DFF_P_) from module simple_spi_top (D = $abc$4549$dat_i[0], Q = $abc$4549$lo008).
+
+8.135. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 64 unused cells and 3714 unused wires.
+<suppressed ~81 debug messages>
+
+8.136. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.137. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.138. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.139. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.140. Executing OPT_SHARE pass.
+
+8.141. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.142. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+
+8.143. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 2
+
+8.144. Executing BMUXMAP pass.
+
+8.145. Executing DEMUXMAP pass.
+
+8.146. Executing ABC pass (technology mapping using ABC).
+
+8.146.1. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Extracted 347 gates and 478 wires to a netlist network with 131 inputs and 68 outputs.
+
+8.146.1.1. Executing ABC.
+DE:   #PIs = 131  #Luts =   119  Max Lvl =   4  Avg Lvl =   2.47  [   0.04 sec. at Pass 0]
+DE:   #PIs = 131  #Luts =   124  Max Lvl =   3  Avg Lvl =   2.10  [   0.25 sec. at Pass 1]
+DE:   #PIs = 131  #Luts =   118  Max Lvl =   3  Avg Lvl =   2.18  [   0.17 sec. at Pass 2]
+DE:   #PIs = 131  #Luts =   118  Max Lvl =   3  Avg Lvl =   2.18  [   0.14 sec. at Pass 3]
+DE:   #PIs = 131  #Luts =   117  Max Lvl =   3  Avg Lvl =   2.15  [   0.19 sec. at Pass 4]
+DE:   #PIs = 131  #Luts =   117  Max Lvl =   3  Avg Lvl =   2.15  [   0.16 sec. at Pass 5]
+DE:   #PIs = 131  #Luts =   116  Max Lvl =   3  Avg Lvl =   2.15  [   0.16 sec. at Pass 6]
+DE:   #PIs = 131  #Luts =   112  Max Lvl =   3  Avg Lvl =   2.16  [   0.16 sec. at Pass 7]
+DE:   #PIs = 131  #Luts =   111  Max Lvl =   3  Avg Lvl =   2.18  [   0.18 sec. at Pass 8]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.12 sec. at Pass 9]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.18 sec. at Pass 10]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.16 sec. at Pass 11]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.17 sec. at Pass 12]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.00 sec. at Pass 13]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.00 sec. at Pass 14]
+
+8.147. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.148. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.149. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.150. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.151. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.152. Executing OPT_SHARE pass.
+
+8.153. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.154. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 460 unused wires.
+<suppressed ~11 debug messages>
+
+8.155. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 1
+
+8.156. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+8.157. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                216
+   Number of wire bits:            365
+   Number of public wires:          59
+   Number of public wire bits:     208
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                241
+     $_DFFE_PN0P_                   23
+     $_DFFE_PN_                     32
+     $_DFFE_PP_                     36
+     $_DFF_PN0_                      1
+     $_DFF_P_                       39
+     $lut                          110
+
+8.158. Executing SHREGMAP pass (map shift registers).
+Converted 0 dff cells into 0 shift registers.
+
+8.159. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+8.160. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                216
+   Number of wire bits:            365
+   Number of public wires:          59
+   Number of public wire bits:     208
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                241
+     $_DFFE_PN0P_                   23
+     $_DFFE_PP0N_                   32
+     $_DFFE_PP0P_                   36
+     $_DFF_PN0_                      1
+     $_DFF_P_                       39
+     $lut                          110
+
+8.161. Executing TECHMAP pass (map to technology primitives).
+
+8.161.1. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+8.161.2. Executing Verilog-2005 frontend: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v
+Parsing Verilog input from `/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0N_'.
+Generating RTLIL representation for module `\$_DFFE_PN0P_'.
+Generating RTLIL representation for module `\$_DFFE_PN0N_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1N_'.
+Generating RTLIL representation for module `\$_DFFE_PN1P_'.
+Generating RTLIL representation for module `\$_DFFE_PN1N_'.
+Generating RTLIL representation for module `\$_DFFSR_PPP_'.
+Generating RTLIL representation for module `\$_DFFSR_PNP_'.
+Generating RTLIL representation for module `\$_DFFSR_PNN_'.
+Generating RTLIL representation for module `\$_DFFSR_PPN_'.
+Generating RTLIL representation for module `\$_DFFSR_NPP_'.
+Generating RTLIL representation for module `\$_DFFSR_NNP_'.
+Generating RTLIL representation for module `\$_DFFSR_NNN_'.
+Generating RTLIL representation for module `\$_DFFSR_NPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPNN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNNN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PPP_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NPP_'.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0N_'.
+Generating RTLIL representation for module `\$_DFFE_NN0P_'.
+Generating RTLIL representation for module `\$_DFFE_NN0N_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1N_'.
+Generating RTLIL representation for module `\$_DFFE_NN1P_'.
+Generating RTLIL representation for module `\$_DFFE_NN1N_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPNN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNNN_'.
+Generating RTLIL representation for module `\$__SHREG_DFF_P_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PN0_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NN0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_PN1_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_NN1_'.
+Successfully finished Verilog frontend.
+
+8.161.3. Continuing TECHMAP pass.
+Using template \$_DFFE_PN0P_ for cells of type $_DFFE_PN0P_.
+Using template \$_DFFE_PP0P_ for cells of type $_DFFE_PP0P_.
+Using template \$_DFF_PN0_ for cells of type $_DFF_PN0_.
+Using template \$_DFFE_PP0N_ for cells of type $_DFFE_PP0N_.
+Using extmapper simplemap for cells of type $lut.
+Using template \$_DFF_P_ for cells of type $_DFF_P_.
+Using extmapper simplemap for cells of type $logic_not.
+No more expansions possible.
+<suppressed ~477 debug messages>
+
+8.162. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~3148 debug messages>
+
+8.163. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+8.164. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.165. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+<suppressed ~1407 debug messages>
+Removed a total of 469 cells.
+
+8.166. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.167. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 860 unused wires.
+<suppressed ~1 debug messages>
+
+8.168. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+<suppressed ~144 debug messages>
+
+8.169. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.170. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.171. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.172. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.173. Executing OPT_SHARE pass.
+
+8.174. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.175. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 15 unused wires.
+<suppressed ~1 debug messages>
+
+8.176. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 1
+
+8.177. Executing ABC pass (technology mapping using ABC).
+
+8.177.1. Extracting gate netlist of module `\simple_spi_top' to `<abc-temp-dir>/input.blif'..
+Extracted 497 gates and 630 wires to a netlist network with 131 inputs and 68 outputs.
+
+8.177.1.1. Executing ABC.
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.04 sec. at Pass 0]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.25 sec. at Pass 1]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.13 sec. at Pass 2]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.11 sec. at Pass 3]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.18 sec. at Pass 4]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.16 sec. at Pass 5]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.00 sec. at Pass 6]
+DE:   #PIs = 131  #Luts =   110  Max Lvl =   3  Avg Lvl =   2.09  [   0.00 sec. at Pass 7]
+
+8.178. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+
+8.179. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.180. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \simple_spi_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.181. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \simple_spi_top.
+Performed a total of 0 changes.
+
+8.182. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\simple_spi_top'.
+Removed a total of 0 cells.
+
+8.183. Executing OPT_SHARE pass.
+
+8.184. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.185. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 561 unused wires.
+<suppressed ~1 debug messages>
+
+8.186. Executing OPT_EXPR pass (perform const folding).
+Optimizing module simple_spi_top.
+MAX OPT ITERATION = 1
+
+8.187. Executing HIERARCHY pass (managing design hierarchy).
+
+8.187.1. Analyzing design hierarchy..
+Top module:  \simple_spi_top
+
+8.187.2. Analyzing design hierarchy..
+Top module:  \simple_spi_top
+Removed 0 unused modules.
+
+8.188. Printing statistics.
+
+=== simple_spi_top ===
+
+   Number of wires:                216
+   Number of wire bits:            365
+   Number of public wires:          59
+   Number of public wire bits:     208
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                241
+     $lut                          110
+     dffsre                        131
+
+8.189. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \simple_spi_top..
+Removed 0 unused cells and 31 unused wires.
+<suppressed ~31 debug messages>
+
+9. Executing BLIF backend.
+
+10. Executing Verilog backend.
+Dumping module `\simple_spi_top'.
+
+Warnings: 68 unique messages, 68 total
+End of script. Logfile hash: 6693e3be5a, CPU: user 1.53s system 0.13s, MEM: 31.22 MB peak
+Yosys 0.18+10 (git sha1 c98b0e94e, gcc 9.4.0 -fPIC -Os)
+Time spent: 95% 6x abc (25 sec), 1% 35x opt_expr (0 sec), ...
