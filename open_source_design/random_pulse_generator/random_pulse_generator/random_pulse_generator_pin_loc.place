@@ -1,0 +1,6 @@
+#Block Name   x   y   z
+#------------ --  --  -
+clock0	6	0	19
+ce	7	0	12
+rst	8	0	7
+out:q	8	0	16

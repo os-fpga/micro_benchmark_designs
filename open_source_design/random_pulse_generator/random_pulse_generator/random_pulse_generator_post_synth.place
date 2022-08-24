@@ -1,0 +1,14 @@
+Netlist_File: random_pulse_generator_post_synth.net Netlist_ID: SHA256:7e2a4dfcb0ef740249c0d3f4ca7e34ef32b7a0ea17fa0f641820e78bf7c1bfb0
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$abc$1154$new_new_n33__	10	36	0	#0
+$abc$1154$abc$588$li0_li0	10	35	0	#1
+q		10	32	0	#2
+$abc$1154$abc$593$lo29	10	34	0	#3
+$true		10	37	0	#4
+out:q		8	0	16	#5
+clock0		6	0	19	#6
+ce		7	0	12	#7
+rst		8	0	7	#8

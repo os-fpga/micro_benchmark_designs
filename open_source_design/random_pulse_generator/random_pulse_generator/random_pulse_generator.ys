@@ -1,0 +1,24 @@
+ 
+# Yosys synthesis script for random_pulse_generator
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/random_pulse_generator/./random_pulse_generator.v
+verific -import random_pulse_generator
+
+
+# Technology mapping
+hierarchy -top random_pulse_generator
+
+setattr -set keep 1 w:\clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top random_pulse_generator -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif random_pulse_generator_post_synth.blif
+write_verilog -noexpr -nodec -norename random_pulse_generator_post_synth.v
+  

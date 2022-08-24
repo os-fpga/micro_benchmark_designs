@@ -1,0 +1,20 @@
+# Perf log file
+# Created: Wed Aug 24 15:31:15 2022
+
+[ 15:31:15 ] Synthesize has started
+[ 15:31:15 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/yosys -s random_pulse_generator.ys -l random_pulse_generator_synth.log
+[ 15:31:20 ] Duration: 5732 ms. Max utilization: 68 MB
+[ 15:31:20 ] Packing has started
+[ 15:31:20 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml random_pulse_generator_post_synth.blif --sdc_file random_pulse_generator_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report random_pulse_generator_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
+[ 15:32:21 ] Duration: 60924 ms. Max utilization: 1063 MB
+[ 15:32:21 ] Placement has started
+[ 15:32:21 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf random_pulse_generator_openfpga.pcf --blif random_pulse_generator_post_synth.blif --output random_pulse_generator_pin_loc.place --assign_unconstrained_pins in_define_order
+[ 15:32:21 ] Duration: 74 ms. Max utilization: 227 MB
+[ 15:32:21 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml random_pulse_generator_post_synth.blif --sdc_file random_pulse_generator_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report random_pulse_generator_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins random_pulse_generator_pin_loc.place
+[ 15:34:26 ] Duration: 124527 ms. Max utilization: 1108 MB
+[ 15:34:26 ] Route has started
+[ 15:34:26 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml random_pulse_generator_post_synth.blif --sdc_file random_pulse_generator_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report random_pulse_generator_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 15:36:22 ] Duration: 116171 ms. Max utilization: 1107 MB
+[ 15:36:22 ] TimingAnalysis has started
+[ 15:36:22 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml random_pulse_generator_post_synth.blif --sdc_file random_pulse_generator_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report random_pulse_generator_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 15:37:25 ] Duration: 62474 ms. Max utilization: 1102 MB
