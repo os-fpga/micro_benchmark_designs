@@ -1,0 +1,24 @@
+ 
+# Yosys synthesis script for rc4
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/rc4-prbs/./rc4.v
+verific -import rc4
+
+
+# Technology mapping
+hierarchy -top rc4
+
+setattr -set keep 1 w:\clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top rc4 -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif rc4_post_synth.blif
+write_verilog -noexpr -nodec -norename rc4_post_synth.v
+  
