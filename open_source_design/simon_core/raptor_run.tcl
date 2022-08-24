@@ -1,0 +1,16 @@
+
+
+create_design Simon_bit_serial_top_module_FPGA
+#target_device MPW1
+target_device GEMINI
+add_design_file ./Simon_bit_serial_top_module_FPGA.v
+add_design_file ./Simon_bit_serial_datapath_FPGA.v
+add_design_file ./Simon_bit_serial_key_expansion_FPGA.v
+set_top_module Simon_bit_serial_top_module_FPGA.v
+add_constraint_file Simon_bit_serial_top_module_FPGA.sdc
+synthesize delay
+packing
+place
+route
+sta
+#bitstream force

@@ -1,0 +1,20 @@
+# Perf log file
+# Created: Wed Aug 24 17:23:26 2022
+
+[ 17:23:26 ] Synthesize has started
+[ 17:23:26 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/yosys -s Simon_bit_serial_top_module_FPGA.ys -l Simon_bit_serial_top_module_FPGA_synth.log
+[ 17:23:34 ] Duration: 8742 ms. Max utilization: 71 MB
+[ 17:23:34 ] Packing has started
+[ 17:23:34 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml Simon_bit_serial_top_module_FPGA_post_synth.blif --sdc_file Simon_bit_serial_top_module_FPGA_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report Simon_bit_serial_top_module_FPGA_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
+[ 17:24:34 ] Duration: 60072 ms. Max utilization: 1065 MB
+[ 17:24:34 ] Placement has started
+[ 17:24:34 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf Simon_bit_serial_top_module_FPGA_openfpga.pcf --blif Simon_bit_serial_top_module_FPGA_post_synth.blif --output Simon_bit_serial_top_module_FPGA_pin_loc.place --assign_unconstrained_pins in_define_order
+[ 17:24:34 ] Duration: 64 ms. Max utilization: 227 MB
+[ 17:24:34 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml Simon_bit_serial_top_module_FPGA_post_synth.blif --sdc_file Simon_bit_serial_top_module_FPGA_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report Simon_bit_serial_top_module_FPGA_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins Simon_bit_serial_top_module_FPGA_pin_loc.place
+[ 17:26:39 ] Duration: 124308 ms. Max utilization: 1110 MB
+[ 17:26:39 ] Route has started
+[ 17:26:39 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml Simon_bit_serial_top_module_FPGA_post_synth.blif --sdc_file Simon_bit_serial_top_module_FPGA_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report Simon_bit_serial_top_module_FPGA_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 17:28:30 ] Duration: 110915 ms. Max utilization: 1110 MB
+[ 17:28:30 ] TimingAnalysis has started
+[ 17:28:30 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml Simon_bit_serial_top_module_FPGA_post_synth.blif --sdc_file Simon_bit_serial_top_module_FPGA_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report Simon_bit_serial_top_module_FPGA_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 17:29:27 ] Duration: 57105 ms. Max utilization: 1104 MB

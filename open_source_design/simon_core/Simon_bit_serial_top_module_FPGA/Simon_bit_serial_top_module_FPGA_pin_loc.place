@@ -1,0 +1,7 @@
+#Block Name   x   y   z
+#------------ --  --  -
+clock0	6	0	19
+data_in	7	0	12
+out:cipher_out	8	0	7
+data_rdy[0]	13	0	13
+data_rdy[1]	14	0	2

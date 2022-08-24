@@ -1,0 +1,30 @@
+Netlist_File: Simon_bit_serial_top_module_FPGA_post_synth.net Netlist_ID: SHA256:c95e952442825ae6bcf86c51338e72040c713c2ecdf09efd6c4379953fe76fcd
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$abc$8195$new_new_n89__	10	26	0	#0
+$abc$8195$new_new_n57__	8	27	0	#1
+$abc$5426$li057_li057	10	27	0	#2
+$abc$8195$new_new_n91__	8	26	0	#3
+$abc$5703$lo0	11	27	0	#4
+$abc$3599$li0_li0	10	25	0	#5
+$abc$3151$li071_li071	10	28	0	#6
+$abc$5426$li110_li110	8	28	0	#7
+$abc$5146$li122_li122	8	24	0	#8
+$abc$5146$li001_li001	11	29	0	#9
+$abc$5146$li053_li053	11	28	0	#10
+$abc$5146$li014_li014	11	26	0	#11
+$abc$5146$li024_li024	10	24	0	#12
+$abc$5146$li028_li028	11	24	0	#13
+$abc$5146$li072_li072	11	25	0	#14
+$abc$5426$li001_li001	11	22	0	#15
+$abc$5426$li002_li002	10	22	0	#16
+$abc$5426$li014_li014	10	30	0	#17
+$abc$5426$li015_li015	10	29	0	#18
+$abc$5426$li076_li076	8	29	0	#19
+out:cipher_out	8	0	7	#20
+clock0		6	0	19	#21
+data_in		7	0	12	#22
+data_rdy[0]	13	0	13	#23
+data_rdy[1]	14	0	2	#24

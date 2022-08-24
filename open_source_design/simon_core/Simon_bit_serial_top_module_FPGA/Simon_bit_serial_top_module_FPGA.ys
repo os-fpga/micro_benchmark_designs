@@ -1,0 +1,26 @@
+ 
+# Yosys synthesis script for Simon_bit_serial_top_module_FPGA
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/simon_core/./Simon_bit_serial_top_module_FPGA.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/simon_core/./Simon_bit_serial_datapath_FPGA.v
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/open_source_design/simon_core/./Simon_bit_serial_key_expansion_FPGA.v
+verific -import Simon_bit_serial_top_module_FPGA
+
+
+# Technology mapping
+hierarchy -top Simon_bit_serial_top_module_FPGA
+
+setattr -set keep 1 w:\clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top Simon_bit_serial_top_module_FPGA -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif Simon_bit_serial_top_module_FPGA_post_synth.blif
+write_verilog -noexpr -nodec -norename Simon_bit_serial_top_module_FPGA_post_synth.v
+  

@@ -1,0 +1,1 @@
+/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf Simon_bit_serial_top_module_FPGA_openfpga.pcf --blif Simon_bit_serial_top_module_FPGA_post_synth.blif --output Simon_bit_serial_top_module_FPGA_pin_loc.place --assign_unconstrained_pins in_define_order
