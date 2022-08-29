@@ -1,0 +1,20 @@
+# Perf log file
+# Created: Tue Aug 23 16:55:37 2022
+
+[ 16:55:37 ] Synthesize has started
+[ 16:55:37 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/yosys -s hop7_L4.ys -l hop7_L4_synth.log
+[ 16:55:44 ] Duration: 6609 ms. Max utilization: 67 MB
+[ 16:55:44 ] Packing has started
+[ 16:55:44 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop7_L4_post_synth.blif --sdc_file hop7_L4_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop7_L4_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
+[ 16:56:54 ] Duration: 70088 ms. Max utilization: 1063 MB
+[ 16:56:54 ] Placement has started
+[ 16:56:54 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf hop7_L4_openfpga.pcf --blif hop7_L4_post_synth.blif --output hop7_L4_pin_loc.place --assign_unconstrained_pins in_define_order
+[ 16:56:54 ] Duration: 73 ms. Max utilization: 227 MB
+[ 16:56:54 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop7_L4_post_synth.blif --sdc_file hop7_L4_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop7_L4_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins hop7_L4_pin_loc.place
+[ 16:59:09 ] Duration: 135236 ms. Max utilization: 1107 MB
+[ 16:59:09 ] Route has started
+[ 16:59:09 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop7_L4_post_synth.blif --sdc_file hop7_L4_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop7_L4_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 17:01:15 ] Duration: 125742 ms. Max utilization: 1148 MB
+[ 17:01:15 ] TimingAnalysis has started
+[ 17:01:15 ] Command: /nfs_cadtools/raptor/08_23_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/08_23_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml hop7_L4_post_synth.blif --sdc_file hop7_L4_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report hop7_L4_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 17:02:13 ] Duration: 58067 ms. Max utilization: 1102 MB

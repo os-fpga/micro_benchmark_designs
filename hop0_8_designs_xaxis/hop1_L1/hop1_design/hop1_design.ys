@@ -1,0 +1,24 @@
+ 
+# Yosys synthesis script for hop1_design
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/Roman/hop1_design/./hop1_design.v
+verific -import hop1_design
+
+
+# Technology mapping
+hierarchy -top hop1_design
+
+setattr -set keep 1 clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top hop1_design -de -goal delay         -de_max_threads -1   
+
+# Clean and output blif
+write_blif hop1_design_post_synth.blif
+write_verilog -noexpr -nodec -norename hop1_design_post_synth.v
+  

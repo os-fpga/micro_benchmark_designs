@@ -1,0 +1,1349 @@
+<?xml version="1.0"?>
+<block name="hop4_L4_post_synth.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:f2f1416c8f5afb5432e575fd6264f3a78ff797934f9ee9ccd0e42270cc128686" atom_netlist_id="SHA256:d629dacf8dcebdfb1d7fa2f6773b8ddc900ea8a9077560a0cdca97ec2bd20cfb">
+	<inputs>clock0 rst1 rst2 rst3 rst4 start</inputs>
+	<outputs>out:ff5</outputs>
+	<clocks>clock0</clocks>
+	<block name="ff1" instance="clb[0]" mode="default">
+		<inputs>
+			<port name="I0">open open open open open open start open open open</port>
+			<port name="I1">open open open open rst1 open open open open open</port>
+			<port name="I2">open open open open open open open open open open</port>
+			<port name="I3">open open open open open open open open open open</port>
+			<port name="sc_in">open</port>
+			<port name="cin">open</port>
+			<port name="cin_trick">open</port>
+			<port name="set">$true</port>
+			<port name="lreset">$true</port>
+			<port name="sync_set">open</port>
+			<port name="sync_reset">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+			<port name="enable">$true</port>
+			<port name="reg_in">open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open fle[9].out[0]-&gt;clbouts1 open open open open open open open open fle[8].out[1]-&gt;clbouts2 fle[9].out[1]-&gt;clbouts2</port>
+			<port name="sc_out">open</port>
+			<port name="cout">open</port>
+			<port name="reg_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">clock0 open open open</port>
+		</clocks>
+		<block name="open" instance="fle[0]" />
+		<block name="open" instance="fle[1]" />
+		<block name="open" instance="fle[2]" />
+		<block name="open" instance="fle[3]" />
+		<block name="open" instance="fle[4]" />
+		<block name="open" instance="fle[5]" />
+		<block name="open" instance="fle[6]" />
+		<block name="open" instance="fle[7]" />
+		<block name="$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]" instance="fle[8]" mode="n2_lut5">
+			<inputs>
+				<port name="in">open open open clb.I1[4]-&gt;crossbar3 open open</port>
+				<port name="cin">open</port>
+				<port name="sc_in">open</port>
+				<port name="set">open</port>
+				<port name="reset">open</port>
+				<port name="sync_set">open</port>
+				<port name="sync_reset">open</port>
+				<port name="enable">open</port>
+				<port name="reg_in">open</port>
+			</inputs>
+			<outputs>
+				<port name="out">open lut5inter[0].out[1]-&gt;direct2</port>
+				<port name="cout">open</port>
+				<port name="sc_out">open</port>
+				<port name="reg_out">open</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]" instance="lut5inter[0]" mode="default">
+				<inputs>
+					<port name="in">open open open fle.in[3]-&gt;direct1 open</port>
+					<port name="cin">open</port>
+					<port name="set">open</port>
+					<port name="reset">open</port>
+					<port name="sync_set">open</port>
+					<port name="sync_reset">open</port>
+					<port name="enable">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open ble5[1].out[0]-&gt;direct3</port>
+					<port name="cout">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="open" instance="ble5[0]" />
+				<block name="$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]" instance="ble5[1]" mode="blut5">
+					<inputs>
+						<port name="in">open open open lut5inter.in[3]-&gt;direct2 open</port>
+						<port name="cin">open</port>
+						<port name="set">open</port>
+						<port name="reset">open</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">open</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">open</port>
+					</clocks>
+					<block name="$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open open ble5.in[3]-&gt;direct1 open</port>
+							<port name="set">open</port>
+							<port name="reset">open</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">open</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">open</port>
+						</clocks>
+						<block name="$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">open open open flut5.in[3]-&gt;direct1 open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">open open open lut5.in[3]-&gt;direct:lut5 open</port>
+									<port_rotation_map name="in">open open open 0 open</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+						<block name="open" instance="ff[0]" />
+					</block>
+				</block>
+			</block>
+		</block>
+		<block name="ff1" instance="fle[9]" mode="n2_lut5">
+			<inputs>
+				<port name="in">clb.I0[6]-&gt;crossbar0 clb.I1[4]-&gt;crossbar1 open open open open</port>
+				<port name="cin">open</port>
+				<port name="sc_in">open</port>
+				<port name="set">clb.set[0]-&gt;set</port>
+				<port name="reset">clb.lreset[0]-&gt;reset</port>
+				<port name="sync_set">open</port>
+				<port name="sync_reset">open</port>
+				<port name="enable">clb.enable[0]-&gt;enable</port>
+				<port name="reg_in">open</port>
+			</inputs>
+			<outputs>
+				<port name="out">lut5inter[0].out[0]-&gt;direct2 lut5inter[0].out[1]-&gt;direct2</port>
+				<port name="cout">open</port>
+				<port name="sc_out">open</port>
+				<port name="reg_out">open</port>
+			</outputs>
+			<clocks>
+				<port name="clk">clb.clk[0]-&gt;clks</port>
+			</clocks>
+			<block name="ff1" instance="lut5inter[0]" mode="default">
+				<inputs>
+					<port name="in">fle.in[0]-&gt;direct1 fle.in[1]-&gt;direct1 open open open</port>
+					<port name="cin">open</port>
+					<port name="set">fle.set[0]-&gt;set</port>
+					<port name="reset">fle.reset[0]-&gt;reset</port>
+					<port name="sync_set">open</port>
+					<port name="sync_reset">open</port>
+					<port name="enable">fle.enable[0]-&gt;enable</port>
+				</inputs>
+				<outputs>
+					<port name="out">ble5[0].out[0]-&gt;direct3 ble5[1].out[0]-&gt;direct3</port>
+					<port name="cout">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">fle.clk[0]-&gt;direct3</port>
+				</clocks>
+				<block name="$true" instance="ble5[0]" mode="blut5">
+					<inputs>
+						<port name="in">open open open open open</port>
+						<port name="cin">open</port>
+						<port name="set">open</port>
+						<port name="reset">open</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">open</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">open</port>
+					</clocks>
+					<block name="$true" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open open open open</port>
+							<port name="set">open</port>
+							<port name="reset">open</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">open</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">open</port>
+						</clocks>
+						<block name="$true" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">open open open open open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="$true" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">open open open open open</port>
+								</inputs>
+								<outputs>
+									<port name="out">$true</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+						<block name="open" instance="ff[0]" />
+					</block>
+				</block>
+				<block name="ff1" instance="ble5[1]" mode="blut5">
+					<inputs>
+						<port name="in">lut5inter.in[0]-&gt;direct2 lut5inter.in[1]-&gt;direct2 open open open</port>
+						<port name="cin">open</port>
+						<port name="set">lut5inter.set[0]-&gt;set</port>
+						<port name="reset">lut5inter.reset[0]-&gt;reset</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">lut5inter.enable[0]-&gt;enable</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">lut5inter.clk[0]-&gt;complete1</port>
+					</clocks>
+					<block name="ff1" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">ble5.in[0]-&gt;direct1 ble5.in[1]-&gt;direct1 open open open</port>
+							<port name="set">ble5.set[0]-&gt;direct4</port>
+							<port name="reset">ble5.reset[0]-&gt;direct5</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">ble5.enable[0]-&gt;direct6</port>
+						</inputs>
+						<outputs>
+							<port name="out">ff[0].Q[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">ble5.clk[0]-&gt;direct3</port>
+						</clocks>
+						<block name="$abc$279$li0_li0" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">flut5.in[0]-&gt;direct1 flut5.in[1]-&gt;direct1 open open open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="$abc$279$li0_li0" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 lut5.in[1]-&gt;direct:lut5 open open open</port>
+									<port_rotation_map name="in">0 1 open open open</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">$abc$279$li0_li0</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+						<block name="ff1" instance="ff[0]" mode="DFFSRE">
+							<inputs>
+								<port name="D">lut5[0].out[0]-&gt;direct2</port>
+								<port name="S">flut5.set[0]-&gt;direct4</port>
+								<port name="R">flut5.reset[0]-&gt;direct5</port>
+								<port name="SYNC_S">open</port>
+								<port name="SYNC_R">open</port>
+								<port name="E">flut5.enable[0]-&gt;direct6</port>
+							</inputs>
+							<outputs>
+								<port name="Q">DFFSRE[0].Q[0]-&gt;Q_to_Q</port>
+							</outputs>
+							<clocks>
+								<port name="clk">flut5.clk[0]-&gt;direct3</port>
+							</clocks>
+							<block name="ff1" instance="DFFSRE[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="D">ff.D[0]-&gt;D_to_D</port>
+									<port name="S">ff.S[0]-&gt;S_to_S</port>
+									<port name="R">ff.R[0]-&gt;R_to_R</port>
+									<port name="E">ff.E[0]-&gt;E_to_E</port>
+								</inputs>
+								<outputs>
+									<port name="Q">ff1</port>
+								</outputs>
+								<clocks>
+									<port name="C">ff.clk[0]-&gt;clk_to_C</port>
+								</clocks>
+							</block>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="ff5" instance="clb[1]" mode="default">
+		<inputs>
+			<port name="I0">open open open open open open rst4 open open open</port>
+			<port name="I1">open open open open open open open open open open</port>
+			<port name="I2">open open open open open open open open open ff4</port>
+			<port name="I3">open open open open open open open open open open</port>
+			<port name="sc_in">open</port>
+			<port name="cin">open</port>
+			<port name="cin_trick">open</port>
+			<port name="set">$true</port>
+			<port name="lreset">$abc$438$techmap$techmap428$abc$263$auto$blifparse.cc:362:parse_blif$264.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y</port>
+			<port name="sync_set">open</port>
+			<port name="sync_reset">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+			<port name="enable">$true</port>
+			<port name="reg_in">open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open fle[9].out[0]-&gt;clbouts1 open open open open open open open open open fle[9].out[1]-&gt;clbouts2</port>
+			<port name="sc_out">open</port>
+			<port name="cout">open</port>
+			<port name="reg_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">clock0 open open open</port>
+		</clocks>
+		<block name="open" instance="fle[0]" />
+		<block name="open" instance="fle[1]" />
+		<block name="open" instance="fle[2]" />
+		<block name="open" instance="fle[3]" />
+		<block name="open" instance="fle[4]" />
+		<block name="open" instance="fle[5]" />
+		<block name="open" instance="fle[6]" />
+		<block name="open" instance="fle[7]" />
+		<block name="open" instance="fle[8]" />
+		<block name="ff5" instance="fle[9]" mode="n2_lut5">
+			<inputs>
+				<port name="in">open open clb.I2[9]-&gt;crossbar2 open clb.I0[6]-&gt;crossbar4 open</port>
+				<port name="cin">open</port>
+				<port name="sc_in">open</port>
+				<port name="set">clb.set[0]-&gt;set</port>
+				<port name="reset">clb.lreset[0]-&gt;reset</port>
+				<port name="sync_set">open</port>
+				<port name="sync_reset">open</port>
+				<port name="enable">clb.enable[0]-&gt;enable</port>
+				<port name="reg_in">open</port>
+			</inputs>
+			<outputs>
+				<port name="out">lut5inter[0].out[0]-&gt;direct2 lut5inter[0].out[1]-&gt;direct2</port>
+				<port name="cout">open</port>
+				<port name="sc_out">open</port>
+				<port name="reg_out">open</port>
+			</outputs>
+			<clocks>
+				<port name="clk">clb.clk[0]-&gt;clks</port>
+			</clocks>
+			<block name="ff5" instance="lut5inter[0]" mode="default">
+				<inputs>
+					<port name="in">open open fle.in[2]-&gt;direct1 open fle.in[4]-&gt;direct1</port>
+					<port name="cin">open</port>
+					<port name="set">fle.set[0]-&gt;set</port>
+					<port name="reset">fle.reset[0]-&gt;reset</port>
+					<port name="sync_set">open</port>
+					<port name="sync_reset">open</port>
+					<port name="enable">fle.enable[0]-&gt;enable</port>
+				</inputs>
+				<outputs>
+					<port name="out">ble5[0].out[0]-&gt;direct3 ble5[1].out[0]-&gt;direct3</port>
+					<port name="cout">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">fle.clk[0]-&gt;direct3</port>
+				</clocks>
+				<block name="$abc$438$techmap$techmap428$abc$263$auto$blifparse.cc:362:parse_blif$264.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="ble5[0]" mode="blut5">
+					<inputs>
+						<port name="in">open open open open lut5inter.in[4]-&gt;direct1</port>
+						<port name="cin">open</port>
+						<port name="set">open</port>
+						<port name="reset">open</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">open</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">open</port>
+					</clocks>
+					<block name="$abc$438$techmap$techmap428$abc$263$auto$blifparse.cc:362:parse_blif$264.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open open open ble5.in[4]-&gt;direct1</port>
+							<port name="set">open</port>
+							<port name="reset">open</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">open</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">open</port>
+						</clocks>
+						<block name="$abc$438$techmap$techmap428$abc$263$auto$blifparse.cc:362:parse_blif$264.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">open open open open flut5.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="$abc$438$techmap$techmap428$abc$263$auto$blifparse.cc:362:parse_blif$264.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">open open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">open open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">$abc$438$techmap$techmap428$abc$263$auto$blifparse.cc:362:parse_blif$264.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+						<block name="open" instance="ff[0]" />
+					</block>
+				</block>
+				<block name="ff5" instance="ble5[1]" mode="blut5">
+					<inputs>
+						<port name="in">open open lut5inter.in[2]-&gt;direct2 open open</port>
+						<port name="cin">open</port>
+						<port name="set">lut5inter.set[0]-&gt;set</port>
+						<port name="reset">lut5inter.reset[0]-&gt;reset</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">lut5inter.enable[0]-&gt;enable</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">lut5inter.clk[0]-&gt;complete1</port>
+					</clocks>
+					<block name="ff5" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open ble5.in[2]-&gt;direct1 open open</port>
+							<port name="set">ble5.set[0]-&gt;direct4</port>
+							<port name="reset">ble5.reset[0]-&gt;direct5</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">ble5.enable[0]-&gt;direct6</port>
+						</inputs>
+						<outputs>
+							<port name="out">ff[0].Q[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">ble5.clk[0]-&gt;direct3</port>
+						</clocks>
+						<block name="open" instance="lut5[0]" mode="wire" pb_type_num_modes="2">
+							<inputs>
+								<port name="in">open open flut5.in[2]-&gt;direct1 open open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut5[0].in[2]-&gt;complete:lut5</port>
+							</outputs>
+							<clocks />
+						</block>
+						<block name="ff5" instance="ff[0]" mode="DFFSRE">
+							<inputs>
+								<port name="D">lut5[0].out[0]-&gt;direct2</port>
+								<port name="S">flut5.set[0]-&gt;direct4</port>
+								<port name="R">flut5.reset[0]-&gt;direct5</port>
+								<port name="SYNC_S">open</port>
+								<port name="SYNC_R">open</port>
+								<port name="E">flut5.enable[0]-&gt;direct6</port>
+							</inputs>
+							<outputs>
+								<port name="Q">DFFSRE[0].Q[0]-&gt;Q_to_Q</port>
+							</outputs>
+							<clocks>
+								<port name="clk">flut5.clk[0]-&gt;direct3</port>
+							</clocks>
+							<block name="ff5" instance="DFFSRE[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="D">ff.D[0]-&gt;D_to_D</port>
+									<port name="S">ff.S[0]-&gt;S_to_S</port>
+									<port name="R">ff.R[0]-&gt;R_to_R</port>
+									<port name="E">ff.E[0]-&gt;E_to_E</port>
+								</inputs>
+								<outputs>
+									<port name="Q">ff5</port>
+								</outputs>
+								<clocks>
+									<port name="C">ff.clk[0]-&gt;clk_to_C</port>
+								</clocks>
+							</block>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="ff4" instance="clb[2]" mode="default">
+		<inputs>
+			<port name="I0">open open open open open open rst3 open open open</port>
+			<port name="I1">open open open open open open open open open open</port>
+			<port name="I2">open open open open open open open open open ff3</port>
+			<port name="I3">open open open open open open open open open open</port>
+			<port name="sc_in">open</port>
+			<port name="cin">open</port>
+			<port name="cin_trick">open</port>
+			<port name="set">$true</port>
+			<port name="lreset">$abc$438$techmap$techmap427$abc$267$auto$blifparse.cc:362:parse_blif$268.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y</port>
+			<port name="sync_set">open</port>
+			<port name="sync_reset">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+			<port name="enable">$true</port>
+			<port name="reg_in">open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open fle[9].out[0]-&gt;clbouts1 open open open open open open open open open fle[9].out[1]-&gt;clbouts2</port>
+			<port name="sc_out">open</port>
+			<port name="cout">open</port>
+			<port name="reg_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">clock0 open open open</port>
+		</clocks>
+		<block name="open" instance="fle[0]" />
+		<block name="open" instance="fle[1]" />
+		<block name="open" instance="fle[2]" />
+		<block name="open" instance="fle[3]" />
+		<block name="open" instance="fle[4]" />
+		<block name="open" instance="fle[5]" />
+		<block name="open" instance="fle[6]" />
+		<block name="open" instance="fle[7]" />
+		<block name="open" instance="fle[8]" />
+		<block name="ff4" instance="fle[9]" mode="n2_lut5">
+			<inputs>
+				<port name="in">open open clb.I2[9]-&gt;crossbar2 open clb.I0[6]-&gt;crossbar4 open</port>
+				<port name="cin">open</port>
+				<port name="sc_in">open</port>
+				<port name="set">clb.set[0]-&gt;set</port>
+				<port name="reset">clb.lreset[0]-&gt;reset</port>
+				<port name="sync_set">open</port>
+				<port name="sync_reset">open</port>
+				<port name="enable">clb.enable[0]-&gt;enable</port>
+				<port name="reg_in">open</port>
+			</inputs>
+			<outputs>
+				<port name="out">lut5inter[0].out[0]-&gt;direct2 lut5inter[0].out[1]-&gt;direct2</port>
+				<port name="cout">open</port>
+				<port name="sc_out">open</port>
+				<port name="reg_out">open</port>
+			</outputs>
+			<clocks>
+				<port name="clk">clb.clk[0]-&gt;clks</port>
+			</clocks>
+			<block name="ff4" instance="lut5inter[0]" mode="default">
+				<inputs>
+					<port name="in">open open fle.in[2]-&gt;direct1 open fle.in[4]-&gt;direct1</port>
+					<port name="cin">open</port>
+					<port name="set">fle.set[0]-&gt;set</port>
+					<port name="reset">fle.reset[0]-&gt;reset</port>
+					<port name="sync_set">open</port>
+					<port name="sync_reset">open</port>
+					<port name="enable">fle.enable[0]-&gt;enable</port>
+				</inputs>
+				<outputs>
+					<port name="out">ble5[0].out[0]-&gt;direct3 ble5[1].out[0]-&gt;direct3</port>
+					<port name="cout">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">fle.clk[0]-&gt;direct3</port>
+				</clocks>
+				<block name="$abc$438$techmap$techmap427$abc$267$auto$blifparse.cc:362:parse_blif$268.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="ble5[0]" mode="blut5">
+					<inputs>
+						<port name="in">open open open open lut5inter.in[4]-&gt;direct1</port>
+						<port name="cin">open</port>
+						<port name="set">open</port>
+						<port name="reset">open</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">open</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">open</port>
+					</clocks>
+					<block name="$abc$438$techmap$techmap427$abc$267$auto$blifparse.cc:362:parse_blif$268.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open open open ble5.in[4]-&gt;direct1</port>
+							<port name="set">open</port>
+							<port name="reset">open</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">open</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">open</port>
+						</clocks>
+						<block name="$abc$438$techmap$techmap427$abc$267$auto$blifparse.cc:362:parse_blif$268.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">open open open open flut5.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="$abc$438$techmap$techmap427$abc$267$auto$blifparse.cc:362:parse_blif$268.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">open open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">open open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">$abc$438$techmap$techmap427$abc$267$auto$blifparse.cc:362:parse_blif$268.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+						<block name="open" instance="ff[0]" />
+					</block>
+				</block>
+				<block name="ff4" instance="ble5[1]" mode="blut5">
+					<inputs>
+						<port name="in">open open lut5inter.in[2]-&gt;direct2 open open</port>
+						<port name="cin">open</port>
+						<port name="set">lut5inter.set[0]-&gt;set</port>
+						<port name="reset">lut5inter.reset[0]-&gt;reset</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">lut5inter.enable[0]-&gt;enable</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">lut5inter.clk[0]-&gt;complete1</port>
+					</clocks>
+					<block name="ff4" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open ble5.in[2]-&gt;direct1 open open</port>
+							<port name="set">ble5.set[0]-&gt;direct4</port>
+							<port name="reset">ble5.reset[0]-&gt;direct5</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">ble5.enable[0]-&gt;direct6</port>
+						</inputs>
+						<outputs>
+							<port name="out">ff[0].Q[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">ble5.clk[0]-&gt;direct3</port>
+						</clocks>
+						<block name="open" instance="lut5[0]" mode="wire" pb_type_num_modes="2">
+							<inputs>
+								<port name="in">open open flut5.in[2]-&gt;direct1 open open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut5[0].in[2]-&gt;complete:lut5</port>
+							</outputs>
+							<clocks />
+						</block>
+						<block name="ff4" instance="ff[0]" mode="DFFSRE">
+							<inputs>
+								<port name="D">lut5[0].out[0]-&gt;direct2</port>
+								<port name="S">flut5.set[0]-&gt;direct4</port>
+								<port name="R">flut5.reset[0]-&gt;direct5</port>
+								<port name="SYNC_S">open</port>
+								<port name="SYNC_R">open</port>
+								<port name="E">flut5.enable[0]-&gt;direct6</port>
+							</inputs>
+							<outputs>
+								<port name="Q">DFFSRE[0].Q[0]-&gt;Q_to_Q</port>
+							</outputs>
+							<clocks>
+								<port name="clk">flut5.clk[0]-&gt;direct3</port>
+							</clocks>
+							<block name="ff4" instance="DFFSRE[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="D">ff.D[0]-&gt;D_to_D</port>
+									<port name="S">ff.S[0]-&gt;S_to_S</port>
+									<port name="R">ff.R[0]-&gt;R_to_R</port>
+									<port name="E">ff.E[0]-&gt;E_to_E</port>
+								</inputs>
+								<outputs>
+									<port name="Q">ff4</port>
+								</outputs>
+								<clocks>
+									<port name="C">ff.clk[0]-&gt;clk_to_C</port>
+								</clocks>
+							</block>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="ff3" instance="clb[3]" mode="default">
+		<inputs>
+			<port name="I0">open open open open open open rst2 open open open</port>
+			<port name="I1">open open open open open open open open open open</port>
+			<port name="I2">open open open open open open open open open ff2</port>
+			<port name="I3">open open open open open open open open open open</port>
+			<port name="sc_in">open</port>
+			<port name="cin">open</port>
+			<port name="cin_trick">open</port>
+			<port name="set">$true</port>
+			<port name="lreset">$abc$438$techmap$techmap426$abc$271$auto$blifparse.cc:362:parse_blif$272.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y</port>
+			<port name="sync_set">open</port>
+			<port name="sync_reset">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+			<port name="enable">$true</port>
+			<port name="reg_in">open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open fle[9].out[0]-&gt;clbouts1 open open open open open open open open open fle[9].out[1]-&gt;clbouts2</port>
+			<port name="sc_out">open</port>
+			<port name="cout">open</port>
+			<port name="reg_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">clock0 open open open</port>
+		</clocks>
+		<block name="open" instance="fle[0]" />
+		<block name="open" instance="fle[1]" />
+		<block name="open" instance="fle[2]" />
+		<block name="open" instance="fle[3]" />
+		<block name="open" instance="fle[4]" />
+		<block name="open" instance="fle[5]" />
+		<block name="open" instance="fle[6]" />
+		<block name="open" instance="fle[7]" />
+		<block name="open" instance="fle[8]" />
+		<block name="ff3" instance="fle[9]" mode="n2_lut5">
+			<inputs>
+				<port name="in">open open clb.I2[9]-&gt;crossbar2 open clb.I0[6]-&gt;crossbar4 open</port>
+				<port name="cin">open</port>
+				<port name="sc_in">open</port>
+				<port name="set">clb.set[0]-&gt;set</port>
+				<port name="reset">clb.lreset[0]-&gt;reset</port>
+				<port name="sync_set">open</port>
+				<port name="sync_reset">open</port>
+				<port name="enable">clb.enable[0]-&gt;enable</port>
+				<port name="reg_in">open</port>
+			</inputs>
+			<outputs>
+				<port name="out">lut5inter[0].out[0]-&gt;direct2 lut5inter[0].out[1]-&gt;direct2</port>
+				<port name="cout">open</port>
+				<port name="sc_out">open</port>
+				<port name="reg_out">open</port>
+			</outputs>
+			<clocks>
+				<port name="clk">clb.clk[0]-&gt;clks</port>
+			</clocks>
+			<block name="ff3" instance="lut5inter[0]" mode="default">
+				<inputs>
+					<port name="in">open open fle.in[2]-&gt;direct1 open fle.in[4]-&gt;direct1</port>
+					<port name="cin">open</port>
+					<port name="set">fle.set[0]-&gt;set</port>
+					<port name="reset">fle.reset[0]-&gt;reset</port>
+					<port name="sync_set">open</port>
+					<port name="sync_reset">open</port>
+					<port name="enable">fle.enable[0]-&gt;enable</port>
+				</inputs>
+				<outputs>
+					<port name="out">ble5[0].out[0]-&gt;direct3 ble5[1].out[0]-&gt;direct3</port>
+					<port name="cout">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">fle.clk[0]-&gt;direct3</port>
+				</clocks>
+				<block name="$abc$438$techmap$techmap426$abc$271$auto$blifparse.cc:362:parse_blif$272.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="ble5[0]" mode="blut5">
+					<inputs>
+						<port name="in">open open open open lut5inter.in[4]-&gt;direct1</port>
+						<port name="cin">open</port>
+						<port name="set">open</port>
+						<port name="reset">open</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">open</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">open</port>
+					</clocks>
+					<block name="$abc$438$techmap$techmap426$abc$271$auto$blifparse.cc:362:parse_blif$272.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open open open ble5.in[4]-&gt;direct1</port>
+							<port name="set">open</port>
+							<port name="reset">open</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">open</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">open</port>
+						</clocks>
+						<block name="$abc$438$techmap$techmap426$abc$271$auto$blifparse.cc:362:parse_blif$272.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">open open open open flut5.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="$abc$438$techmap$techmap426$abc$271$auto$blifparse.cc:362:parse_blif$272.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">open open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">open open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">$abc$438$techmap$techmap426$abc$271$auto$blifparse.cc:362:parse_blif$272.$logic_not$/nfs_cadtools/raptor/08_23_2022_08_00_01/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v:27$362_Y</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+						<block name="open" instance="ff[0]" />
+					</block>
+				</block>
+				<block name="ff3" instance="ble5[1]" mode="blut5">
+					<inputs>
+						<port name="in">open open lut5inter.in[2]-&gt;direct2 open open</port>
+						<port name="cin">open</port>
+						<port name="set">lut5inter.set[0]-&gt;set</port>
+						<port name="reset">lut5inter.reset[0]-&gt;reset</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">lut5inter.enable[0]-&gt;enable</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">lut5inter.clk[0]-&gt;complete1</port>
+					</clocks>
+					<block name="ff3" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open ble5.in[2]-&gt;direct1 open open</port>
+							<port name="set">ble5.set[0]-&gt;direct4</port>
+							<port name="reset">ble5.reset[0]-&gt;direct5</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">ble5.enable[0]-&gt;direct6</port>
+						</inputs>
+						<outputs>
+							<port name="out">ff[0].Q[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">ble5.clk[0]-&gt;direct3</port>
+						</clocks>
+						<block name="open" instance="lut5[0]" mode="wire" pb_type_num_modes="2">
+							<inputs>
+								<port name="in">open open flut5.in[2]-&gt;direct1 open open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut5[0].in[2]-&gt;complete:lut5</port>
+							</outputs>
+							<clocks />
+						</block>
+						<block name="ff3" instance="ff[0]" mode="DFFSRE">
+							<inputs>
+								<port name="D">lut5[0].out[0]-&gt;direct2</port>
+								<port name="S">flut5.set[0]-&gt;direct4</port>
+								<port name="R">flut5.reset[0]-&gt;direct5</port>
+								<port name="SYNC_S">open</port>
+								<port name="SYNC_R">open</port>
+								<port name="E">flut5.enable[0]-&gt;direct6</port>
+							</inputs>
+							<outputs>
+								<port name="Q">DFFSRE[0].Q[0]-&gt;Q_to_Q</port>
+							</outputs>
+							<clocks>
+								<port name="clk">flut5.clk[0]-&gt;direct3</port>
+							</clocks>
+							<block name="ff3" instance="DFFSRE[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="D">ff.D[0]-&gt;D_to_D</port>
+									<port name="S">ff.S[0]-&gt;S_to_S</port>
+									<port name="R">ff.R[0]-&gt;R_to_R</port>
+									<port name="E">ff.E[0]-&gt;E_to_E</port>
+								</inputs>
+								<outputs>
+									<port name="Q">ff3</port>
+								</outputs>
+								<clocks>
+									<port name="C">ff.clk[0]-&gt;clk_to_C</port>
+								</clocks>
+							</block>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="ff2" instance="clb[4]" mode="default">
+		<inputs>
+			<port name="I0">open open open open open open ff1 open open open</port>
+			<port name="I1">open open open open open open open open open open</port>
+			<port name="I2">open open open open open open open open open open</port>
+			<port name="I3">open open open open open open open open open open</port>
+			<port name="sc_in">open</port>
+			<port name="cin">open</port>
+			<port name="cin_trick">open</port>
+			<port name="set">$true</port>
+			<port name="lreset">$abc$438$auto$simplemap.cc:333:simplemap_lut$429[1]</port>
+			<port name="sync_set">open</port>
+			<port name="sync_reset">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+			<port name="enable">$true</port>
+			<port name="reg_in">open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open open open open open open fle[9].out[1]-&gt;clbouts2</port>
+			<port name="sc_out">open</port>
+			<port name="cout">open</port>
+			<port name="reg_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">clock0 open open open</port>
+		</clocks>
+		<block name="open" instance="fle[0]" />
+		<block name="open" instance="fle[1]" />
+		<block name="open" instance="fle[2]" />
+		<block name="open" instance="fle[3]" />
+		<block name="open" instance="fle[4]" />
+		<block name="open" instance="fle[5]" />
+		<block name="open" instance="fle[6]" />
+		<block name="open" instance="fle[7]" />
+		<block name="open" instance="fle[8]" />
+		<block name="ff2" instance="fle[9]" mode="n2_lut5">
+			<inputs>
+				<port name="in">open open clb.I0[6]-&gt;crossbar2 open open open</port>
+				<port name="cin">open</port>
+				<port name="sc_in">open</port>
+				<port name="set">clb.set[0]-&gt;set</port>
+				<port name="reset">clb.lreset[0]-&gt;reset</port>
+				<port name="sync_set">open</port>
+				<port name="sync_reset">open</port>
+				<port name="enable">clb.enable[0]-&gt;enable</port>
+				<port name="reg_in">open</port>
+			</inputs>
+			<outputs>
+				<port name="out">open lut5inter[0].out[1]-&gt;direct2</port>
+				<port name="cout">open</port>
+				<port name="sc_out">open</port>
+				<port name="reg_out">open</port>
+			</outputs>
+			<clocks>
+				<port name="clk">clb.clk[0]-&gt;clks</port>
+			</clocks>
+			<block name="ff2" instance="lut5inter[0]" mode="default">
+				<inputs>
+					<port name="in">open open fle.in[2]-&gt;direct1 open open</port>
+					<port name="cin">open</port>
+					<port name="set">fle.set[0]-&gt;set</port>
+					<port name="reset">fle.reset[0]-&gt;reset</port>
+					<port name="sync_set">open</port>
+					<port name="sync_reset">open</port>
+					<port name="enable">fle.enable[0]-&gt;enable</port>
+				</inputs>
+				<outputs>
+					<port name="out">open ble5[1].out[0]-&gt;direct3</port>
+					<port name="cout">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">fle.clk[0]-&gt;direct3</port>
+				</clocks>
+				<block name="open" instance="ble5[0]" />
+				<block name="ff2" instance="ble5[1]" mode="blut5">
+					<inputs>
+						<port name="in">open open lut5inter.in[2]-&gt;direct2 open open</port>
+						<port name="cin">open</port>
+						<port name="set">lut5inter.set[0]-&gt;set</port>
+						<port name="reset">lut5inter.reset[0]-&gt;reset</port>
+						<port name="sync_set">open</port>
+						<port name="sync_reset">open</port>
+						<port name="enable">lut5inter.enable[0]-&gt;enable</port>
+					</inputs>
+					<outputs>
+						<port name="out">flut5[0].out[0]-&gt;direct2</port>
+						<port name="cout">open</port>
+					</outputs>
+					<clocks>
+						<port name="clk">lut5inter.clk[0]-&gt;complete1</port>
+					</clocks>
+					<block name="ff2" instance="flut5[0]" mode="default">
+						<inputs>
+							<port name="in">open open ble5.in[2]-&gt;direct1 open open</port>
+							<port name="set">ble5.set[0]-&gt;direct4</port>
+							<port name="reset">ble5.reset[0]-&gt;direct5</port>
+							<port name="sync_set">open</port>
+							<port name="sync_reset">open</port>
+							<port name="enable">ble5.enable[0]-&gt;direct6</port>
+						</inputs>
+						<outputs>
+							<port name="out">ff[0].Q[0]-&gt;mux5</port>
+						</outputs>
+						<clocks>
+							<port name="clk">ble5.clk[0]-&gt;direct3</port>
+						</clocks>
+						<block name="open" instance="lut5[0]" mode="wire" pb_type_num_modes="2">
+							<inputs>
+								<port name="in">open open flut5.in[2]-&gt;direct1 open open</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut5[0].in[2]-&gt;complete:lut5</port>
+							</outputs>
+							<clocks />
+						</block>
+						<block name="ff2" instance="ff[0]" mode="DFFSRE">
+							<inputs>
+								<port name="D">lut5[0].out[0]-&gt;direct2</port>
+								<port name="S">flut5.set[0]-&gt;direct4</port>
+								<port name="R">flut5.reset[0]-&gt;direct5</port>
+								<port name="SYNC_S">open</port>
+								<port name="SYNC_R">open</port>
+								<port name="E">flut5.enable[0]-&gt;direct6</port>
+							</inputs>
+							<outputs>
+								<port name="Q">DFFSRE[0].Q[0]-&gt;Q_to_Q</port>
+							</outputs>
+							<clocks>
+								<port name="clk">flut5.clk[0]-&gt;direct3</port>
+							</clocks>
+							<block name="ff2" instance="DFFSRE[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="D">ff.D[0]-&gt;D_to_D</port>
+									<port name="S">ff.S[0]-&gt;S_to_S</port>
+									<port name="R">ff.R[0]-&gt;R_to_R</port>
+									<port name="E">ff.E[0]-&gt;E_to_E</port>
+								</inputs>
+								<outputs>
+									<port name="Q">ff2</port>
+								</outputs>
+								<clocks>
+									<port name="C">ff.clk[0]-&gt;clk_to_C</port>
+								</clocks>
+							</block>
+						</block>
+					</block>
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="out:ff5" instance="io[5]" mode="io_output">
+		<inputs>
+			<port name="f2a_i">ff5</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">open</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="out:ff5" instance="io_output[0]" mode="default">
+			<inputs>
+				<port name="f2a_i">io.f2a_i[0]-&gt;io_output-f2a_i</port>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs />
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="open" instance="ff[0]" />
+			<block name="out:ff5" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">io_output.f2a_i[0]-&gt;mux1</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="clock0" instance="io[6]" mode="io_input">
+		<inputs>
+			<port name="f2a_i">open</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">io_input[0].a2f_o[0]-&gt;io-a2f_o</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="clock0" instance="io_input[0]" mode="default">
+			<inputs>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs>
+				<port name="a2f_o">inpad[0].inpad[0]-&gt;mux2</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="clock0" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">clock0</port>
+				</outputs>
+				<clocks />
+			</block>
+			<block name="open" instance="ff[0]" />
+		</block>
+	</block>
+	<block name="rst1" instance="io[7]" mode="io_input">
+		<inputs>
+			<port name="f2a_i">open</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">io_input[0].a2f_o[0]-&gt;io-a2f_o</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="rst1" instance="io_input[0]" mode="default">
+			<inputs>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs>
+				<port name="a2f_o">inpad[0].inpad[0]-&gt;mux2</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="rst1" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">rst1</port>
+				</outputs>
+				<clocks />
+			</block>
+			<block name="open" instance="ff[0]" />
+		</block>
+	</block>
+	<block name="rst2" instance="io[8]" mode="io_input">
+		<inputs>
+			<port name="f2a_i">open</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">io_input[0].a2f_o[0]-&gt;io-a2f_o</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="rst2" instance="io_input[0]" mode="default">
+			<inputs>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs>
+				<port name="a2f_o">inpad[0].inpad[0]-&gt;mux2</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="rst2" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">rst2</port>
+				</outputs>
+				<clocks />
+			</block>
+			<block name="open" instance="ff[0]" />
+		</block>
+	</block>
+	<block name="rst3" instance="io[9]" mode="io_input">
+		<inputs>
+			<port name="f2a_i">open</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">io_input[0].a2f_o[0]-&gt;io-a2f_o</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="rst3" instance="io_input[0]" mode="default">
+			<inputs>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs>
+				<port name="a2f_o">inpad[0].inpad[0]-&gt;mux2</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="rst3" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">rst3</port>
+				</outputs>
+				<clocks />
+			</block>
+			<block name="open" instance="ff[0]" />
+		</block>
+	</block>
+	<block name="rst4" instance="io[10]" mode="io_input">
+		<inputs>
+			<port name="f2a_i">open</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">io_input[0].a2f_o[0]-&gt;io-a2f_o</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="rst4" instance="io_input[0]" mode="default">
+			<inputs>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs>
+				<port name="a2f_o">inpad[0].inpad[0]-&gt;mux2</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="rst4" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">rst4</port>
+				</outputs>
+				<clocks />
+			</block>
+			<block name="open" instance="ff[0]" />
+		</block>
+	</block>
+	<block name="start" instance="io[11]" mode="io_input">
+		<inputs>
+			<port name="f2a_i">open</port>
+			<port name="sc_in">open</port>
+			<port name="reset">open</port>
+			<port name="scan_reset">open</port>
+		</inputs>
+		<outputs>
+			<port name="a2f_o">io_input[0].a2f_o[0]-&gt;io-a2f_o</port>
+			<port name="sc_out">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open</port>
+		</clocks>
+		<block name="start" instance="io_input[0]" mode="default">
+			<inputs>
+				<port name="reset">open</port>
+			</inputs>
+			<outputs>
+				<port name="a2f_o">inpad[0].inpad[0]-&gt;mux2</port>
+			</outputs>
+			<clocks>
+				<port name="clk">open</port>
+			</clocks>
+			<block name="start" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">start</port>
+				</outputs>
+				<clocks />
+			</block>
+			<block name="open" instance="ff[0]" />
+		</block>
+	</block>
+</block>
