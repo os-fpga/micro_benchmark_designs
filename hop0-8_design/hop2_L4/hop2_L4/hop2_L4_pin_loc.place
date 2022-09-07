@@ -1,7 +1,0 @@
-#Block Name   x   y   z
-#------------ --  --  -
-clock0	6	0	19
-rst1	7	0	12
-rst2	8	0	7
-out:ff3	79	66	15
-start	9	0	1

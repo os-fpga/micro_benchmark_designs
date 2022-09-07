@@ -1,0 +1,10 @@
+Netlist_File: hop0_post_synth.net Netlist_ID: SHA256:ed4eb9fd0a02748fdd7eaf0e608d7d3b4d38b250660be07ee6b441dc1a2508f9
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+ff2		1	1	0	#0
+out:ff2		8	0	7	#1
+clock0		6	0	19	#2
+rst		7	0	12	#3
+start		8	0	16	#4

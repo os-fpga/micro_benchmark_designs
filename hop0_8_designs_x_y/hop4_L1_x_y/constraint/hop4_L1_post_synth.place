@@ -1,0 +1,47 @@
+Netlist_File: hop4_L1_post_synth.net Netlist_ID: SHA256:6bf9056dc175a29d7ea3345c5573ef5f625d8c6b4b14613159365b86b66153c9
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+ff2		40	34	0	#0
+ff8		38	36	0	#1
+ff7		38	35	0	#2
+ff3		41	34	0	#3
+ff20		38	30	0	#4
+ff19		38	31	0	#5
+ff18		38	32	0	#6
+ff5		44	34	0	#7
+ff17		38	33	0	#8
+ff15		32	34	0	#9
+ff14		34	34	0	#10
+ff13		35	34	0	#11
+ff4		43	34	0	#12
+ff12		37	34	0	#13
+ff10		38	38	0	#14
+ff9		38	37	0	#15
+ff1		38	34	0	#16
+out:ff5		8	0	7	#17
+out:ff10	10	0	3	#18
+out:ff15	9	0	1	#19
+out:ff20	9	0	17	#20
+clock0		6	0	19	#21
+rst1		15	0	13	#22
+rst2		16	0	3	#23
+rst3		16	0	11	#24
+rst4		17	0	5	#25
+rst5		17	0	17	#26
+rst6		18	0	7	#27
+rst7		18	0	15	#28
+rst8		19	0	6	#29
+rst9		19	0	15	#30
+rst10		20	0	1	#31
+rst11		15	0	4	#32
+rst12		14	0	12	#33
+rst13		14	0	2	#34
+rst14		13	0	13	#35
+rst15		13	0	1	#36
+rst16		12	0	11	#37
+start1		26	0	7	#38
+start2		26	0	15	#39
+start3		27	0	8	#40
+start4		27	0	14	#41

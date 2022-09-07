@@ -1,1 +1,0 @@
-/nfs_cadtools/raptor/08_20_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/08_20_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf hop3_L1_openfpga.pcf --blif hop3_L1_post_synth.blif --output hop3_L1_pin_loc.place
