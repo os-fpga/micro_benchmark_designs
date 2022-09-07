@@ -19,7 +19,7 @@ These are hop designs in +x and +y direction, where each CLB has one flipflop.
 
 
 # Running the project
-
+ Goto design root folder
 
 ## Running with VPR GUI
  ```bash

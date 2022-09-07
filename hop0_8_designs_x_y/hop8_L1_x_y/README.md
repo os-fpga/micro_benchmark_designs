@@ -20,7 +20,7 @@ These are hop designs in +x,-x,+y and -y direction, where each CLB has one flipf
 
 # Running the project
 
-
+ Goto design root folder
 ## Running with VPR GUI
  ```bash
  python3 start_raptor.py dispon
