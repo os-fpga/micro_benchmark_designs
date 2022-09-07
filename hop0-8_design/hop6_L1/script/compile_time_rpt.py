@@ -25,7 +25,7 @@ with open("report_timing.setup.rpt", "r") as f, open("timing_report.txt", "a+") 
 				start1 = False
 			else:
 				start1 = True
-				Startpoint = line.split()[1]
+				Startpoint = line
 				#outfile.write("Startpoint: "+Startpoint)
 			# print(line)
 		if re.search("Endpoint.*", line): #and start == True:
@@ -33,12 +33,12 @@ with open("report_timing.setup.rpt", "r") as f, open("timing_report.txt", "a+") 
 				start2 = False
 			else:
 				start2 = True
-				Endpoint = line.split()[2]
+				Endpoint = line
 				if start1 and start2 == True:
 					Total_Paths = Total_Paths +1;
 					outfile.write("\n\n\n")
-					outfile.write("Startpoint: "+Startpoint)
-					outfile.write(" \tEndpoint: "+Endpoint)
+					outfile.write(Startpoint)
+					outfile.write(Endpoint)
 					outfile.write("\n\nRouted via \t\tLenght\tFrom(CLB)\tTo(CLB)\t\t\tIncr\tPath\n")
 		if re.search("L.*length:.*", line) and start1 and start2 == True:
 			# print(line)
