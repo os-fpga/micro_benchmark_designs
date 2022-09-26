@@ -1,0 +1,260 @@
+#Timing report of worst 9 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: and_output.Q[0] (dffsre clocked by clock0)
+Endpoint  : out:and_output.outpad[0] (.output clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input)                                         0.000     0.000
+and_output.C[0] (dffsre)                                         1.519     1.519
+and_output.Q[0] (dffsre) [clock-to-output]                       0.709     2.228
+out:and_output.outpad[0] (.output)                               1.519     3.747
+data arrival time                                                          3.747
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.747
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.053
+
+
+#Path 2
+Startpoint: in5_reg.Q[0] (dffsre clocked by clock0)
+Endpoint  : out1.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input)                                         0.000     0.000
+in5_reg.C[0] (dffsre)                                            1.519     1.519
+in5_reg.Q[0] (dffsre) [clock-to-output]                          0.709     2.228
+and1_o.in[0] (.names)                                            1.519     3.747
+and1_o.out[0] (.names)                                           0.320     4.067
+out1.D[0] (dffsre)                                               1.519     5.586
+data arrival time                                                          5.586
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+out1.C[0] (dffsre)                                               1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -5.586
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.670
+
+
+#Path 3
+Startpoint: out1.Q[0] (dffsre clocked by clock0)
+Endpoint  : and_output.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input)                                         0.000     0.000
+out1.C[0] (dffsre)                                               1.519     1.519
+out1.Q[0] (dffsre) [clock-to-output]                             0.709     2.228
+and_output.D[0] (dffsre)                                         1.519     3.747
+data arrival time                                                          3.747
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+and_output.C[0] (dffsre)                                         1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -3.747
+--------------------------------------------------------------------------------
+slack (MET)                                                                4.508
+
+
+#Path 4
+Startpoint: in1.inpad[0] (.input clocked by clock0)
+Endpoint  : in1_reg.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in1.inpad[0] (.input)                                            0.000     1.000
+in1_reg.D[0] (dffsre)                                            1.519     2.519
+data arrival time                                                          2.519
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+in1_reg.C[0] (dffsre)                                            1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.737
+
+
+#Path 5
+Startpoint: in2.inpad[0] (.input clocked by clock0)
+Endpoint  : in2_reg.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in2.inpad[0] (.input)                                            0.000     1.000
+in2_reg.D[0] (dffsre)                                            1.519     2.519
+data arrival time                                                          2.519
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+in2_reg.C[0] (dffsre)                                            1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.737
+
+
+#Path 6
+Startpoint: in3.inpad[0] (.input clocked by clock0)
+Endpoint  : in3_reg.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in3.inpad[0] (.input)                                            0.000     1.000
+in3_reg.D[0] (dffsre)                                            1.519     2.519
+data arrival time                                                          2.519
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+in3_reg.C[0] (dffsre)                                            1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.737
+
+
+#Path 7
+Startpoint: in4.inpad[0] (.input clocked by clock0)
+Endpoint  : in4_reg.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in4.inpad[0] (.input)                                            0.000     1.000
+in4_reg.D[0] (dffsre)                                            1.519     2.519
+data arrival time                                                          2.519
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+in4_reg.C[0] (dffsre)                                            1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.737
+
+
+#Path 8
+Startpoint: in5.inpad[0] (.input clocked by clock0)
+Endpoint  : in5_reg.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in5.inpad[0] (.input)                                            0.000     1.000
+in5_reg.D[0] (dffsre)                                            1.519     2.519
+data arrival time                                                          2.519
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+in5_reg.C[0] (dffsre)                                            1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.737
+
+
+#Path 9
+Startpoint: in6.inpad[0] (.input clocked by clock0)
+Endpoint  : in6_reg.D[0] (dffsre clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in6.inpad[0] (.input)                                            0.000     1.000
+in6_reg.D[0] (dffsre)                                            1.519     2.519
+data arrival time                                                          2.519
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input)                                         0.000     6.800
+in6_reg.C[0] (dffsre)                                            1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.063     8.255
+data required time                                                         8.255
+--------------------------------------------------------------------------------
+data required time                                                         8.255
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.737
+
+
+#End of timing report

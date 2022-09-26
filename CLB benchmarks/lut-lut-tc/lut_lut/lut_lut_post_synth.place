@@ -1,0 +1,16 @@
+Netlist_File: lut_lut_post_synth.net Netlist_ID: SHA256:4271d138f72dd86d710c670b1e7ff6c668059e4802ce2b7db80570d2d3c75a51
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$abc$494$new_new_n11__	13	1	0	#0
+out:out1	15	0	4	#1
+clock0		6	0	19	#2
+in1		11	0	4	#3
+in2		11	0	14	#4
+in3		12	0	2	#5
+in4		12	0	11	#6
+in5		13	0	1	#7
+in6		13	0	13	#8
+in7		14	0	2	#9
+in8		14	0	12	#10

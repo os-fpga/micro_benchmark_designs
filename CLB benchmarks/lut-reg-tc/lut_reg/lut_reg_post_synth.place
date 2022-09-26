@@ -1,0 +1,14 @@
+Netlist_File: lut_reg_post_synth.net Netlist_ID: SHA256:612ec28a9a2f0147a5cd9eff7118380532341bbd9d02016e67dce3968c9bda35
+Array size: 80 x 68 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+and1_o		13	1	0	#0
+out:and_output	15	0	4	#1
+clock0		6	0	19	#2
+in1		11	0	4	#3
+in2		11	0	14	#4
+in3		12	0	2	#5
+in4		12	0	11	#6
+in5		13	0	1	#7
+in6		13	0	13	#8
