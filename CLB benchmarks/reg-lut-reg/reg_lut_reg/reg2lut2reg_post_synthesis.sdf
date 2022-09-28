@@ -1,0 +1,1066 @@
+(DELAYFILE
+    (SDFVERSION "2.1")
+    (DESIGN "reg2lut2reg")
+    (VENDOR "verilog-to-routing")
+    (PROGRAM "vpr")
+    (VERSION "0.0.0+655b34d3")
+    (DIVIDER /)
+    (TIMESCALE 1 ps)
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in5_reg_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_and_output_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in6_reg_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in4_reg_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in3_reg_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in1_reg_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in2_reg_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in2_reg1_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in1_reg1_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in3_reg1_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in4_reg1_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in6_reg1_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_in5_reg1_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_clock0_output_0_0_to_dffsre_out_reg2_clock_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (2099.08:2099.08:2099.08) (2099.08:2099.08:2099.08))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_in1_output_0_0_to_dffsre_in1_reg_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (938.776:938.776:938.776) (938.776:938.776:938.776))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_in2_output_0_0_to_dffsre_in2_reg_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (1098.78:1098.78:1098.78) (1098.78:1098.78:1098.78))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_in3_output_0_0_to_dffsre_in3_reg_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (876.776:876.776:876.776) (876.776:876.776:876.776))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_in4_output_0_0_to_dffsre_in4_reg_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (926.776:926.776:926.776) (926.776:926.776:926.776))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_in5_output_0_0_to_dffsre_in5_reg_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (938.776:938.776:938.776) (938.776:938.776:938.776))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_in6_output_0_0_to_dffsre_in6_reg_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (926.776:926.776:926.776) (926.776:926.776:926.776))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_and_output_output_0_0_to_and_output_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (783.586:783.586:783.586) (783.586:783.586:783.586))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in5_reg_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in5_reg_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in5_reg_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_and_output_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_and_output_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_and_output_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in6_reg_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in6_reg_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in6_reg_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in4_reg_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in4_reg_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in4_reg_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in3_reg_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in3_reg_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in3_reg_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in1_reg_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in1_reg_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in1_reg_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in2_reg_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in2_reg_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in2_reg_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in2_reg1_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in2_reg1_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in2_reg1_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in1_reg1_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in1_reg1_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in1_reg1_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in3_reg1_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in3_reg1_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in3_reg1_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in4_reg1_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in4_reg1_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in4_reg1_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in6_reg1_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in6_reg1_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in6_reg1_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in5_reg1_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in5_reg1_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_in5_reg1_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_out_reg2_input_1_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (548.726:548.726:548.726) (548.726:548.726:548.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_out_reg2_input_2_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (800.726:800.726:800.726) (800.726:800.726:800.726))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_\$true_output_0_0_to_dffsre_out_reg2_input_3_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (574.597:574.597:574.597) (574.597:574.597:574.597))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in5_reg1_output_0_0_to_lut_and1_o_input_0_4)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (634.014:634.014:634.014) (634.014:634.014:634.014))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in6_reg1_output_0_0_to_lut_and1_o_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (356.314:356.314:356.314) (356.314:356.314:356.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in4_reg1_output_0_0_to_lut_and1_o_input_0_5)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (742.014:742.014:742.014) (742.014:742.014:742.014))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in3_reg1_output_0_0_to_lut_and1_o_input_0_3)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (634.014:634.014:634.014) (634.014:634.014:634.014))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in1_reg1_output_0_0_to_lut_and1_o_input_0_2)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (356.314:356.314:356.314) (356.314:356.314:356.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in2_reg1_output_0_0_to_lut_and1_o_input_0_1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (634.014:634.014:634.014) (634.014:634.014:634.014))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_lut_and1_o_output_0_0_to_dffsre_out_reg2_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (0:0:0) (0:0:0))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in1_reg_output_0_0_to_dffsre_in1_reg1_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (526.314:526.314:526.314) (526.314:526.314:526.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in2_reg_output_0_0_to_dffsre_in2_reg1_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (576.314:576.314:576.314) (576.314:576.314:576.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in3_reg_output_0_0_to_dffsre_in3_reg1_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (576.314:576.314:576.314) (576.314:576.314:576.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in4_reg_output_0_0_to_dffsre_in4_reg1_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (526.314:526.314:526.314) (526.314:526.314:526.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in5_reg_output_0_0_to_dffsre_in5_reg1_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (636.314:636.314:636.314) (636.314:636.314:636.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_in6_reg_output_0_0_to_dffsre_in6_reg1_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (576.314:576.314:576.314) (576.314:576.314:576.314))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "fpga_interconnect")
+        (INSTANCE routing_segment_dffsre_out_reg2_output_0_0_to_dffsre_and_output_input_0_0)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH datain dataout (576.435:576.435:576.435) (576.435:576.435:576.435))
+            )
+        )
+    )
+
+    (CELL
+        (CELLTYPE "LUT_K")
+        (INSTANCE lut_\$true)
+    )
+    
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in5_reg)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_and_output)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in6_reg)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in4_reg)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in3_reg)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in1_reg)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in2_reg)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in2_reg1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in1_reg1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in3_reg1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in4_reg1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in6_reg1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_in5_reg1)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+    (CELL
+        (CELLTYPE "LUT_K")
+        (INSTANCE lut_and1_o)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH in[0] out (320:320:320) (320:320:320))
+                (IOPATH in[1] out (260:260:260) (260:260:260))
+                (IOPATH in[2] out (200:200:200) (200:200:200))
+                (IOPATH in[3] out (160:160:160) (160:160:160))
+                (IOPATH in[4] out (110:110:110) (110:110:110))
+                (IOPATH in[5] out (70:70:70) (70:70:70))
+            )
+        )
+    )
+    
+    (CELL
+        (CELLTYPE "dffsre")
+        (INSTANCE dffsre_out_reg2)
+        (DELAY
+            (ABSOLUTE
+                (IOPATH (posedge C) Q (709.448:709.448:709.448) (709.448:709.448:709.448))
+            )
+        )
+        (TIMINGCHECK
+            (SETUP D (posedge  C) (63.4486:63.4486:63.4486))
+            (SETUP E (posedge  C) (81.4058:81.4058:81.4058))
+            (SETUP R (posedge  C) (-87.3915:-87.3915:-87.3915))
+            (SETUP S (posedge  C) (-67.04:-67.04:-67.04))
+            (HOLD D (posedge C) (28.7314:28.7314:28.7314))
+            (HOLD E (posedge C) (10.7743:10.7743:10.7743))
+            (HOLD R (posedge C) (134.08:134.08:134.08))
+            (HOLD S (posedge C) (88.5886:88.5886:88.5886))
+        )
+    )
+)

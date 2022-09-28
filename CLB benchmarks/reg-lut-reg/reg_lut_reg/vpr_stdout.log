@@ -1,0 +1,617 @@
+VPR FPGA Placement and Routing.
+Version: 0.0.0+655b34d3
+Revision: 655b34d3
+Compiled: 2022-09-27T08:26:18
+Compiler: GNU 9.4.0 on Linux-3.10.0-1160.62.1.el7.x86_64 x86_64
+Build Info: Release VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+/nfs_cadtools/raptor/instl_dir/09_27_2022_08_00_02/bin/vpr /nfs_cadtools/raptor/instl_dir/09_27_2022_08_00_02/share/raptor/etc/devices/gemini/gemini_vpr.xml reg_lut_reg_post_synth.blif --sdc_file reg_lut_reg_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report reg_lut_reg_post_place_timing.rpt --device 78x66 --gen_post_synthesis_netlist on --allow_dangling_combinational_nodes on --analysis
+
+
+Architecture file: /nfs_cadtools/raptor/instl_dir/09_27_2022_08_00_02/share/raptor/etc/devices/gemini/gemini_vpr.xml
+Circuit name: reg_lut_reg_post_synth
+
+# Loading Architecture Description
+Warning 1: Model 'io' input port 'outpad' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 2: Model 'io' output port 'inpad' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 3: Model 'dsp_phy' input port 'sc_in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 4: Model 'dsp_phy' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 5: Model 'dsp_phy' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 6: Model 'dsp_phy' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 7: Model 'dsp_phy' input port 'lreset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 8: Model 'dsp_phy' input port 'scan_reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 9: Model 'dsp_phy' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 10: Model 'dsp_phy' output port 'sc_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 11: Model 'dsp_phy' output port 'dly_b_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 12: Model 'dsp_phy' output port 'z_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 13: Model 'RS_DSP2' output port 'dly_b' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 14: Model 'RS_DSP2_MULT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 15: Model 'RS_DSP2_MULT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 16: Model 'RS_DSP2_MULT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 17: Model 'RS_DSP2_MULT' input port 'feedback' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 18: Model 'RS_DSP2_MULT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 19: Model 'RS_DSP2_MULT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 20: Model 'RS_DSP2_MULT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 21: Model 'RS_DSP2_MULT_REGIN' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 22: Model 'RS_DSP2_MULT_REGIN' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 23: Model 'RS_DSP2_MULT_REGIN' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 24: Model 'RS_DSP2_MULT_REGIN' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 25: Model 'RS_DSP2_MULT_REGIN' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 26: Model 'RS_DSP2_MULT_REGIN' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 27: Model 'RS_DSP2_MULT_REGOUT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 28: Model 'RS_DSP2_MULT_REGOUT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 29: Model 'RS_DSP2_MULT_REGOUT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 30: Model 'RS_DSP2_MULT_REGOUT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 31: Model 'RS_DSP2_MULT_REGOUT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 32: Model 'RS_DSP2_MULT_REGOUT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 33: Model 'RS_DSP2_MULT_REGIN_REGOUT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 34: Model 'RS_DSP2_MULT_REGIN_REGOUT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 35: Model 'RS_DSP2_MULT_REGIN_REGOUT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 36: Model 'RS_DSP2_MULT_REGIN_REGOUT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 37: Model 'RS_DSP2_MULT_REGIN_REGOUT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 38: Model 'RS_DSP2_MULT_REGIN_REGOUT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 39: Model 'RS_DSP2_MULTADD' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 40: Model 'RS_DSP2_MULTADD' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 41: Model 'RS_DSP2_MULTADD' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 42: Model 'RS_DSP2_MULTADD' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 43: Model 'RS_DSP2_MULTADD' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 44: Model 'RS_DSP2_MULTADD' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 45: Model 'RS_DSP2_MULTADD' input port 'feedback' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 46: Model 'RS_DSP2_MULTADD' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 47: Model 'RS_DSP2_MULTADD' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 48: Model 'RS_DSP2_MULTADD' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 49: Model 'RS_DSP2_MULTADD' input port 'load_acc' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 50: Model 'RS_DSP2_MULTADD_REGIN' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 51: Model 'RS_DSP2_MULTADD_REGIN' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 52: Model 'RS_DSP2_MULTADD_REGIN' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 53: Model 'RS_DSP2_MULTADD_REGIN' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 54: Model 'RS_DSP2_MULTADD_REGIN' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 55: Model 'RS_DSP2_MULTADD_REGIN' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 56: Model 'RS_DSP2_MULTADD_REGIN' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 57: Model 'RS_DSP2_MULTADD_REGIN' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 58: Model 'RS_DSP2_MULTADD_REGIN' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 59: Model 'RS_DSP2_MULTADD_REGOUT' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 60: Model 'RS_DSP2_MULTADD_REGOUT' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 61: Model 'RS_DSP2_MULTADD_REGOUT' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 62: Model 'RS_DSP2_MULTADD_REGOUT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 63: Model 'RS_DSP2_MULTADD_REGOUT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 64: Model 'RS_DSP2_MULTADD_REGOUT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 65: Model 'RS_DSP2_MULTADD_REGOUT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 66: Model 'RS_DSP2_MULTADD_REGOUT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 67: Model 'RS_DSP2_MULTADD_REGOUT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 68: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 69: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 70: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 71: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 72: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 73: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 74: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 75: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 76: Model 'RS_DSP2_MULTADD_REGIN_REGOUT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 77: Model 'RS_DSP2_MULTACC' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 78: Model 'RS_DSP2_MULTACC' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 79: Model 'RS_DSP2_MULTACC' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 80: Model 'RS_DSP2_MULTACC' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 81: Model 'RS_DSP2_MULTACC' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 82: Model 'RS_DSP2_MULTACC' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 83: Model 'RS_DSP2_MULTACC' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 84: Model 'RS_DSP2_MULTACC' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 85: Model 'RS_DSP2_MULTACC' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 86: Model 'RS_DSP2_MULTACC_REGIN' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 87: Model 'RS_DSP2_MULTACC_REGIN' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 88: Model 'RS_DSP2_MULTACC_REGIN' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 89: Model 'RS_DSP2_MULTACC_REGIN' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 90: Model 'RS_DSP2_MULTACC_REGIN' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 91: Model 'RS_DSP2_MULTACC_REGIN' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 92: Model 'RS_DSP2_MULTACC_REGIN' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 93: Model 'RS_DSP2_MULTACC_REGIN' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 94: Model 'RS_DSP2_MULTACC_REGIN' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 95: Model 'RS_DSP2_MULTACC_REGOUT' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 96: Model 'RS_DSP2_MULTACC_REGOUT' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 97: Model 'RS_DSP2_MULTACC_REGOUT' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 98: Model 'RS_DSP2_MULTACC_REGOUT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 99: Model 'RS_DSP2_MULTACC_REGOUT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 100: Model 'RS_DSP2_MULTACC_REGOUT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 101: Model 'RS_DSP2_MULTACC_REGOUT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 102: Model 'RS_DSP2_MULTACC_REGOUT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 103: Model 'RS_DSP2_MULTACC_REGOUT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 104: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'round' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 105: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'shift_right' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 106: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'saturate_enable' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 107: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 108: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'register_inputs' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 109: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'output_select' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 110: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'f_mode' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 111: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'unsigned_b' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 112: Model 'RS_DSP2_MULTACC_REGIN_REGOUT' input port 'unsigned_a' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 113: Model 'bram_phy' input port 'sc_in' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 114: Model 'bram_phy' input port 'scan_reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 115: Model 'bram_phy' input port 'reset' has no timing specification (no clock specified to create a sequential input port, not combinationally connected to any outputs, not a clock input)
+Warning 116: Model 'bram_phy' output port 'sc_out' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 117: Model 'bram_phy' output port 'PL_DATA_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 118: Model 'bram_phy' output port 'PL_ADDR_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 119: Model 'bram_phy' output port 'PL_WEN_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 120: Model 'bram_phy' output port 'PL_CLK_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 121: Model 'bram_phy' output port 'PL_REN_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 122: Model 'bram_phy' output port 'PL_ENA_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 123: Model 'bram_phy' output port 'PL_INIT_o' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+mode 'io[physical]' is disabled in packing by user
+mode 'iopad[default]' is disabled in packing by user
+mode 'fle[physical]' is disabled in packing by user
+mode 'fabric[default]' is disabled in packing by user
+mode 'frac_logic[default]' is disabled in packing by user
+mode 'dsp[physical]' is disabled in packing by user
+mode 'bram[physical]' is disabled in packing by user
+# Loading Architecture Description took 0.02 seconds (max_rss 10.8 MiB, delta_rss +0.1 MiB)
+# Building complex block graph
+Warning 124: io[0].scan_reset[0] unconnected pin in architecture.
+Warning 125: io_output[0].reset[0] unconnected pin in architecture.
+Warning 126: io_input[0].reset[0] unconnected pin in architecture.
+Warning 127: ff[0].R[0] unconnected pin in architecture.
+Warning 128: ff[0].R[0] unconnected pin in architecture.
+Warning 129: clb[0].reset[0] unconnected pin in architecture.
+Warning 130: clb[0].scan_reset[0] unconnected pin in architecture.
+Warning 131: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 132: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 133: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 134: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 135: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 136: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 137: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 138: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 139: frac_logic[0].regchain[0] unconnected pin in architecture.
+Warning 140: frac_logic[0].regchain[0] unconnected pin in architecture.
+# Building complex block graph took 0.06 seconds (max_rss 18.5 MiB, delta_rss +7.8 MiB)
+# Load circuit
+Found constant-zero generator '$false'
+Found constant-one generator '$true'
+Found constant-zero generator '$undef'
+# Load circuit took 0.00 seconds (max_rss 18.8 MiB, delta_rss +0.3 MiB)
+# Clean circuit
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 0
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 2
+Swept block(s)      : 2
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 18.8 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.00 seconds (max_rss 18.8 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 18.8 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 24
+    .input :       7
+    .output:       1
+    0-LUT  :       1
+    6-LUT  :       1
+    dffsre :      14
+  Nets  : 23
+    Avg Fanout:     3.3
+    Max Fanout:    42.0
+    Min Fanout:     1.0
+  Netlist Clocks: 1
+# Build Timing Graph
+  Timing Graph Nodes: 100
+  Timing Graph Edges: 153
+  Timing Graph Levels: 6
+# Build Timing Graph took 0.00 seconds (max_rss 18.8 MiB, delta_rss +0.0 MiB)
+Netlist contains 1 clocks
+  Netlist Clock 'clock0' Fanout: 14 pins (14.0%), 14 blocks (58.3%)
+# Load Timing Constraints
+Warning 141: set_input_delay command matched but was not applied to primary output 'and_output'
+Warning 142: set_output_delay command matched but was not applied to primary input 'clock0'
+Warning 143: set_output_delay command matched but was not applied to primary input 'in1'
+Warning 144: set_output_delay command matched but was not applied to primary input 'in2'
+Warning 145: set_output_delay command matched but was not applied to primary input 'in3'
+Warning 146: set_output_delay command matched but was not applied to primary input 'in4'
+Warning 147: set_output_delay command matched but was not applied to primary input 'in5'
+Warning 148: set_output_delay command matched but was not applied to primary input 'in6'
+
+Applied 3 SDC commands from 'reg_lut_reg_openfpga.sdc'
+Timing constraints created 1 clocks
+  Constrained Clock 'clock0' Source: 'clock0.inpad[0]'
+
+# Load Timing Constraints took 0.00 seconds (max_rss 19.2 MiB, delta_rss +0.3 MiB)
+Timing analysis: ON
+Circuit netlist file: reg_lut_reg_post_synth.net
+Circuit placement file: reg_lut_reg_post_synth.place
+Circuit routing file: reg_lut_reg_post_synth.route
+Circuit SDC file: reg_lut_reg_openfpga.sdc
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+NetlistOpts.abosrb_buffer_luts            : false
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: PATH_TIMING_DRIVEN_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 180
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 180
+RouterOpts.trim_empty_chan: false
+RouterOpts.trim_obs_chan: false
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: true
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+# Load Packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'reg_lut_reg_post_synth.net'.
+Detected 1 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0 seconds).
+# Load Packing took 0.01 seconds (max_rss 19.5 MiB, delta_rss +0.3 MiB)
+Warning 149: Netlist contains 0 global net to non-global architecture pin connections
+
+Netlist num_nets: 13
+Netlist num_blocks: 9
+Netlist EMPTY blocks: 0.
+Netlist io blocks: 8.
+Netlist clb blocks: 1.
+Netlist dsp blocks: 0.
+Netlist bram blocks: 0.
+Netlist inputs pins: 7
+Netlist output pins: 1
+
+# Create Device
+## Build Device Grid
+Warning 150: Ambiguous block type specification at grid location (0,0). Existing block type 'io_bottom' at (0,0) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 151: Ambiguous block type specification at grid location (0,67). Existing block type 'io_top' at (0,67) has the same priority (100) as new overlapping type 'io_left'. The last specification will apply.
+Warning 152: Ambiguous block type specification at grid location (79,0). Existing block type 'io_bottom' at (79,0) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+Warning 153: Ambiguous block type specification at grid location (79,67). Existing block type 'io_top' at (79,67) has the same priority (100) as new overlapping type 'io_right'. The last specification will apply.
+FPGA sized to 80 x 68: 5440 grid tiles (78x66)
+
+Resource usage...
+	Netlist
+		8	blocks of type: io
+	Architecture
+		1560	blocks of type: io_top
+		1320	blocks of type: io_right
+		1560	blocks of type: io_bottom
+		1320	blocks of type: io_left
+	Netlist
+		1	blocks of type: clb
+	Architecture
+		3498	blocks of type: clb
+	Netlist
+		0	blocks of type: dsp
+	Architecture
+		286	blocks of type: dsp
+	Netlist
+		0	blocks of type: bram
+	Architecture
+		132	blocks of type: bram
+
+Device Utilization: 0.00 (target 1.00)
+	Physical Tile io_top:
+	Block Utilization: 0.01 Logical Block: io
+	Physical Tile io_right:
+	Block Utilization: 0.01 Logical Block: io
+	Physical Tile io_bottom:
+	Block Utilization: 0.01 Logical Block: io
+	Physical Tile io_left:
+	Block Utilization: 0.01 Logical Block: io
+	Physical Tile clb:
+	Block Utilization: 0.00 Logical Block: clb
+	Physical Tile dsp:
+	Block Utilization: 0.00 Logical Block: dsp
+	Physical Tile bram:
+	Block Utilization: 0.00 Logical Block: bram
+
+## Build Device Grid took 0.00 seconds (max_rss 20.1 MiB, delta_rss +0.5 MiB)
+## Build tileable routing resource graph
+X-direction routing channel width is 180
+Y-direction routing channel width is 180
+Warning 154: Sized nonsensical R=0 transistor to minimum width
+Warning 155: Sized nonsensical R=0 transistor to minimum width
+Warning 156: Sized nonsensical R=0 transistor to minimum width
+Warning 157: Sized nonsensical R=0 transistor to minimum width
+## Build tileable routing resource graph took 53.50 seconds (max_rss 795.9 MiB, delta_rss +775.9 MiB)
+  RR Graph Nodes: 1485668
+  RR Graph Edges: 10163507
+# Create Device took 53.69 seconds (max_rss 798.9 MiB, delta_rss +779.3 MiB)
+
+# Load Placement
+# Load Placement took 0.04 seconds (max_rss 798.9 MiB, delta_rss +0.0 MiB)
+
+# Load Routing
+Begin loading FPGA routing file.
+Finished loading route file
+# Load Routing took 0.10 seconds (max_rss 838.6 MiB, delta_rss +39.7 MiB)
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: 181279
+Circuit successfully routed with a channel width factor of 180.
+
+Average number of bends per net: 1.58333  Maximum # of bends: 4
+
+Number of global nets: 1
+Number of routed nets (nonglobal): 12
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 80, average net length: 6.66667
+	Maximum net length: 12
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 32, average wire segments per net: 2.66667
+	Maximum segments used by a net: 6
+	Total local nets with reserved CLB opins: 0
+
+Routing channel utilization histogram:
+[        1:      inf)     0 ( 0.0%) |
+[      0.9:        1)     0 ( 0.0%) |
+[      0.8:      0.9)     0 ( 0.0%) |
+[      0.7:      0.8)     0 ( 0.0%) |
+[      0.5:      0.6)     0 ( 0.0%) |
+[      0.4:      0.5)     0 ( 0.0%) |
+[      0.3:      0.4)     0 ( 0.0%) |
+[      0.2:      0.3)     0 ( 0.0%) |
+[      0.1:      0.2)     0 ( 0.0%) |
+[        0:      0.1) 10586 (100.0%) |*********************************************
+Maximum routing channel utilization:     0.067 at (13,1)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0       6   0.325      180
+                         1      12   0.488      180
+                         2       0   0.000      180
+                         3       0   0.000      180
+                         4       0   0.000      180
+                         5       0   0.000      180
+                         6       0   0.000      180
+                         7       0   0.000      180
+                         8       0   0.000      180
+                         9       0   0.000      180
+                        10       0   0.000      180
+                        11       0   0.000      180
+                        12       0   0.000      180
+                        13       0   0.000      180
+                        14       0   0.000      180
+                        15       0   0.000      180
+                        16       0   0.000      180
+                        17       0   0.000      180
+                        18       0   0.000      180
+                        19       0   0.000      180
+                        20       0   0.000      180
+                        21       0   0.000      180
+                        22       0   0.000      180
+                        23       0   0.000      180
+                        24       0   0.000      180
+                        25       0   0.000      180
+                        26       0   0.000      180
+                        27       0   0.000      180
+                        28       0   0.000      180
+                        29       0   0.000      180
+                        30       0   0.000      180
+                        31       0   0.000      180
+                        32       0   0.000      180
+                        33       0   0.000      180
+                        34       0   0.000      180
+                        35       0   0.000      180
+                        36       0   0.000      180
+                        37       0   0.000      180
+                        38       0   0.000      180
+                        39       0   0.000      180
+                        40       0   0.000      180
+                        41       0   0.000      180
+                        42       0   0.000      180
+                        43       0   0.000      180
+                        44       0   0.000      180
+                        45       0   0.000      180
+                        46       0   0.000      180
+                        47       0   0.000      180
+                        48       0   0.000      180
+                        49       0   0.000      180
+                        50       0   0.000      180
+                        51       0   0.000      180
+                        52       0   0.000      180
+                        53       0   0.000      180
+                        54       0   0.000      180
+                        55       0   0.000      180
+                        56       0   0.000      180
+                        57       0   0.000      180
+                        58       0   0.000      180
+                        59       0   0.000      180
+                        60       0   0.000      180
+                        61       0   0.000      180
+                        62       0   0.000      180
+                        63       0   0.000      180
+                        64       0   0.000      180
+                        65       0   0.000      180
+                        66       0   0.000      180
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0       0   0.000      180
+                         1       0   0.000      180
+                         2       0   0.000      180
+                         3       0   0.000      180
+                         4       0   0.000      180
+                         5       0   0.000      180
+                         6       0   0.000      180
+                         7       0   0.000      180
+                         8       0   0.000      180
+                         9       0   0.000      180
+                        10       0   0.000      180
+                        11       2   0.029      180
+                        12       4   0.059      180
+                        13       6   0.132      180
+                        14       0   0.000      180
+                        15       0   0.000      180
+                        16       0   0.000      180
+                        17       0   0.000      180
+                        18       0   0.000      180
+                        19       0   0.000      180
+                        20       0   0.000      180
+                        21       0   0.000      180
+                        22       0   0.000      180
+                        23       0   0.000      180
+                        24       0   0.000      180
+                        25       0   0.000      180
+                        26       0   0.000      180
+                        27       0   0.000      180
+                        28       0   0.000      180
+                        29       0   0.000      180
+                        30       0   0.000      180
+                        31       0   0.000      180
+                        32       0   0.000      180
+                        33       0   0.000      180
+                        34       0   0.000      180
+                        35       0   0.000      180
+                        36       0   0.000      180
+                        37       0   0.000      180
+                        38       0   0.000      180
+                        39       0   0.000      180
+                        40       0   0.000      180
+                        41       0   0.000      180
+                        42       0   0.000      180
+                        43       0   0.000      180
+                        44       0   0.000      180
+                        45       0   0.000      180
+                        46       0   0.000      180
+                        47       0   0.000      180
+                        48       0   0.000      180
+                        49       0   0.000      180
+                        50       0   0.000      180
+                        51       0   0.000      180
+                        52       0   0.000      180
+                        53       0   0.000      180
+                        54       0   0.000      180
+                        55       0   0.000      180
+                        56       0   0.000      180
+                        57       0   0.000      180
+                        58       0   0.000      180
+                        59       0   0.000      180
+                        60       0   0.000      180
+                        61       0   0.000      180
+                        62       0   0.000      180
+                        63       0   0.000      180
+                        64       0   0.000      180
+                        65       0   0.000      180
+                        66       0   0.000      180
+                        67       0   0.000      180
+                        68       0   0.000      180
+                        69       0   0.000      180
+                        70       0   0.000      180
+                        71       0   0.000      180
+                        72       0   0.000      180
+                        73       0   0.000      180
+                        74       0   0.000      180
+                        75       0   0.000      180
+                        76       0   0.000      180
+                        77       0   0.000      180
+                        78       0   0.000      180
+
+Total tracks in x-direction: 12060, in y-direction: 14220
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 4.17573e+08
+	Total used logic block area: 53894
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 6.96582e+07, per logic tile: 12804.8
+
+Segment usage by type (index): type utilization
+                               ---- -----------
+                                  0    3.46e-05
+                                  1    4.85e-05
+
+Segment usage by length: length utilization
+                         ------ -----------
+                              1    3.46e-05
+                              4    4.85e-05
+
+
+Hold Worst Negative Slack (hWNS): -0.326032 ns
+Hold Total Negative Slack (hTNS): -1.52019 ns
+
+Hold slack histogram:
+[ -3.3e-10:  1.3e-10) 6 (40.0%) |*************************************
+[  1.3e-10:  5.9e-10) 0 ( 0.0%) |
+[  5.9e-10:  1.1e-09) 8 (53.3%) |*************************************************
+[  1.1e-09:  1.5e-09) 0 ( 0.0%) |
+[  1.5e-09:    2e-09) 0 ( 0.0%) |
+[    2e-09:  2.4e-09) 0 ( 0.0%) |
+[  2.4e-09:  2.9e-09) 0 ( 0.0%) |
+[  2.9e-09:  3.3e-09) 0 ( 0.0%) |
+[  3.3e-09:  3.8e-09) 0 ( 0.0%) |
+[  3.8e-09:  4.3e-09) 1 ( 6.7%) |******
+
+Final critical path: 4.59211 ns, Fmax: 217.765 MHz
+Setup Worst Negative Slack (sWNS): 0 ns
+Setup Total Negative Slack (sTNS): 0 ns
+
+Setup slack histogram:
+[  2.2e-09:  2.7e-09) 1 ( 6.7%) |******
+[  2.7e-09:  3.2e-09) 0 ( 0.0%) |
+[  3.2e-09:  3.6e-09) 0 ( 0.0%) |
+[  3.6e-09:  4.1e-09) 0 ( 0.0%) |
+[  4.1e-09:  4.6e-09) 0 ( 0.0%) |
+[  4.6e-09:  5.1e-09) 0 ( 0.0%) |
+[  5.1e-09:  5.5e-09) 8 (53.3%) |*************************************************
+[  5.5e-09:    6e-09) 0 ( 0.0%) |
+[    6e-09:  6.5e-09) 0 ( 0.0%) |
+[  6.5e-09:    7e-09) 6 (40.0%) |*************************************
+
+Writing Implementation Netlist: reg2lut2reg_post_synthesis.v
+Writing Implementation Netlist: reg2lut2reg_post_synthesis.blif
+Writing Implementation SDF    : reg2lut2reg_post_synthesis.sdf
+Timing analysis took 0.00183281 seconds (0.00180771 STA, 2.5101e-05 slack) (2 full updates: 0 setup, 0 hold, 2 combined).
+VPR suceeded
+The entire flow of VPR took 54.76 seconds (max_rss 838.8 MiB)

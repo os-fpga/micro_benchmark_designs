@@ -1,0 +1,1 @@
+/nfs_cadtools/raptor/instl_dir/09_27_2022_08_00_02/bin/pin_c --csv /nfs_cadtools/raptor/instl_dir/09_27_2022_08_00_02/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf reg_lut_reg_openfpga.pcf --blif reg_lut_reg_post_synth.blif --output reg_lut_reg_pin_loc.place --assign_unconstrained_pins in_define_order

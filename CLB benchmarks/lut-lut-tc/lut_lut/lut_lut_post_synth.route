@@ -1,4 +1,4 @@
-Placement_File: lut_lut_post_synth.place Placement_ID: SHA256:65f8baade2f11d064c568fc09dc2a8931d5e71308f4372548bdeb525f5c10e1d
+Placement_File: ./lut_lut_post_synth.place Placement_ID: SHA256:65f8baade2f11d064c568fc09dc2a8931d5e71308f4372548bdeb525f5c10e1d
 Array size: 80 x 68 logic blocks.
 
 Routing:

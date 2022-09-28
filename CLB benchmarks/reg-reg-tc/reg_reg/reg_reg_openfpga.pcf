@@ -1,0 +1,3 @@
+set_io clock0 Bank_H_1_12  
+set_io in1 Bank_H_2_1  
+set_io out Bank_H_2_9  

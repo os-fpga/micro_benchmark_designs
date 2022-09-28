@@ -1,0 +1,575 @@
+#Timing report of worst 15 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: and_output.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : out:and_output.outpad[0] (.output at (15,0) clocked by clock0)
+Path Type : setup
+
+Point                                                               Incr      Path
+----------------------------------------------------------------------------------
+clock clock0 (rise edge)                                           0.000     0.000
+clock source latency                                               0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                  0.000     0.000
+| (intra 'io' routing)                                             0.099     0.099
+| (inter-block routing:global net)                                 0.000     0.099
+| (intra 'clb' routing)                                            2.000     2.099
+and_output.C[0] (dffsre at (13,1))                                 0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                     0.709     2.809
+and_output.Q[0] (dffsre at (13,1)) [clock-to-output]               0.000     2.809
+| (intra 'clb' routing)                                            0.142     2.951
+| (OPIN:34761 side:TOP (13,1))                                     0.000     2.951
+| (CHANX:724972 L4 length:3 (13,1)->(16,1))                        0.120     3.071
+| (CHANY:1165041 L4 length:0 (13,1)->(13,1))                       0.120     3.191
+| (CHANX:719326 L4 length:3 (14,0)->(17,0))                        0.120     3.311
+| (IPIN:5872 side:TOP (15,0))                                      0.164     3.475
+| (intra 'io' routing)                                             0.118     3.592
+out:and_output.outpad[0] (.output at (15,0))                       0.000     3.592
+data arrival time                                                            3.592
+
+clock clock0 (rise edge)                                           6.800     6.800
+clock source latency                                               0.000     6.800
+clock uncertainty                                                  0.000     6.800
+output external delay                                             -1.000     5.800
+data required time                                                           5.800
+----------------------------------------------------------------------------------
+data required time                                                           5.800
+data arrival time                                                           -3.592
+----------------------------------------------------------------------------------
+slack (MET)                                                                  2.208
+
+
+#Path 2
+Startpoint: in2_reg1.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : out_reg2.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in2_reg1.C[0] (dffsre at (13,1))                                 0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in2_reg1.Q[0] (dffsre at (13,1)) [clock-to-output]               0.000     2.809
+| (intra 'clb' routing)                                          0.142     2.951
+| (OPIN:34764 side:TOP (13,1))                                   0.000     2.951
+| (CHANX:724966 L4 length:3 (13,1)->(16,1))                      0.120     3.071
+| (IPIN:34800 side:TOP (13,1))                                   0.164     3.235
+| (intra 'clb' routing)                                          0.208     3.443
+and1_o.in[5] (.names at (13,1))                                  0.000     3.443
+| (primitive '.names' combinational delay)                       0.260     3.703
+and1_o.out[0] (.names at (13,1))                                 0.000     3.703
+| (intra 'clb' routing)                                          0.000     3.703
+out_reg2.D[0] (dffsre at (13,1))                                 0.000     3.703
+data arrival time                                                          3.703
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+out_reg2.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.703
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.133
+
+
+#Path 3
+Startpoint: in5_reg.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : in5_reg1.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in5_reg.C[0] (dffsre at (13,1))                                  0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in5_reg.Q[0] (dffsre at (13,1)) [clock-to-output]                0.000     2.809
+| (intra 'clb' routing)                                          0.636     3.445
+in5_reg1.D[0] (dffsre at (13,1))                                 0.000     3.445
+data arrival time                                                          3.445
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in5_reg1.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.445
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.391
+
+
+#Path 4
+Startpoint: out_reg2.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : and_output.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+out_reg2.C[0] (dffsre at (13,1))                                 0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+out_reg2.Q[0] (dffsre at (13,1)) [clock-to-output]               0.000     2.809
+| (intra 'clb' routing)                                          0.576     3.385
+and_output.D[0] (dffsre at (13,1))                               0.000     3.385
+data arrival time                                                          3.385
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+and_output.C[0] (dffsre at (13,1))                               0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.385
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.451
+
+
+#Path 5
+Startpoint: in2_reg.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : in2_reg1.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in2_reg.C[0] (dffsre at (13,1))                                  0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in2_reg.Q[0] (dffsre at (13,1)) [clock-to-output]                0.000     2.809
+| (intra 'clb' routing)                                          0.576     3.385
+in2_reg1.D[0] (dffsre at (13,1))                                 0.000     3.385
+data arrival time                                                          3.385
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in2_reg1.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.385
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.451
+
+
+#Path 6
+Startpoint: in3_reg.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : in3_reg1.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in3_reg.C[0] (dffsre at (13,1))                                  0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in3_reg.Q[0] (dffsre at (13,1)) [clock-to-output]                0.000     2.809
+| (intra 'clb' routing)                                          0.576     3.385
+in3_reg1.D[0] (dffsre at (13,1))                                 0.000     3.385
+data arrival time                                                          3.385
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in3_reg1.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.385
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.451
+
+
+#Path 7
+Startpoint: in6_reg.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : in6_reg1.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in6_reg.C[0] (dffsre at (13,1))                                  0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in6_reg.Q[0] (dffsre at (13,1)) [clock-to-output]                0.000     2.809
+| (intra 'clb' routing)                                          0.576     3.385
+in6_reg1.D[0] (dffsre at (13,1))                                 0.000     3.385
+data arrival time                                                          3.385
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in6_reg1.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.385
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.451
+
+
+#Path 8
+Startpoint: in1_reg.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : in1_reg1.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in1_reg.C[0] (dffsre at (13,1))                                  0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in1_reg.Q[0] (dffsre at (13,1)) [clock-to-output]                0.000     2.809
+| (intra 'clb' routing)                                          0.526     3.335
+in1_reg1.D[0] (dffsre at (13,1))                                 0.000     3.335
+data arrival time                                                          3.335
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in1_reg1.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.335
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.501
+
+
+#Path 9
+Startpoint: in4_reg.Q[0] (dffsre at (13,1) clocked by clock0)
+Endpoint  : in4_reg1.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+clock0.inpad[0] (.input at (6,0))                                0.000     0.000
+| (intra 'io' routing)                                           0.099     0.099
+| (inter-block routing:global net)                               0.000     0.099
+| (intra 'clb' routing)                                          2.000     2.099
+in4_reg.C[0] (dffsre at (13,1))                                  0.000     2.099
+| (primitive 'dffsre' Tcq_max)                                   0.709     2.809
+in4_reg.Q[0] (dffsre at (13,1)) [clock-to-output]                0.000     2.809
+| (intra 'clb' routing)                                          0.526     3.335
+in4_reg1.D[0] (dffsre at (13,1))                                 0.000     3.335
+data arrival time                                                          3.335
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in4_reg1.C[0] (dffsre at (13,1))                                 0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -3.335
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.501
+
+
+#Path 10
+Startpoint: in2.inpad[0] (.input at (11,0) clocked by clock0)
+Endpoint  : in2_reg.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in2.inpad[0] (.input at (11,0))                                  0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:4228 side:TOP (11,0))                                    0.000     1.099
+| (CHANX:719090 L4 length:3 (11,0)->(14,0))                      0.120     1.219
+| (CHANY:1160068 L1 length:0 (12,1)->(12,1))                     0.108     1.327
+| (CHANX:724964 L4 length:3 (13,1)->(16,1))                      0.120     1.447
+| (IPIN:34781 side:TOP (13,1))                                   0.164     1.611
+| (intra 'clb' routing)                                          0.488     2.099
+in2_reg.D[0] (dffsre at (13,1))                                 -0.000     2.099
+data arrival time                                                          2.099
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in2_reg.C[0] (dffsre at (13,1))                                  0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -2.099
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.737
+
+
+#Path 11
+Startpoint: in1.inpad[0] (.input at (11,0) clocked by clock0)
+Endpoint  : in1_reg.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in1.inpad[0] (.input at (11,0))                                  0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:4208 side:TOP (11,0))                                    0.000     1.099
+| (CHANX:719094 L4 length:3 (11,0)->(14,0))                      0.120     1.219
+| (CHANY:1160080 L1 length:0 (12,1)->(12,1))                     0.108     1.327
+| (CHANX:724952 L4 length:3 (13,1)->(16,1))                      0.120     1.447
+| (IPIN:34799 side:TOP (13,1))                                   0.164     1.611
+| (intra 'clb' routing)                                          0.328     1.939
+in1_reg.D[0] (dffsre at (13,1))                                 -0.000     1.939
+data arrival time                                                          1.939
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in1_reg.C[0] (dffsre at (13,1))                                  0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -1.939
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.897
+
+
+#Path 12
+Startpoint: in5.inpad[0] (.input at (13,0) clocked by clock0)
+Endpoint  : in5_reg.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in5.inpad[0] (.input at (13,0))                                  0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:5002 side:TOP (13,0))                                    0.000     1.099
+| (CHANX:719017 L4 length:3 (13,0)->(10,0))                      0.120     1.219
+| (CHANY:1155202 L1 length:0 (11,1)->(11,1))                     0.108     1.327
+| (CHANX:724898 L4 length:3 (12,1)->(15,1))                      0.120     1.447
+| (IPIN:34794 side:TOP (13,1))                                   0.164     1.611
+| (intra 'clb' routing)                                          0.328     1.939
+in5_reg.D[0] (dffsre at (13,1))                                 -0.000     1.939
+data arrival time                                                          1.939
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in5_reg.C[0] (dffsre at (13,1))                                  0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -1.939
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.897
+
+
+#Path 13
+Startpoint: in4.inpad[0] (.input at (12,0) clocked by clock0)
+Endpoint  : in4_reg.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in4.inpad[0] (.input at (12,0))                                  0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:4622 side:TOP (12,0))                                    0.000     1.099
+| (CHANX:719143 L1 length:0 (12,0)->(12,0))                      0.108     1.207
+| (CHANY:1155208 L1 length:0 (11,1)->(11,1))                     0.108     1.315
+| (CHANX:724892 L4 length:3 (12,1)->(15,1))                      0.120     1.435
+| (IPIN:34798 side:TOP (13,1))                                   0.164     1.599
+| (intra 'clb' routing)                                          0.328     1.927
+in4_reg.D[0] (dffsre at (13,1))                                  0.000     1.927
+data arrival time                                                          1.927
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in4_reg.C[0] (dffsre at (13,1))                                  0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -1.927
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.909
+
+
+#Path 14
+Startpoint: in6.inpad[0] (.input at (13,0) clocked by clock0)
+Endpoint  : in6_reg.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in6.inpad[0] (.input at (13,0))                                  0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:5026 side:TOP (13,0))                                    0.000     1.099
+| (CHANX:719221 L1 length:0 (13,0)->(13,0))                      0.108     1.207
+| (CHANY:1160074 L1 length:0 (12,1)->(12,1))                     0.108     1.315
+| (CHANX:724958 L4 length:3 (13,1)->(16,1))                      0.120     1.435
+| (IPIN:34793 side:TOP (13,1))                                   0.164     1.599
+| (intra 'clb' routing)                                          0.328     1.927
+in6_reg.D[0] (dffsre at (13,1))                                  0.000     1.927
+data arrival time                                                          1.927
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in6_reg.C[0] (dffsre at (13,1))                                  0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -1.927
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.909
+
+
+#Path 15
+Startpoint: in3.inpad[0] (.input at (12,0) clocked by clock0)
+Endpoint  : in3_reg.D[0] (dffsre at (13,1) clocked by clock0)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock0 (rise edge)                                         0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+in3.inpad[0] (.input at (12,0))                                  0.000     1.000
+| (intra 'io' routing)                                           0.099     1.099
+| (OPIN:4604 side:TOP (12,0))                                    0.000     1.099
+| (CHANX:719160 L4 length:3 (12,0)->(15,0))                      0.120     1.219
+| (CHANY:1164922 L1 length:0 (13,1)->(13,1))                     0.108     1.327
+| (CHANX:724933 L1 length:0 (13,1)->(13,1))                      0.108     1.435
+| (IPIN:34789 side:TOP (13,1))                                   0.164     1.599
+| (intra 'clb' routing)                                          0.278     1.877
+in3_reg.D[0] (dffsre at (13,1))                                  0.000     1.877
+data arrival time                                                          1.877
+
+clock clock0 (rise edge)                                         6.800     6.800
+clock source latency                                             0.000     6.800
+clock0.inpad[0] (.input at (6,0))                                0.000     6.800
+| (intra 'io' routing)                                           0.099     6.899
+| (inter-block routing:global net)                               0.000     6.899
+| (intra 'clb' routing)                                          2.000     8.899
+in3_reg.C[0] (dffsre at (13,1))                                  0.000     8.899
+clock uncertainty                                                0.000     8.899
+cell setup time                                                 -0.063     8.836
+data required time                                                         8.836
+--------------------------------------------------------------------------------
+data required time                                                         8.836
+data arrival time                                                         -1.877
+--------------------------------------------------------------------------------
+slack (MET)                                                                6.959
+
+
+#End of timing report

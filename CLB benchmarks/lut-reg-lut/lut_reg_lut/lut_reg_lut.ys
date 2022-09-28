@@ -1,0 +1,25 @@
+ 
+# Yosys synthesis script for lut2reg2lut
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /nfs_scratch/scratch/AE/saad/Micro-BenchMark-Brams/CLB_Benchmarks/lut-reg-lut/./lut2reg2lut.v
+verific -import lut2reg2lut
+
+
+# Technology mapping
+hierarchy -top lut2reg2lut
+
+setattr -set keep 1 w:\clock0
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top lut2reg2lut -de -goal delay         -de_max_threads -1 -no_simplify  
+
+# Clean and output blif
+write_blif lut_reg_lut_post_synth.blif
+write_verilog -noexpr -nodec -norename lut_reg_lut_post_synth.v
+write_edif lut_reg_lut_post_synth.edif
+  
