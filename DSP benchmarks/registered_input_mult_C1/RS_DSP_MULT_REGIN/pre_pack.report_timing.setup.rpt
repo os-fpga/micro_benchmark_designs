@@ -1,0 +1,2095 @@
+#Timing report of worst 76 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: z_out[0].z[9] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[9].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[9] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[9].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 2
+Startpoint: z_out[0].z[18] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[18].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[18] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[18].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 3
+Startpoint: z_out[0].z[17] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[17].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[17] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[17].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 4
+Startpoint: z_out[0].z[16] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[16].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[16] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[16].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 5
+Startpoint: z_out[0].z[15] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[15].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[15] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[15].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 6
+Startpoint: z_out[0].z[14] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[14].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[14] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[14].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 7
+Startpoint: z_out[0].z[13] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[13].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[13] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[13].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 8
+Startpoint: z_out[0].z[12] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[12].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[12] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[12].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 9
+Startpoint: z_out[0].z[11] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[11].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[11] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[11].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 10
+Startpoint: z_out[0].z[10] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[10].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[10] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[10].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 11
+Startpoint: z_out[0].z[19] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[19].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[19] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[19].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 12
+Startpoint: z_out[0].z[8] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[8].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[8] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[8].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 13
+Startpoint: z_out[0].z[7] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[7].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[7] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[7].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 14
+Startpoint: z_out[0].z[6] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[6].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[6] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[6].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 15
+Startpoint: z_out[0].z[5] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[5].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[5] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[5].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 16
+Startpoint: z_out[0].z[4] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[4].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[4] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[4].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 17
+Startpoint: z_out[0].z[3] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[3].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[3] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[3].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 18
+Startpoint: z_out[0].z[2] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[2].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[2] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[2].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 19
+Startpoint: z_out[0].z[1] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[1].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[1] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[1].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 20
+Startpoint: z_out[0].z[28] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[28].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[28] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[28].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 21
+Startpoint: z_out[0].z[37] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[37].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[37] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[37].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 22
+Startpoint: z_out[0].z[36] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[36].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[36] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[36].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 23
+Startpoint: z_out[0].z[35] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[35].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[35] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[35].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 24
+Startpoint: z_out[0].z[34] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[34].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[34] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[34].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 25
+Startpoint: z_out[0].z[33] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[33].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[33] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[33].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 26
+Startpoint: z_out[0].z[32] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[32].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[32] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[32].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 27
+Startpoint: z_out[0].z[31] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[31].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[31] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[31].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 28
+Startpoint: z_out[0].z[30] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[30].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[30] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[30].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 29
+Startpoint: z_out[0].z[29] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[29].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[29] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[29].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 30
+Startpoint: z_out[0].z[0] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[0].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[0] (RS_DSP2_MULT_REGIN) [clock-to-output]             0.200     1.719
+out:z_out[0].outpad[0] (.output)                                 1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 31
+Startpoint: z_out[0].z[27] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[27].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[27] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[27].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 32
+Startpoint: z_out[0].z[26] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[26].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[26] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[26].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 33
+Startpoint: z_out[0].z[25] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[25].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[25] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[25].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 34
+Startpoint: z_out[0].z[24] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[24].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[24] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[24].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 35
+Startpoint: z_out[0].z[23] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[23].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[23] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[23].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 36
+Startpoint: z_out[0].z[22] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[22].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[22] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[22].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 37
+Startpoint: z_out[0].z[21] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[21].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[21] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[21].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 38
+Startpoint: z_out[0].z[20] (RS_DSP2_MULT_REGIN clocked by clk)
+Endpoint  : out:z_out[20].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     1.519
+z_out[0].z[20] (RS_DSP2_MULT_REGIN) [clock-to-output]            0.200     1.719
+out:z_out[20].outpad[0] (.output)                                1.519     3.238
+data arrival time                                                          3.238
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clock uncertainty                                                0.000     6.800
+output external delay                                           -1.000     5.800
+data required time                                                         5.800
+--------------------------------------------------------------------------------
+data required time                                                         5.800
+data arrival time                                                         -3.238
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.562
+
+
+#Path 39
+Startpoint: a[9].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[9] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[9].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[9] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 40
+Startpoint: a[18].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[18] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[18].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[18] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 41
+Startpoint: a[17].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[17] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[17].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[17] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 42
+Startpoint: a[16].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[16] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[16].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[16] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 43
+Startpoint: a[15].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[15] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[15].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[15] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 44
+Startpoint: a[14].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[14] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[14].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[14] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 45
+Startpoint: a[13].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[13] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[13].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[13] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 46
+Startpoint: a[12].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[12] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[12].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[12] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 47
+Startpoint: a[11].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[11] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[11].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[11] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 48
+Startpoint: a[10].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[10] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[10].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[10] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 49
+Startpoint: a[19].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[19] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[19].inpad[0] (.input)                                          0.000     1.000
+z_out[0].a[19] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 50
+Startpoint: a[8].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[8] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[8].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[8] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 51
+Startpoint: a[7].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[7] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[7].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[7] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 52
+Startpoint: a[6].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[6] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[6].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[6] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 53
+Startpoint: a[5].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[5] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[5].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[5] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 54
+Startpoint: a[4].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[4] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[4].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[4] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 55
+Startpoint: a[3].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[3] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[3].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[3] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 56
+Startpoint: a[2].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[2] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[2].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[2] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 57
+Startpoint: a[1].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[1] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[1].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[1] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 58
+Startpoint: b[8].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[8] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[8].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[8] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 59
+Startpoint: b[17].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[17] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[17].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[17] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 60
+Startpoint: b[16].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[16] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[16].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[16] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 61
+Startpoint: b[15].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[15] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[15].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[15] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 62
+Startpoint: b[14].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[14] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[14].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[14] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 63
+Startpoint: b[13].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[13] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[13].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[13] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 64
+Startpoint: b[12].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[12] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[12].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[12] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 65
+Startpoint: b[11].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[11] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[11].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[11] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 66
+Startpoint: b[10].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[10] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[10].inpad[0] (.input)                                          0.000     1.000
+z_out[0].b[10] (RS_DSP2_MULT_REGIN)                              1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 67
+Startpoint: b[9].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[9] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[9].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[9] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 68
+Startpoint: a[0].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].a[0] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+a[0].inpad[0] (.input)                                           0.000     1.000
+z_out[0].a[0] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 69
+Startpoint: b[7].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[7] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[7].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[7] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 70
+Startpoint: b[6].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[6] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[6].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[6] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 71
+Startpoint: b[5].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[5] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[5].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[5] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 72
+Startpoint: b[4].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[4] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[4].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[4] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 73
+Startpoint: b[3].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[3] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[3].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[3] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 74
+Startpoint: b[2].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[2] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[2].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[2] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 75
+Startpoint: b[1].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[1] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[1].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[1] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#Path 76
+Startpoint: b[0].inpad[0] (.input clocked by clk)
+Endpoint  : z_out[0].b[0] (RS_DSP2_MULT_REGIN clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             1.000     1.000
+b[0].inpad[0] (.input)                                           0.000     1.000
+z_out[0].b[0] (RS_DSP2_MULT_REGIN)                               1.519     2.519
+data arrival time                                                          2.519
+
+clock clk (rise edge)                                            6.800     6.800
+clock source latency                                             0.000     6.800
+clk.inpad[0] (.input)                                            0.000     6.800
+z_out[0].clk[0] (RS_DSP2_MULT_REGIN)                             1.519     8.319
+clock uncertainty                                                0.000     8.319
+cell setup time                                                 -0.200     8.119
+data required time                                                         8.119
+--------------------------------------------------------------------------------
+data required time                                                         8.119
+data arrival time                                                         -2.519
+--------------------------------------------------------------------------------
+slack (MET)                                                                5.600
+
+
+#End of timing report
