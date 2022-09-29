@@ -1,0 +1,21 @@
+# Perf log file
+# Created: Wed Sep 28 15:59:59 2022
+
+[ 15:59:59 ] Synthesize has started
+[ 15:59:59 ] Command: /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/bin/yosys -s lut_lut.ys -l lut_lut_synth.log
+[ 16:00:04 ] Duration: 5272 ms. Max utilization: 67 MB
+[ 16:00:04 ] Packing has started
+[ 16:00:04 ] Command: /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml lut_lut_post_synth.blif --sdc_file lut_lut_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report lut_lut_post_place_timing.rpt --device 78x66 --gen_post_synthesis_netlist on --allow_dangling_combinational_nodes on --pack
+[ 16:01:03 ] Duration: 58768 ms. Max utilization: 1062 MB
+[ 16:01:03 ] GlobalPlacement has started
+[ 16:01:03 ] Placement has started
+[ 16:01:03 ] Command: /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/bin/pin_c --csv /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf lut_lut_openfpga.pcf --blif lut_lut_post_synth.blif --output lut_lut_pin_loc.place --assign_unconstrained_pins in_define_order
+[ 16:01:03 ] Duration: 33 ms. Max utilization: 15 MB
+[ 16:01:03 ] Command: /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml lut_lut_post_synth.blif --sdc_file lut_lut_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report lut_lut_post_place_timing.rpt --device 78x66 --gen_post_synthesis_netlist on --allow_dangling_combinational_nodes on --place --fix_pins lut_lut_pin_loc.place
+[ 16:03:04 ] Duration: 121602 ms. Max utilization: 1107 MB
+[ 16:03:04 ] Route has started
+[ 16:03:04 ] Command: /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml lut_lut_post_synth.blif --sdc_file lut_lut_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report lut_lut_post_place_timing.rpt --device 78x66 --gen_post_synthesis_netlist on --allow_dangling_combinational_nodes on --route
+[ 16:05:06 ] Duration: 121079 ms. Max utilization: 1107 MB
+[ 16:05:06 ] TimingAnalysis has started
+[ 16:05:06 ] Command: /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/bin/vpr /nfs_cadtools/raptor/instl_dir/09_28_2022_08_00_01/share/raptor/etc/devices/gemini/gemini_vpr.xml lut_lut_post_synth.blif --sdc_file lut_lut_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report lut_lut_post_place_timing.rpt --device 78x66 --gen_post_synthesis_netlist on --allow_dangling_combinational_nodes on --analysis
+[ 16:06:05 ] Duration: 59492 ms. Max utilization: 1102 MB
