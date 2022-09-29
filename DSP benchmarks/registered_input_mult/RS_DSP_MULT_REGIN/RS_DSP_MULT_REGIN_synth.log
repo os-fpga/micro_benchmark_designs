@@ -1,0 +1,1165 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys-Verific 0.0.92
+ Yosys 0.18+10 (git sha1 18ac9db6a, gcc 9.3.1 -fPIC -Os)
+
+
+-- Executing script file `RS_DSP_MULT_REGIN.ys' --
+
+1. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+2. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+3. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+
+4. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/home/users/amajid/Cases/registered_input_mult/./rtl/registered_input_mult.v'
+
+5. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file '/home/users/amajid/Cases/registered_input_mult/./rtl/RS_DSP2_MULT_REGIN.v'
+
+6. Executing VERIFIC (loading SystemVerilog and VHDL designs using Verific).
+Built with Verific May22_SW_Release, released at Wed Jun  1 05:39:28 2022.
+Adding Verilog module 'registered_input_mult' to elaboration queue.
+Running hier_tree::Elaborate().
+VERIFIC-INFO [VERI-1018] /home/users/amajid/Cases/registered_input_mult/./rtl/registered_input_mult.v:25: compiling module 'registered_input_mult'
+VERIFIC-INFO [VERI-1018] /home/users/amajid/Cases/registered_input_mult/./rtl/RS_DSP2_MULT_REGIN.v:2: compiling module 'RS_DSP2_MULT_REGIN'
+Importing module registered_input_mult.
+Importing blackbox module RS_DSP2_MULT_REGIN.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \registered_input_mult
+
+7.2. Analyzing design hierarchy..
+Top module:  \registered_input_mult
+Removed 0 unused modules.
+
+8. Executing synth_rs pass: v0.4.79
+
+8.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/common/cells_sim.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/common/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\inv'.
+Generating RTLIL representation for module `\buff'.
+Generating RTLIL representation for module `\logic_0'.
+Generating RTLIL representation for module `\logic_1'.
+Generating RTLIL representation for module `\gclkbuff'.
+Successfully finished Verilog frontend.
+
+8.2. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/cells_sim.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\dffsre'.
+Generating RTLIL representation for module `\dffnsre'.
+Generating RTLIL representation for module `\latchsre'.
+Generating RTLIL representation for module `\latchnsre'.
+Generating RTLIL representation for module `\io_scff'.
+Generating RTLIL representation for module `\scff'.
+Generating RTLIL representation for module `\sh_dff'.
+Generating RTLIL representation for module `\adder_carry'.
+Generating RTLIL representation for module `\sdffr'.
+Generating RTLIL representation for module `\sdffs'.
+Generating RTLIL representation for module `\TDP_BRAM18'.
+Generating RTLIL representation for module `\TDP36K'.
+Generating RTLIL representation for module `\BRAM2x18_TDP'.
+Generating RTLIL representation for module `\BRAM2x18_SDP'.
+Generating RTLIL representation for module `\_$_mem_v2_asymmetric'.
+Successfully finished Verilog frontend.
+
+8.3. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v' to AST representation.
+Generating RTLIL representation for module `\RS_DSP1'.
+Generating RTLIL representation for module `\RS_DSP2'.
+Generating RTLIL representation for module `\RS_DSP2_MULT'.
+Replacing existing blackbox module `\RS_DSP2_MULT_REGIN' at /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_sim.v:227.1-272.10.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULT_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTADD_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGIN'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP2_MULTACC_REGIN_REGOUT'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_sim_cfg_ports'.
+Generating RTLIL representation for module `\RS_DSP3'.
+Generating RTLIL representation for module `\RS_DSP3_MULT'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULT_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTADD_REGIN_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGIN'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGOUT'.
+Generating RTLIL representation for module `\RS_DSP3_MULTACC_REGIN_REGOUT'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_sim_cfg_params'.
+Successfully finished Verilog frontend.
+
+8.4. Executing HIERARCHY pass (managing design hierarchy).
+
+8.4.1. Analyzing design hierarchy..
+Top module:  \registered_input_mult
+
+8.4.2. Analyzing design hierarchy..
+Top module:  \registered_input_mult
+Removed 0 unused modules.
+
+8.5. Executing PROC pass (convert processes to netlists).
+
+8.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+8.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+8.5.4. Executing PROC_INIT pass (extract init attributes).
+
+8.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+8.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+8.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+8.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+8.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+8.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+8.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.6. Executing DEMUXMAP pass.
+
+8.7. Executing FLATTEN pass (flatten design).
+
+8.8. Executing DEMUXMAP pass.
+
+8.9. Executing TRIBUF pass.
+
+8.10. Executing DEMINOUT pass (demote inout ports to input or output).
+
+8.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+Removed 0 unused cells and 97 unused wires.
+<suppressed ~4 debug messages>
+
+8.13. Executing CHECK pass (checking for obvious problems).
+Checking module registered_input_mult...
+Found and reported 0 problems.
+
+8.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.15. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.16. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+8.17. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.18. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.19. Executing OPT_SHARE pass.
+
+8.20. Executing OPT_DFF pass (perform DFF optimizations).
+Removing never-active async load on $verific$z_out_reg$/home/users/amajid/Cases/registered_input_mult/./rtl/registered_input_mult.v:65$111 ($aldff) from module registered_input_mult.
+Removing never-active async load on $verific$reg_B_reg$/home/users/amajid/Cases/registered_input_mult/./rtl/registered_input_mult.v:52$20 ($aldff) from module registered_input_mult.
+Removing never-active async load on $verific$reg_A_reg$/home/users/amajid/Cases/registered_input_mult/./rtl/registered_input_mult.v:52$19 ($aldff) from module registered_input_mult.
+
+8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.23. Executing FSM pass (extract and optimize FSM).
+
+8.23.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+8.23.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+8.23.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+8.23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.23.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+8.23.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+8.23.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+8.23.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+8.24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.26. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+8.27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.29. Executing OPT_SHARE pass.
+
+8.30. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.31. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.32. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.33. Executing WREDUCE pass (reducing word size of cells).
+
+8.34. Executing PEEPOPT pass (run peephole optimizers).
+
+8.35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.36. Executing DEMUXMAP pass.
+
+8.37. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $mux                            3
+     RS_DSP2_MULT_REGIN              1
+
+8.38. Executing WREDUCE pass (reducing word size of cells).
+
+8.39. Executing RS_DSP_MACC pass.
+
+8.40. Executing TECHMAP pass (map to technology primitives).
+
+8.40.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp_check_maxwidth.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp_check_maxwidth.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+8.40.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.41. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $mux                            3
+     RS_DSP2_MULT_REGIN              1
+
+8.42. Executing TECHMAP pass (map to technology primitives).
+
+8.42.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp_check_maxwidth.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp_check_maxwidth.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+8.42.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.43. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $mux                            3
+     RS_DSP2_MULT_REGIN              1
+
+8.44. Executing TECHMAP pass (map to technology primitives).
+
+8.44.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+8.44.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.45. Executing TECHMAP pass (map to technology primitives).
+
+8.45.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+8.45.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.46. Executing TECHMAP pass (map to technology primitives).
+
+8.46.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_map.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `\$__RS_MUL20X18'.
+Generating RTLIL representation for module `\$__RS_MUL10X9'.
+Successfully finished Verilog frontend.
+
+8.46.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.47. Executing RS_DSP_SIMD pass.
+
+8.48. Executing TECHMAP pass (map to technology primitives).
+
+8.48.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_final_map.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/dsp_final_map.v' to AST representation.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_ports'.
+Generating RTLIL representation for module `\dsp_t1_20x18x64_cfg_params'.
+Generating RTLIL representation for module `\dsp_t1_10x9x32_cfg_params'.
+Successfully finished Verilog frontend.
+
+8.48.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+8.49. Executing RS_DSP_IO_REGS pass.
+
+8.50. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module registered_input_mult:
+  created 0 $alu and 0 $macc cells.
+
+8.51. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.52. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.53. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+8.54. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.55. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.56. Executing OPT_SHARE pass.
+
+8.57. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.58. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.59. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.60. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $mux                            3
+     RS_DSP2_MULT_REGIN              1
+
+8.61. Executing MEMORY pass.
+
+8.61.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+8.61.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+8.61.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+8.61.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+8.61.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+8.61.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.61.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+8.61.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+8.61.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.61.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+8.62. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $mux                            3
+     RS_DSP2_MULT_REGIN              1
+
+8.63. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converted 0 (p)mux cells into 0 pmux cells.
+<suppressed ~3 debug messages>
+
+8.64. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.65. Executing RS_BRAM_ASYMMETRIC pass.
+<suppressed ~2 debug messages>
+
+8.66. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+8.67. Executing Rs_BRAM_Split pass.
+
+8.68. Executing TECHMAP pass (map to technology primitives).
+
+8.68.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/brams_map.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_TDP'.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM18_TDP'.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM18_SDP'.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_SDP'.
+Generating RTLIL representation for module `\$__RS_FACTOR_BRAM36_SDP_ASYMMETRIC'.
+Note: Assuming pure combinatorial block at /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/brams_map.v:940.2-945.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+8.68.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~7 debug messages>
+
+8.69. Executing TECHMAP pass (map to technology primitives).
+
+8.69.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/brams_final_map.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/brams_final_map.v' to AST representation.
+Generating RTLIL representation for module `\BRAM2x18_TDP'.
+Generating RTLIL representation for module `\BRAM2x18_SDP'.
+Successfully finished Verilog frontend.
+
+8.69.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+8.70. Executing PMUXTREE pass.
+
+8.71. Executing MUXPACK pass ($mux cell cascades to $pmux).
+Converted 0 (p)mux cells into 0 pmux cells.
+<suppressed ~3 debug messages>
+
+8.72. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+8.73. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $mux                            3
+     RS_DSP2_MULT_REGIN              1
+
+8.74. Executing TECHMAP pass (map to technology primitives).
+
+8.74.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+8.74.2. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/arith_map.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_rs_alu'.
+Successfully finished Verilog frontend.
+
+8.74.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+8.75. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 11
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $_DFF_P_                       76
+     $_MUX_                         76
+     RS_DSP2_MULT_REGIN              1
+
+8.76. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.77. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.78. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.79. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.80. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.81. Executing OPT_SHARE pass.
+
+8.82. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.83. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.84. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.85. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.86. Executing TECHMAP pass (map to technology primitives).
+
+8.86.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+8.86.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~71 debug messages>
+
+8.87. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.88. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.89. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.90. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.91. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.92. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.93. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.94. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.95. Executing ABC pass (technology mapping using ABC).
+
+8.95.1. Summary of detected clock domains:
+  153 cells in clk=\clk, en={ }, arst={ }, srst={ }
+
+8.95.2. Extracting gate netlist of module `\registered_input_mult' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clk
+Extracted 152 gates and 230 wires to a netlist network with 77 inputs and 76 outputs.
+
+8.95.2.1. Executing ABC.
+
+8.96. Executing ABC pass (technology mapping using ABC).
+
+8.96.1. Summary of detected clock domains:
+  153 cells in clk=\clk, en={ }, arst={ }, srst={ }
+
+8.96.2. Extracting gate netlist of module `\registered_input_mult' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clk
+Extracted 152 gates and 229 wires to a netlist network with 77 inputs and 76 outputs.
+
+8.96.2.1. Executing ABC.
+
+8.97. Executing ABC pass (technology mapping using ABC).
+
+8.97.1. Summary of detected clock domains:
+  153 cells in clk=\clk, en={ }, arst={ }, srst={ }
+
+8.97.2. Extracting gate netlist of module `\registered_input_mult' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clk
+Extracted 152 gates and 229 wires to a netlist network with 77 inputs and 76 outputs.
+
+8.97.2.1. Executing ABC.
+
+8.98. Executing ABC pass (technology mapping using ABC).
+
+8.98.1. Summary of detected clock domains:
+  153 cells in clk=\clk, en={ }, arst={ }, srst={ }
+
+8.98.2. Extracting gate netlist of module `\registered_input_mult' to `<abc-temp-dir>/input.blif'..
+Found matching posedge clock domain: \clk
+Extracted 152 gates and 229 wires to a netlist network with 77 inputs and 76 outputs.
+
+8.98.2.1. Executing ABC.
+
+8.99. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+8.100. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.101. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.102. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.103. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.104. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.105. Executing OPT_SHARE pass.
+
+8.106. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.107. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+Removed 0 unused cells and 1147 unused wires.
+<suppressed ~1 debug messages>
+
+8.108. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.109. Executing BMUXMAP pass.
+
+8.110. Executing DEMUXMAP pass.
+
+8.111. Executing ABC pass (technology mapping using ABC).
+
+8.111.1. Extracting gate netlist of module `\registered_input_mult' to `<abc-temp-dir>/input.blif'..
+Extracted 76 gates and 153 wires to a netlist network with 77 inputs and 76 outputs.
+
+8.111.1.1. Executing ABC.
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.07 sec. at Pass 0]{firstMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.10 sec. at Pass 1]{initMapFlow}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 2]{map}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.10 sec. at Pass 3]{postMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.11 sec. at Pass 4]{map}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.10 sec. at Pass 5]{postMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]{pushMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]{finalMap}
+
+8.112. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.113. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.114. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.115. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.116. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.117. Executing OPT_SHARE pass.
+
+8.118. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.119. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+Removed 0 unused cells and 153 unused wires.
+<suppressed ~1 debug messages>
+
+8.120. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.121. Executing OPT_FFINV pass (push inverters through FFs).
+Discovering LUTs.
+Pushed 0 inverters.
+
+8.122. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 84
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $_DFF_P_                       76
+     $lut                           76
+     RS_DSP2_MULT_REGIN              1
+
+8.123. Executing SHREGMAP pass (map shift registers).
+Converted 0 dff cells into 0 shift registers.
+
+8.124. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+8.125. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 84
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $_DFF_P_                       76
+     $lut                           76
+     RS_DSP2_MULT_REGIN              1
+
+8.126. Executing TECHMAP pass (map to technology primitives).
+
+8.126.1. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+8.126.2. Executing Verilog-2005 frontend: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v
+Parsing Verilog input from `/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/../share/yosys/rapidsilicon/genesis/ffs_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0N_'.
+Generating RTLIL representation for module `\$_DFFE_PN0P_'.
+Generating RTLIL representation for module `\$_DFFE_PN0N_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1N_'.
+Generating RTLIL representation for module `\$_DFFE_PN1P_'.
+Generating RTLIL representation for module `\$_DFFE_PN1N_'.
+Generating RTLIL representation for module `\$_DFFSR_PPP_'.
+Generating RTLIL representation for module `\$_DFFSR_PNP_'.
+Generating RTLIL representation for module `\$_DFFSR_PNN_'.
+Generating RTLIL representation for module `\$_DFFSR_PPN_'.
+Generating RTLIL representation for module `\$_DFFSR_NPP_'.
+Generating RTLIL representation for module `\$_DFFSR_NNP_'.
+Generating RTLIL representation for module `\$_DFFSR_NNN_'.
+Generating RTLIL representation for module `\$_DFFSR_NPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PPNN_'.
+Generating RTLIL representation for module `\$_DFFSRE_PNNN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PPP_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NPP_'.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0N_'.
+Generating RTLIL representation for module `\$_DFFE_NN0P_'.
+Generating RTLIL representation for module `\$_DFFE_NN0N_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1N_'.
+Generating RTLIL representation for module `\$_DFFE_NN1P_'.
+Generating RTLIL representation for module `\$_DFFE_NN1N_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNPP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNNP_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNPN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NPNN_'.
+Generating RTLIL representation for module `\$_DFFSRE_NNNN_'.
+Generating RTLIL representation for module `\$__SHREG_DFF_P_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PN0_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NN0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_PN1_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_NN1_'.
+Successfully finished Verilog frontend.
+
+8.126.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $lut.
+Using template \$_DFF_P_ for cells of type $_DFF_P_.
+No more expansions possible.
+<suppressed ~288 debug messages>
+
+8.127. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+<suppressed ~76 debug messages>
+
+8.128. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+8.129. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.130. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+<suppressed ~225 debug messages>
+Removed a total of 75 cells.
+
+8.131. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.132. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+Removed 0 unused cells and 379 unused wires.
+<suppressed ~1 debug messages>
+
+8.133. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.134. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.135. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.136. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.137. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.138. Executing OPT_SHARE pass.
+
+8.139. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.140. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+8.141. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.142. Executing ABC pass (technology mapping using ABC).
+
+8.142.1. Extracting gate netlist of module `\registered_input_mult' to `<abc-temp-dir>/input.blif'..
+Extracted 77 gates and 155 wires to a netlist network with 77 inputs and 76 outputs.
+
+8.142.1.1. Executing ABC.
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.07 sec. at Pass 0]{firstMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 1]{initMapFlow}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 2]{map}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.09 sec. at Pass 3]{postMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.10 sec. at Pass 4]{map}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.10 sec. at Pass 5]{postMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 6]{pushMap}
+DE:   #PIs =  77  #Luts =    76  Max Lvl =   1  Avg Lvl =   1.00  [   0.00 sec. at Pass 7]{finalMap}
+
+8.143. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+
+8.144. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.145. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \registered_input_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.146. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \registered_input_mult.
+Performed a total of 0 changes.
+
+8.147. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\registered_input_mult'.
+Removed a total of 0 cells.
+
+8.148. Executing OPT_SHARE pass.
+
+8.149. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.150. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+Removed 0 unused cells and 154 unused wires.
+<suppressed ~1 debug messages>
+
+8.151. Executing OPT_EXPR pass (perform const folding).
+Optimizing module registered_input_mult.
+MAX OPT ITERATION = 1
+
+8.152. Executing HIERARCHY pass (managing design hierarchy).
+
+8.152.1. Analyzing design hierarchy..
+Top module:  \registered_input_mult
+
+8.152.2. Analyzing design hierarchy..
+Top module:  \registered_input_mult
+Removed 0 unused modules.
+
+8.153. Printing statistics.
+
+=== registered_input_mult ===
+
+   Number of wires:                 84
+   Number of wire bits:            230
+   Number of public wires:           8
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $lut                           76
+     RS_DSP2_MULT_REGIN              1
+     dffsre                         76
+
+8.154. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \registered_input_mult..
+
+9. Executing BLIF backend.
+
+10. Executing Verilog backend.
+Dumping module `\registered_input_mult'.
+
+11. Executing EDIF backend.
+
+End of script. Logfile hash: 0d815a1c6d, CPU: user 1.37s system 0.07s, MEM: 21.59 MB peak
+Yosys 0.18+10 (git sha1 18ac9db6a, gcc 9.3.1 -fPIC -Os)
+Time spent: 86% 6x abc (8 sec), 4% 17x read_verilog (0 sec), ...
