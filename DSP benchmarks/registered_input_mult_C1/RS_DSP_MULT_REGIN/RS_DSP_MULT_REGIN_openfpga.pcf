@@ -1,0 +1,43 @@
+set_io clk Bank_H_1_1  
+set_io a[0] Bank_H_1_2  
+set_io a[1] Bank_H_1_3  
+set_io a[2] Bank_H_1_4  
+set_io a[3] Bank_H_1_5  
+set_io a[4] Bank_H_1_6  
+set_io a[5] Bank_H_1_7  
+set_io a[6] Bank_H_1_8  
+set_io a[7] Bank_H_1_9  
+set_io a[8] Bank_H_1_10  
+set_io a[9] Bank_H_1_11  
+set_io a[10] Bank_H_1_12  
+set_io a[11] Bank_H_1_13  
+set_io a[12] Bank_H_1_14  
+set_io a[13] Bank_H_1_15  
+set_io a[14] Bank_H_1_16  
+set_io a[15] Bank_H_1_17  
+set_io a[16] Bank_H_1_18  
+set_io a[17] Bank_H_1_19  
+set_io a[18] Bank_H_1_20  
+set_io a[19] Bank_H_2_1  
+set_io b[0] Bank_H_2_2  
+set_io b[1]Bank_H_2_3  
+set_io b[2]Bank_H_2_4  
+set_io b[3]Bank_H_2_5  
+set_io b[4]Bank_H_2_6  
+set_io b[5]Bank_H_2_7  
+set_io b[6]Bank_H_2_8  
+set_io b[7]Bank_H_2_9  
+set_io b[8]Bank_H_2_10  
+set_io b[9]Bank_H_2_11  
+set_io b[10] Bank_H_2_12  
+set_io b[11] Bank_H_2_13  
+set_io b[12] Bank_H_2_14  
+set_io b[13] Bank_H_2_15  
+set_io b[14] Bank_H_2_16  
+set_io b[15] Bank_H_2_17  
+set_io b[16] Bank_H_2_18  
+set_io b[17] Bank_H_2_19  
+set_io feedback_in[0] Bank_H_2_20  
+set_io feedback_in[1] Bank_H_3_1  
+set_io feedback_in[2] Bank_H_3_2  
+set_io z_out Bank_H_3_3  

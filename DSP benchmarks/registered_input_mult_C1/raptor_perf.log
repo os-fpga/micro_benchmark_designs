@@ -1,0 +1,23 @@
+# Perf log file
+# Created: Thu Sep 29 14:15:06 2022
+
+[ 14:15:06 ] Analysis has started
+[ 14:15:06 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/analyze -f /home/users/amajid/Cases/registered_input_mult/RS_DSP_MULT_REGIN/RS_DSP_MULT_REGIN_analyzer.cmd
+[ 14:15:06 ] Duration: 44 ms. Max utilization: 39 MB
+[ 14:15:06 ] Synthesize has started
+[ 14:15:06 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/yosys -s RS_DSP_MULT_REGIN.ys -l RS_DSP_MULT_REGIN_synth.log
+[ 14:15:07 ] Duration: 833 ms. Max utilization: 63 MB
+[ 14:15:07 ] Packing has started
+[ 14:15:07 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/vpr /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/share/raptor/etc/devices/gemini/gemini_vpr.xmle RS_DSP_MULT_REGIN_post_synth.blif --sdc_file RS_DSP_MULT_REGIN_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report RS_DSP_MULT_REGIN_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --pack
+[ 14:15:29 ] Duration: 22031 ms. Max utilization: 914 MB
+[ 14:15:29 ] Placement has started
+[ 14:15:29 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/pin_c --csv /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf RS_DSP_MULT_REGIN_openfpga.pcf --blif RS_DSP_MULT_REGIN_post_synth.blif --output RS_DSP_MULT_REGIN_pin_loc.place --assign_unconstrained_pins in_define_order
+[ 14:15:29 ] Duration: 43 ms. Max utilization: 17 MB
+[ 14:15:29 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/vpr /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/share/raptor/etc/devices/gemini/gemini_vpr.xmle RS_DSP_MULT_REGIN_post_synth.blif --sdc_file RS_DSP_MULT_REGIN_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report RS_DSP_MULT_REGIN_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --place --fix_pins RS_DSP_MULT_REGIN_pin_loc.place
+[ 14:16:13 ] Duration: 43534 ms. Max utilization: 958 MB
+[ 14:16:13 ] Route has started
+[ 14:16:13 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/vpr /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/share/raptor/etc/devices/gemini/gemini_vpr.xmle RS_DSP_MULT_REGIN_post_synth.blif --sdc_file RS_DSP_MULT_REGIN_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report RS_DSP_MULT_REGIN_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 14:16:53 ] Duration: 40626 ms. Max utilization: 958 MB
+[ 14:16:53 ] TimingAnalysis has started
+[ 14:16:53 ] Command: /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/vpr /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/share/raptor/etc/devices/gemini/gemini_vpr.xmle RS_DSP_MULT_REGIN_post_synth.blif --sdc_file RS_DSP_MULT_REGIN_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report RS_DSP_MULT_REGIN_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 14:17:14 ] Duration: 21358 ms. Max utilization: 953 MB

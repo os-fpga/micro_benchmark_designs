@@ -1,0 +1,6 @@
+-vlog-incdir 
+-vlog-libdir 
+-vlog-define 
+-vlog2k /home/users/amajid/Cases/registered_input_mult/./rtl/registered_input_mult.v
+-vlog2k /home/users/amajid/Cases/registered_input_mult/./rtl/RS_DSP2_MULT_REGIN.v
+-top registered_input_mult
