@@ -1,0 +1,9 @@
+# Perf log file
+# Created: Thu Sep 29 13:26:26 2022
+
+[ 13:26:26 ] Analysis has started
+[ 13:26:26 ] Synthesize has started
+[ 13:26:26 ] Packing has started
+[ 13:26:26 ] Placement has started
+[ 13:26:26 ] Route has started
+[ 13:26:26 ] TimingAnalysis has started
