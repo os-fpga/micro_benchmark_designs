@@ -1,1 +1,0 @@
-/home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/bin/pin_c --csv /home/eda/rapidsilicon/09-28-2022/RapidSilicon/Raptor/2022.10/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf RS_DSP_MULT_REGIN_openfpga.pcf --blif RS_DSP_MULT_REGIN_post_synth.blif --output RS_DSP_MULT_REGIN_pin_loc.place --assign_unconstrained_pins in_define_order
